@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><component loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/PlatformP.nc" nicename="tos.platforms.z1.PlatformP" qname="PlatformP">
+      <module/>
+    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/platforms/z1/PlatformP.nc" name="Msp430ClockInit" provided="0" ref="0x40533640">
+      <component-ref nicename="tos.platforms.z1.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430ClockInit" ref="0x40533640" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40533818" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/platforms/z1/PlatformP.nc" name="Init" provided="1" ref="0x40533220">
+      <component-ref nicename="tos.platforms.z1.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40533220" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x405333f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/platforms/z1/PlatformP.nc" name="LedsInit" provided="0" ref="0x40533a20">
+      <component-ref nicename="tos.platforms.z1.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LedsInit" ref="0x40533a20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40533bf8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

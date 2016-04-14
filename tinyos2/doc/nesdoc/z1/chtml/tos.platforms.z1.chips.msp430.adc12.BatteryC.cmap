@@ -1,0 +1,13 @@
+<area shape="rect" id="node2" href="../chtml/tos.chips.msp430.adc12.AdcReadClientC.html" title="AdcReadClientC" alt="" coords="5,120,157,179">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="84,54 84,106 79,106 79,54">
+<area shape="rect" id="edge2" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="81,78,187,95">
+<area shape="rect" id="node6" href="../chtml/tos.platforms.z1.chips.msp430.adc12.BatteryP.html" title="BatteryP" alt="" coords="392,245,480,293">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.AdcConfigure.html" title="AdcConfigure&lt;msp430adc12_channel_config_t *&gt;" alt="" coords="87,178 94,200 108,219 128,230 155,240 227,253 307,261 378,265 378,271 306,267 226,259 154,245 125,235 105,223 90,203 82,180">
+<area shape="rect" id="edge8" href="../ihtml/tos.interfaces.AdcConfigure.html" title="AdcConfigure&lt;msp430adc12_channel_config_t *&gt;" alt="" coords="107,203,431,221">
+<area shape="rect" id="node4" href="../chtml/tos.chips.msp430.adc12.AdcReadStreamClientC.html" title="AdcReadStreamClientC" alt="" coords="332,120,540,179">
+<area shape="poly" id="edge4" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="439,54 439,106 433,106 433,54">
+<area shape="rect" id="edge4" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="436,78,589,95">
+<area shape="poly" id="edge10" href="../ihtml/tos.interfaces.AdcConfigure.html" title="AdcConfigure&lt;msp430adc12_channel_config_t *&gt;" alt="" coords="439,179 439,232 433,232 433,179">
+<area shape="rect" id="edge10" href="../ihtml/tos.interfaces.AdcConfigure.html" title="AdcConfigure&lt;msp430adc12_channel_config_t *&gt;" alt="" coords="436,203,760,221">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.DeviceMetadata.html" title="DeviceMetadata" alt="" coords="790,174 781,200 763,223 743,235 715,244 644,258 565,266 494,270 494,265 565,261 643,252 713,239 741,230 760,219 776,198 785,173">
+<area shape="rect" id="edge6" href="../ihtml/tos.interfaces.DeviceMetadata.html" title="DeviceMetadata" alt="" coords="775,203,880,221">

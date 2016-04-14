@@ -1,0 +1,49 @@
+<?xml version="1.0" ?><component abstract="" loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc" nicename="tos.chips.msp430.x2xxx.usci.Msp430UsciShareP" qname="Msp430UsciShareP" safe="">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author Xavier Orduna &lt;xorduna@dexmatech.com&gt;
+ @version $Revision: 1.4 $ $Date: 2006/12/12 18:23:11 $
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <module/>
+    <specification><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc" name="Interrupts" provided="1" ref="0x40b80de8">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430UsciShareP" qname="Msp430UsciShareP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Interrupts" ref="0x40b80de8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts" qname="HplMsp430UsciInterrupts"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x40b7d010" scoped=""/>
+        <function-ref name="txDone" ref="0x40b7d0f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc" name="ArbiterInfo" provided="0" ref="0x40b7d868">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430UsciShareP" qname="Msp430UsciShareP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ArbiterInfo" ref="0x40b7d868" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ArbiterInfo" qname="ArbiterInfo"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="inUse" ref="0x40b7da40" scoped=""/>
+        <function-ref name="userId" ref="0x40b7db20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc" name="RawInterrupts" provided="0" ref="0x40b7d3e0">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430UsciShareP" qname="Msp430UsciShareP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RawInterrupts" ref="0x40b7d3e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts" qname="HplMsp430UsciInterrupts"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x40b7d5b8" scoped=""/>
+        <function-ref name="txDone" ref="0x40b7d698" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

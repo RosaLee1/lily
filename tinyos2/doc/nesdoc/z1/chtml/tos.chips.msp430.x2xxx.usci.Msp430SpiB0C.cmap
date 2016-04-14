@@ -1,0 +1,18 @@
+<area shape="rect" id="node2" href="../chtml/tos.chips.msp430.x2xxx.usci.Msp430UsciB0C.html" title="Msp430UsciB0C\n(UsciC)" alt="" coords="83,120,243,181">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.ResourceRequested.html" title="ResourceRequested" alt="" coords="165,54 165,106 160,106 160,54">
+<area shape="rect" id="edge2" href="../ihtml/tos.interfaces.ResourceRequested.html" title="ResourceRequested" alt="" coords="163,78,288,95">
+<area shape="rect" id="node4" href="../chtml/tos.platforms.z1.chips.msp430.usci.Msp430SpiNoDmaB0P.html" title="Msp430SpiNoDmaB0P" alt="" coords="300,248,505,307">
+<area shape="poly" id="edge12" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure" alt="" coords="83,166 49,176 21,189 13,196 9,204 9,212 15,222 27,229 49,236 116,248 286,266 286,272 115,254 48,241 25,234 11,226 4,214 3,203 9,193 18,184 47,171 82,161">
+<area shape="rect" id="edge12" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure" alt="" coords="13,206,133,223">
+<area shape="poly" id="edge4" href="../ihtml/tos.interfaces.SpiPacket.html" title="SpiPacket" alt="" coords="481,175 480,200 472,225 461,240 457,237 467,223 474,199 476,175">
+<area shape="rect" id="edge4" href="../ihtml/tos.interfaces.SpiPacket.html" title="SpiPacket" alt="" coords="475,206,537,223">
+<area shape="poly" id="edge14" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="299,270 216,253 183,241 162,226 154,211 152,195 157,195 159,210 166,222 186,236 218,248 300,264">
+<area shape="rect" id="edge14" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="164,206,277,223">
+<area shape="poly" id="edge16" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="343,250 301,226 276,208 244,190 246,185 279,203 304,222 346,246">
+<area shape="rect" id="edge16" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="304,206,465,223">
+<area shape="poly" id="edge10" href="../ihtml/tos.chips.msp430.x2xxx.usci.Msp430SpiConfigure.html" title="Msp430SpiConfigure[uint8_t]" alt="" coords="405,307 405,360 400,360 400,307">
+<area shape="rect" id="edge10" href="../ihtml/tos.chips.msp430.x2xxx.usci.Msp430SpiConfigure.html" title="Msp430SpiConfigure[uint8_t]" alt="" coords="403,331,588,349">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.SpiByte.html" title="SpiByte" alt="" coords="598,175 574,201 544,226 510,245 508,240 541,222 570,198 594,172">
+<area shape="rect" id="edge6" href="../ihtml/tos.interfaces.SpiByte.html" title="SpiByte" alt="" coords="564,206,613,223">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="720,174 674,201 620,226 520,257 518,252 618,222 671,196 717,169">
+<area shape="rect" id="edge8" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="656,206,715,223">

@@ -1,0 +1,6 @@
+<area shape="rect" id="node2" href="../chtml/tos.platforms.z1.PlatformP.html" title="PlatformP" alt="" coords="29,120,128,168">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="81,54 81,106 76,106 76,54">
+<area shape="rect" id="edge2" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="79,78,99,95">
+<area shape="rect" id="node3" href="../chtml/tos.chips.msp430.timer.Msp430ClockC.html" title="Msp430ClockC" alt="" coords="5,235,152,293">
+<area shape="poly" id="edge4" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="81,168 81,221 76,221 76,168">
+<area shape="rect" id="edge4" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="79,193,99,210">

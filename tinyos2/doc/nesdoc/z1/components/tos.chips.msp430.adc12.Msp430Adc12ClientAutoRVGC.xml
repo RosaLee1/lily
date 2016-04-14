@@ -1,0 +1,482 @@
+<?xml version="1.0" ?><component abstract="" loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+        <short> 
+ This component virtualizes access to the HAL of the MSP430 ADC12.</short>
+        <long> 
+ This component virtualizes access to the HAL of the MSP430 ADC12.
+ Reference voltage is enabled automatically as required by the configuration.
+ 
+ @author Jan Hauer 
+
+ @see  Please refer to the README.txt and TEP 101 for more information about
+ this component and its intended use.
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="60:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="Msp430Adc12MultiChannel" ref="0x40f43b20" scoped=""/></from>
+          <to><interface-ref name="MultiChannel" ref="0x40f3edc0" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="59:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="Msp430Adc12SingleChannel" ref="0x40f494f0" scoped=""/></from>
+          <to><interface-ref name="SingleChannel" ref="0x40f3e100" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="61:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="Msp430Adc12Overflow" ref="0x40f48de0" scoped=""/></from>
+          <to><interface-ref name="Overflow" ref="0x40f3d728" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="Resource" ref="0x40f1cd50" scoped=""/></from>
+          <to><interface-ref name="ClientResource" ref="0x4104a710" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="63:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="AdcResource" ref="0x41049220" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="Resource" ref="0x40f41540" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="66:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="ConfUp" ref="0x410927a8" scoped=""/></from>
+          <to><interface-ref name="AdcConfigure" ref="0x40f474d0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc">
+          <from><interface-ref name="Config" ref="0x41049e90" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="ConfSub" ref="0x410c9e28" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" name="Msp430Adc12MultiChannel" provided="1" ref="0x40f43b20">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Adc12MultiChannel" ref="0x40f43b20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12MultiChannel" qname="Msp430Adc12MultiChannel"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getData" ref="0x40f43cf8" scoped=""/>
+        <function-ref name="configure" ref="0x40f43dd8" scoped=""/>
+        <function-ref name="dataReady" ref="0x40f43eb8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" name="Msp430Adc12SingleChannel" provided="1" ref="0x40f494f0">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Adc12SingleChannel" ref="0x40f494f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12SingleChannel" qname="Msp430Adc12SingleChannel"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getData" ref="0x40f496c8" scoped=""/>
+        <function-ref name="configureSingle" ref="0x40f497a8" scoped=""/>
+        <function-ref name="configureSingleRepeat" ref="0x40f49888" scoped=""/>
+        <function-ref name="configureMultipleRepeat" ref="0x40f49968" scoped=""/>
+        <function-ref name="multipleDataReady" ref="0x40f49a48" scoped=""/>
+        <function-ref name="configureMultiple" ref="0x40f49b28" scoped=""/>
+        <function-ref name="singleDataReady" ref="0x40f49c08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" name="Msp430Adc12Overflow" provided="1" ref="0x40f48de0">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Adc12Overflow" ref="0x40f48de0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12Overflow" qname="Msp430Adc12Overflow"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="memOverflow" ref="0x40f47010" scoped=""/>
+        <function-ref name="conversionTimeOverflow" ref="0x40f470f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" name="AdcConfigure" provided="0" ref="0x40f474d0">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcConfigure" ref="0x40f474d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x40f47b18" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ClientAutoRVGC.nc" name="Resource" provided="1" ref="0x40f1cd50">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ClientAutoRVGC" qname="Msp430Adc12ClientAutoRVGC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40f1cd50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x40f1cf28" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40f49018" scoped=""/>
+        <function-ref name="request" ref="0x40f490f8" scoped=""/>
+        <function-ref name="granted" ref="0x40f491d8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40f492b8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc" name="AdcResource" provided="0" ref="0x41049220">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430RefVoltArbiterP" qname="Msp430RefVoltArbiterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcResource" ref="0x41049220" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x410493f8" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x410494d8" scoped=""/>
+        <function-ref name="request" ref="0x410495b8" scoped=""/>
+        <function-ref name="granted" ref="0x41049698" scoped=""/>
+        <function-ref name="isOwner" ref="0x41049778" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ConfAlertC.nc" name="ConfSub" provided="1" ref="0x410c9e28">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ConfAlertC" qname="Msp430Adc12ClientAutoRVGC.Msp430Adc12ConfAlertC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ConfSub" ref="0x410c9e28" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x41092488" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc" name="ClientResource" provided="1" ref="0x4104a710">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430RefVoltArbiterP" qname="Msp430RefVoltArbiterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ClientResource" ref="0x4104a710" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x4104a8e8" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x4104a9c8" scoped=""/>
+        <function-ref name="request" ref="0x4104aaa8" scoped=""/>
+        <function-ref name="granted" ref="0x4104ab88" scoped=""/>
+        <function-ref name="isOwner" ref="0x4104ac68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc" name="MultiChannel" provided="1" ref="0x40f3edc0">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12P" qname="Msp430Adc12P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MultiChannel" ref="0x40f3edc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12MultiChannel" qname="Msp430Adc12MultiChannel"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getData" ref="0x40f3d010" scoped=""/>
+        <function-ref name="configure" ref="0x40f3d0f0" scoped=""/>
+        <function-ref name="dataReady" ref="0x40f3d1d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ConfAlertC.nc" name="ConfUp" provided="0" ref="0x410927a8">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ConfAlertC" qname="Msp430Adc12ClientAutoRVGC.Msp430Adc12ConfAlertC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ConfUp" ref="0x410927a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x41092df0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc" name="SingleChannel" provided="1" ref="0x40f3e100">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12P" qname="Msp430Adc12P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SingleChannel" ref="0x40f3e100" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12SingleChannel" qname="Msp430Adc12SingleChannel"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getData" ref="0x40f3e2d8" scoped=""/>
+        <function-ref name="configureSingle" ref="0x40f3e3b8" scoped=""/>
+        <function-ref name="configureSingleRepeat" ref="0x40f3e498" scoped=""/>
+        <function-ref name="configureMultipleRepeat" ref="0x40f3e578" scoped=""/>
+        <function-ref name="multipleDataReady" ref="0x40f3e658" scoped=""/>
+        <function-ref name="configureMultiple" ref="0x40f3e738" scoped=""/>
+        <function-ref name="singleDataReady" ref="0x40f3e818" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc" name="Config" provided="0" ref="0x41049e90">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430RefVoltArbiterP" qname="Msp430RefVoltArbiterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Config" ref="0x41049e90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x410484f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc" name="Overflow" provided="1" ref="0x40f3d728">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12P" qname="Msp430Adc12P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Overflow" ref="0x40f3d728" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12Overflow" qname="Msp430Adc12Overflow"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="memOverflow" ref="0x40f3d900" scoped=""/>
+        <function-ref name="conversionTimeOverflow" ref="0x40f3d9e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc" name="Resource" provided="1" ref="0x40f41540">
+      <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12P" qname="Msp430Adc12P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40f41540" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x40f41718" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40f417f8" scoped=""/>
+        <function-ref name="request" ref="0x40f418d8" scoped=""/>
+        <function-ref name="granted" ref="0x40f419b8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40f41a98" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="42(Msp430Adc12ClientAutoRVGC.Msp430Adc12ConfAlertC):/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ConfAlertC.nc" nicename="tos.chips.msp430.adc12.Msp430Adc12ConfAlertC" qname="Msp430Adc12ClientAutoRVGC.Msp430Adc12ConfAlertC">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12ConfAlertC.nc">
+        <short> 
+ The only purpose of this component is to generate a nesC warning
+ if someone has wired to Msp430Adc12ClientAutoRVGC or 
+ Msp430Adc12ClientAutoDMA_RVGC and forgotten to wire to AdcConfigure.</short>
+        <long> 
+ The only purpose of this component is to generate a nesC warning
+ if someone has wired to Msp430Adc12ClientAutoRVGC or 
+ Msp430Adc12ClientAutoDMA_RVGC and forgotten to wire to AdcConfigure.
+ (nesC optimizes all of its code away).
+
+ @author: Jan Hauer
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.msp430.adc12.Msp430Adc12ConfAlertC" qname="Msp430Adc12ConfAlertC"/>
+      </instance>
+      <module/>
+    </component><component loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc" nicename="tos.chips.msp430.adc12.Msp430RefVoltArbiterP" qname="Msp430RefVoltArbiterP">
+      <documentation loc="36:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+        <short> 
+ This component is meant to intercept requests to the &lt;code&gt;Resource&lt;/code&gt;
+ interface on their way to the adc arbiter.</short>
+        <long> 
+ This component is meant to intercept requests to the &lt;code&gt;Resource&lt;/code&gt;
+ interface on their way to the adc arbiter. It checks whether the client's
+ adc configuration requires the internal reference voltage generator of the
+ MSP430 to be enabled during the conversion by inspecting the client's
+ configuration data (using the &lt;code&gt;AdcConfigure&lt;/code&gt; interface). If so it
+ makes sure that Resource.granted() is held back until the reference voltage
+ is stable. Clients SHOULD NOT wire to &lt;code&gt;Msp430RefVoltArbiterP&lt;/code&gt; but
+ to the Resource interface provided by
+ &lt;code&gt;Msp430Adc12ClientAutoRVGC&lt;/code&gt;.
+ 
+ @author Jan Hauer
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="64:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="ClientResource" ref="0x4104a710" scoped=""/></from>
+          <to><interface-ref name="ClientResource" ref="0x410865b0" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="AdcResource" ref="0x41084100" scoped=""/></from>
+          <to><interface-ref name="AdcResource" ref="0x41049220" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="Config" ref="0x41083ba0" scoped=""/></from>
+          <to><interface-ref name="Config" ref="0x41049e90" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="RefVolt_1_5V" ref="0x410848b8" scoped=""/></from>
+          <to><interface-ref name="RefVolt_1_5V" ref="0x41048dc0" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="RefVolt_2_5V" ref="0x41083010" scoped=""/></from>
+          <to><interface-ref name="RefVolt_2_5V" ref="0x41045510" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="SwitchOnTimer" ref="0x41044d20" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x410a2848" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="SwitchOffTimer" ref="0x41040138" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4109f688" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="SwitchOffSettleTimer" ref="0x4103d4f8" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4109b5a8" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430RefVoltArbiterP.nc">
+          <from><interface-ref name="HplAdc12" ref="0x41045b60" scoped=""/></from>
+          <to><interface-ref name="HplAdc12" ref="0x40fc95f0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="37:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc" nicename="tos.chips.msp430.adc12.Msp430Adc12P" qname="Msp430Adc12P">
+      <configuration/>
+      <wiring>
+        <wire loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="MultiChannel" ref="0x40f3edc0" scoped=""/></from>
+          <to><interface-ref name="MultiChannel" ref="0x40f6c1f8" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="DMAExtension" ref="0x40f3c100" scoped=""/></from>
+          <to><interface-ref name="DMAExtension" ref="0x40f6b310" scoped=""/></to>
+        </wire>
+        <wire loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Overflow" ref="0x40f3d728" scoped=""/></from>
+          <to><interface-ref name="Overflow" ref="0x40f6cae8" scoped=""/></to>
+        </wire>
+        <wire loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="SingleChannel" ref="0x40f3e100" scoped=""/></from>
+          <to><interface-ref name="SingleChannel" ref="0x40f6d4e0" scoped=""/></to>
+        </wire>
+        <wire loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Resource" ref="0x40f41540" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40fc7780" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40f3cc78" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="ADCArbiterInfo" ref="0x40f6b868" scoped=""/></from>
+          <to><interface-ref name="ArbiterInfo" ref="0x410182e0" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="HplAdc12" ref="0x40f62520" scoped=""/></from>
+          <to><interface-ref name="HplAdc12" ref="0x40fc95f0" scoped=""/></to>
+        </wire>
+        <wire loc="62:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port60" ref="0x40f5fa08" scoped=""/></from>
+          <to><interface-ref name="Port60" ref="0x40812688" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port61" ref="0x40f5eba8" scoped=""/></from>
+          <to><interface-ref name="Port61" ref="0x40811848" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port62" ref="0x40f5dd68" scoped=""/></from>
+          <to><interface-ref name="Port62" ref="0x40810a08" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port63" ref="0x40f5cf28" scoped=""/></from>
+          <to><interface-ref name="Port63" ref="0x4080fbc8" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port64" ref="0x40f5a070" scoped=""/></from>
+          <to><interface-ref name="Port64" ref="0x4080ed88" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port65" ref="0x40f59178" scoped=""/></from>
+          <to><interface-ref name="Port65" ref="0x4080c010" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port66" ref="0x40f58348" scoped=""/></from>
+          <to><interface-ref name="Port66" ref="0x4080b178" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="Port67" ref="0x40f574a8" scoped=""/></from>
+          <to><interface-ref name="Port67" ref="0x40824368" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="TimerA" ref="0x40f6a620" scoped=""/></from>
+          <to><interface-ref name="TimerA" ref="0x40579af8" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="ControlA0" ref="0x40f69368" scoped=""/></from>
+          <to><interface-ref name="ControlA0" ref="0x405837e8" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="ControlA1" ref="0x40f69eb8" scoped=""/></from>
+          <to><interface-ref name="ControlA1" ref="0x4057d388" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="CompareA0" ref="0x40f60a08" scoped=""/></from>
+          <to><interface-ref name="CompareA0" ref="0x4058e708" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/Msp430Adc12P.nc">
+          <from><interface-ref name="CompareA1" ref="0x40f5f258" scoped=""/></from>
+          <to><interface-ref name="CompareA1" ref="0x4058eec8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

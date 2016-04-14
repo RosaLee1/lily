@@ -1,0 +1,15 @@
+<area shape="rect" id="node2" href="../chtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciB0P.html" title="HplMsp430UsciB0P" alt="" coords="173,120,347,168">
+<area shape="poly" id="edge2" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciB.html" title="HplMsp430UsciB" alt="" coords="155,51 223,109 220,113 152,55">
+<area shape="rect" id="edge2" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciB.html" title="HplMsp430UsciB" alt="" coords="201,78,309,95">
+<area shape="rect" id="node4" href="../chtml/tos.chips.msp430.pins.HplMsp430GeneralIOC.html" title="HplMsp430GeneralIOC" alt="" coords="73,235,281,293">
+<area shape="poly" id="edge6" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="173,152 78,166 39,178 15,194 8,210 15,224 34,235 61,245 59,250 32,240 11,227 3,211 11,190 37,173 77,161 173,147">
+<area shape="rect" id="edge6" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="13,193,148,210">
+<area shape="poly" id="edge8" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="204,170 191,181 181,193 176,207 174,221 168,221 171,205 176,191 187,177 200,166">
+<area shape="rect" id="edge8" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="179,193,313,210">
+<area shape="poly" id="edge10" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="300,166 317,187 320,200 316,212 305,222 288,231 286,227 302,218 311,209 314,199 312,190 296,170">
+<area shape="rect" id="edge10" href="../ihtml/tos.chips.msp430.pins.HplMsp430GeneralIO.html" title="HplMsp430GeneralIO" alt="" coords="316,193,451,210">
+<area shape="rect" id="node5" href="../chtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciAB0RawInterruptsP.html" title="HplMsp430UsciAB0RawInterruptsP" alt="" coords="360,240,656,288">
+<area shape="poly" id="edge12" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts.html" title="HplMsp430UsciRawInterrupts" alt="" coords="348,157 412,172 457,190 476,207 491,226 487,230 472,210 455,194 410,177 347,162">
+<area shape="rect" id="edge12" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts.html" title="HplMsp430UsciRawInterrupts" alt="" coords="475,193,660,210">
+<area shape="poly" id="edge4" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="367,55 300,113 296,109 364,51">
+<area shape="rect" id="edge4" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="333,78,495,95">

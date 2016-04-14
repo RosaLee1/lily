@@ -1,0 +1,149 @@
+<?xml version="1.0" ?><component loc="36:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP" safe="">
+      <module/>
+    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="SubResourceReadNow" provided="0" ref="0x40f13260">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubResourceReadNow" ref="0x40f13260" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x40f13438" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40f13518" scoped=""/>
+        <function-ref name="request" ref="0x40f135f8" scoped=""/>
+        <function-ref name="granted" ref="0x40f136d8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40f137b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="Read" provided="1" ref="0x40f19758">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Read" ref="0x40f19758" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Read" qname="Read"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="read" ref="0x40f19d80" scoped=""/>
+        <function-ref name="readDone" ref="0x40f18010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="ReadNow" provided="1" ref="0x40f15bf8">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ReadNow" ref="0x40f15bf8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ReadNow" qname="ReadNow"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="read" ref="0x40f17278" scoped=""/>
+        <function-ref name="readDone" ref="0x40f174f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="ResourceReadNow" provided="1" ref="0x40f17be0">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceReadNow" ref="0x40f17be0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x40f17db8" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40f17e98" scoped=""/>
+        <function-ref name="request" ref="0x40f14010" scoped=""/>
+        <function-ref name="granted" ref="0x40f140f0" scoped=""/>
+        <function-ref name="isOwner" ref="0x40f141d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="Config" provided="0" ref="0x40f13ee0">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Config" ref="0x40f13ee0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x40f12578" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="SingleChannel" provided="0" ref="0x40f11010">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SingleChannel" ref="0x40f11010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.adc12.Msp430Adc12SingleChannel" qname="Msp430Adc12SingleChannel"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getData" ref="0x40f111e8" scoped=""/>
+        <function-ref name="configureSingle" ref="0x40f112c8" scoped=""/>
+        <function-ref name="configureSingleRepeat" ref="0x40f113a8" scoped=""/>
+        <function-ref name="configureMultipleRepeat" ref="0x40f11488" scoped=""/>
+        <function-ref name="multipleDataReady" ref="0x40f11568" scoped=""/>
+        <function-ref name="configureMultiple" ref="0x40f11648" scoped=""/>
+        <function-ref name="singleDataReady" ref="0x40f11728" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="ResourceRead" provided="0" ref="0x40f14760">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceRead" ref="0x40f14760" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x40f14938" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40f14a18" scoped=""/>
+        <function-ref name="request" ref="0x40f14af8" scoped=""/>
+        <function-ref name="granted" ref="0x40f14bd8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40f14cb8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="136:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcP.nc" name="readDone" provided="0" ref="0x40f2ca68">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcP" qname="AdcP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="readDone" ref="0x40f2ca68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x40f2cc40" scoped=""/>
+        <function-ref name="runTask" ref="0x40f2cd20" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

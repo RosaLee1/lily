@@ -1,0 +1,17 @@
+<area shape="rect" id="node2" href="../chtml/tos.system.FcfsArbiterC.html" title="FcfsArbiterC\n(ArbiterC)" alt="" coords="397,237,525,299">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.ResourceRequested.html" title="ResourceRequested[uint8_t]" alt="" coords="695,169 539,237 537,232 693,165">
+<area shape="rect" id="edge2" href="../ihtml/tos.interfaces.ResourceRequested.html" title="ResourceRequested[uint8_t]" alt="" coords="627,195,807,213">
+<area shape="poly" id="edge10" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure[uint8_t]" alt="" coords="464,299 464,352 459,352 459,299">
+<area shape="rect" id="edge10" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure[uint8_t]" alt="" coords="461,323,635,341">
+<area shape="rect" id="node4" href="../chtml/tos.chips.msp430.x2xxx.usci.Msp430UsciShareP.html" title="Msp430UsciShareP\n(UsciShareP)" alt="" coords="65,120,236,171">
+<area shape="poly" id="edge4" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts[uint8_t]" alt="" coords="153,53 153,106 148,106 148,53">
+<area shape="rect" id="edge4" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts[uint8_t]" alt="" coords="151,78,365,95">
+<area shape="poly" id="edge12" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="209,168 310,211 385,239 383,244 308,216 207,173">
+<area shape="rect" id="edge12" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="309,195,376,213">
+<area shape="rect" id="node8" href="../chtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciB0C.html" title="HplMsp430UsciB0C" alt="" coords="5,239,189,297">
+<area shape="poly" id="edge14" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="118,172 101,196 95,225 90,224 96,194 114,169">
+<area shape="rect" id="edge14" href="../ihtml/tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts.html" title="HplMsp430UsciInterrupts" alt="" coords="99,195,260,213">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="381,169 382,191 389,212 399,226 395,229 384,215 377,192 376,170">
+<area shape="rect" id="edge6" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="388,195,501,213">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="529,171 508,215 499,228 494,225 503,212 525,168">
+<area shape="rect" id="edge8" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="515,195,581,213">

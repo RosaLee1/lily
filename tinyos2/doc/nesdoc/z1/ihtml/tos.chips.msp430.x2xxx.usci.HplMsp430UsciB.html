@@ -1,0 +1,386 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.chips.msp430.x2xxx.usci.HplMsp430UsciB</title>
+  </head>
+  <body>
+    <h2>Interface: tos.chips.msp430.x2xxx.usci.HplMsp430UsciB</h2>
+    <b>interface HplMsp430UsciB</b><p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command void <a href="#clearGeneralCall">clearGeneralCall</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#clrIntr">clrIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#clrRxIntr">clrRxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#clrTxIntr">clrTxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableArbLostInt">disableArbLostInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableI2C">disableI2C</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableIntr">disableIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableNACKInt">disableNACKInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableRxIntr">disableRxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableSpi">disableSpi</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableStartInt">disableStartInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableStopInt">disableStopInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#disableTxIntr">disableTxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableArbLostInt">enableArbLostInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableI2C">enableI2C</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableIntr">enableIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableNACKInt">enableNACKInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableRxIntr">enableRxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableSpi">enableSpi</a>()
+      </span><menu>*********************************************************************
+
+ SPI Mode interface
+
+**********************************************************************
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#enableStartInt">enableStartInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableStopInt">enableStopInt</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableTxIntr">enableTxIntr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command msp430_uscimode_t <a href="#getMode">getMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getOwnAddress">getOwnAddress</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getSlaveAddress">getSlaveAddress</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#getStopBit">getStopBit</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#getTransmitReceiveMode">getTransmitReceiveMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getUbr">getUbr</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command msp430_uctl0_t <a href="#getUctl0">getUctl0</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command msp430_uctl1_t <a href="#getUctl1">getUctl1</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#getUstat">getUstat</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isI2C">isI2C</a>()
+      </span><menu>*********************************************************************
+
+ I2C Mode interface
+
+**********************************************************************
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command bool <a href="#isRxIntrPending">isRxIntrPending</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isSpi">isSpi</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isTxIntrPending">isTxIntrPending</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#resetUsci">resetUsci</a>(bool reset)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#rx">rx</a>()
+      </span><menu>
+ Get current value from RX-buffer.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setGeneralCall">setGeneralCall</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setMasterMode">setMasterMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setModeI2C">setModeI2C</a>(msp430_i2c_union_config_t *config)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setModeSpi">setModeSpi</a>(msp430_spi_union_config_t *config)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setOwnAddress">setOwnAddress</a>(uint16_t addr)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setReceiveMode">setReceiveMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setSlaveAddress">setSlaveAddress</a>(uint16_t addr)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setSlaveMode">setSlaveMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setTransmitMode">setTransmitMode</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setTXNACK">setTXNACK</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setTXStart">setTXStart</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setTXStop">setTXStop</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setUbr">setUbr</a>(uint16_t ubr)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setUctl0">setUctl0</a>(msp430_uctl0_t control)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setUctl1">setUctl1</a>(msp430_uctl1_t control)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setUstat">setUstat</a>(uint8_t ustat)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#tx">tx</a>(uint8_t data)
+      </span><menu>
+ Transmit a byte of data.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="clearGeneralCall"></a>
+    <h4>clearGeneralCall
+    </h4>
+    <span id=funcnameshort>command void <b>clearGeneralCall</b>()
+    </span><hr>
+    <a name="clrIntr"></a>
+    <h4>clrIntr
+    </h4>
+    <span id=funcnameshort>command void <b>clrIntr</b>()
+    </span><hr>
+    <a name="clrRxIntr"></a>
+    <h4>clrRxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>clrRxIntr</b>()
+    </span><hr>
+    <a name="clrTxIntr"></a>
+    <h4>clrTxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>clrTxIntr</b>()
+    </span><hr>
+    <a name="disableArbLostInt"></a>
+    <h4>disableArbLostInt
+    </h4>
+    <span id=funcnameshort>command void <b>disableArbLostInt</b>()
+    </span><hr>
+    <a name="disableI2C"></a>
+    <h4>disableI2C
+    </h4>
+    <span id=funcnameshort>command void <b>disableI2C</b>()
+    </span><hr>
+    <a name="disableIntr"></a>
+    <h4>disableIntr
+    </h4>
+    <span id=funcnameshort>command void <b>disableIntr</b>()
+    </span><hr>
+    <a name="disableNACKInt"></a>
+    <h4>disableNACKInt
+    </h4>
+    <span id=funcnameshort>command void <b>disableNACKInt</b>()
+    </span><hr>
+    <a name="disableRxIntr"></a>
+    <h4>disableRxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>disableRxIntr</b>()
+    </span><hr>
+    <a name="disableSpi"></a>
+    <h4>disableSpi
+    </h4>
+    <span id=funcnameshort>command void <b>disableSpi</b>()
+    </span><hr>
+    <a name="disableStartInt"></a>
+    <h4>disableStartInt
+    </h4>
+    <span id=funcnameshort>command void <b>disableStartInt</b>()
+    </span><hr>
+    <a name="disableStopInt"></a>
+    <h4>disableStopInt
+    </h4>
+    <span id=funcnameshort>command void <b>disableStopInt</b>()
+    </span><hr>
+    <a name="disableTxIntr"></a>
+    <h4>disableTxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>disableTxIntr</b>()
+    </span><hr>
+    <a name="enableArbLostInt"></a>
+    <h4>enableArbLostInt
+    </h4>
+    <span id=funcnameshort>command void <b>enableArbLostInt</b>()
+    </span><hr>
+    <a name="enableI2C"></a>
+    <h4>enableI2C
+    </h4>
+    <span id=funcnameshort>command void <b>enableI2C</b>()
+    </span><hr>
+    <a name="enableIntr"></a>
+    <h4>enableIntr
+    </h4>
+    <span id=funcnameshort>command void <b>enableIntr</b>()
+    </span><hr>
+    <a name="enableNACKInt"></a>
+    <h4>enableNACKInt
+    </h4>
+    <span id=funcnameshort>command void <b>enableNACKInt</b>()
+    </span><hr>
+    <a name="enableRxIntr"></a>
+    <h4>enableRxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>enableRxIntr</b>()
+    </span><hr>
+    <a name="enableSpi"></a>
+    <h4>enableSpi
+    </h4>
+    <span id=funcnameshort>command void <b>enableSpi</b>()
+    </span>
+    <p>
+    <menu>
+      *********************************************************************
+
+ SPI Mode interface
+
+**********************************************************************
+    </menu>
+    <hr>
+    <a name="enableStartInt"></a>
+    <h4>enableStartInt
+    </h4>
+    <span id=funcnameshort>command void <b>enableStartInt</b>()
+    </span><hr>
+    <a name="enableStopInt"></a>
+    <h4>enableStopInt
+    </h4>
+    <span id=funcnameshort>command void <b>enableStopInt</b>()
+    </span><hr>
+    <a name="enableTxIntr"></a>
+    <h4>enableTxIntr
+    </h4>
+    <span id=funcnameshort>command void <b>enableTxIntr</b>()
+    </span><hr>
+    <a name="getMode"></a>
+    <h4>getMode
+    </h4>
+    <span id=funcnameshort>command msp430_uscimode_t <b>getMode</b>()
+    </span><hr>
+    <a name="getOwnAddress"></a>
+    <h4>getOwnAddress
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getOwnAddress</b>()
+    </span><hr>
+    <a name="getSlaveAddress"></a>
+    <h4>getSlaveAddress
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getSlaveAddress</b>()
+    </span><hr>
+    <a name="getStopBit"></a>
+    <h4>getStopBit
+    </h4>
+    <span id=funcnameshort>command bool <b>getStopBit</b>()
+    </span><hr>
+    <a name="getTransmitReceiveMode"></a>
+    <h4>getTransmitReceiveMode
+    </h4>
+    <span id=funcnameshort>command bool <b>getTransmitReceiveMode</b>()
+    </span><hr>
+    <a name="getUbr"></a>
+    <h4>getUbr
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getUbr</b>()
+    </span><hr>
+    <a name="getUctl0"></a>
+    <h4>getUctl0
+    </h4>
+    <span id=funcnameshort>command msp430_uctl0_t <b>getUctl0</b>()
+    </span><hr>
+    <a name="getUctl1"></a>
+    <h4>getUctl1
+    </h4>
+    <span id=funcnameshort>command msp430_uctl1_t <b>getUctl1</b>()
+    </span><hr>
+    <a name="getUstat"></a>
+    <h4>getUstat
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>getUstat</b>()
+    </span><hr>
+    <a name="isI2C"></a>
+    <h4>isI2C
+    </h4>
+    <span id=funcnameshort>command bool <b>isI2C</b>()
+    </span>
+    <p>
+    <menu>
+      *********************************************************************
+
+ I2C Mode interface
+
+**********************************************************************
+    </menu>
+    <hr>
+    <a name="isRxIntrPending"></a>
+    <h4>isRxIntrPending
+    </h4>
+    <span id=funcnameshort>command bool <b>isRxIntrPending</b>()
+    </span><hr>
+    <a name="isSpi"></a>
+    <h4>isSpi
+    </h4>
+    <span id=funcnameshort>command bool <b>isSpi</b>()
+    </span><hr>
+    <a name="isTxIntrPending"></a>
+    <h4>isTxIntrPending
+    </h4>
+    <span id=funcnameshort>command bool <b>isTxIntrPending</b>()
+    </span><hr>
+    <a name="resetUsci"></a>
+    <h4>resetUsci
+    </h4>
+    <span id=funcnameshort>command void <b>resetUsci</b>(bool reset)
+    </span><hr>
+    <a name="rx"></a>
+    <h4>rx
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>rx</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Get current value from RX-buffer.
+
+ return:	byte received.
+
+    </menu>
+    <hr>
+    <a name="setGeneralCall"></a>
+    <h4>setGeneralCall
+    </h4>
+    <span id=funcnameshort>command void <b>setGeneralCall</b>()
+    </span><hr>
+    <a name="setMasterMode"></a>
+    <h4>setMasterMode
+    </h4>
+    <span id=funcnameshort>command void <b>setMasterMode</b>()
+    </span><hr>
+    <a name="setModeI2C"></a>
+    <h4>setModeI2C
+    </h4>
+    <span id=funcnameshort>command void <b>setModeI2C</b>(msp430_i2c_union_config_t *config)
+    </span><hr>
+    <a name="setModeSpi"></a>
+    <h4>setModeSpi
+    </h4>
+    <span id=funcnameshort>command void <b>setModeSpi</b>(msp430_spi_union_config_t *config)
+    </span><hr>
+    <a name="setOwnAddress"></a>
+    <h4>setOwnAddress
+    </h4>
+    <span id=funcnameshort>command void <b>setOwnAddress</b>(uint16_t addr)
+    </span><hr>
+    <a name="setReceiveMode"></a>
+    <h4>setReceiveMode
+    </h4>
+    <span id=funcnameshort>command void <b>setReceiveMode</b>()
+    </span><hr>
+    <a name="setSlaveAddress"></a>
+    <h4>setSlaveAddress
+    </h4>
+    <span id=funcnameshort>command void <b>setSlaveAddress</b>(uint16_t addr)
+    </span><hr>
+    <a name="setSlaveMode"></a>
+    <h4>setSlaveMode
+    </h4>
+    <span id=funcnameshort>command void <b>setSlaveMode</b>()
+    </span><hr>
+    <a name="setTransmitMode"></a>
+    <h4>setTransmitMode
+    </h4>
+    <span id=funcnameshort>command void <b>setTransmitMode</b>()
+    </span><hr>
+    <a name="setTXNACK"></a>
+    <h4>setTXNACK
+    </h4>
+    <span id=funcnameshort>command void <b>setTXNACK</b>()
+    </span><hr>
+    <a name="setTXStart"></a>
+    <h4>setTXStart
+    </h4>
+    <span id=funcnameshort>command void <b>setTXStart</b>()
+    </span><hr>
+    <a name="setTXStop"></a>
+    <h4>setTXStop
+    </h4>
+    <span id=funcnameshort>command void <b>setTXStop</b>()
+    </span><hr>
+    <a name="setUbr"></a>
+    <h4>setUbr
+    </h4>
+    <span id=funcnameshort>command void <b>setUbr</b>(uint16_t ubr)
+    </span><hr>
+    <a name="setUctl0"></a>
+    <h4>setUctl0
+    </h4>
+    <span id=funcnameshort>command void <b>setUctl0</b>(msp430_uctl0_t control)
+    </span><hr>
+    <a name="setUctl1"></a>
+    <h4>setUctl1
+    </h4>
+    <span id=funcnameshort>command void <b>setUctl1</b>(msp430_uctl1_t control)
+    </span><hr>
+    <a name="setUstat"></a>
+    <h4>setUstat
+    </h4>
+    <span id=funcnameshort>command void <b>setUstat</b>(uint8_t ustat)
+    </span><hr>
+    <a name="tx"></a>
+    <h4>tx
+    </h4>
+    <span id=funcnameshort>command void <b>tx</b>(uint8_t data)
+    </span>
+    <p>
+    <menu>
+      
+ Transmit a byte of data. When the transmission is completed,
+ <code>txDone</done> is generated. Only then a new byte may be
+ transmitted, otherwise the previous byte will be overwritten.
+
+    </menu>
+  </body>
+</html>

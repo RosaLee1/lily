@@ -1,0 +1,11 @@
+digraph "tos.platforms.z1.chips.cc2420.HplCC2420SpiC" {
+  n0x40a48d28 [shape=ellipse, style=filled, label="SpiPacket", fontsize=12];
+  "HplCC2420SpiC.SpiC" [fontsize=12, shape=box,peripheries=2, style=dashed, label="Msp430SpiB0C\n(SpiC)", URL="../chtml/tos.chips.msp430.x2xxx.usci.Msp430SpiB0C.html"];
+  n0x40a48990 [shape=ellipse, style=filled, label="SpiByte", fontsize=12];
+  "HplCC2420SpiC.SpiC" [fontsize=12, shape=box,peripheries=2, style=dashed, label="Msp430SpiB0C\n(SpiC)", URL="../chtml/tos.chips.msp430.x2xxx.usci.Msp430SpiB0C.html"];
+  n0x40a48290 [shape=ellipse, style=filled, label="Resource", fontsize=12];
+  "HplCC2420SpiC.SpiC" [fontsize=12, shape=box,peripheries=2, style=dashed, label="Msp430SpiB0C\n(SpiC)", URL="../chtml/tos.chips.msp430.x2xxx.usci.Msp430SpiB0C.html"];
+  "n0x40a48d28" -> "HplCC2420SpiC.SpiC" [label="SpiPacket", URL="../ihtml/tos.interfaces.SpiPacket.html", fontsize=10];
+  "n0x40a48990" -> "HplCC2420SpiC.SpiC" [label="SpiByte", URL="../ihtml/tos.interfaces.SpiByte.html", fontsize=10];
+  "n0x40a48290" -> "HplCC2420SpiC.SpiC" [label="Resource", URL="../ihtml/tos.interfaces.Resource.html", fontsize=10];
+}

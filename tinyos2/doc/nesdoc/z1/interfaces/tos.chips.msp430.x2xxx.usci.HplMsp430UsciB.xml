@@ -1,0 +1,690 @@
+<?xml version="1.0" ?><interfacedef loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB">
+      <function command="" loc="202:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableArbLostInt" provided="0" ref="0x40ab8c38">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="191:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setSlaveAddress" provided="0" ref="0x40abbd48">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="191:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="addr" ref="0x40abbbf0">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="181:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setMasterMode" provided="0" ref="0x40abca98">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="197:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableStopInt" provided="0" ref="0x40ab8010">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="164:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setTransmitMode" provided="0" ref="0x40a9a010">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="184:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getStopBit" provided="0" ref="0x40abceb0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="93:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableRxIntr" provided="0" ref="0x40aa2e58">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="81:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="resetUsci" provided="0" ref="0x40aa4980">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="81:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="reset" ref="0x40aa4828">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="100:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="clrRxIntr" provided="0" ref="0x40aa06a0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="193:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableNACKInt" provided="0" ref="0x40ab9158">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="190:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getSlaveAddress" provided="0" ref="0x40abb7b0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="92:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableIntr" provided="0" ref="0x40aa29e8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="154:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableI2C" provided="0" ref="0x40a9c1a8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="73:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getUstat" provided="0" ref="0x40aa4430">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getUctl1" provided="0" ref="0x40aa5158">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a56ec0"/>
+            <typename><typedef-ref name="msp430_uctl1_t" ref="0x40a55308"/></typename>
+          </type-tag>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="199:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableStartInt" provided="0" ref="0x40ab8418">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="185:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getTransmitReceiveMode" provided="0" ref="0x40abb340">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setUctl0" provided="0" ref="0x40aa62d8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a58cd8"/>
+              <typename><typedef-ref name="msp430_uctl0_t" ref="0x40a56128"/></typename>
+            </type-tag>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="control" ref="0x40aa6180">
+            <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a58cd8"/>
+              <typename><typedef-ref name="msp430_uctl0_t" ref="0x40a56128"/></typename>
+            </type-tag>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="168:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setTXNACK" provided="0" ref="0x40a9a7f0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getUbr" provided="0" ref="0x40aa5aa0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="94:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableTxIntr" provided="0" ref="0x40aa1290">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="153:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="isI2C" provided="0" ref="0x40a9dd00">
+        <documentation loc="144:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc">
+          <short>*********************************************************************
+
+ I2C Mode interface
+
+**********************************************************************</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="170:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setTXStart" provided="0" ref="0x40abd010">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="90:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableRxIntr" provided="0" ref="0x40aa2210">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="91:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableTxIntr" provided="0" ref="0x40aa2608">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="173:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setOwnAddress" provided="0" ref="0x40abd9e8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="173:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="addr" ref="0x40abd890">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="203:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableArbLostInt" provided="0" ref="0x40ab7070">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="177:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setGeneralCall" provided="0" ref="0x40abc2a0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="97:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="isTxIntrPending" provided="0" ref="0x40aa1aa0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="101:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="clrIntr" provided="0" ref="0x40aa0a58">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="135:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="isSpi" provided="0" ref="0x40a9d2b8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="95:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableIntr" provided="0" ref="0x40aa1668">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="155:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableI2C" provided="0" ref="0x40a9c580">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="194:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableNACKInt" provided="0" ref="0x40ab9550">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="196:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableStopInt" provided="0" ref="0x40ab9950">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="200:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableStartInt" provided="0" ref="0x40ab8818">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="86:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getMode" provided="0" ref="0x40aa4df8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:2" size="I:2"><enum-ref ref="0x40a5b5f0"/>
+            <typename><typedef-ref name="msp430_uscimode_t" ref="0x40a58010"/></typename>
+          </type-tag>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="172:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getOwnAddress" provided="0" ref="0x40abd460">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="169:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setTXStop" provided="0" ref="0x40a9abc0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="64:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setUbr" provided="0" ref="0x40aa5698">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="64:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="ubr" ref="0x40aa5540">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="161:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setModeI2C" provided="0" ref="0x40a9cbd0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:2" size="I:6"><union-ref ref="0x40a78cf0"/>
+                <typename><typedef-ref name="msp430_i2c_union_config_t" ref="0x40a78f18"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="161:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="config" ref="0x40a9ca78">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:2" size="I:6"><union-ref ref="0x40a78cf0"/>
+                <typename><typedef-ref name="msp430_i2c_union_config_t" ref="0x40a78f18"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="108:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="tx" provided="0" ref="0x40a9e010">
+        <documentation loc="103:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc">
+          <short>
+ Transmit a byte of data.</short>
+          <long>
+ Transmit a byte of data. When the transmission is completed,
+ &lt;code&gt;txDone&lt;/done&gt; is generated. Only then a new byte may be
+ transmitted, otherwise the previous byte will be overwritten.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="108:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="data" ref="0x40aa0e18">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="129:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="enableSpi" provided="0" ref="0x40a9e928">
+        <documentation loc="118:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc">
+          <short>*********************************************************************
+
+ SPI Mode interface
+
+**********************************************************************</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="72:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setUstat" provided="0" ref="0x40aa4020">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="72:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="ustat" ref="0x40aa5eb8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="60:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setUctl1" provided="0" ref="0x40aa6ce8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a56ec0"/>
+              <typename><typedef-ref name="msp430_uctl1_t" ref="0x40a55308"/></typename>
+            </type-tag>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="60:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="control" ref="0x40aa6b90">
+            <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a56ec0"/>
+              <typename><typedef-ref name="msp430_uctl1_t" ref="0x40a55308"/></typename>
+            </type-tag>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="176:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="clearGeneralCall" provided="0" ref="0x40abde10">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="180:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setSlaveMode" provided="0" ref="0x40abc6a0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="115:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="rx" provided="0" ref="0x40a9e4d0">
+        <documentation loc="110:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc">
+          <short>
+ Get current value from RX-buffer.</short>
+          <long>
+ Get current value from RX-buffer.
+
+ return:	byte received.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="141:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setModeSpi" provided="0" ref="0x40a9d908">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:2" size="I:4"><union-ref ref="0x40a839d8"/>
+                <typename><typedef-ref name="msp430_spi_union_config_t" ref="0x40a83c00"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="141:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="config" ref="0x40a9d7b0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:2" size="I:4"><union-ref ref="0x40a839d8"/>
+                <typename><typedef-ref name="msp430_spi_union_config_t" ref="0x40a83c00"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="165:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="setReceiveMode" provided="0" ref="0x40a9a410">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="98:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="isRxIntrPending" provided="0" ref="0x40aa1ed8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="99:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="clrTxIntr" provided="0" ref="0x40aa02d0">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="57:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="getUctl0" provided="0" ref="0x40aa6730">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:1"><struct-ref ref="0x40a58cd8"/>
+            <typename><typedef-ref name="msp430_uctl0_t" ref="0x40a56128"/></typename>
+          </type-tag>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="130:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciB.nc" name="disableSpi" provided="0" ref="0x40a9eda8">
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

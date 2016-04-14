@@ -1,0 +1,91 @@
+<?xml version="1.0" ?><component abstract="" loc="29:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP" safe="">
+      <documentation loc="2:/home/rgao/lily/tinyos2/tos/chips/msp430/msp430regtypes.h">
+        <short>
+ Copyright (c) 2011 Eric B.</short>
+        <long>
+ Copyright (c) 2011 Eric B. Decker
+ Copyright (c) 2009 DEXMA SENSORS SL
+ Copyright (c) 2000-2003 The Regents of the University of California.  
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+ - Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ - Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the
+   distribution.
+ - Neither the name of the copyright holder nor the names of
+   its contributors may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+ THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ OF THE POSSIBILITY OF SUCH DAMAGE.
+</long>
+      </documentation>
+      <parameters>
+        <constant loc="30:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_in_addr" ref="0x408457b8">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+        </constant>
+        <constant loc="31:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_out_addr" ref="0x408459e8">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+        </constant>
+        <constant loc="32:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_dir_addr" ref="0x40845c18">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+        </constant>
+        <constant loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_sel_addr" ref="0x40845e48">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+        </constant>
+        <constant loc="34:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_ren_addr" ref="0x40844088">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+        </constant>
+        <constant loc="35:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="pin" ref="0x40844288">
+          <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+          </type-int>
+        </constant>
+      </parameters>
+      <module/>
+    <specification><interface loc="38:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="IO" provided="1" ref="0x408447d8">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="IO" ref="0x408447d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x408449b0" scoped=""/>
+        <function-ref name="isInput" ref="0x40844a90" scoped=""/>
+        <function-ref name="setResistor" ref="0x40844b70" scoped=""/>
+        <function-ref name="toggle" ref="0x40844c50" scoped=""/>
+        <function-ref name="isOutput" ref="0x40844d30" scoped=""/>
+        <function-ref name="getResistor" ref="0x40844e10" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40844ef0" scoped=""/>
+        <function-ref name="get" ref="0x40843010" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x408430f0" scoped=""/>
+        <function-ref name="getRaw" ref="0x408431d0" scoped=""/>
+        <function-ref name="set" ref="0x408432b0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x40843390" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x40843470" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x408435d0" scoped=""/>
+        <function-ref name="clr" ref="0x408436b0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

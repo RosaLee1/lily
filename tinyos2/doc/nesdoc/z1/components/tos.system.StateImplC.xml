@@ -1,0 +1,117 @@
+<?xml version="1.0" ?><component loc="64:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc" nicename="tos.system.StateImplC" qname="StateImplC">
+      <documentation loc="32:/home/rgao/lily/tinyos2/tos/types/State.h">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="75:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc">
+          <from><interface-ref name="State" ref="0x40a4a100" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x40a47798" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40a47168" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc" name="State" provided="1" ref="0x40a4a100">
+      <component-ref nicename="tos.system.StateImplC" qname="StateImplC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a4a100" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getState" ref="0x40a4a2d8" scoped=""/>
+        <function-ref name="toIdle" ref="0x40a4a3b8" scoped=""/>
+        <function-ref name="isState" ref="0x40a4a498" scoped=""/>
+        <function-ref name="isIdle" ref="0x40a4a578" scoped=""/>
+        <function-ref name="requestState" ref="0x40a4a658" scoped=""/>
+        <function-ref name="forceState" ref="0x40a4a738" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="67:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="State" provided="1" ref="0x40a47798">
+      <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a47798" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getState" ref="0x40a47970" scoped=""/>
+        <function-ref name="toIdle" ref="0x40a47a50" scoped=""/>
+        <function-ref name="isState" ref="0x40a47b30" scoped=""/>
+        <function-ref name="isIdle" ref="0x40a47c10" scoped=""/>
+        <function-ref name="requestState" ref="0x40a47cf0" scoped=""/>
+        <function-ref name="forceState" ref="0x40a47dd0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="Init" provided="1" ref="0x40a47168">
+      <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40a47168" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40a47340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x40534258">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40534430" scoped=""/>
+      </interface-functions>
+    </interface><component loc="56:/home/rgao/lily/tinyos2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x40392578" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x405365e0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x40536978" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x403875f0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x40636010" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40534a30" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x40636418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="64:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" nicename="tos.system.StateImplP" qname="StateImplP" safe="">
+      <documentation loc="32:/home/rgao/lily/tinyos2/tos/types/State.h">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+</long>
+      </documentation>
+      <module/>
+    </component></referenced></component>

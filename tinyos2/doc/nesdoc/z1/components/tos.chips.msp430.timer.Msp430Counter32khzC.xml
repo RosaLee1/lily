@@ -1,0 +1,440 @@
+<?xml version="1.0" ?><component loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc" nicename="tos.chips.msp430.timer.Msp430Counter32khzC" qname="Msp430Counter32khzC">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc">
+        <short>
+ Msp430Counter32khC provides the standard 32khz counter for the MSP430.</short>
+        <long>
+ Msp430Counter32khC provides the standard 32khz counter for the MSP430.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc">
+          <from><interface-ref name="Msp430Counter32khz" ref="0x40787820" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x4079a388" scoped=""/></to>
+        </wire>
+        <wire loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc">
+          <from><interface-ref name="Msp430Timer" ref="0x407924b8" scoped=""/></from>
+          <to><interface-ref name="TimerB" ref="0x40581e60" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc" name="Msp430Counter32khz" provided="1" ref="0x40787820">
+      <component-ref nicename="tos.chips.msp430.timer.Msp430Counter32khzC" qname="Msp430Counter32khzC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Counter32khz" ref="0x40787820" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x4079c010" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x4079c500" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x4079c288" scoped=""/>
+        <function-ref name="overflow" ref="0x4079c778" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc" name="TimerB" provided="1" ref="0x40581e60">
+      <component-ref nicename="tos.chips.msp430.timer.Msp430TimerC" qname="Msp430TimerC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerB" ref="0x40581e60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x4058d050" scoped=""/>
+        <function-ref name="setClockSource" ref="0x4058d130" scoped=""/>
+        <function-ref name="enableEvents" ref="0x4058d210" scoped=""/>
+        <function-ref name="get" ref="0x4058d2f0" scoped=""/>
+        <function-ref name="disableEvents" ref="0x4058d3d0" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x4058d4b0" scoped=""/>
+        <function-ref name="getMode" ref="0x4058d590" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x4058d670" scoped=""/>
+        <function-ref name="overflow" ref="0x4058d750" scoped=""/>
+        <function-ref name="setMode" ref="0x4058d830" scoped=""/>
+        <function-ref name="setInputDivider" ref="0x4058d910" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430CounterC.nc" name="Counter" provided="1" ref="0x4079a388">
+      <component-ref nicename="tos.chips.msp430.timer.Msp430CounterC" qname="Msp430Counter32khzC.Counter"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x4079a388" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x4079aad8" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40792010" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x4079ad50" scoped=""/>
+        <function-ref name="overflow" ref="0x40792288" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430CounterC.nc" name="Msp430Timer" provided="0" ref="0x407924b8">
+      <component-ref nicename="tos.chips.msp430.timer.Msp430CounterC" qname="Msp430Counter32khzC.Counter"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Timer" ref="0x407924b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40792690" scoped=""/>
+        <function-ref name="setClockSource" ref="0x40792770" scoped=""/>
+        <function-ref name="enableEvents" ref="0x40792850" scoped=""/>
+        <function-ref name="get" ref="0x40792930" scoped=""/>
+        <function-ref name="disableEvents" ref="0x40792a10" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40792af0" scoped=""/>
+        <function-ref name="getMode" ref="0x40792bd0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40792cb0" scoped=""/>
+        <function-ref name="overflow" ref="0x40792d90" scoped=""/>
+        <function-ref name="setMode" ref="0x40792e70" scoped=""/>
+        <function-ref name="setInputDivider" ref="0x407a9010" scoped=""/>
+      </interface-functions>
+    </interface><component loc="42(Msp430Counter32khzC.Counter):/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430CounterC.nc" nicename="tos.chips.msp430.timer.Msp430CounterC" qname="Msp430Counter32khzC.Counter">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430CounterC.nc">
+        <short>
+ Msp430Counter is a generic component that wraps the MSP430 HPL timers into a
+ TinyOS Counter.</short>
+        <long>
+ Msp430Counter is a generic component that wraps the MSP430 HPL timers into a
+ TinyOS Counter.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.chips.msp430.timer.Msp430CounterC" qname="Msp430CounterC"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="37:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc" nicename="tos.chips.msp430.timer.Msp430TimerC" qname="Msp430TimerC">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+        <short>
+ </short>
+        <long>
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="113:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlA2" ref="0x4057def8" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405f7588" scoped=""/></to>
+        </wire>
+        <wire loc="126:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB0" ref="0x4058dba8" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405f3430" scoped=""/></to>
+        </wire>
+        <wire loc="108:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureA1" ref="0x4058ad28" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405eb868" scoped=""/></to>
+        </wire>
+        <wire loc="149:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB3" ref="0x4059e168" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x40606190" scoped=""/></to>
+        </wire>
+        <wire loc="107:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareA1" ref="0x4058eec8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405eb190" scoped=""/></to>
+        </wire>
+        <wire loc="148:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB3" ref="0x405925f8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x40607a68" scoped=""/></to>
+        </wire>
+        <wire loc="170:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB6" ref="0x4059dbf8" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x4060ccc8" scoped=""/></to>
+        </wire>
+        <wire loc="154:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB4" ref="0x40597b80" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x40604e68" scoped=""/></to>
+        </wire>
+        <wire loc="99:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlA0" ref="0x405837e8" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405c7770" scoped=""/></to>
+        </wire>
+        <wire loc="135:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB1" ref="0x4059f010" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405fe430" scoped=""/></to>
+        </wire>
+        <wire loc="134:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB1" ref="0x405935f8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405ffc78" scoped=""/></to>
+        </wire>
+        <wire loc="133:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB1" ref="0x405897e8" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405ff220" scoped=""/></to>
+        </wire>
+        <wire loc="115:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureA2" ref="0x405815f8" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405f66e8" scoped=""/></to>
+        </wire>
+        <wire loc="156:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB4" ref="0x4059ea08" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x40602010" scoped=""/></to>
+        </wire>
+        <wire loc="140:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB2" ref="0x40588468" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405fa120" scoped=""/></to>
+        </wire>
+        <wire loc="114:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareA2" ref="0x405826a8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405f6010" scoped=""/></to>
+        </wire>
+        <wire loc="93:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="TimerA" ref="0x40579af8" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4059bb48" scoped=""/></to>
+        </wire>
+        <wire loc="155:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB4" ref="0x40592db8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x406038d0" scoped=""/></to>
+        </wire>
+        <wire loc="106:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlA1" ref="0x4057d388" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x405ec6d0" scoped=""/></to>
+        </wire>
+        <wire loc="161:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB5" ref="0x40595708" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x40600ca8" scoped=""/></to>
+        </wire>
+        <wire loc="101:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureA0" ref="0x4058a488" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405c6948" scoped=""/></to>
+        </wire>
+        <wire loc="142:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB2" ref="0x4059f8b0" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405f9270" scoped=""/></to>
+        </wire>
+        <wire loc="100:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareA0" ref="0x4058e708" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405c6270" scoped=""/></to>
+        </wire>
+        <wire loc="141:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB2" ref="0x40593db8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405fab78" scoped=""/></to>
+        </wire>
+        <wire loc="163:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB5" ref="0x4059d358" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x40611e88" scoped=""/></to>
+        </wire>
+        <wire loc="147:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB3" ref="0x40597010" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x40607010" scoped=""/></to>
+        </wire>
+        <wire loc="120:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="TimerB" ref="0x40581e60" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="162:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB5" ref="0x405915f8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x406117b0" scoped=""/></to>
+        </wire>
+        <wire loc="128:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CaptureB0" ref="0x405906a8" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x405f2570" scoped=""/></to>
+        </wire>
+        <wire loc="169:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB6" ref="0x40591db8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x4060c5f0" scoped=""/></to>
+        </wire>
+        <wire loc="127:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="CompareB0" ref="0x40594de8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x405f3e88" scoped=""/></to>
+        </wire>
+        <wire loc="168:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="ControlB6" ref="0x405942a8" scoped=""/></from>
+          <to><interface-ref name="Control" ref="0x4060daf0" scoped=""/></to>
+        </wire>
+        <wire loc="94:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Overflow" ref="0x4059abb0" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x4059a848" scoped=""/>
+          <arguments>
+            <value cst="I:5">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="95:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="VectorTimerX0" ref="0x4059af08" scoped=""/></from>
+          <to><interface-ref name="VectorTimerA0" ref="0x40609700" scoped=""/></to>
+        </wire>
+        <wire loc="96:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="VectorTimerX1" ref="0x405bc270" scoped=""/></from>
+          <to><interface-ref name="VectorTimerA1" ref="0x40609b88" scoped=""/></to>
+        </wire>
+        <wire loc="102:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405ee190" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4059bb48" scoped=""/></to>
+        </wire>
+        <wire loc="103:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405eeda8" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x4059a848" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="109:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405e9050" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4059bb48" scoped=""/></to>
+        </wire>
+        <wire loc="110:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405e9c68" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x4059a848" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="116:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405f6ea0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4059bb48" scoped=""/></to>
+        </wire>
+        <wire loc="117:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405f5b00" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x4059a848" scoped=""/>
+          <arguments>
+            <value cst="I:2">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="121:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Overflow" ref="0x405b9590" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:7">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="122:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="VectorTimerX0" ref="0x405b98e8" scoped=""/></from>
+          <to><interface-ref name="VectorTimerB0" ref="0x40618030" scoped=""/></to>
+        </wire>
+        <wire loc="123:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="VectorTimerX1" ref="0x405b9c40" scoped=""/></from>
+          <to><interface-ref name="VectorTimerB1" ref="0x406184b8" scoped=""/></to>
+        </wire>
+        <wire loc="129:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405f2d28" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="130:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405f1970" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="136:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405febe8" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="137:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405fd890" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="143:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x405f9a28" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="144:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x405f86d0" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:2">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="150:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x40606948" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="151:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x406055f0" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:3">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="157:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x406027c8" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="158:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x40601430" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:4">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="164:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x4060f650" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="165:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x4060e278" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:5">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="171:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Timer" ref="0x4060b510" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x405ba528" scoped=""/></to>
+        </wire>
+        <wire loc="172:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerC.nc">
+          <from><interface-ref name="Event" ref="0x4060a190" scoped=""/></from>
+          <to><interface-ref name="Event" ref="0x405b9228" scoped=""/>
+          <arguments>
+            <value cst="I:6">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?><component loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciAB0RawInterruptsP.nc" nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciAB0RawInterruptsP" qname="HplMsp430UsciAB0RawInterruptsP" safe="">
+      <module/>
+    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciAB0RawInterruptsP.nc" name="UsciA" provided="1" ref="0x40b4d1c0">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciAB0RawInterruptsP" qname="HplMsp430UsciAB0RawInterruptsP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciA" ref="0x40b4d1c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts" qname="HplMsp430UsciRawInterrupts"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x40b4d398" scoped=""/>
+        <function-ref name="txDone" ref="0x40b4d478" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciAB0RawInterruptsP.nc" name="UsciB" provided="1" ref="0x40b4d738">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciAB0RawInterruptsP" qname="HplMsp430UsciAB0RawInterruptsP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciB" ref="0x40b4d738" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts" qname="HplMsp430UsciRawInterrupts"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x40b4d910" scoped=""/>
+        <function-ref name="txDone" ref="0x40b4d9f0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

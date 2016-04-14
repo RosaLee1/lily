@@ -1,0 +1,29 @@
+<?xml version="1.0" ?><component loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP">
+      <module/>
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" name="AdcConfigure" provided="1" ref="0x4113a3e0">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcConfigure" ref="0x4113a3e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x4113aa28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" name="DeviceMetadata" provided="1" ref="0x4113ed60">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DeviceMetadata" ref="0x4113ed60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.DeviceMetadata" qname="DeviceMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getSignificantBits" ref="0x4113a010" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

@@ -1,0 +1,185 @@
+<?xml version="1.0" ?><component abstract="" loc="40:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc" nicename="tos.platforms.z1.chips.msp430.adc12.BatteryC" qname="BatteryC">
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="47:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc">
+          <from><interface-ref name="Read" ref="0x40f02cd8" scoped=""/></from>
+          <to><interface-ref name="Read" ref="0x40ef9610" scoped=""/></to>
+        </wire>
+        <wire loc="50:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc">
+          <from><interface-ref name="ReadStream" ref="0x40f000b0" scoped=""/></from>
+          <to><interface-ref name="ReadStream" ref="0x410c0b00" scoped=""/></to>
+        </wire>
+        <wire loc="53:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc">
+          <from><interface-ref name="DeviceMetadata" ref="0x40f02888" scoped=""/></from>
+          <to><interface-ref name="DeviceMetadata" ref="0x4113ed60" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc">
+          <from><interface-ref name="AdcConfigure" ref="0x410c3270" scoped=""/></from>
+          <to><interface-ref name="AdcConfigure" ref="0x4113a3e0" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc">
+          <from><interface-ref name="AdcConfigure" ref="0x41140290" scoped=""/></from>
+          <to><interface-ref name="AdcConfigure" ref="0x4113a3e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc" name="Read" provided="1" ref="0x40f02cd8">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryC" qname="BatteryC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Read" ref="0x40f02cd8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Read" qname="Read"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40f01350" scoped=""/>
+        <function-ref name="readDone" ref="0x40f015a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc" name="ReadStream" provided="1" ref="0x40f000b0">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryC" qname="BatteryC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ReadStream" ref="0x40f000b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ReadStream" qname="ReadStream"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="bufferDone" ref="0x40f00e28" scoped=""/>
+        <function-ref name="postBuffer" ref="0x40f006d8" scoped=""/>
+        <function-ref name="read" ref="0x40f00ba8" scoped=""/>
+        <function-ref name="readDone" ref="0x40eff3b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryC.nc" name="DeviceMetadata" provided="1" ref="0x40f02888">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryC" qname="BatteryC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DeviceMetadata" ref="0x40f02888" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.DeviceMetadata" qname="DeviceMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getSignificantBits" ref="0x40f02a60" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadClientC.nc" name="Read" provided="1" ref="0x40ef9610">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcReadClientC" qname="BatteryC.AdcReadClientC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Read" ref="0x40ef9610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Read" qname="Read"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40ef9c38" scoped=""/>
+        <function-ref name="readDone" ref="0x40ef9e90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadStreamClientC.nc" name="ReadStream" provided="1" ref="0x410c0b00">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcReadStreamClientC" qname="BatteryC.AdcReadStreamClientC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ReadStream" ref="0x410c0b00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ReadStream" qname="ReadStream"/>
+        <arguments>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="bufferDone" ref="0x41141930" scoped=""/>
+        <function-ref name="postBuffer" ref="0x411411e0" scoped=""/>
+        <function-ref name="read" ref="0x411416b0" scoped=""/>
+        <function-ref name="readDone" ref="0x41141ea0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadStreamClientC.nc" name="AdcConfigure" provided="0" ref="0x41140290">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcReadStreamClientC" qname="BatteryC.AdcReadStreamClientC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcConfigure" ref="0x41140290" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x411408d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" name="DeviceMetadata" provided="1" ref="0x4113ed60">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DeviceMetadata" ref="0x4113ed60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.DeviceMetadata" qname="DeviceMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getSignificantBits" ref="0x4113a010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadClientC.nc" name="AdcConfigure" provided="0" ref="0x410c3270">
+      <component-ref nicename="tos.chips.msp430.adc12.AdcReadClientC" qname="BatteryC.AdcReadClientC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcConfigure" ref="0x410c3270" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x410c38b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" name="AdcConfigure" provided="1" ref="0x4113a3e0">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AdcConfigure" ref="0x4113a3e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AdcConfigure" qname="AdcConfigure"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-qualified const="">
+                <typename><typedef-ref name="msp430adc12_channel_config_t" ref="0x40ef8ef0"/></typename>
+              <type-tag alignment="I:2" size="I:4"><struct-ref ref="0x40ef8a30"/></type-tag>
+            </type-qualified>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfiguration" ref="0x4113aa28" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="47(BatteryC.AdcReadClientC):/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadClientC.nc" nicename="tos.chips.msp430.adc12.AdcReadClientC" qname="BatteryC.AdcReadClientC">
+      <instance>
+        <component-ref nicename="tos.chips.msp430.adc12.AdcReadClientC" qname="AdcReadClientC"/>
+      </instance>
+      <configuration/>
+    </component><component abstract="" loc="47(BatteryC.AdcReadStreamClientC):/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadStreamClientC.nc" nicename="tos.chips.msp430.adc12.AdcReadStreamClientC" qname="BatteryC.AdcReadStreamClientC">
+      <documentation loc="36:/home/rgao/lily/tinyos2/tos/chips/msp430/adc12/AdcReadStreamClientC.nc">
+        <short> 
+ This component virtualizes the HIL of ADC12 on MSP430.</short>
+        <long> 
+ This component virtualizes the HIL of ADC12 on MSP430. A client must wire
+ &lt;code&gt;AdcConfigure&lt;/code&gt; to a component that returns the client's adc
+ configuration data.
+
+ @author Jan Hauer 
+ @see  Please refer to the README.txt and TEP 101 for more information about 
+ this component and its intended use.
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.msp430.adc12.AdcReadStreamClientC" qname="AdcReadStreamClientC"/>
+      </instance>
+      <configuration/>
+    </component><component loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/adc12/BatteryP.nc" nicename="tos.platforms.z1.chips.msp430.adc12.BatteryP" qname="BatteryP">
+      <module/>
+    </component></referenced></component>

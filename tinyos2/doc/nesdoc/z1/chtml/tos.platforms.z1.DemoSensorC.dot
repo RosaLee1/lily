@@ -1,0 +1,5 @@
+digraph "tos.platforms.z1.DemoSensorC" {
+  n0x40ed5e18 [shape=ellipse, style=filled, label="Read", fontsize=12];
+  "DemoSensorC.DemoSensor" [fontsize=12, shape=box,peripheries=2, style=dashed, label="BatteryC\n(DemoSensor)", URL="../chtml/tos.platforms.z1.chips.msp430.adc12.BatteryC.html"];
+  "n0x40ed5e18" -> "DemoSensorC.DemoSensor" [label="Read<uint16_t>", URL="../ihtml/tos.interfaces.Read.html", fontsize=10];
+}
