@@ -7,7 +7,7 @@
  @author Jon Wyant
 </long>
       </documentation>
-      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="getRetryDelay" provided="0" ref="0x40671960">
+      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="getRetryDelay" provided="0" ref="0x4054a188">
         <documentation loc="61:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc">
           <short>
  </short>
@@ -23,23 +23,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="65:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x40671808">
+          <variable loc="65:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4054a030">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="setRetries" provided="0" ref="0x40668d58">
+      <function command="" loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="setRetries" provided="0" ref="0x4054d590">
         <documentation loc="39:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc">
           <short>
  Set the maximum number of times attempt message delivery
@@ -58,8 +58,8 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
@@ -68,21 +68,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x406689c0">
+          <variable loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4054d1f8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="maxRetries" ref="0x40668bf8">
+          <variable loc="46:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="maxRetries" ref="0x4054d430">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="59:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="getRetries" provided="0" ref="0x40671010">
+      <function command="" loc="59:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="getRetries" provided="0" ref="0x4054c808">
         <documentation loc="55:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc">
           <short> 
  </short>
@@ -98,23 +98,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x40670e70">
+          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4054c6b0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="setRetryDelay" provided="0" ref="0x40670950">
+      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="setRetryDelay" provided="0" ref="0x4054c190">
         <documentation loc="48:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc">
           <short>
  Set a delay between each retry attempt
@@ -130,8 +130,8 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
@@ -140,21 +140,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x406705b8">
+          <variable loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4054ddd0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="retryDelay" ref="0x406707f0">
+          <variable loc="53:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="retryDelay" ref="0x4054c030">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="wasDelivered" provided="0" ref="0x4066f2a0">
+      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="wasDelivered" provided="0" ref="0x4054aaa8">
         <documentation loc="67:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc">
           <short>
  </short>
@@ -170,17 +170,17 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="71:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4066f148">
+          <variable loc="71:/home/rgao/lily/tinyos2/tos/interfaces/PacketLink.nc" name="msg" ref="0x4054a950">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>

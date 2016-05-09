@@ -8,7 +8,7 @@
  @author David Moss
 </long>
       </documentation>
-      <function command="" loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ReceiveIndicator.nc" name="isReceiving" provided="0" ref="0x40c2fb88">
+      <function command="" loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ReceiveIndicator.nc" name="isReceiving" provided="0" ref="0x40c26b88">
         <documentation loc="39:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ReceiveIndicator.nc">
           <short>
  </short>

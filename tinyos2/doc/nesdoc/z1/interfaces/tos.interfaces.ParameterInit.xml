@@ -11,12 +11,12 @@
 </long>
       </documentation>
       <parameters>
-        <typedef loc="53:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="parameter" ref="0x40df95c0">
+        <typedef loc="53:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="parameter" ref="0x40de67d8">
           <interfacedef-ref nicename="tos.interfaces.ParameterInit" qname="ParameterInit"/>
-          <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40df95c0" scoped=""/></type-var>
+          <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40de67d8" scoped=""/></type-var>
         </typedef>
       </parameters>
-      <function command="" loc="64:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="init" provided="0" ref="0x40df9c10">
+      <function command="" loc="64:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="init" provided="0" ref="0x40de6e28">
         <documentation loc="55:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc">
           <short>
  Initialize this component.</short>
@@ -36,12 +36,12 @@
             <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
           </type-int>
           <function-parameters>
-            <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40df95c0" scoped=""/></type-var>
+            <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40de67d8" scoped=""/></type-var>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="64:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="param" ref="0x40df9ab8">
-            <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40df95c0" scoped=""/></type-var>
+          <variable loc="64:/home/rgao/lily/tinyos2/tos/interfaces/ParameterInit.nc" name="param" ref="0x40de6cd0">
+            <type-var alignment="U:" size="U:"><typedef-ref name="parameter" ref="0x40de67d8" scoped=""/></type-var>
           </variable>
         </parameters>
       </function>

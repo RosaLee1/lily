@@ -14,31 +14,31 @@
       <configuration/>
       <wiring>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc">
-          <from><interface-ref name="Init" ref="0x40739af0" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40749258" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x4061b670" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40729258" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc">
-          <from><interface-ref name="Alarm32khz32" ref="0x4074c0e0" scoped=""/></from>
-          <to><interface-ref name="Alarm32khz32" ref="0x407496d0" scoped=""/></to>
+          <from><interface-ref name="Alarm32khz32" ref="0x4061bc38" scoped=""/></from>
+          <to><interface-ref name="Alarm32khz32" ref="0x407296d0" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc" name="Init" provided="1" ref="0x40739af0">
+    <specification><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc" name="Init" provided="1" ref="0x4061b670">
       <component-ref nicename="tos.chips.cc2420.alarm.AlarmMultiplexC" qname="AlarmMultiplexC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40739af0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x4061b670" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40739cc8" scoped=""/>
+        <function-ref name="init" ref="0x4061b848" scoped=""/>
       </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc" name="Alarm32khz32" provided="1" ref="0x4074c0e0">
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/alarm/AlarmMultiplexC.nc" name="Alarm32khz32" provided="1" ref="0x4061bc38">
       <component-ref nicename="tos.chips.cc2420.alarm.AlarmMultiplexC" qname="AlarmMultiplexC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm32khz32" ref="0x4074c0e0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm32khz32" ref="0x4061bc38" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -46,22 +46,22 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="getNow" ref="0x4074b5c8" scoped=""/>
-        <function-ref name="fired" ref="0x4074cd48" scoped=""/>
-        <function-ref name="startAt" ref="0x4074b288" scoped=""/>
-        <function-ref name="isRunning" ref="0x4074b010" scoped=""/>
-        <function-ref name="getAlarm" ref="0x4074b840" scoped=""/>
-        <function-ref name="start" ref="0x4074c830" scoped=""/>
-        <function-ref name="stop" ref="0x4074cad0" scoped=""/>
+        <function-ref name="getNow" ref="0x4072a0f8" scoped=""/>
+        <function-ref name="fired" ref="0x4072b8b8" scoped=""/>
+        <function-ref name="startAt" ref="0x4072bda8" scoped=""/>
+        <function-ref name="isRunning" ref="0x4072bb30" scoped=""/>
+        <function-ref name="getAlarm" ref="0x4072a370" scoped=""/>
+        <function-ref name="start" ref="0x4072b3a0" scoped=""/>
+        <function-ref name="stop" ref="0x4072b640" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc" name="Alarm32khz32" provided="1" ref="0x407496d0">
+    </interface></specification><referenced><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc" name="Alarm32khz32" provided="1" ref="0x407296d0">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420AlarmC" qname="AlarmMultiplexC.Alarm"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm32khz32" ref="0x407496d0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm32khz32" ref="0x407296d0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -69,22 +69,22 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="getNow" ref="0x40748b80" scoped=""/>
-        <function-ref name="fired" ref="0x40748350" scoped=""/>
-        <function-ref name="startAt" ref="0x40748840" scoped=""/>
-        <function-ref name="isRunning" ref="0x407485c8" scoped=""/>
-        <function-ref name="getAlarm" ref="0x40748df8" scoped=""/>
-        <function-ref name="start" ref="0x40749e20" scoped=""/>
-        <function-ref name="stop" ref="0x407480d8" scoped=""/>
+        <function-ref name="getNow" ref="0x40728b80" scoped=""/>
+        <function-ref name="fired" ref="0x40728350" scoped=""/>
+        <function-ref name="startAt" ref="0x40728840" scoped=""/>
+        <function-ref name="isRunning" ref="0x407285c8" scoped=""/>
+        <function-ref name="getAlarm" ref="0x40728df8" scoped=""/>
+        <function-ref name="start" ref="0x40729e20" scoped=""/>
+        <function-ref name="stop" ref="0x407280d8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc" name="Init" provided="1" ref="0x40749258">
+    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc" name="Init" provided="1" ref="0x40729258">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420AlarmC" qname="AlarmMultiplexC.Alarm"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40749258" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40729258" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40749430" scoped=""/>
+        <function-ref name="init" ref="0x40729430" scoped=""/>
       </interface-functions>
     </interface><component loc="40(AlarmMultiplexC.Alarm):/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc" nicename="tos.platforms.z1.chips.cc2420.HplCC2420AlarmC" qname="AlarmMultiplexC.Alarm">
       <documentation loc="32:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc">
@@ -105,12 +105,12 @@
       <configuration/>
       <wiring>
         <wire loc="51:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc">
-          <from><interface-ref name="Init" ref="0x40749258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x4124b010" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x40729258" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40fe8bc0" scoped=""/></to>
         </wire>
         <wire loc="52:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420AlarmC.nc">
-          <from><interface-ref name="Alarm32khz32" ref="0x407496d0" scoped=""/></from>
-          <to><interface-ref name="Alarm" ref="0x4124b468" scoped=""/></to>
+          <from><interface-ref name="Alarm32khz32" ref="0x407296d0" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x40fe6030" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

@@ -18,7 +18,7 @@
  @author David Moss
 </long>
       </documentation>
-      <function event="" loc="24:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="releasing" provided="0" ref="0x409e3270">
+      <function event="" loc="24:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="releasing" provided="0" ref="0x409c6270">
         <documentation loc="19:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc">
           <short>
  The SPI bus is about to be automatically released.</short>
@@ -37,7 +37,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="31:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="abortRelease" provided="0" ref="0x409e3760">
+      <function command="" loc="31:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="abortRelease" provided="0" ref="0x409c6760">
         <documentation loc="27:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc">
           <short>
  Abort the release of the SPI bus.</short>
@@ -55,7 +55,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="39:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="attemptRelease" provided="0" ref="0x409e3c40">
+      <function command="" loc="39:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc" name="attemptRelease" provided="0" ref="0x409c6c40">
         <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc">
           <short>
  Release the SPI bus if there are no objections

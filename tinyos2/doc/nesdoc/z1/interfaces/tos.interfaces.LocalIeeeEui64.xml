@@ -7,7 +7,7 @@
 
 </long>
       </documentation>
-      <function command="" loc="48:/home/rgao/lily/tinyos2/tos/interfaces/LocalIeeeEui64.nc" name="getId" provided="0" ref="0x406dda68">
+      <function command="" loc="48:/home/rgao/lily/tinyos2/tos/interfaces/LocalIeeeEui64.nc" name="getId" provided="0" ref="0x405b8dc0">
         <documentation loc="44:/home/rgao/lily/tinyos2/tos/interfaces/LocalIeeeEui64.nc">
           <short>
  Get the 64-bit IEEE EUI.</short>
@@ -18,8 +18,8 @@
         </documentation>
         <interfacedef-ref nicename="tos.interfaces.LocalIeeeEui64" qname="LocalIeeeEui64"/>
         <type-function alignment="I:1" size="I:1">
-          <type-tag alignment="I:1" size="I:8"><struct-ref name="ieee_eui64" ref="0x40655ed0"/>
-            <typename><typedef-ref name="ieee_eui64_t" ref="0x40654388"/></typename>
+          <type-tag alignment="I:1" size="I:8"><struct-ref name="ieee_eui64" ref="0x4052e3e8"/>
+            <typename><typedef-ref name="ieee_eui64_t" ref="0x4052ec78"/></typename>
           </type-tag>
           <function-parameters>
           </function-parameters>

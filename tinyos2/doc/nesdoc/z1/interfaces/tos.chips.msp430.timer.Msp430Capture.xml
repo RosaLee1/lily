@@ -6,7 +6,7 @@
  @author Joe Polastre
 </long>
       </documentation>
-      <function command="" loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="getEvent" provided="0" ref="0x4058c418">
+      <function command="" loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="getEvent" provided="0" ref="0x4067d7c8">
         <documentation loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Reads the value of the last capture event in TxCCRx
@@ -23,7 +23,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="79:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="setSynchronous" provided="0" ref="0x4058bab0">
+      <function command="" loc="79:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="setSynchronous" provided="0" ref="0x40678db0">
         <documentation loc="70:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Set whether the capture should occur synchronously or asynchronously.</short>
@@ -47,14 +47,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="79:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="synchronous" ref="0x4058b958">
+          <variable loc="79:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="synchronous" ref="0x40678c58">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="86:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="captured" provided="0" ref="0x4058a210">
+      <function event="" loc="86:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="captured" provided="0" ref="0x40676638">
         <documentation loc="81:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Signalled when an event is captured.</short>
@@ -74,14 +74,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="86:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="time" ref="0x4058a0b8">
+          <variable loc="86:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="time" ref="0x406764e0">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="68:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="clearOverflow" provided="0" ref="0x4058b4b0">
+      <function command="" loc="68:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="clearOverflow" provided="0" ref="0x406787b0">
         <documentation loc="65:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Clear the capture overflow flag for when multiple captures occur
@@ -96,7 +96,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="63:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="isOverflowPending" provided="0" ref="0x4058b010">
+      <function command="" loc="63:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="isOverflowPending" provided="0" ref="0x40678310">
         <documentation loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Determine if a capture overflow is pending.</short>
@@ -117,7 +117,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="setEdge" provided="0" ref="0x4058c980">
+      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="setEdge" provided="0" ref="0x4067dd30">
         <documentation loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc">
           <short>
  Set the edge that the capture should occur
@@ -144,7 +144,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="cm" ref="0x4058c828">
+          <variable loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Capture.nc" name="cm" ref="0x4067dbd8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>

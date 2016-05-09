@@ -11,7 +11,7 @@
  @version $Revision: 1.2 $ $Date: 2008-06-03 04:43:03 $
 </long>
       </documentation>
-      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="continueRead" provided="0" ref="0x409f2d60">
+      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="continueRead" provided="0" ref="0x409d4d60">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc">
           <short>
  Continue reading from the FIFO without having to send the address
@@ -43,21 +43,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409f2a00">
+          <variable loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409d4a00">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409f2c00">
+          <variable loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409d4c00">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="writeDone" provided="0" ref="0x40a0f498">
+      <function event="" loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="writeDone" provided="0" ref="0x409d0498">
         <documentation loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc">
           <short>
  Signals the completion of a write operation.</short>
@@ -87,26 +87,26 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x40a10f20">
+          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409d2f20">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x40a0f138">
+          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409d0138">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
-          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="error" ref="0x40a0f330">
+          <variable loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="error" ref="0x409d0330">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="write" provided="0" ref="0x40a10700">
+      <function command="" loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="write" provided="0" ref="0x409d2700">
         <documentation loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc">
           <short>
  Start writing the FIFO.</short>
@@ -123,7 +123,7 @@
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="cc2420_status_t" ref="0x404d7498"/></typename>
+            <typename><typedef-ref name="cc2420_status_t" ref="0x404cc7e8"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
@@ -137,21 +137,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x40a103a0">
+          <variable loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409d23a0">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x40a105a0">
+          <variable loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409d25a0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="beginRead" provided="0" ref="0x409f2170">
+      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="beginRead" provided="0" ref="0x409d4170">
         <documentation loc="42:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc">
           <short>
  Start reading from the FIFO.</short>
@@ -168,7 +168,7 @@
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="cc2420_status_t" ref="0x404d7498"/></typename>
+            <typename><typedef-ref name="cc2420_status_t" ref="0x404cc7e8"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
@@ -182,21 +182,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409f5d30">
+          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409d7d30">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409f2010">
+          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409d4010">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="readDone" provided="0" ref="0x409f0b18">
+      <function event="" loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="readDone" provided="0" ref="0x409d3b18">
         <documentation loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc">
           <short>
  Signals the completion of a read operation.</short>
@@ -226,19 +226,19 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409f05b8">
+          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="data" ref="0x409d35b8">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409f07b8">
+          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="length" ref="0x409d37b8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
-          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="error" ref="0x409f09b0">
+          <variable loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc" name="error" ref="0x409d39b0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>

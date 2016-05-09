@@ -17,22 +17,22 @@
       <configuration/>
       <wiring>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc">
-          <from><interface-ref name="TimerMilli" ref="0x40dc43f0" scoped=""/></from>
-          <to><interface-ref name="TimerMilli" ref="0x40d4ebe0" scoped=""/></to>
+          <from><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x40d38580" scoped=""/></to>
         </wire>
         <wire loc="53:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40d4e430" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40d42430" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="49:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc" name="TimerMilli" provided="1" ref="0x40dc43f0">
+    <specification><interface loc="49:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc" name="TimerMilli" provided="1" ref="0x40db3a70">
       <component-ref nicename="tos.system.TimerMilliP" qname="TimerMilliP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40dc43f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
           </type-tag>
         </arguments>
       </instance>
@@ -42,64 +42,64 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getNow" ref="0x40dc3ed0" scoped=""/>
-        <function-ref name="fired" ref="0x40dc3188" scoped=""/>
-        <function-ref name="startPeriodicAt" ref="0x40dc3890" scoped=""/>
-        <function-ref name="isOneShot" ref="0x40dc3638" scoped=""/>
-        <function-ref name="getdt" ref="0x40dc13a8" scoped=""/>
-        <function-ref name="gett0" ref="0x40dc1150" scoped=""/>
-        <function-ref name="isRunning" ref="0x40dc33e0" scoped=""/>
-        <function-ref name="startPeriodic" ref="0x40dc4a18" scoped=""/>
-        <function-ref name="startOneShotAt" ref="0x40dc3bb0" scoped=""/>
-        <function-ref name="startOneShot" ref="0x40dc4c98" scoped=""/>
-        <function-ref name="stop" ref="0x40dc4f18" scoped=""/>
+        <function-ref name="getNow" ref="0x40dae570" scoped=""/>
+        <function-ref name="fired" ref="0x40daf810" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40daff18" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40dafcc0" scoped=""/>
+        <function-ref name="getdt" ref="0x40daea20" scoped=""/>
+        <function-ref name="gett0" ref="0x40dae7c8" scoped=""/>
+        <function-ref name="isRunning" ref="0x40dafa68" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40daf0b8" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40dae250" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40daf338" scoped=""/>
+        <function-ref name="stop" ref="0x40daf5b8" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc" name="TimerMilli" provided="1" ref="0x40d4ebe0">
+    </interface></specification><referenced><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc" name="Init" provided="1" ref="0x40d42430">
       <component-ref nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40d4ebe0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
-        <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
-          </type-tag>
-        </arguments>
-      </instance>
-      <interface-parameters>
-        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
-        </type-int>
-      </interface-parameters>
-      <interface-functions>
-        <function-ref name="getNow" ref="0x40d4a730" scoped=""/>
-        <function-ref name="fired" ref="0x40d4b9b0" scoped=""/>
-        <function-ref name="startPeriodicAt" ref="0x40d4a0f0" scoped=""/>
-        <function-ref name="isOneShot" ref="0x40d4be60" scoped=""/>
-        <function-ref name="getdt" ref="0x40d4abe0" scoped=""/>
-        <function-ref name="gett0" ref="0x40d4a988" scoped=""/>
-        <function-ref name="isRunning" ref="0x40d4bc08" scoped=""/>
-        <function-ref name="startPeriodic" ref="0x40d4b258" scoped=""/>
-        <function-ref name="startOneShotAt" ref="0x40d4a410" scoped=""/>
-        <function-ref name="startOneShot" ref="0x40d4b4d8" scoped=""/>
-        <function-ref name="stop" ref="0x40d4b758" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc" name="Init" provided="1" ref="0x40d4e430">
-      <component-ref nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40d4e430" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40d42430" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40d4e608" scoped=""/>
+        <function-ref name="init" ref="0x40d42608" scoped=""/>
       </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x40534258">
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc" name="TimerMilli" provided="1" ref="0x40d38580">
+      <component-ref nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40d38580" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40d37098" scoped=""/>
+        <function-ref name="fired" ref="0x40d3f330" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40d3fa38" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40d3f7e0" scoped=""/>
+        <function-ref name="getdt" ref="0x40d37548" scoped=""/>
+        <function-ref name="gett0" ref="0x40d372f0" scoped=""/>
+        <function-ref name="isRunning" ref="0x40d3f588" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40d38ba8" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40d3fd58" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40d38e28" scoped=""/>
+        <function-ref name="stop" ref="0x40d3f0d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x406299f8">
       <component-ref nicename="tos.system.MainC" qname="MainC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40534430" scoped=""/>
+        <function-ref name="init" ref="0x40629bd0" scoped=""/>
       </interface-functions>
     </interface><component loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc" nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC">
       <documentation loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
@@ -119,28 +119,28 @@
       <configuration/>
       <wiring>
         <wire loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="TimerMilli" ref="0x40d4ebe0" scoped=""/></from>
-          <to><interface-ref name="Timer" ref="0x40d9ba60" scoped=""/></to>
+          <from><interface-ref name="TimerMilli" ref="0x40d38580" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40d88210" scoped=""/></to>
         </wire>
         <wire loc="59:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="LocalTime" ref="0x40d76010" scoped=""/></from>
-          <to><interface-ref name="LocalTime" ref="0x40dcf538" scoped=""/></to>
+          <from><interface-ref name="LocalTime" ref="0x40d378a8" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40dbcc60" scoped=""/></to>
         </wire>
         <wire loc="57:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="Init" ref="0x40d4e430" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40d75a88" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x40d42430" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40d343c0" scoped=""/></to>
         </wire>
         <wire loc="61:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="TimerFrom" ref="0x40dd5e30" scoped=""/></from>
-          <to><interface-ref name="Timer" ref="0x40d88968" scoped=""/></to>
+          <from><interface-ref name="TimerFrom" ref="0x40d905a0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40d760a0" scoped=""/></to>
         </wire>
         <wire loc="62:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="Alarm" ref="0x40da0cc8" scoped=""/></from>
-          <to><interface-ref name="Alarm" ref="0x40d75ee0" scoped=""/></to>
+          <from><interface-ref name="Alarm" ref="0x40d8d398" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x40d34818" scoped=""/></to>
         </wire>
         <wire loc="63:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/HilTimerMilliC.nc">
-          <from><interface-ref name="Counter" ref="0x40dcfed0" scoped=""/></from>
-          <to><interface-ref name="Counter" ref="0x40d6b0d0" scoped=""/></to>
+          <from><interface-ref name="Counter" ref="0x40dbb638" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x40d5c8f8" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="56:/home/rgao/lily/tinyos2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
@@ -159,20 +159,20 @@
       <configuration/>
       <wiring>
         <wire loc="72:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Boot" ref="0x40392578" scoped=""/></from>
-          <to><interface-ref name="Boot" ref="0x405365e0" scoped=""/></to>
+          <from><interface-ref name="Boot" ref="0x406295f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x4062a5e0" scoped=""/></to>
         </wire>
         <wire loc="67:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Scheduler" ref="0x40536978" scoped=""/></from>
+          <from><interface-ref name="Scheduler" ref="0x4062a978" scoped=""/></from>
           <to><interface-ref name="Scheduler" ref="0x403875f0" scoped=""/></to>
         </wire>
         <wire loc="68:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="PlatformInit" ref="0x40636010" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40534a30" scoped=""/></to>
+          <from><interface-ref name="PlatformInit" ref="0x4071a010" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4062b1f0" scoped=""/></to>
         </wire>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40636418" scoped=""/></from>
-          <to><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x4071a418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

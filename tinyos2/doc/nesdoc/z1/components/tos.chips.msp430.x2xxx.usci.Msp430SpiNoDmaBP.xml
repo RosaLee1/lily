@@ -12,9 +12,9 @@
       <parameters>
       </parameters>
       <module/>
-    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="ResourceConfigure" provided="1" ref="0x40a88930">
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="ResourceConfigure" provided="1" ref="0x40a87190">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceConfigure" ref="0x40a88930" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceConfigure" ref="0x40a87190" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.ResourceConfigure" qname="ResourceConfigure"/>
       </instance>
@@ -24,22 +24,22 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="unconfigure" ref="0x40a88b08" scoped=""/>
-        <function-ref name="configure" ref="0x40a88be8" scoped=""/>
+        <function-ref name="unconfigure" ref="0x40a87368" scoped=""/>
+        <function-ref name="configure" ref="0x40a87448" scoped=""/>
       </interface-functions>
-    </interface><interface loc="69:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="signalDone_task" provided="0" ref="0x40ab28f0">
+    </interface><interface loc="69:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="signalDone_task" provided="0" ref="0x40a8c090">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="signalDone_task" ref="0x40ab28f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="signalDone_task" ref="0x40a8c090" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
       </instance>
       <interface-functions>
-        <function-ref name="postTask" ref="0x40ab2ac8" scoped=""/>
-        <function-ref name="runTask" ref="0x40ab2ba8" scoped=""/>
+        <function-ref name="postTask" ref="0x40a8c268" scoped=""/>
+        <function-ref name="runTask" ref="0x40a8c348" scoped=""/>
       </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="SpiPacket" provided="1" ref="0x40aab4b0">
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="SpiPacket" provided="1" ref="0x40a87c68">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40aab4b0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40a87c68" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SpiPacket" qname="SpiPacket"/>
       </instance>
@@ -49,12 +49,12 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="send" ref="0x40aab688" scoped=""/>
-        <function-ref name="sendDone" ref="0x40aab768" scoped=""/>
+        <function-ref name="send" ref="0x40a87e40" scoped=""/>
+        <function-ref name="sendDone" ref="0x40a87f20" scoped=""/>
       </interface-functions>
-    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Msp430SpiConfigure" provided="0" ref="0x40aa97a8">
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Msp430SpiConfigure" provided="0" ref="0x40a86ec0">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430SpiConfigure" ref="0x40aa97a8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430SpiConfigure" ref="0x40a86ec0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiConfigure" qname="Msp430SpiConfigure"/>
       </instance>
@@ -64,49 +64,49 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getConfig" ref="0x40aa9980" scoped=""/>
+        <function-ref name="getConfig" ref="0x40a850c0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="SpiByte" provided="1" ref="0x40a88d90">
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="SpiByte" provided="1" ref="0x40a875f0">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40a88d90" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40a875f0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
       </instance>
       <interface-functions>
-        <function-ref name="write" ref="0x40aab010" scoped=""/>
+        <function-ref name="write" ref="0x40a877c8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="UsciInterrupts" provided="0" ref="0x40ab6968">
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="UsciInterrupts" provided="0" ref="0x40a8f1f8">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciInterrupts" ref="0x40ab6968" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciInterrupts" ref="0x40a8f1f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciInterrupts" qname="HplMsp430UsciInterrupts"/>
       </instance>
       <interface-functions>
-        <function-ref name="rxDone" ref="0x40ab6b40" scoped=""/>
-        <function-ref name="txDone" ref="0x40ab6c20" scoped=""/>
+        <function-ref name="rxDone" ref="0x40a8f3d0" scoped=""/>
+        <function-ref name="txDone" ref="0x40a8f4b0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Leds" provided="0" ref="0x40ab6db0">
+    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Leds" provided="0" ref="0x40a8f640">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40ab6db0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40a8f640" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
       </instance>
       <interface-functions>
-        <function-ref name="led0Off" ref="0x40ab5010" scoped=""/>
-        <function-ref name="led0Toggle" ref="0x40ab50f0" scoped=""/>
-        <function-ref name="led1On" ref="0x40ab51d0" scoped=""/>
-        <function-ref name="led1Toggle" ref="0x40ab52b0" scoped=""/>
-        <function-ref name="led2Toggle" ref="0x40ab5390" scoped=""/>
-        <function-ref name="get" ref="0x40ab5470" scoped=""/>
-        <function-ref name="led1Off" ref="0x40ab5550" scoped=""/>
-        <function-ref name="led2Off" ref="0x40ab58d0" scoped=""/>
-        <function-ref name="set" ref="0x40ab5630" scoped=""/>
-        <function-ref name="led0On" ref="0x40ab5710" scoped=""/>
-        <function-ref name="led2On" ref="0x40ab57f0" scoped=""/>
+        <function-ref name="led0Off" ref="0x40a8f818" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40a8f8f8" scoped=""/>
+        <function-ref name="led1On" ref="0x40a8f9d8" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40a8fab8" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x40a8fb98" scoped=""/>
+        <function-ref name="get" ref="0x40a8fc78" scoped=""/>
+        <function-ref name="led1Off" ref="0x40a8fd58" scoped=""/>
+        <function-ref name="led2Off" ref="0x40a8e0f0" scoped=""/>
+        <function-ref name="set" ref="0x40a8fe38" scoped=""/>
+        <function-ref name="led0On" ref="0x40a8ff18" scoped=""/>
+        <function-ref name="led2On" ref="0x40a8e010" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Resource" provided="1" ref="0x40a8cea0">
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Resource" provided="1" ref="0x40a6a730">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a8cea0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a6a730" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
       </instance>
@@ -116,15 +116,15 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="release" ref="0x40a880c0" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40a881a0" scoped=""/>
-        <function-ref name="request" ref="0x40a88280" scoped=""/>
-        <function-ref name="granted" ref="0x40a88360" scoped=""/>
-        <function-ref name="isOwner" ref="0x40a88440" scoped=""/>
+        <function-ref name="release" ref="0x40a6a908" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40a6a9e8" scoped=""/>
+        <function-ref name="request" ref="0x40a6aac8" scoped=""/>
+        <function-ref name="granted" ref="0x40a6aba8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40a6ac88" scoped=""/>
       </interface-functions>
-    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="UsciResource" provided="0" ref="0x40aabca0">
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="UsciResource" provided="0" ref="0x40a86470">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciResource" ref="0x40aabca0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsciResource" ref="0x40a86470" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
       </instance>
@@ -134,72 +134,72 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="release" ref="0x40aabe78" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40aa9010" scoped=""/>
-        <function-ref name="request" ref="0x40aa90f0" scoped=""/>
-        <function-ref name="granted" ref="0x40aa91d0" scoped=""/>
-        <function-ref name="isOwner" ref="0x40aa92b0" scoped=""/>
+        <function-ref name="release" ref="0x40a86648" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40a86728" scoped=""/>
+        <function-ref name="request" ref="0x40a86808" scoped=""/>
+        <function-ref name="granted" ref="0x40a868e8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40a869c8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Usci" provided="0" ref="0x40ab7238">
+    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiNoDmaBP.nc" name="Usci" provided="0" ref="0x40a91910">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiNoDmaBP" qname="Msp430SpiNoDmaBP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Usci" ref="0x40ab7238" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Usci" ref="0x40a91910" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciB" qname="HplMsp430UsciB"/>
       </instance>
       <interface-functions>
-        <function-ref name="disableArbLostInt" ref="0x40ab7410" scoped=""/>
-        <function-ref name="setSlaveAddress" ref="0x40ab74f0" scoped=""/>
-        <function-ref name="setMasterMode" ref="0x40ab75d0" scoped=""/>
-        <function-ref name="enableStopInt" ref="0x40ab76b0" scoped=""/>
-        <function-ref name="setTransmitMode" ref="0x40ab7790" scoped=""/>
-        <function-ref name="getStopBit" ref="0x40ab7870" scoped=""/>
-        <function-ref name="enableRxIntr" ref="0x40ab7950" scoped=""/>
-        <function-ref name="resetUsci" ref="0x40ab7a30" scoped=""/>
-        <function-ref name="clrRxIntr" ref="0x40ab7b10" scoped=""/>
-        <function-ref name="disableNACKInt" ref="0x40ab7bf0" scoped=""/>
-        <function-ref name="getSlaveAddress" ref="0x40ab7cd0" scoped=""/>
-        <function-ref name="disableIntr" ref="0x40ab7db0" scoped=""/>
-        <function-ref name="enableI2C" ref="0x40ab7e90" scoped=""/>
-        <function-ref name="getUstat" ref="0x40aa8010" scoped=""/>
-        <function-ref name="getUctl1" ref="0x40aa80f0" scoped=""/>
-        <function-ref name="disableStartInt" ref="0x40aa81d0" scoped=""/>
-        <function-ref name="getTransmitReceiveMode" ref="0x40aa82b0" scoped=""/>
-        <function-ref name="setUctl0" ref="0x40aa8390" scoped=""/>
-        <function-ref name="setTXNACK" ref="0x40aa8470" scoped=""/>
-        <function-ref name="getUbr" ref="0x40aa8550" scoped=""/>
-        <function-ref name="enableTxIntr" ref="0x40aa8630" scoped=""/>
-        <function-ref name="isI2C" ref="0x40aa8710" scoped=""/>
-        <function-ref name="setTXStart" ref="0x40aa87f0" scoped=""/>
-        <function-ref name="disableRxIntr" ref="0x40aa88d0" scoped=""/>
-        <function-ref name="disableTxIntr" ref="0x40aa89b0" scoped=""/>
-        <function-ref name="setOwnAddress" ref="0x40aa8b90" scoped=""/>
-        <function-ref name="enableArbLostInt" ref="0x40aa8c70" scoped=""/>
-        <function-ref name="setGeneralCall" ref="0x40aa8d50" scoped=""/>
-        <function-ref name="isTxIntrPending" ref="0x40aa8e30" scoped=""/>
-        <function-ref name="clrIntr" ref="0x40aa8f10" scoped=""/>
-        <function-ref name="isSpi" ref="0x40aa7010" scoped=""/>
-        <function-ref name="enableIntr" ref="0x40aa70f0" scoped=""/>
-        <function-ref name="disableI2C" ref="0x40aa71d0" scoped=""/>
-        <function-ref name="enableNACKInt" ref="0x40aa72b0" scoped=""/>
-        <function-ref name="disableStopInt" ref="0x40aa7390" scoped=""/>
-        <function-ref name="enableStartInt" ref="0x40aa7470" scoped=""/>
-        <function-ref name="getMode" ref="0x40aa7550" scoped=""/>
-        <function-ref name="getOwnAddress" ref="0x40aa7630" scoped=""/>
-        <function-ref name="setTXStop" ref="0x40aa7710" scoped=""/>
-        <function-ref name="setUbr" ref="0x40aa77f0" scoped=""/>
-        <function-ref name="setModeI2C" ref="0x40aa78d0" scoped=""/>
-        <function-ref name="tx" ref="0x40aa79b0" scoped=""/>
-        <function-ref name="enableSpi" ref="0x40aa7a90" scoped=""/>
-        <function-ref name="setUstat" ref="0x40aa7b70" scoped=""/>
-        <function-ref name="setUctl1" ref="0x40aa7c50" scoped=""/>
-        <function-ref name="clearGeneralCall" ref="0x40aa7d30" scoped=""/>
-        <function-ref name="setSlaveMode" ref="0x40aa7e10" scoped=""/>
-        <function-ref name="rx" ref="0x40aa7ef0" scoped=""/>
-        <function-ref name="setModeSpi" ref="0x40ab6010" scoped=""/>
-        <function-ref name="setReceiveMode" ref="0x40ab62f0" scoped=""/>
-        <function-ref name="isRxIntrPending" ref="0x40ab63d0" scoped=""/>
-        <function-ref name="clrTxIntr" ref="0x40ab64b0" scoped=""/>
-        <function-ref name="getUctl0" ref="0x40ab6590" scoped=""/>
-        <function-ref name="disableSpi" ref="0x40ab6670" scoped=""/>
+        <function-ref name="disableArbLostInt" ref="0x40a91ae8" scoped=""/>
+        <function-ref name="setSlaveAddress" ref="0x40a91bc8" scoped=""/>
+        <function-ref name="setMasterMode" ref="0x40a91ca8" scoped=""/>
+        <function-ref name="enableStopInt" ref="0x40a91d88" scoped=""/>
+        <function-ref name="setTransmitMode" ref="0x40a91e68" scoped=""/>
+        <function-ref name="getStopBit" ref="0x40a84010" scoped=""/>
+        <function-ref name="enableRxIntr" ref="0x40a840f0" scoped=""/>
+        <function-ref name="resetUsci" ref="0x40a841d0" scoped=""/>
+        <function-ref name="clrRxIntr" ref="0x40a842b0" scoped=""/>
+        <function-ref name="disableNACKInt" ref="0x40a84390" scoped=""/>
+        <function-ref name="getSlaveAddress" ref="0x40a84470" scoped=""/>
+        <function-ref name="disableIntr" ref="0x40a84550" scoped=""/>
+        <function-ref name="enableI2C" ref="0x40a84630" scoped=""/>
+        <function-ref name="getUstat" ref="0x40a84790" scoped=""/>
+        <function-ref name="getUctl1" ref="0x40a84870" scoped=""/>
+        <function-ref name="disableStartInt" ref="0x40a84950" scoped=""/>
+        <function-ref name="getTransmitReceiveMode" ref="0x40a84a30" scoped=""/>
+        <function-ref name="setUctl0" ref="0x40a84b10" scoped=""/>
+        <function-ref name="setTXNACK" ref="0x40a84bf0" scoped=""/>
+        <function-ref name="getUbr" ref="0x40a84cd0" scoped=""/>
+        <function-ref name="enableTxIntr" ref="0x40a84db0" scoped=""/>
+        <function-ref name="isI2C" ref="0x40a84e90" scoped=""/>
+        <function-ref name="setTXStart" ref="0x40a82010" scoped=""/>
+        <function-ref name="disableRxIntr" ref="0x40a820f0" scoped=""/>
+        <function-ref name="disableTxIntr" ref="0x40a821d0" scoped=""/>
+        <function-ref name="setOwnAddress" ref="0x40a823b0" scoped=""/>
+        <function-ref name="enableArbLostInt" ref="0x40a82490" scoped=""/>
+        <function-ref name="setGeneralCall" ref="0x40a82570" scoped=""/>
+        <function-ref name="isTxIntrPending" ref="0x40a82650" scoped=""/>
+        <function-ref name="clrIntr" ref="0x40a82730" scoped=""/>
+        <function-ref name="isSpi" ref="0x40a82810" scoped=""/>
+        <function-ref name="enableIntr" ref="0x40a828f0" scoped=""/>
+        <function-ref name="disableI2C" ref="0x40a829d0" scoped=""/>
+        <function-ref name="enableNACKInt" ref="0x40a82ab0" scoped=""/>
+        <function-ref name="disableStopInt" ref="0x40a82b90" scoped=""/>
+        <function-ref name="enableStartInt" ref="0x40a82c70" scoped=""/>
+        <function-ref name="getMode" ref="0x40a82d50" scoped=""/>
+        <function-ref name="getOwnAddress" ref="0x40a82e30" scoped=""/>
+        <function-ref name="setTXStop" ref="0x40a82f10" scoped=""/>
+        <function-ref name="setUbr" ref="0x40a90010" scoped=""/>
+        <function-ref name="setModeI2C" ref="0x40a900f0" scoped=""/>
+        <function-ref name="tx" ref="0x40a901d0" scoped=""/>
+        <function-ref name="enableSpi" ref="0x40a902b0" scoped=""/>
+        <function-ref name="setUstat" ref="0x40a90390" scoped=""/>
+        <function-ref name="setUctl1" ref="0x40a90470" scoped=""/>
+        <function-ref name="clearGeneralCall" ref="0x40a90550" scoped=""/>
+        <function-ref name="setSlaveMode" ref="0x40a90630" scoped=""/>
+        <function-ref name="rx" ref="0x40a90710" scoped=""/>
+        <function-ref name="setModeSpi" ref="0x40a907f0" scoped=""/>
+        <function-ref name="setReceiveMode" ref="0x40a90ad0" scoped=""/>
+        <function-ref name="isRxIntrPending" ref="0x40a90bb0" scoped=""/>
+        <function-ref name="clrTxIntr" ref="0x40a90c90" scoped=""/>
+        <function-ref name="getUctl0" ref="0x40a90d70" scoped=""/>
+        <function-ref name="disableSpi" ref="0x40a90e50" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

@@ -26,7 +26,7 @@
  @author David Moss
 </long>
       </documentation>
-      <function event="" loc="95:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestCca" provided="0" ref="0x40674020">
+      <function event="" loc="95:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestCca" provided="0" ref="0x40541880">
         <documentation loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>
  Request for input on whether or not to use CCA on the outbound packet.</short>
@@ -41,23 +41,23 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="95:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40675eb0">
+          <variable loc="95:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40541728">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestInitialBackoff" provided="0" ref="0x40676ef8">
+      <function event="" loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestInitialBackoff" provided="0" ref="0x40542778">
         <documentation loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>  
  Request for input on the initial backoff
@@ -74,23 +74,23 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40676da0">
+          <variable loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40542620">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setCongestionBackoff" provided="0" ref="0x40676090">
+      <function command="" loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setCongestionBackoff" provided="0" ref="0x405458c0">
         <documentation loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>
  Must be called within a requestCongestionBackoff event
@@ -110,14 +110,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="backoffTime" ref="0x40665f28">
+          <variable loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="backoffTime" ref="0x40545768">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setInitialBackoff" provided="0" ref="0x406659a0">
+      <function command="" loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setInitialBackoff" provided="0" ref="0x405451e0">
         <documentation loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>
  Must be called within a requestInitialBackoff event
@@ -137,14 +137,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="backoffTime" ref="0x40665848">
+          <variable loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="backoffTime" ref="0x40545088">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setCca" provided="0" ref="0x40676688">
+      <function command="" loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="setCca" provided="0" ref="0x40545eb8">
         <documentation loc="68:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>
  Enable CCA for the outbound packet.</short>
@@ -164,14 +164,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="ccaOn" ref="0x40676530">
+          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="ccaOn" ref="0x40545d60">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestCongestionBackoff" provided="0" ref="0x406757e0">
+      <function event="" loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="requestCongestionBackoff" provided="0" ref="0x40541058">
         <documentation loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc">
           <short>
  Request for input on the congestion backoff
@@ -188,17 +188,17 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40675688">
+          <variable loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/RadioBackoff.nc" name="msg" ref="0x40542ed0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>

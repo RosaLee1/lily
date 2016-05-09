@@ -12,7 +12,7 @@
  @version $Revision: 1.1 $ $Date: 2007-07-04 00:37:14 $
 </long>
       </documentation>
-      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startOscillator" provided="0" ref="0x4068bd68">
+      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startOscillator" provided="0" ref="0x405654e8">
         <documentation loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Start the oscillator.</short>
@@ -34,7 +34,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="rfOff" provided="0" ref="0x4069d090">
+      <function command="" loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="rfOff" provided="0" ref="0x405717f0">
         <documentation loc="92:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Disable RX.</short>
@@ -55,7 +55,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="rxOn" provided="0" ref="0x4068ac00">
+      <function command="" loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="rxOn" provided="0" ref="0x40571388">
         <documentation loc="85:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Enable RX.</short>
@@ -76,7 +76,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startVReg" provided="0" ref="0x4068eef8">
+      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startVReg" provided="0" ref="0x40568638">
         <documentation loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Start the voltage regulator on the CC2420.</short>
@@ -99,7 +99,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="stopVReg" provided="0" ref="0x4068b890">
+      <function command="" loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="stopVReg" provided="0" ref="0x40565010">
         <documentation loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Stop the voltage regulator immediately.</short>
@@ -120,7 +120,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startOscillatorDone" provided="0" ref="0x4068a2d0">
+      <function event="" loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startOscillatorDone" provided="0" ref="0x40565a00">
         <documentation loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Signals that the oscillator has been started.</short>
@@ -137,7 +137,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="stopOscillator" provided="0" ref="0x4068a790">
+      <function command="" loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="stopOscillator" provided="0" ref="0x40565ec0">
         <documentation loc="78:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Stop the oscillator.</short>
@@ -158,7 +158,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startVRegDone" provided="0" ref="0x4068b438">
+      <function event="" loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc" name="startVRegDone" provided="0" ref="0x40568b40">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Power.nc">
           <short>
  Signals that the voltage regulator has been started.</short>

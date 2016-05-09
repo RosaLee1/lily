@@ -6,7 +6,7 @@
  @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
 </long>
       </documentation>
-      <function command="" loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="getEvent" provided="0" ref="0x40580010">
+      <function command="" loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="getEvent" provided="0" ref="0x4067c378">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Compare" qname="Msp430Compare"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
@@ -18,7 +18,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEvent" provided="0" ref="0x40580568">
+      <function command="" loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEvent" provided="0" ref="0x4067c8d0">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Compare" qname="Msp430Compare"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -29,14 +29,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="time" ref="0x40580410">
+          <variable loc="41:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="time" ref="0x4067c778">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEventFromPrev" provided="0" ref="0x40580b18">
+      <function command="" loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEventFromPrev" provided="0" ref="0x4067ce80">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Compare" qname="Msp430Compare"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -47,14 +47,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="delta" ref="0x405809c0">
+          <variable loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="delta" ref="0x4067cd28">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEventFromNow" provided="0" ref="0x4058e168">
+      <function command="" loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="setEventFromNow" provided="0" ref="0x4067b440">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Compare" qname="Msp430Compare"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -65,14 +65,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="delta" ref="0x4058e010">
+          <variable loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="delta" ref="0x4067b2e8">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="fired" provided="0" ref="0x4058e510">
+      <function event="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Compare.nc" name="fired" provided="0" ref="0x4067b7e8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Compare" qname="Msp430Compare"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>

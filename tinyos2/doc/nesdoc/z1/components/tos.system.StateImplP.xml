@@ -7,18 +7,18 @@
 </long>
       </documentation>
       <module/>
-    <specification><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="Init" provided="1" ref="0x40a47168">
+    <specification><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="Init" provided="1" ref="0x40a28c90">
       <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40a47168" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40a28c90" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40a47340" scoped=""/>
+        <function-ref name="init" ref="0x40a28e68" scoped=""/>
       </interface-functions>
-    </interface><interface loc="67:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="State" provided="1" ref="0x40a47798">
+    </interface><interface loc="67:/home/rgao/lily/tinyos2/tos/system/StateImplP.nc" name="State" provided="1" ref="0x40a242d8">
       <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a47798" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a242d8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
       </instance>
@@ -28,11 +28,11 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getState" ref="0x40a47970" scoped=""/>
-        <function-ref name="toIdle" ref="0x40a47a50" scoped=""/>
-        <function-ref name="isState" ref="0x40a47b30" scoped=""/>
-        <function-ref name="isIdle" ref="0x40a47c10" scoped=""/>
-        <function-ref name="requestState" ref="0x40a47cf0" scoped=""/>
-        <function-ref name="forceState" ref="0x40a47dd0" scoped=""/>
+        <function-ref name="getState" ref="0x40a244b0" scoped=""/>
+        <function-ref name="toIdle" ref="0x40a24590" scoped=""/>
+        <function-ref name="isState" ref="0x40a24670" scoped=""/>
+        <function-ref name="isIdle" ref="0x40a24750" scoped=""/>
+        <function-ref name="requestState" ref="0x40a24830" scoped=""/>
+        <function-ref name="forceState" ref="0x40a24910" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

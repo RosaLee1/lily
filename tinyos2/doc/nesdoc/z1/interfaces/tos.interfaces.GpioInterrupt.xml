@@ -10,7 +10,7 @@
  Provides a microcontroller-independent presentation of interrupts
 </long>
       </documentation>
-      <function event="" loc="68:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="fired" provided="0" ref="0x406f6248">
+      <function event="" loc="68:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="fired" provided="0" ref="0x405c9638">
         <documentation loc="63:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc">
           <short>
  Fired when an edge interrupt occurs.</short>
@@ -29,7 +29,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="disable" provided="0" ref="0x406f7db0">
+      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="disable" provided="0" ref="0x405c91d8">
         <documentation loc="56:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc">
           <short>  
  Diables an edge interrupt or capture interrupt
@@ -52,7 +52,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="54:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="enableFallingEdge" provided="0" ref="0x406f79a0">
+      <function command="" loc="54:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="enableFallingEdge" provided="0" ref="0x405cfdb0">
         <interfacedef-ref nicename="tos.interfaces.GpioInterrupt" qname="GpioInterrupt"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -64,7 +64,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="enableRisingEdge" provided="0" ref="0x406f7438">
+      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc" name="enableRisingEdge" provided="0" ref="0x405cf848">
         <documentation loc="45:/home/rgao/lily/tinyos2/tos/interfaces/GpioInterrupt.nc">
           <short> 
  Enable an edge based interrupt.</short>

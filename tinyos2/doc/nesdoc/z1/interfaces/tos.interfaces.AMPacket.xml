@@ -18,7 +18,7 @@
  @see    TEP 116: Packet Protocols
 </long>
       </documentation>
-      <function command="" loc="177:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="group" provided="0" ref="0x40645310">
+      <function command="" loc="177:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="group" provided="0" ref="0x405189e8">
         <documentation loc="164:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Get the AM group of the AM packet.</short>
@@ -38,27 +38,27 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+            <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="177:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x406451b8">
+          <variable loc="177:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40518890">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="88:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="source" provided="0" ref="0x40638cb0">
+      <function command="" loc="88:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="source" provided="0" ref="0x4051d168">
         <documentation loc="80:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Return the AM address of the source of the AM packet.</short>
@@ -73,27 +73,27 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-            <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+            <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="88:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40638b58">
+          <variable loc="88:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x4051d010">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="68:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="address" provided="0" ref="0x40640bd8">
+      <function command="" loc="68:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="address" provided="0" ref="0x40511010">
         <documentation loc="63:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Return the node's active message address associated with this AM stack.</short>
@@ -105,7 +105,7 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-            <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+            <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -113,7 +113,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="78:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="destination" provided="0" ref="0x406382b0">
+      <function command="" loc="78:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="destination" provided="0" ref="0x405116a8">
         <documentation loc="70:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Return the AM address of the destination of the AM packet.</short>
@@ -128,27 +128,27 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-            <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+            <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40638158">
+          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40511550">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setSource" provided="0" ref="0x406495a0">
+      <function command="" loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setSource" provided="0" ref="0x4051cbd8">
         <documentation loc="105:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Set the AM address of the source field of the AM packet.</short>
@@ -173,31 +173,31 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40649238">
+          <variable loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x4051c870">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="addr" ref="0x40649440">
+          <variable loc="121:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="addr" ref="0x4051ca78">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setDestination" provided="0" ref="0x406488a8">
+      <function command="" loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setDestination" provided="0" ref="0x4051dd50">
         <documentation loc="90:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Set the AM address of the destination field of the AM packet.</short>
@@ -219,31 +219,31 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40648540">
+          <variable loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x4051d9e8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="addr" ref="0x40648748">
+          <variable loc="103:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="addr" ref="0x4051dbf0">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="147:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="type" provided="0" ref="0x40647ca0">
+      <function command="" loc="147:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="type" provided="0" ref="0x4051a310">
         <documentation loc="138:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Return the AM type of the AM packet.</short>
@@ -259,27 +259,27 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+            <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="147:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40647b48">
+          <variable loc="147:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x4051a1b8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setType" provided="0" ref="0x40644808">
+      <function command="" loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setType" provided="0" ref="0x4051ae48">
         <documentation loc="149:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Set the AM type of the AM packet.</short>
@@ -301,31 +301,31 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+              <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x406444d8">
+          <variable loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x4051ab18">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="t" ref="0x406446a8">
+          <variable loc="162:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="t" ref="0x4051ace8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+              <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="136:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="isForMe" provided="0" ref="0x40647168">
+      <function command="" loc="136:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="isForMe" provided="0" ref="0x405197c0">
         <documentation loc="123:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Return whether &lt;tt&gt;amsg&lt;/tt&gt; is destined for this mote.</short>
@@ -350,23 +350,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="136:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40647010">
+          <variable loc="136:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40519668">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setGroup" provided="0" ref="0x40642010">
+      <function command="" loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="setGroup" provided="0" ref="0x40524688">
         <documentation loc="179:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Set the AM group field of a packet.</short>
@@ -384,31 +384,31 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+              <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40645c30">
+          <variable loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="amsg" ref="0x40524328">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="grp" ref="0x40645e30">
+          <variable loc="187:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="grp" ref="0x40524528">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+              <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="195:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="localGroup" provided="0" ref="0x40642888">
+      <function command="" loc="195:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc" name="localGroup" provided="0" ref="0x40524f00">
         <documentation loc="189:/home/rgao/lily/tinyos2/tos/interfaces/AMPacket.nc">
           <short>
  Provides the current AM group of this communication interface.</short>
@@ -421,7 +421,7 @@
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+            <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>

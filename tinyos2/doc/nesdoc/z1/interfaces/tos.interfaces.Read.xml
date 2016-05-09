@@ -20,12 +20,12 @@
 </long>
       </documentation>
       <parameters>
-        <typedef loc="49:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="val_t" ref="0x4051d5d8">
+        <typedef loc="49:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="val_t" ref="0x405b78e0">
           <interfacedef-ref nicename="tos.interfaces.Read" qname="Read"/>
-          <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x4051d5d8" scoped=""/></type-var>
+          <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x405b78e0" scoped=""/></type-var>
         </typedef>
       </parameters>
-      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="read" provided="0" ref="0x4051da88">
+      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="read" provided="0" ref="0x405b7d90">
         <documentation loc="50:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc">
           <short>
  Initiates a read of the value.</short>
@@ -46,7 +46,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="readDone" provided="0" ref="0x40519260">
+      <function event="" loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="readDone" provided="0" ref="0x405be558">
         <documentation loc="57:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc">
           <short>
  Signals the completion of the read().</short>
@@ -64,17 +64,17 @@
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
-            <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x4051d5d8" scoped=""/></type-var>
+            <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x405b78e0" scoped=""/></type-var>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="result" ref="0x4051df08">
+          <variable loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="result" ref="0x405be228">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
           </variable>
-          <variable loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="val" ref="0x40519100">
-            <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x4051d5d8" scoped=""/></type-var>
+          <variable loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Read.nc" name="val" ref="0x405be3f8">
+            <type-var alignment="U:" size="U:"><typedef-ref name="val_t" ref="0x405b78e0" scoped=""/></type-var>
           </variable>
         </parameters>
       </function>

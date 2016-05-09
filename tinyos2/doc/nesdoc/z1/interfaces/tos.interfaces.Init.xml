@@ -10,7 +10,7 @@
  Defines global error codes for error_t in TinyOS.
 </long>
       </documentation>
-      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/interfaces/Init.nc" name="init" provided="0" ref="0x40392e58">
+      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/interfaces/Init.nc" name="init" provided="0" ref="0x405b9240">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/interfaces/Init.nc">
           <short>
  Initialize this component.</short>

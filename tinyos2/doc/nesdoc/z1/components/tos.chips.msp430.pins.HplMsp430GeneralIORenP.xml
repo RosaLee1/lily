@@ -37,27 +37,27 @@
 </long>
       </documentation>
       <parameters>
-        <constant loc="30:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_in_addr" ref="0x408457b8">
+        <constant loc="30:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_in_addr" ref="0x408197b8">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
         </constant>
-        <constant loc="31:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_out_addr" ref="0x408459e8">
+        <constant loc="31:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_out_addr" ref="0x408199e8">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
         </constant>
-        <constant loc="32:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_dir_addr" ref="0x40845c18">
+        <constant loc="32:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_dir_addr" ref="0x40819c18">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
         </constant>
-        <constant loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_sel_addr" ref="0x40845e48">
+        <constant loc="33:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_sel_addr" ref="0x40819e48">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
         </constant>
-        <constant loc="34:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_ren_addr" ref="0x40844088">
+        <constant loc="34:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="port_ren_addr" ref="0x40818088">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
         </constant>
-        <constant loc="35:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="pin" ref="0x40844288">
+        <constant loc="35:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="pin" ref="0x40818288">
           <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
             <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
@@ -65,27 +65,27 @@
         </constant>
       </parameters>
       <module/>
-    <specification><interface loc="38:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="IO" provided="1" ref="0x408447d8">
+    <specification><interface loc="38:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc" name="IO" provided="1" ref="0x408187d8">
       <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIORenP" qname="HplMsp430GeneralIORenP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="IO" ref="0x408447d8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="IO" ref="0x408187d8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x408449b0" scoped=""/>
-        <function-ref name="isInput" ref="0x40844a90" scoped=""/>
-        <function-ref name="setResistor" ref="0x40844b70" scoped=""/>
-        <function-ref name="toggle" ref="0x40844c50" scoped=""/>
-        <function-ref name="isOutput" ref="0x40844d30" scoped=""/>
-        <function-ref name="getResistor" ref="0x40844e10" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40844ef0" scoped=""/>
-        <function-ref name="get" ref="0x40843010" scoped=""/>
-        <function-ref name="selectIOFunc" ref="0x408430f0" scoped=""/>
-        <function-ref name="getRaw" ref="0x408431d0" scoped=""/>
-        <function-ref name="set" ref="0x408432b0" scoped=""/>
-        <function-ref name="selectModuleFunc" ref="0x40843390" scoped=""/>
-        <function-ref name="isIOFunc" ref="0x40843470" scoped=""/>
-        <function-ref name="isModuleFunc" ref="0x408435d0" scoped=""/>
-        <function-ref name="clr" ref="0x408436b0" scoped=""/>
+        <function-ref name="makeInput" ref="0x408189b0" scoped=""/>
+        <function-ref name="isInput" ref="0x40818a90" scoped=""/>
+        <function-ref name="setResistor" ref="0x40818b70" scoped=""/>
+        <function-ref name="toggle" ref="0x40818c50" scoped=""/>
+        <function-ref name="isOutput" ref="0x40818d30" scoped=""/>
+        <function-ref name="getResistor" ref="0x40818e10" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40818ef0" scoped=""/>
+        <function-ref name="get" ref="0x40831010" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x408310f0" scoped=""/>
+        <function-ref name="getRaw" ref="0x408311d0" scoped=""/>
+        <function-ref name="set" ref="0x408312b0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x40831390" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x40831470" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x408315d0" scoped=""/>
+        <function-ref name="clr" ref="0x408316b0" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

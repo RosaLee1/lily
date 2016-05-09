@@ -7,7 +7,7 @@
  @author David Moss
 </long>
       </documentation>
-      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="amAddress" provided="0" ref="0x406f4a00">
+      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="amAddress" provided="0" ref="0x405cbdf0">
         <documentation loc="47:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc">
           <short>
  </short>
@@ -18,7 +18,7 @@
         <interfacedef-ref nicename="tos.interfaces.ActiveMessageAddress" qname="ActiveMessageAddress"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-            <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+            <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -26,7 +26,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="60:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="changed" provided="0" ref="0x406f3298">
+      <function event="" loc="60:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="changed" provided="0" ref="0x405d6678">
         <documentation loc="57:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc">
           <short>
  Notification that the address or group settings changed.</short>
@@ -43,7 +43,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="amGroup" provided="0" ref="0x406f4e70">
+      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="amGroup" provided="0" ref="0x405d6278">
         <documentation loc="52:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc">
           <short>
  </short>
@@ -54,7 +54,7 @@
         <interfacedef-ref nicename="tos.interfaces.ActiveMessageAddress" qname="ActiveMessageAddress"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+            <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>
@@ -62,7 +62,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="setAddress" provided="0" ref="0x406f4510">
+      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="setAddress" provided="0" ref="0x405cb900">
         <documentation loc="40:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc">
           <short>
  Set the active message address of this node
@@ -78,22 +78,22 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+              <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
             </type-int>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="group" ref="0x406f41a8">
+          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="group" ref="0x405cb598">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_group_t" ref="0x404ffd38"/></typename>
+              <typename><typedef-ref name="am_group_t" ref="0x405000d0"/></typename>
             </type-int>
           </variable>
-          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="addr" ref="0x406f43b0">
+          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/ActiveMessageAddress.nc" name="addr" ref="0x405cb7a0">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </variable>
         </parameters>

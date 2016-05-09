@@ -12,466 +12,507 @@
       <configuration/>
       <wiring>
         <wire loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="CC2420Receive" ref="0x40cd5118" scoped=""/></from>
-          <to><interface-ref name="CC2420Receive" ref="0x40cd1040" scoped=""/></to>
+          <from><interface-ref name="CC2420Receive" ref="0x40c9e118" scoped=""/></from>
+          <to><interface-ref name="CC2420Receive" ref="0x40c9a040" scoped=""/></to>
         </wire>
         <wire loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="Receive" ref="0x40cd5658" scoped=""/></from>
-          <to><interface-ref name="Receive" ref="0x40cd1580" scoped=""/></to>
+          <from><interface-ref name="Receive" ref="0x40c9e658" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40c9a580" scoped=""/></to>
         </wire>
         <wire loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="PacketIndicator" ref="0x40cd5af0" scoped=""/></from>
-          <to><interface-ref name="PacketIndicator" ref="0x40cd1a18" scoped=""/></to>
+          <from><interface-ref name="PacketIndicator" ref="0x40c9eaf0" scoped=""/></from>
+          <to><interface-ref name="PacketIndicator" ref="0x40c9aa18" scoped=""/></to>
         </wire>
         <wire loc="61:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="StdControl" ref="0x40cd8c58" scoped=""/></from>
-          <to><interface-ref name="StdControl" ref="0x40cd4b80" scoped=""/></to>
+          <from><interface-ref name="StdControl" ref="0x40ca1c58" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40c9db80" scoped=""/></to>
         </wire>
         <wire loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="Leds" ref="0x40cc6c88" scoped=""/></from>
-          <to><interface-ref name="Leds" ref="0x40b443b8" scoped=""/></to>
+          <from><interface-ref name="Leds" ref="0x40cbbc88" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x40b19368" scoped=""/></to>
         </wire>
         <wire loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40cd47e0" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40c9d7e0" scoped=""/></to>
         </wire>
         <wire loc="68:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="CSN" ref="0x40cd1df0" scoped=""/></from>
-          <to><interface-ref name="CSN" ref="0x407d13d0" scoped=""/></to>
+          <from><interface-ref name="CSN" ref="0x40c9adf0" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x407aa3d0" scoped=""/></to>
         </wire>
         <wire loc="69:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="FIFO" ref="0x40cd0840" scoped=""/></from>
-          <to><interface-ref name="FIFO" ref="0x407d1dd8" scoped=""/></to>
+          <from><interface-ref name="FIFO" ref="0x40c99840" scoped=""/></from>
+          <to><interface-ref name="FIFO" ref="0x407aadd8" scoped=""/></to>
         </wire>
         <wire loc="70:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="FIFOP" ref="0x40cce308" scoped=""/></from>
-          <to><interface-ref name="FIFOP" ref="0x407d0848" scoped=""/></to>
+          <from><interface-ref name="FIFOP" ref="0x40c98308" scoped=""/></from>
+          <to><interface-ref name="FIFOP" ref="0x407c1848" scoped=""/></to>
         </wire>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="InterruptFIFOP" ref="0x40cced98" scoped=""/></from>
-          <to><interface-ref name="InterruptFIFOP" ref="0x4093b8c8" scoped=""/></to>
+          <from><interface-ref name="InterruptFIFOP" ref="0x40c98d98" scoped=""/></from>
+          <to><interface-ref name="InterruptFIFOP" ref="0x409208c8" scoped=""/></to>
         </wire>
         <wire loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SpiResource" ref="0x40ccd4f8" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40d0de50" scoped=""/></to>
+          <from><interface-ref name="SpiResource" ref="0x40c974f8" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40d02518" scoped=""/></to>
         </wire>
         <wire loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="RXFIFO" ref="0x40ccdc78" scoped=""/></from>
-          <to><interface-ref name="RXFIFO" ref="0x40de05c8" scoped=""/></to>
+          <from><interface-ref name="RXFIFO" ref="0x40c97c78" scoped=""/></from>
+          <to><interface-ref name="RXFIFO" ref="0x40dcccb8" scoped=""/></to>
         </wire>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SFLUSHRX" ref="0x40ccc910" scoped=""/></from>
-          <to><interface-ref name="SFLUSHRX" ref="0x40dec5b8" scoped=""/></to>
+          <from><interface-ref name="SFLUSHRX" ref="0x40cc2910" scoped=""/></from>
+          <to><interface-ref name="SFLUSHRX" ref="0x40da8c68" scoped=""/></to>
         </wire>
         <wire loc="75:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SACK" ref="0x40ccc4e0" scoped=""/></from>
-          <to><interface-ref name="SACK" ref="0x40decc68" scoped=""/></to>
+          <from><interface-ref name="SACK" ref="0x40cc24e0" scoped=""/></from>
+          <to><interface-ref name="SACK" ref="0x40da7368" scoped=""/></to>
         </wire>
         <wire loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="CC2420Packet" ref="0x40cccd48" scoped=""/></from>
-          <to><interface-ref name="CC2420Packet" ref="0x40d0c0e0" scoped=""/></to>
+          <from><interface-ref name="CC2420Packet" ref="0x40cc2d48" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40d010e0" scoped=""/></to>
         </wire>
         <wire loc="77:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="CC2420PacketBody" ref="0x40ccb5a0" scoped=""/></from>
-          <to><interface-ref name="CC2420PacketBody" ref="0x40d0cf08" scoped=""/></to>
+          <from><interface-ref name="CC2420PacketBody" ref="0x40cc15a0" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40d01f08" scoped=""/></to>
         </wire>
         <wire loc="78:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="PacketTimeStamp" ref="0x40ccade0" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStamp" ref="0x40cc0de0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></to>
         </wire>
         <wire loc="79:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="CC2420Config" ref="0x40ccbb18" scoped=""/></from>
-          <to><interface-ref name="CC2420Config" ref="0x406e31b0" scoped=""/></to>
+          <from><interface-ref name="CC2420Config" ref="0x40cc1b18" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x405b1930" scoped=""/></to>
         </wire>
         <wire loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SECCTRL0" ref="0x40cc89e0" scoped=""/></from>
-          <to><interface-ref name="SECCTRL0" ref="0x40de75c8" scoped=""/></to>
+          <from><interface-ref name="SECCTRL0" ref="0x40cbd9e0" scoped=""/></from>
+          <to><interface-ref name="SECCTRL0" ref="0x40dd3cd8" scoped=""/></to>
         </wire>
         <wire loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SECCTRL1" ref="0x40cc8f00" scoped=""/></from>
-          <to><interface-ref name="SECCTRL1" ref="0x40de7a00" scoped=""/></to>
+          <from><interface-ref name="SECCTRL1" ref="0x40cbdf00" scoped=""/></from>
+          <to><interface-ref name="SECCTRL1" ref="0x40dd2190" scoped=""/></to>
         </wire>
         <wire loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SRXDEC" ref="0x40cc85a0" scoped=""/></from>
-          <to><interface-ref name="SRXDEC" ref="0x40dea3d8" scoped=""/></to>
+          <from><interface-ref name="SRXDEC" ref="0x40cbd5a0" scoped=""/></from>
+          <to><interface-ref name="SRXDEC" ref="0x40da7a98" scoped=""/></to>
         </wire>
         <wire loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="RXNONCE" ref="0x40cc7d88" scoped=""/></from>
-          <to><interface-ref name="RXNONCE" ref="0x40de0190" scoped=""/></to>
+          <from><interface-ref name="RXNONCE" ref="0x40cbcd88" scoped=""/></from>
+          <to><interface-ref name="RXNONCE" ref="0x40dcc880" scoped=""/></to>
         </wire>
         <wire loc="85:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="KEY0" ref="0x40cc73e0" scoped=""/></from>
-          <to><interface-ref name="KEY0" ref="0x40de1010" scoped=""/></to>
+          <from><interface-ref name="KEY0" ref="0x40cbc3e0" scoped=""/></from>
+          <to><interface-ref name="KEY0" ref="0x40dcd6e8" scoped=""/></to>
         </wire>
         <wire loc="86:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="KEY1" ref="0x40cc78a8" scoped=""/></from>
-          <to><interface-ref name="KEY1" ref="0x40de1448" scoped=""/></to>
+          <from><interface-ref name="KEY1" ref="0x40cbc8a8" scoped=""/></from>
+          <to><interface-ref name="KEY1" ref="0x40dcdb20" scoped=""/></to>
         </wire>
         <wire loc="87:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="RXFIFO_RAM" ref="0x40cc6338" scoped=""/></from>
-          <to><interface-ref name="RXFIFO_RAM" ref="0x40de2b20" scoped=""/></to>
+          <from><interface-ref name="RXFIFO_RAM" ref="0x40cbb338" scoped=""/></from>
+          <to><interface-ref name="RXFIFO_RAM" ref="0x40dcd2b0" scoped=""/></to>
         </wire>
         <wire loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
-          <from><interface-ref name="SNOP" ref="0x40cc6820" scoped=""/></from>
-          <to><interface-ref name="SNOP" ref="0x40deea48" scoped=""/></to>
+          <from><interface-ref name="SNOP" ref="0x40cbb820" scoped=""/></from>
+          <to><interface-ref name="SNOP" ref="0x40da9190" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="42:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="CC2420Receive" provided="1" ref="0x40cd5118">
+    <specification><interface loc="42:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="CC2420Receive" provided="1" ref="0x40c9e118">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Receive" ref="0x40cd5118" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Receive" ref="0x40c9e118" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Receive" qname="CC2420Receive"/>
       </instance>
       <interface-functions>
-        <function-ref name="receive" ref="0x40cd52f0" scoped=""/>
-        <function-ref name="sfd_dropped" ref="0x40cd53d0" scoped=""/>
-        <function-ref name="sfd" ref="0x40cd54b0" scoped=""/>
+        <function-ref name="receive" ref="0x40c9e2f0" scoped=""/>
+        <function-ref name="sfd_dropped" ref="0x40c9e3d0" scoped=""/>
+        <function-ref name="sfd" ref="0x40c9e4b0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="Receive" provided="1" ref="0x40cd5658">
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="Receive" provided="1" ref="0x40c9e658">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40cd5658" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40c9e658" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
       </instance>
       <interface-functions>
-        <function-ref name="receive" ref="0x40cd5830" scoped=""/>
+        <function-ref name="receive" ref="0x40c9e830" scoped=""/>
       </interface-functions>
-    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="PacketIndicator" provided="1" ref="0x40cd5af0">
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="PacketIndicator" provided="1" ref="0x40c9eaf0">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketIndicator" ref="0x40cd5af0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketIndicator" ref="0x40c9eaf0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ReceiveIndicator" qname="ReceiveIndicator"/>
       </instance>
       <interface-functions>
-        <function-ref name="isReceiving" ref="0x40cd5cc8" scoped=""/>
+        <function-ref name="isReceiving" ref="0x40c9ecc8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="StdControl" provided="1" ref="0x40cd8c58">
+    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="StdControl" provided="1" ref="0x40ca1c58">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x40cd8c58" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x40ca1c58" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
       </instance>
       <interface-functions>
-        <function-ref name="start" ref="0x40cd8e30" scoped=""/>
-        <function-ref name="stop" ref="0x40cd8f10" scoped=""/>
+        <function-ref name="start" ref="0x40ca1e30" scoped=""/>
+        <function-ref name="stop" ref="0x40ca1f10" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="45:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="FIFOP" provided="1" ref="0x407d0848">
+    </interface></specification><referenced><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Init" provided="1" ref="0x40c9d7e0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40c9d7e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40c9d9b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="KEY1" provided="1" ref="0x40dcdb20">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY1" ref="0x40dcdb20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40dcdcf8" scoped=""/>
+        <function-ref name="write" ref="0x40dcddd8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="CSN" provided="1" ref="0x407aa3d0">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFOP" ref="0x407d0848" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x407aa3d0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x407d0a20" scoped=""/>
-        <function-ref name="isInput" ref="0x407d0b00" scoped=""/>
-        <function-ref name="toggle" ref="0x407d0be0" scoped=""/>
-        <function-ref name="isOutput" ref="0x407d0cc0" scoped=""/>
-        <function-ref name="get" ref="0x407d0da0" scoped=""/>
-        <function-ref name="makeOutput" ref="0x407d0e80" scoped=""/>
-        <function-ref name="set" ref="0x407cf010" scoped=""/>
-        <function-ref name="clr" ref="0x407cf0f0" scoped=""/>
+        <function-ref name="makeInput" ref="0x407aa5a8" scoped=""/>
+        <function-ref name="isInput" ref="0x407aa688" scoped=""/>
+        <function-ref name="toggle" ref="0x407aa768" scoped=""/>
+        <function-ref name="isOutput" ref="0x407aa848" scoped=""/>
+        <function-ref name="get" ref="0x407aa928" scoped=""/>
+        <function-ref name="makeOutput" ref="0x407aaa08" scoped=""/>
+        <function-ref name="set" ref="0x407aaae8" scoped=""/>
+        <function-ref name="clr" ref="0x407aabc8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="KEY1" provided="0" ref="0x40cc78a8">
+    </interface><interface loc="61:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SFLUSHRX" provided="0" ref="0x40cc2910">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY1" ref="0x40cc78a8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFLUSHRX" ref="0x40cc2910" scoped=""/></type-interface>
       <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
       </instance>
       <interface-functions>
-        <function-ref name="read" ref="0x40cc7a80" scoped=""/>
-        <function-ref name="write" ref="0x40cc7b60" scoped=""/>
+        <function-ref name="strobe" ref="0x40cc2b68" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="CSN" provided="1" ref="0x407d13d0">
+    </interface><interface loc="74:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SNOP" provided="0" ref="0x40cbb820">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SNOP" ref="0x40cbb820" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40cbbaf8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Receive" provided="1" ref="0x40c9a580">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40c9a580" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c9a758" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="FIFO" provided="1" ref="0x407aadd8">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x407d13d0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFO" ref="0x407aadd8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x407d15a8" scoped=""/>
-        <function-ref name="isInput" ref="0x407d1688" scoped=""/>
-        <function-ref name="toggle" ref="0x407d1768" scoped=""/>
-        <function-ref name="isOutput" ref="0x407d1848" scoped=""/>
-        <function-ref name="get" ref="0x407d1928" scoped=""/>
-        <function-ref name="makeOutput" ref="0x407d1a08" scoped=""/>
-        <function-ref name="set" ref="0x407d1ae8" scoped=""/>
-        <function-ref name="clr" ref="0x407d1bc8" scoped=""/>
+        <function-ref name="makeInput" ref="0x407c1010" scoped=""/>
+        <function-ref name="isInput" ref="0x407c10f0" scoped=""/>
+        <function-ref name="toggle" ref="0x407c11d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x407c12b0" scoped=""/>
+        <function-ref name="get" ref="0x407c1390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x407c1470" scoped=""/>
+        <function-ref name="set" ref="0x407c1550" scoped=""/>
+        <function-ref name="clr" ref="0x407c1630" scoped=""/>
       </interface-functions>
-    </interface><interface loc="74:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SNOP" provided="0" ref="0x40cc6820">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SNOP" ref="0x40cc6820" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40cc6af8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="69:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SECCTRL1" provided="0" ref="0x40cc8f00">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL1" ref="0x40cc8f00" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40cc70f0" scoped=""/>
-        <function-ref name="write" ref="0x40cc71d0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="54:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="FIFO" provided="0" ref="0x40cd0840">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFO" ref="0x40cd0840" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="makeInput" ref="0x40cd0a18" scoped=""/>
-        <function-ref name="isInput" ref="0x40cd0af8" scoped=""/>
-        <function-ref name="toggle" ref="0x40cd0bd8" scoped=""/>
-        <function-ref name="isOutput" ref="0x40cd0cb8" scoped=""/>
-        <function-ref name="get" ref="0x40cd0d98" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40cd0e78" scoped=""/>
-        <function-ref name="set" ref="0x40cce010" scoped=""/>
-        <function-ref name="clr" ref="0x40cce0f0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="89:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXFIFO_RAM" provided="1" ref="0x40de2b20">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO_RAM" ref="0x40de2b20" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40de2cf8" scoped=""/>
-        <function-ref name="write" ref="0x40de2dd8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXFIFO_RAM" provided="0" ref="0x40cc6338">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO_RAM" ref="0x40cc6338" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40cc6510" scoped=""/>
-        <function-ref name="write" ref="0x40cc65f0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SNOP" provided="1" ref="0x40deea48">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SNOP" ref="0x40deea48" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40deec20" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="67:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SRXDEC" provided="0" ref="0x40cc85a0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SRXDEC" ref="0x40cc85a0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40cc8778" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SECCTRL1" provided="1" ref="0x40de7a00">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL1" ref="0x40de7a00" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40de7bd8" scoped=""/>
-        <function-ref name="write" ref="0x40de7cb8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="PacketTimeStamp" provided="0" ref="0x40ccade0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp" ref="0x40ccade0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
-        <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
-          </type-tag>
-          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
-            <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
-          </type-int>
-        </arguments>
-      </instance>
-      <interface-functions>
-        <function-ref name="timestamp" ref="0x40cc9920" scoped=""/>
-        <function-ref name="clear" ref="0x40cc9cd0" scoped=""/>
-        <function-ref name="isValid" ref="0x40cc9570" scoped=""/>
-        <function-ref name="set" ref="0x40cc80a8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x40534258">
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x406299f8">
       <component-ref nicename="tos.system.MainC" qname="MainC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40534430" scoped=""/>
+        <function-ref name="init" ref="0x40629bd0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Packet" provided="0" ref="0x40cccd48">
+    </interface><interface loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXFIFO_RAM" provided="0" ref="0x40cbb338">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x40cccd48" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="setPower" ref="0x40cccf20" scoped=""/>
-        <function-ref name="setNetwork" ref="0x40ccb018" scoped=""/>
-        <function-ref name="getRssi" ref="0x40ccb0f8" scoped=""/>
-        <function-ref name="getNetwork" ref="0x40ccb1d8" scoped=""/>
-        <function-ref name="getPower" ref="0x40ccb2b8" scoped=""/>
-        <function-ref name="getLqi" ref="0x40ccb398" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="KEY0" provided="1" ref="0x40de1010">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY0" ref="0x40de1010" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO_RAM" ref="0x40cbb338" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
       </instance>
       <interface-functions>
-        <function-ref name="read" ref="0x40de11e8" scoped=""/>
-        <function-ref name="write" ref="0x40de12c8" scoped=""/>
+        <function-ref name="read" ref="0x40cbb510" scoped=""/>
+        <function-ref name="write" ref="0x40cbb5f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420PacketBody" provided="1" ref="0x40d0cf08">
-      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40d0cf08" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="getPayload" ref="0x40d0b0f0" scoped=""/>
-        <function-ref name="getHeader" ref="0x40d0b1d0" scoped=""/>
-        <function-ref name="getMetadata" ref="0x40d0b2b0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXNONCE" provided="0" ref="0x40cc7d88">
+    </interface><interface loc="54:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="FIFO" provided="0" ref="0x40c99840">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXNONCE" ref="0x40cc7d88" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40cc6010" scoped=""/>
-        <function-ref name="write" ref="0x40cc60f0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SACK" provided="1" ref="0x40decc68">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SACK" ref="0x40decc68" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40decec0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="PacketIndicator" provided="1" ref="0x40cd1a18">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketIndicator" ref="0x40cd1a18" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ReceiveIndicator" qname="ReceiveIndicator"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="isReceiving" ref="0x40cd1bf0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SRXDEC" provided="1" ref="0x40dea3d8">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SRXDEC" ref="0x40dea3d8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40dea5b0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CSN" provided="0" ref="0x40cd1df0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x40cd1df0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFO" ref="0x40c99840" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40cd0010" scoped=""/>
-        <function-ref name="isInput" ref="0x40cd00f0" scoped=""/>
-        <function-ref name="toggle" ref="0x40cd01d0" scoped=""/>
-        <function-ref name="isOutput" ref="0x40cd02b0" scoped=""/>
-        <function-ref name="get" ref="0x40cd0390" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40cd0470" scoped=""/>
-        <function-ref name="set" ref="0x40cd0550" scoped=""/>
-        <function-ref name="clr" ref="0x40cd0630" scoped=""/>
+        <function-ref name="makeInput" ref="0x40c99a18" scoped=""/>
+        <function-ref name="isInput" ref="0x40c99af8" scoped=""/>
+        <function-ref name="toggle" ref="0x40c99bd8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40c99cb8" scoped=""/>
+        <function-ref name="get" ref="0x40c99d98" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40c99e78" scoped=""/>
+        <function-ref name="set" ref="0x40c98010" scoped=""/>
+        <function-ref name="clr" ref="0x40c980f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="70:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="KEY0" provided="0" ref="0x40cc73e0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY0" ref="0x40cc73e0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40cc75b8" scoped=""/>
-        <function-ref name="write" ref="0x40cc7698" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SACK" provided="0" ref="0x40ccc4e0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SACK" ref="0x40ccc4e0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40ccc6b8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="StdControl" provided="1" ref="0x40cd4b80">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x40cd4b80" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="start" ref="0x40cd4d58" scoped=""/>
-        <function-ref name="stop" ref="0x40cd4e38" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="FIFO" provided="1" ref="0x407d1dd8">
-      <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFO" ref="0x407d1dd8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="makeInput" ref="0x407d0010" scoped=""/>
-        <function-ref name="isInput" ref="0x407d00f0" scoped=""/>
-        <function-ref name="toggle" ref="0x407d01d0" scoped=""/>
-        <function-ref name="isOutput" ref="0x407d02b0" scoped=""/>
-        <function-ref name="get" ref="0x407d0390" scoped=""/>
-        <function-ref name="makeOutput" ref="0x407d0470" scoped=""/>
-        <function-ref name="set" ref="0x407d0550" scoped=""/>
-        <function-ref name="clr" ref="0x407d0630" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="94:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXNONCE" provided="1" ref="0x40de0190">
+    </interface><interface loc="94:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXNONCE" provided="1" ref="0x40dcc880">
       <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXNONCE" ref="0x40de0190" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXNONCE" ref="0x40dcc880" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
       </instance>
       <interface-functions>
-        <function-ref name="read" ref="0x40de0368" scoped=""/>
-        <function-ref name="write" ref="0x40de0448" scoped=""/>
+        <function-ref name="read" ref="0x40dcca58" scoped=""/>
+        <function-ref name="write" ref="0x40dccb38" scoped=""/>
       </interface-functions>
-    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="InterruptFIFOP" provided="0" ref="0x40cced98">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="InterruptFIFOP" ref="0x40cced98" scoped=""/></type-interface>
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc" name="InterruptFIFOP" provided="1" ref="0x409208c8">
+      <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420InterruptsC" qname="HplCC2420InterruptsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="InterruptFIFOP" ref="0x409208c8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GpioInterrupt" qname="GpioInterrupt"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x40ccd010" scoped=""/>
-        <function-ref name="disable" ref="0x40ccd0f0" scoped=""/>
-        <function-ref name="enableFallingEdge" ref="0x40ccd1d0" scoped=""/>
-        <function-ref name="enableRisingEdge" ref="0x40ccd2b0" scoped=""/>
+        <function-ref name="fired" ref="0x40920aa0" scoped=""/>
+        <function-ref name="disable" ref="0x40920b80" scoped=""/>
+        <function-ref name="enableFallingEdge" ref="0x40920c60" scoped=""/>
+        <function-ref name="enableRisingEdge" ref="0x40920d40" scoped=""/>
       </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x40d0bb00">
+    </interface><interface loc="68:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SECCTRL0" provided="0" ref="0x40cbd9e0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL0" ref="0x40cbd9e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40cbdbb8" scoped=""/>
+        <function-ref name="write" ref="0x40cbdc98" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420Packet" provided="1" ref="0x40d010e0">
       <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x40d010e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x40d012b8" scoped=""/>
+        <function-ref name="setNetwork" ref="0x40d01398" scoped=""/>
+        <function-ref name="getRssi" ref="0x40d01478" scoped=""/>
+        <function-ref name="getNetwork" ref="0x40d01558" scoped=""/>
+        <function-ref name="getPower" ref="0x40d01638" scoped=""/>
+        <function-ref name="getLqi" ref="0x40d01718" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="KEY1" provided="0" ref="0x40cbc8a8">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY1" ref="0x40cbc8a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40cbca80" scoped=""/>
+        <function-ref name="write" ref="0x40cbcb60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SpiResource" provided="0" ref="0x40c974f8">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiResource" ref="0x40c974f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x40c976d0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40c977b0" scoped=""/>
+        <function-ref name="request" ref="0x40c97890" scoped=""/>
+        <function-ref name="granted" ref="0x40c97970" scoped=""/>
+        <function-ref name="isOwner" ref="0x40c97a50" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SFLUSHRX" provided="1" ref="0x40da8c68">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFLUSHRX" ref="0x40da8c68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40da8e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SACK" provided="1" ref="0x40da7368">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SACK" ref="0x40da7368" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40da75c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420PacketBody" provided="0" ref="0x40cc15a0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40cc15a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x40cc1778" scoped=""/>
+        <function-ref name="getHeader" ref="0x40cc1858" scoped=""/>
+        <function-ref name="getMetadata" ref="0x40cc1938" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="Resource" provided="1" ref="0x40d02518">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40d02518" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x40d026f0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40d027d0" scoped=""/>
+        <function-ref name="request" ref="0x40d028b0" scoped=""/>
+        <function-ref name="granted" ref="0x40d02990" scoped=""/>
+        <function-ref name="isOwner" ref="0x40d02a70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXNONCE" provided="0" ref="0x40cbcd88">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXNONCE" ref="0x40cbcd88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40cbb010" scoped=""/>
+        <function-ref name="write" ref="0x40cbb0f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXFIFO" provided="1" ref="0x40dcccb8">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO" ref="0x40dcccb8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="continueRead" ref="0x40dcb0c0" scoped=""/>
+        <function-ref name="writeDone" ref="0x40dcb1a0" scoped=""/>
+        <function-ref name="write" ref="0x40dcb280" scoped=""/>
+        <function-ref name="beginRead" ref="0x40dcb360" scoped=""/>
+        <function-ref name="readDone" ref="0x40dcb440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CSN" provided="0" ref="0x40c9adf0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x40c9adf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40c99010" scoped=""/>
+        <function-ref name="isInput" ref="0x40c990f0" scoped=""/>
+        <function-ref name="toggle" ref="0x40c991d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x40c992b0" scoped=""/>
+        <function-ref name="get" ref="0x40c99390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40c99470" scoped=""/>
+        <function-ref name="set" ref="0x40c99550" scoped=""/>
+        <function-ref name="clr" ref="0x40c99630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc" name="CC2420Config" provided="1" ref="0x405b1930">
+      <component-ref nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x405b1930" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setAutoAck" ref="0x405b1b08" scoped=""/>
+        <function-ref name="isAddressRecognitionEnabled" ref="0x405b1be8" scoped=""/>
+        <function-ref name="setAddressRecognition" ref="0x405b1cc8" scoped=""/>
+        <function-ref name="syncDone" ref="0x405b1da8" scoped=""/>
+        <function-ref name="isHwAddressRecognitionDefault" ref="0x405b1e88" scoped=""/>
+        <function-ref name="setShortAddr" ref="0x405a9010" scoped=""/>
+        <function-ref name="setChannel" ref="0x405a90f0" scoped=""/>
+        <function-ref name="isAutoAckEnabled" ref="0x405a91d0" scoped=""/>
+        <function-ref name="setPanAddr" ref="0x405a92b0" scoped=""/>
+        <function-ref name="isHwAutoAckDefault" ref="0x405a9390" scoped=""/>
+        <function-ref name="getExtAddr" ref="0x405a9470" scoped=""/>
+        <function-ref name="getShortAddr" ref="0x405a9550" scoped=""/>
+        <function-ref name="sync" ref="0x405a9630" scoped=""/>
+        <function-ref name="getChannel" ref="0x405a9790" scoped=""/>
+        <function-ref name="getPanAddr" ref="0x405a9870" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SECCTRL1" provided="1" ref="0x40dd2190">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL1" ref="0x40dd2190" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40dd2368" scoped=""/>
+        <function-ref name="write" ref="0x40dd2448" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x40b19368">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40b19368" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x40b19540" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40b19620" scoped=""/>
+        <function-ref name="led1On" ref="0x40b19700" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40b197e0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x40b198c0" scoped=""/>
+        <function-ref name="get" ref="0x40b199a0" scoped=""/>
+        <function-ref name="led1Off" ref="0x40b19a80" scoped=""/>
+        <function-ref name="led2Off" ref="0x40b19e00" scoped=""/>
+        <function-ref name="set" ref="0x40b19b60" scoped=""/>
+        <function-ref name="led0On" ref="0x40b19c40" scoped=""/>
+        <function-ref name="led2On" ref="0x40b19d20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" name="FIFOP" provided="1" ref="0x407c1848">
+      <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFOP" ref="0x407c1848" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x407c1a20" scoped=""/>
+        <function-ref name="isInput" ref="0x407c1b00" scoped=""/>
+        <function-ref name="toggle" ref="0x407c1be0" scoped=""/>
+        <function-ref name="isOutput" ref="0x407c1cc0" scoped=""/>
+        <function-ref name="get" ref="0x407c1da0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x407c1e80" scoped=""/>
+        <function-ref name="set" ref="0x407c0010" scoped=""/>
+        <function-ref name="clr" ref="0x407c00f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SECCTRL0" provided="1" ref="0x40dd3cd8">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL0" ref="0x40dd3cd8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40dd3eb0" scoped=""/>
+        <function-ref name="write" ref="0x40dd2010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="PacketIndicator" provided="1" ref="0x40c9aa18">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketIndicator" ref="0x40c9aa18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ReceiveIndicator" qname="ReceiveIndicator"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isReceiving" ref="0x40c9abf0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x40d00b00">
+      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -479,276 +520,235 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="timestamp" ref="0x40d0a6b8" scoped=""/>
-        <function-ref name="clear" ref="0x40d0aa68" scoped=""/>
-        <function-ref name="isValid" ref="0x40d0a308" scoped=""/>
-        <function-ref name="set" ref="0x40d0ae18" scoped=""/>
+        <function-ref name="timestamp" ref="0x40cff6b8" scoped=""/>
+        <function-ref name="clear" ref="0x40cffa68" scoped=""/>
+        <function-ref name="isValid" ref="0x40cff308" scoped=""/>
+        <function-ref name="set" ref="0x40cffe18" scoped=""/>
       </interface-functions>
-    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Receive" provided="1" ref="0x40cd1580">
+    </interface><interface loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXFIFO" provided="0" ref="0x40c97c78">
       <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40cd1580" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="receive" ref="0x40cd1758" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SFLUSHRX" provided="1" ref="0x40dec5b8">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFLUSHRX" ref="0x40dec5b8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40dec790" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXFIFO" provided="1" ref="0x40de05c8">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO" ref="0x40de05c8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO" ref="0x40c97c78" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
       </instance>
       <interface-functions>
-        <function-ref name="continueRead" ref="0x40de09a0" scoped=""/>
-        <function-ref name="writeDone" ref="0x40de0a80" scoped=""/>
-        <function-ref name="write" ref="0x40de0b60" scoped=""/>
-        <function-ref name="beginRead" ref="0x40de0c40" scoped=""/>
-        <function-ref name="readDone" ref="0x40de0d20" scoped=""/>
+        <function-ref name="continueRead" ref="0x40c97e50" scoped=""/>
+        <function-ref name="writeDone" ref="0x40cc2010" scoped=""/>
+        <function-ref name="write" ref="0x40cc20f0" scoped=""/>
+        <function-ref name="beginRead" ref="0x40cc21d0" scoped=""/>
+        <function-ref name="readDone" ref="0x40cc22b0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="61:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SFLUSHRX" provided="0" ref="0x40ccc910">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFLUSHRX" ref="0x40ccc910" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="strobe" ref="0x40cccb68" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="KEY1" provided="1" ref="0x40de1448">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY1" ref="0x40de1448" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40de1620" scoped=""/>
-        <function-ref name="write" ref="0x40de1700" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420Packet" provided="1" ref="0x40d0c0e0">
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420PacketBody" provided="1" ref="0x40d01f08">
       <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x40d0c0e0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="setPower" ref="0x40d0c2b8" scoped=""/>
-        <function-ref name="setNetwork" ref="0x40d0c398" scoped=""/>
-        <function-ref name="getRssi" ref="0x40d0c478" scoped=""/>
-        <function-ref name="getNetwork" ref="0x40d0c558" scoped=""/>
-        <function-ref name="getPower" ref="0x40d0c638" scoped=""/>
-        <function-ref name="getLqi" ref="0x40d0c718" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc" name="InterruptFIFOP" provided="1" ref="0x4093b8c8">
-      <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420InterruptsC" qname="HplCC2420InterruptsC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="InterruptFIFOP" ref="0x4093b8c8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.GpioInterrupt" qname="GpioInterrupt"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="fired" ref="0x4093baa0" scoped=""/>
-        <function-ref name="disable" ref="0x4093bb80" scoped=""/>
-        <function-ref name="enableFallingEdge" ref="0x4093bc60" scoped=""/>
-        <function-ref name="enableRisingEdge" ref="0x4093bd40" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SECCTRL0" provided="1" ref="0x40de75c8">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL0" ref="0x40de75c8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40de77a0" scoped=""/>
-        <function-ref name="write" ref="0x40de7880" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="Resource" provided="1" ref="0x40d0de50">
-      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40d0de50" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="release" ref="0x40dee050" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40dee130" scoped=""/>
-        <function-ref name="request" ref="0x40dee210" scoped=""/>
-        <function-ref name="granted" ref="0x40dee2f0" scoped=""/>
-        <function-ref name="isOwner" ref="0x40dee3d0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x40b443b8">
-      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40b443b8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="led0Off" ref="0x40b44590" scoped=""/>
-        <function-ref name="led0Toggle" ref="0x40b44670" scoped=""/>
-        <function-ref name="led1On" ref="0x40b44750" scoped=""/>
-        <function-ref name="led1Toggle" ref="0x40b44830" scoped=""/>
-        <function-ref name="led2Toggle" ref="0x40b44910" scoped=""/>
-        <function-ref name="get" ref="0x40b449f0" scoped=""/>
-        <function-ref name="led1Off" ref="0x40b44ad0" scoped=""/>
-        <function-ref name="led2Off" ref="0x40b44e50" scoped=""/>
-        <function-ref name="set" ref="0x40b44bb0" scoped=""/>
-        <function-ref name="led0On" ref="0x40b44c90" scoped=""/>
-        <function-ref name="led2On" ref="0x40b44d70" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="FIFOP" provided="0" ref="0x40cce308">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFOP" ref="0x40cce308" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="makeInput" ref="0x40cce4e0" scoped=""/>
-        <function-ref name="isInput" ref="0x40cce5c0" scoped=""/>
-        <function-ref name="toggle" ref="0x40cce6a0" scoped=""/>
-        <function-ref name="isOutput" ref="0x40cce780" scoped=""/>
-        <function-ref name="get" ref="0x40cce860" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40cce940" scoped=""/>
-        <function-ref name="set" ref="0x40ccea20" scoped=""/>
-        <function-ref name="clr" ref="0x40cceb00" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Config" provided="0" ref="0x40ccbb18">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x40ccbb18" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="setAutoAck" ref="0x40ccbcf0" scoped=""/>
-        <function-ref name="isAddressRecognitionEnabled" ref="0x40ccbdd0" scoped=""/>
-        <function-ref name="setAddressRecognition" ref="0x40ccbeb0" scoped=""/>
-        <function-ref name="syncDone" ref="0x40cca010" scoped=""/>
-        <function-ref name="isHwAddressRecognitionDefault" ref="0x40cca0f0" scoped=""/>
-        <function-ref name="setShortAddr" ref="0x40cca1d0" scoped=""/>
-        <function-ref name="setChannel" ref="0x40cca2b0" scoped=""/>
-        <function-ref name="isAutoAckEnabled" ref="0x40cca390" scoped=""/>
-        <function-ref name="setPanAddr" ref="0x40cca470" scoped=""/>
-        <function-ref name="isHwAutoAckDefault" ref="0x40cca550" scoped=""/>
-        <function-ref name="getExtAddr" ref="0x40cca630" scoped=""/>
-        <function-ref name="getShortAddr" ref="0x40cca710" scoped=""/>
-        <function-ref name="sync" ref="0x40cca7f0" scoped=""/>
-        <function-ref name="getChannel" ref="0x40cca950" scoped=""/>
-        <function-ref name="getPanAddr" ref="0x40ccaa30" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Receive" provided="1" ref="0x40cd1040">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Receive" ref="0x40cd1040" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Receive" qname="CC2420Receive"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="receive" ref="0x40cd1218" scoped=""/>
-        <function-ref name="sfd_dropped" ref="0x40cd12f8" scoped=""/>
-        <function-ref name="sfd" ref="0x40cd13d8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="RXFIFO" provided="0" ref="0x40ccdc78">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO" ref="0x40ccdc78" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="continueRead" ref="0x40ccde50" scoped=""/>
-        <function-ref name="writeDone" ref="0x40ccc010" scoped=""/>
-        <function-ref name="write" ref="0x40ccc0f0" scoped=""/>
-        <function-ref name="beginRead" ref="0x40ccc1d0" scoped=""/>
-        <function-ref name="readDone" ref="0x40ccc2b0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Init" provided="1" ref="0x40cd47e0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40cd47e0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="init" ref="0x40cd49b8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc" name="CC2420Config" provided="1" ref="0x406e31b0">
-      <component-ref nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x406e31b0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="setAutoAck" ref="0x406e3388" scoped=""/>
-        <function-ref name="isAddressRecognitionEnabled" ref="0x406e3468" scoped=""/>
-        <function-ref name="setAddressRecognition" ref="0x406e3548" scoped=""/>
-        <function-ref name="syncDone" ref="0x406e3628" scoped=""/>
-        <function-ref name="isHwAddressRecognitionDefault" ref="0x406e3708" scoped=""/>
-        <function-ref name="setShortAddr" ref="0x406e37e8" scoped=""/>
-        <function-ref name="setChannel" ref="0x406e38c8" scoped=""/>
-        <function-ref name="isAutoAckEnabled" ref="0x406e39a8" scoped=""/>
-        <function-ref name="setPanAddr" ref="0x406e3a88" scoped=""/>
-        <function-ref name="isHwAutoAckDefault" ref="0x406e3b68" scoped=""/>
-        <function-ref name="getExtAddr" ref="0x406e3c48" scoped=""/>
-        <function-ref name="getShortAddr" ref="0x406e3d28" scoped=""/>
-        <function-ref name="sync" ref="0x406e3e08" scoped=""/>
-        <function-ref name="getChannel" ref="0x406d8010" scoped=""/>
-        <function-ref name="getPanAddr" ref="0x406d80f0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="68:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SECCTRL0" provided="0" ref="0x40cc89e0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL0" ref="0x40cc89e0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="read" ref="0x40cc8bb8" scoped=""/>
-        <function-ref name="write" ref="0x40cc8c98" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Leds" provided="0" ref="0x40cc6c88">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40cc6c88" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="led0Off" ref="0x40cc6e60" scoped=""/>
-        <function-ref name="led0Toggle" ref="0x40cc4010" scoped=""/>
-        <function-ref name="led1On" ref="0x40cc40f0" scoped=""/>
-        <function-ref name="led1Toggle" ref="0x40cc41d0" scoped=""/>
-        <function-ref name="led2Toggle" ref="0x40cc42b0" scoped=""/>
-        <function-ref name="get" ref="0x40cc4390" scoped=""/>
-        <function-ref name="led1Off" ref="0x40cc4470" scoped=""/>
-        <function-ref name="led2Off" ref="0x40cc47f0" scoped=""/>
-        <function-ref name="set" ref="0x40cc4550" scoped=""/>
-        <function-ref name="led0On" ref="0x40cc4630" scoped=""/>
-        <function-ref name="led2On" ref="0x40cc4710" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SpiResource" provided="0" ref="0x40ccd4f8">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiResource" ref="0x40ccd4f8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="release" ref="0x40ccd6d0" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40ccd7b0" scoped=""/>
-        <function-ref name="request" ref="0x40ccd890" scoped=""/>
-        <function-ref name="granted" ref="0x40ccd970" scoped=""/>
-        <function-ref name="isOwner" ref="0x40ccda50" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420PacketBody" provided="0" ref="0x40ccb5a0">
-      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40ccb5a0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40d01f08" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
       </instance>
       <interface-functions>
-        <function-ref name="getPayload" ref="0x40ccb778" scoped=""/>
-        <function-ref name="getHeader" ref="0x40ccb858" scoped=""/>
-        <function-ref name="getMetadata" ref="0x40ccb938" scoped=""/>
+        <function-ref name="getPayload" ref="0x40d000f0" scoped=""/>
+        <function-ref name="getHeader" ref="0x40d001d0" scoped=""/>
+        <function-ref name="getMetadata" ref="0x40d002b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SACK" provided="0" ref="0x40cc24e0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SACK" ref="0x40cc24e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40cc26b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Config" provided="0" ref="0x40cc1b18">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x40cc1b18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setAutoAck" ref="0x40cc1cf0" scoped=""/>
+        <function-ref name="isAddressRecognitionEnabled" ref="0x40cc1dd0" scoped=""/>
+        <function-ref name="setAddressRecognition" ref="0x40cc1eb0" scoped=""/>
+        <function-ref name="syncDone" ref="0x40cc0010" scoped=""/>
+        <function-ref name="isHwAddressRecognitionDefault" ref="0x40cc00f0" scoped=""/>
+        <function-ref name="setShortAddr" ref="0x40cc01d0" scoped=""/>
+        <function-ref name="setChannel" ref="0x40cc02b0" scoped=""/>
+        <function-ref name="isAutoAckEnabled" ref="0x40cc0390" scoped=""/>
+        <function-ref name="setPanAddr" ref="0x40cc0470" scoped=""/>
+        <function-ref name="isHwAutoAckDefault" ref="0x40cc0550" scoped=""/>
+        <function-ref name="getExtAddr" ref="0x40cc0630" scoped=""/>
+        <function-ref name="getShortAddr" ref="0x40cc0710" scoped=""/>
+        <function-ref name="sync" ref="0x40cc07f0" scoped=""/>
+        <function-ref name="getChannel" ref="0x40cc0950" scoped=""/>
+        <function-ref name="getPanAddr" ref="0x40cc0a30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="PacketTimeStamp" provided="0" ref="0x40cc0de0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp" ref="0x40cc0de0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x40cbf920" scoped=""/>
+        <function-ref name="clear" ref="0x40cbfcd0" scoped=""/>
+        <function-ref name="isValid" ref="0x40cbf570" scoped=""/>
+        <function-ref name="set" ref="0x40cbd0a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="69:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SECCTRL1" provided="0" ref="0x40cbdf00">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL1" ref="0x40cbdf00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40cbc0f0" scoped=""/>
+        <function-ref name="write" ref="0x40cbc1d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="70:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="KEY0" provided="0" ref="0x40cbc3e0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY0" ref="0x40cbc3e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40cbc5b8" scoped=""/>
+        <function-ref name="write" ref="0x40cbc698" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="InterruptFIFOP" provided="0" ref="0x40c98d98">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="InterruptFIFOP" ref="0x40c98d98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GpioInterrupt" qname="GpioInterrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x40c97010" scoped=""/>
+        <function-ref name="disable" ref="0x40c970f0" scoped=""/>
+        <function-ref name="enableFallingEdge" ref="0x40c971d0" scoped=""/>
+        <function-ref name="enableRisingEdge" ref="0x40c972b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="FIFOP" provided="0" ref="0x40c98308">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFOP" ref="0x40c98308" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40c984e0" scoped=""/>
+        <function-ref name="isInput" ref="0x40c985c0" scoped=""/>
+        <function-ref name="toggle" ref="0x40c986a0" scoped=""/>
+        <function-ref name="isOutput" ref="0x40c98780" scoped=""/>
+        <function-ref name="get" ref="0x40c98860" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40c98940" scoped=""/>
+        <function-ref name="set" ref="0x40c98a20" scoped=""/>
+        <function-ref name="clr" ref="0x40c98b00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Receive" provided="1" ref="0x40c9a040">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Receive" ref="0x40c9a040" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Receive" qname="CC2420Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c9a218" scoped=""/>
+        <function-ref name="sfd_dropped" ref="0x40c9a2f8" scoped=""/>
+        <function-ref name="sfd" ref="0x40c9a3d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="SRXDEC" provided="0" ref="0x40cbd5a0">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SRXDEC" ref="0x40cbd5a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40cbd778" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SRXDEC" provided="1" ref="0x40da7a98">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SRXDEC" ref="0x40da7a98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40da7c70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="SNOP" provided="1" ref="0x40da9190">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SNOP" ref="0x40da9190" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x40da9368" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="CC2420Packet" provided="0" ref="0x40cc2d48">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x40cc2d48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x40cc2f20" scoped=""/>
+        <function-ref name="setNetwork" ref="0x40cc1018" scoped=""/>
+        <function-ref name="getRssi" ref="0x40cc10f8" scoped=""/>
+        <function-ref name="getNetwork" ref="0x40cc11d8" scoped=""/>
+        <function-ref name="getPower" ref="0x40cc12b8" scoped=""/>
+        <function-ref name="getLqi" ref="0x40cc1398" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="KEY0" provided="1" ref="0x40dcd6e8">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY0" ref="0x40dcd6e8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40dcd8c0" scoped=""/>
+        <function-ref name="write" ref="0x40dcd9a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="Leds" provided="0" ref="0x40cbbc88">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40cbbc88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x40cbbe60" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40cba010" scoped=""/>
+        <function-ref name="led1On" ref="0x40cba0f0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40cba1d0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x40cba2b0" scoped=""/>
+        <function-ref name="get" ref="0x40cba390" scoped=""/>
+        <function-ref name="led1Off" ref="0x40cba470" scoped=""/>
+        <function-ref name="led2Off" ref="0x40cba7f0" scoped=""/>
+        <function-ref name="set" ref="0x40cba550" scoped=""/>
+        <function-ref name="led0On" ref="0x40cba630" scoped=""/>
+        <function-ref name="led2On" ref="0x40cba710" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/chips/cc2420/receive/CC2420ReceiveP.nc" name="StdControl" provided="1" ref="0x40c9db80">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveP" qname="CC2420ReceiveP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x40c9db80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x40c9dd58" scoped=""/>
+        <function-ref name="stop" ref="0x40c9de38" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="89:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" name="RXFIFO_RAM" provided="1" ref="0x40dcd2b0">
+      <component-ref nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RXFIFO_RAM" ref="0x40dcd2b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x40dcd488" scoped=""/>
+        <function-ref name="write" ref="0x40dcd568" scoped=""/>
       </interface-functions>
     </interface><component loc="40:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc" nicename="tos.platforms.z1.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC">
       <documentation loc="32:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
@@ -766,60 +766,60 @@
       <configuration/>
       <wiring>
         <wire loc="84:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="FIFO" ref="0x407d1dd8" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x40934b40" scoped=""/></to>
+          <from><interface-ref name="FIFO" ref="0x407aadd8" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x408fdb40" scoped=""/></to>
         </wire>
         <wire loc="85:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="FIFOP" ref="0x407d0848" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x40931358" scoped=""/></to>
+          <from><interface-ref name="FIFOP" ref="0x407c1848" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x408fa358" scoped=""/></to>
         </wire>
         <wire loc="86:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="RSTN" ref="0x407cf300" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x4092fb40" scoped=""/></to>
+          <from><interface-ref name="RSTN" ref="0x407c0300" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x40915b40" scoped=""/></to>
         </wire>
         <wire loc="83:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="CSN" ref="0x407d13d0" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x40919348" scoped=""/></to>
+          <from><interface-ref name="CSN" ref="0x407aa3d0" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x408ff348" scoped=""/></to>
         </wire>
         <wire loc="88:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="VREN" ref="0x407ce760" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x4092ab40" scoped=""/></to>
+          <from><interface-ref name="VREN" ref="0x407bf760" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x40910b40" scoped=""/></to>
         </wire>
         <wire loc="82:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="CCA" ref="0x4074e980" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x40924b90" scoped=""/></to>
+          <from><interface-ref name="CCA" ref="0x4062c980" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x408efb90" scoped=""/></to>
         </wire>
         <wire loc="87:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="SFD" ref="0x407cfcf8" scoped=""/></from>
-          <to><interface-ref name="GeneralIO" ref="0x4092c348" scoped=""/></to>
+          <from><interface-ref name="SFD" ref="0x407c0cf8" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x40912348" scoped=""/></to>
         </wire>
         <wire loc="73:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x40923518" scoped=""/></from>
-          <to><interface-ref name="Port14" ref="0x407f0688" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x408ee518" scoped=""/></from>
+          <to><interface-ref name="Port14" ref="0x407ca688" scoped=""/></to>
         </wire>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x40919cc0" scoped=""/></from>
-          <to><interface-ref name="Port30" ref="0x407fbbc8" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x408ffcc0" scoped=""/></from>
+          <to><interface-ref name="Port30" ref="0x407d5bc8" scoped=""/></to>
         </wire>
         <wire loc="75:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x40933510" scoped=""/></from>
-          <to><interface-ref name="Port13" ref="0x407f14c8" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x408fc510" scoped=""/></from>
+          <to><interface-ref name="Port13" ref="0x407cb4c8" scoped=""/></to>
         </wire>
         <wire loc="76:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x40931cd0" scoped=""/></from>
-          <to><interface-ref name="Port12" ref="0x407da368" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x408facd0" scoped=""/></from>
+          <to><interface-ref name="Port12" ref="0x407cc368" scoped=""/></to>
         </wire>
         <wire loc="77:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x4092e510" scoped=""/></from>
-          <to><interface-ref name="Port46" ref="0x408044c8" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x40914510" scoped=""/></from>
+          <to><interface-ref name="Port46" ref="0x407dc4c8" scoped=""/></to>
         </wire>
         <wire loc="78:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x4092ccc0" scoped=""/></from>
-          <to><interface-ref name="Port41" ref="0x4080aca8" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x40912cc0" scoped=""/></from>
+          <to><interface-ref name="Port41" ref="0x407e2ca8" scoped=""/></to>
         </wire>
         <wire loc="79:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420PinsC.nc">
-          <from><interface-ref name="HplGeneralIO" ref="0x40929510" scoped=""/></from>
-          <to><interface-ref name="Port45" ref="0x40805368" scoped=""/></to>
+          <from><interface-ref name="HplGeneralIO" ref="0x4090e510" scoped=""/></from>
+          <to><interface-ref name="Port45" ref="0x407dd368" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="40:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc" nicename="tos.platforms.z1.chips.cc2420.HplCC2420InterruptsC" qname="HplCC2420InterruptsC">
@@ -838,36 +838,36 @@
       <configuration/>
       <wiring>
         <wire loc="63:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="CaptureSFD" ref="0x40939aa0" scoped=""/></from>
-          <to><interface-ref name="Capture" ref="0x40937c90" scoped=""/></to>
+          <from><interface-ref name="CaptureSFD" ref="0x4091eaa0" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x4091dc90" scoped=""/></to>
         </wire>
         <wire loc="64:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="InterruptCCA" ref="0x4093b1b8" scoped=""/></from>
-          <to><interface-ref name="Interrupt" ref="0x409d6080" scoped=""/></to>
+          <from><interface-ref name="InterruptCCA" ref="0x409201b8" scoped=""/></from>
+          <to><interface-ref name="Interrupt" ref="0x409b7080" scoped=""/></to>
         </wire>
         <wire loc="65:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="InterruptFIFOP" ref="0x4093b8c8" scoped=""/></from>
-          <to><interface-ref name="Interrupt" ref="0x409d5ab0" scoped=""/></to>
+          <from><interface-ref name="InterruptFIFOP" ref="0x409208c8" scoped=""/></from>
+          <to><interface-ref name="Interrupt" ref="0x409b6ab0" scoped=""/></to>
         </wire>
         <wire loc="53:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="Msp430TimerControl" ref="0x40936330" scoped=""/></from>
-          <to><interface-ref name="ControlB1" ref="0x405897e8" scoped=""/></to>
+          <from><interface-ref name="Msp430TimerControl" ref="0x4091c330" scoped=""/></from>
+          <to><interface-ref name="ControlB1" ref="0x40675c00" scoped=""/></to>
         </wire>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="Msp430Capture" ref="0x40936d68" scoped=""/></from>
-          <to><interface-ref name="CaptureB1" ref="0x4059f010" scoped=""/></to>
+          <from><interface-ref name="Msp430Capture" ref="0x4091cd68" scoped=""/></from>
+          <to><interface-ref name="CaptureB1" ref="0x4067f438" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="GeneralIO" ref="0x4094a5f0" scoped=""/></from>
-          <to><interface-ref name="Port41" ref="0x4080aca8" scoped=""/></to>
+          <from><interface-ref name="GeneralIO" ref="0x4092f5f0" scoped=""/></from>
+          <to><interface-ref name="Port41" ref="0x407e2ca8" scoped=""/></to>
         </wire>
         <wire loc="60:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="HplInterrupt" ref="0x409d6678" scoped=""/></from>
-          <to><interface-ref name="Port14" ref="0x4095e368" scoped=""/></to>
+          <from><interface-ref name="HplInterrupt" ref="0x409b7678" scoped=""/></from>
+          <to><interface-ref name="Port14" ref="0x40926368" scoped=""/></to>
         </wire>
         <wire loc="61:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420InterruptsC.nc">
-          <from><interface-ref name="HplInterrupt" ref="0x409ec0b8" scoped=""/></from>
-          <to><interface-ref name="Port12" ref="0x409611a8" scoped=""/></to>
+          <from><interface-ref name="HplInterrupt" ref="0x409ce0b8" scoped=""/></from>
+          <to><interface-ref name="Port12" ref="0x409281a8" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="42:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc" nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC">
@@ -884,120 +884,120 @@
       <configuration/>
       <wiring>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="CC2420Config" ref="0x406e31b0" scoped=""/></from>
-          <to><interface-ref name="CC2420Config" ref="0x406e0c20" scoped=""/></to>
+          <from><interface-ref name="CC2420Config" ref="0x405b1930" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x405bb010" scoped=""/></to>
         </wire>
         <wire loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="ReadRssi" ref="0x406d8da8" scoped=""/></from>
-          <to><interface-ref name="ReadRssi" ref="0x406de840" scoped=""/></to>
+          <from><interface-ref name="ReadRssi" ref="0x405be8e0" scoped=""/></from>
+          <to><interface-ref name="ReadRssi" ref="0x405babb8" scoped=""/></to>
         </wire>
         <wire loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="CC2420Power" ref="0x406d82c0" scoped=""/></from>
-          <to><interface-ref name="CC2420Power" ref="0x406dfce0" scoped=""/></to>
+          <from><interface-ref name="CC2420Power" ref="0x405a9a40" scoped=""/></from>
+          <to><interface-ref name="CC2420Power" ref="0x405ba0d0" scoped=""/></to>
         </wire>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="Resource" ref="0x406d9168" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x406e04e8" scoped=""/></to>
+          <from><interface-ref name="Resource" ref="0x405ad8f0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x405b9868" scoped=""/></to>
         </wire>
         <wire loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x406e0158" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x405b94d8" scoped=""/></to>
         </wire>
         <wire loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="StartupTimer" ref="0x406ea408" scoped=""/></from>
-          <to><interface-ref name="Alarm32khz32" ref="0x4074c0e0" scoped=""/></to>
+          <from><interface-ref name="StartupTimer" ref="0x405c1760" scoped=""/></from>
+          <to><interface-ref name="Alarm32khz32" ref="0x4061bc38" scoped=""/></to>
         </wire>
         <wire loc="66:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="CSN" ref="0x406e6f18" scoped=""/></from>
-          <to><interface-ref name="CSN" ref="0x407d13d0" scoped=""/></to>
+          <from><interface-ref name="CSN" ref="0x405cc2b0" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x407aa3d0" scoped=""/></to>
         </wire>
         <wire loc="67:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="RSTN" ref="0x406e9938" scoped=""/></from>
-          <to><interface-ref name="RSTN" ref="0x407cf300" scoped=""/></to>
+          <from><interface-ref name="RSTN" ref="0x405cccb8" scoped=""/></from>
+          <to><interface-ref name="RSTN" ref="0x407c0300" scoped=""/></to>
         </wire>
         <wire loc="68:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="VREN" ref="0x406e83e0" scoped=""/></from>
-          <to><interface-ref name="VREN" ref="0x407ce760" scoped=""/></to>
+          <from><interface-ref name="VREN" ref="0x405c0760" scoped=""/></from>
+          <to><interface-ref name="VREN" ref="0x407bf760" scoped=""/></to>
         </wire>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="InterruptCCA" ref="0x406f64f0" scoped=""/></from>
-          <to><interface-ref name="InterruptCCA" ref="0x4093b1b8" scoped=""/></to>
+          <from><interface-ref name="InterruptCCA" ref="0x405c98e0" scoped=""/></from>
+          <to><interface-ref name="InterruptCCA" ref="0x409201b8" scoped=""/></to>
         </wire>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SpiResource" ref="0x40700ca0" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40bdb1f0" scoped=""/></to>
+          <from><interface-ref name="SpiResource" ref="0x405de258" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40bd41f0" scoped=""/></to>
         </wire>
         <wire loc="75:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SRXON" ref="0x40701af8" scoped=""/></from>
-          <to><interface-ref name="SRXON" ref="0x40c02840" scoped=""/></to>
+          <from><interface-ref name="SRXON" ref="0x405df0a8" scoped=""/></from>
+          <to><interface-ref name="SRXON" ref="0x40bd3840" scoped=""/></to>
         </wire>
         <wire loc="76:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SRFOFF" ref="0x40701f10" scoped=""/></from>
-          <to><interface-ref name="SRFOFF" ref="0x40c00260" scoped=""/></to>
+          <from><interface-ref name="SRFOFF" ref="0x405df4c0" scoped=""/></from>
+          <to><interface-ref name="SRFOFF" ref="0x40bd2260" scoped=""/></to>
         </wire>
         <wire loc="77:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SXOSCON" ref="0x40700880" scoped=""/></from>
-          <to><interface-ref name="SXOSCON" ref="0x40c02190" scoped=""/></to>
+          <from><interface-ref name="SXOSCON" ref="0x405dfe10" scoped=""/></from>
+          <to><interface-ref name="SXOSCON" ref="0x40bd3190" scoped=""/></to>
         </wire>
         <wire loc="78:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SXOSCOFF" ref="0x40700360" scoped=""/></from>
-          <to><interface-ref name="SXOSCOFF" ref="0x40c005b8" scoped=""/></to>
+          <from><interface-ref name="SXOSCOFF" ref="0x405df8f0" scoped=""/></from>
+          <to><interface-ref name="SXOSCOFF" ref="0x40bd25b8" scoped=""/></to>
         </wire>
         <wire loc="79:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="FSCTRL" ref="0x406ee820" scoped=""/></from>
-          <to><interface-ref name="FSCTRL" ref="0x40bfc548" scoped=""/></to>
+          <from><interface-ref name="FSCTRL" ref="0x405d2c08" scoped=""/></from>
+          <to><interface-ref name="FSCTRL" ref="0x40bcd548" scoped=""/></to>
         </wire>
         <wire loc="80:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="IOCFG0" ref="0x406eed28" scoped=""/></from>
-          <to><interface-ref name="IOCFG0" ref="0x40bfa6a8" scoped=""/></to>
+          <from><interface-ref name="IOCFG0" ref="0x405d5150" scoped=""/></from>
+          <to><interface-ref name="IOCFG0" ref="0x40bcc6a8" scoped=""/></to>
         </wire>
         <wire loc="81:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="IOCFG1" ref="0x406e4260" scoped=""/></from>
-          <to><interface-ref name="IOCFG1" ref="0x40bfaae0" scoped=""/></to>
+          <from><interface-ref name="IOCFG1" ref="0x405d5658" scoped=""/></from>
+          <to><interface-ref name="IOCFG1" ref="0x40bccae0" scoped=""/></to>
         </wire>
         <wire loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="MDMCTRL0" ref="0x406e4780" scoped=""/></from>
-          <to><interface-ref name="MDMCTRL0" ref="0x40bfe5c8" scoped=""/></to>
+          <from><interface-ref name="MDMCTRL0" ref="0x405d5b78" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL0" ref="0x40bd05c8" scoped=""/></to>
         </wire>
         <wire loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="MDMCTRL1" ref="0x406e4ca0" scoped=""/></from>
-          <to><interface-ref name="MDMCTRL1" ref="0x40bfea00" scoped=""/></to>
+          <from><interface-ref name="MDMCTRL1" ref="0x405d10b8" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL1" ref="0x40bd0a00" scoped=""/></to>
         </wire>
         <wire loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="PANID" ref="0x406e50b8" scoped=""/></from>
-          <to><interface-ref name="PANID" ref="0x40bf7190" scoped=""/></to>
+          <from><interface-ref name="PANID" ref="0x405c8480" scoped=""/></from>
+          <to><interface-ref name="PANID" ref="0x40bc8190" scoped=""/></to>
         </wire>
         <wire loc="85:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="IEEEADR" ref="0x406f1b50" scoped=""/></from>
-          <to><interface-ref name="IEEEADR" ref="0x40bf8cd8" scoped=""/></to>
+          <from><interface-ref name="IEEEADR" ref="0x405d4ec8" scoped=""/></from>
+          <to><interface-ref name="IEEEADR" ref="0x40bcacd8" scoped=""/></to>
         </wire>
         <wire loc="86:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="RXCTRL1" ref="0x406f0268" scoped=""/></from>
-          <to><interface-ref name="RXCTRL1" ref="0x40bfc010" scoped=""/></to>
+          <from><interface-ref name="RXCTRL1" ref="0x405d15c8" scoped=""/></from>
+          <to><interface-ref name="RXCTRL1" ref="0x40bcd010" scoped=""/></to>
         </wire>
         <wire loc="87:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="RSSI" ref="0x406f0760" scoped=""/></from>
-          <to><interface-ref name="RSSI" ref="0x40bfee38" scoped=""/></to>
+          <from><interface-ref name="RSSI" ref="0x405d1ac0" scoped=""/></from>
+          <to><interface-ref name="RSSI" ref="0x40bd0e38" scoped=""/></to>
         </wire>
         <wire loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="TXCTRL" ref="0x406f0c68" scoped=""/></from>
-          <to><interface-ref name="TXCTRL" ref="0x40bfd6e8" scoped=""/></to>
+          <from><interface-ref name="TXCTRL" ref="0x405d0010" scoped=""/></from>
+          <to><interface-ref name="TXCTRL" ref="0x40bce6e8" scoped=""/></to>
         </wire>
         <wire loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="SyncResource" ref="0x406ffcb8" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40c17c80" scoped=""/></to>
+          <from><interface-ref name="SyncResource" ref="0x405dd268" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40be8c80" scoped=""/></to>
         </wire>
         <wire loc="94:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="RssiResource" ref="0x406ff508" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40c04518" scoped=""/></to>
+          <from><interface-ref name="RssiResource" ref="0x405dea08" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40bfc518" scoped=""/></to>
         </wire>
         <wire loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="ActiveMessageAddress" ref="0x406f3480" scoped=""/></from>
-          <to><interface-ref name="ActiveMessageAddress" ref="0x40c1bea8" scoped=""/></to>
+          <from><interface-ref name="ActiveMessageAddress" ref="0x405d6860" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x40c13ea8" scoped=""/></to>
         </wire>
         <wire loc="100:/home/rgao/lily/tinyos2/tos/chips/cc2420/control/CC2420ControlC.nc">
-          <from><interface-ref name="LocalIeeeEui64" ref="0x406ddc58" scoped=""/></from>
-          <to><interface-ref name="LocalIeeeEui64" ref="0x40c1a760" scoped=""/></to>
+          <from><interface-ref name="LocalIeeeEui64" ref="0x405c7010" scoped=""/></from>
+          <to><interface-ref name="LocalIeeeEui64" ref="0x40c12760" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="38:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC">
@@ -1013,44 +1013,44 @@
       <configuration/>
       <wiring>
         <wire loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LinkPacketMetadata" ref="0x40d0b4a8" scoped=""/></from>
-          <to><interface-ref name="LinkPacketMetadata" ref="0x40d2f010" scoped=""/></to>
+          <from><interface-ref name="LinkPacketMetadata" ref="0x40d004a8" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x40cf7010" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="CC2420Packet" ref="0x40d0c0e0" scoped=""/></from>
-          <to><interface-ref name="CC2420Packet" ref="0x40d06b28" scoped=""/></to>
+          <from><interface-ref name="CC2420Packet" ref="0x40d010e0" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40cfbb28" scoped=""/></to>
         </wire>
         <wire loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d2f668" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40cf7668" scoped=""/></to>
         </wire>
         <wire loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="CC2420PacketBody" ref="0x40d0cf08" scoped=""/></from>
-          <to><interface-ref name="CC2420PacketBody" ref="0x40d309c0" scoped=""/></to>
+          <from><interface-ref name="CC2420PacketBody" ref="0x40d01f08" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40cf89c0" scoped=""/></to>
         </wire>
         <wire loc="61:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40d08cb0" scoped=""/></from>
-          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40d2b888" scoped=""/></to>
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40cfccb0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40cf3888" scoped=""/></to>
         </wire>
         <wire loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeStampMilli" ref="0x40d09578" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStampMilli" ref="0x40d2c100" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x40cfd578" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x40cf4100" scoped=""/></to>
         </wire>
         <wire loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="Acks" ref="0x40d0c988" scoped=""/></from>
-          <to><interface-ref name="Acks" ref="0x40d30440" scoped=""/></to>
+          <from><interface-ref name="Acks" ref="0x40d01988" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x40cf8440" scoped=""/></to>
         </wire>
         <wire loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="Counter" ref="0x40d55360" scoped=""/></from>
-          <to><interface-ref name="Counter" ref="0x40788cf0" scoped=""/></to>
+          <from><interface-ref name="Counter" ref="0x40d48360" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x40766cf0" scoped=""/></to>
         </wire>
         <wire loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LocalTime32khz" ref="0x40d27440" scoped=""/></from>
-          <to><interface-ref name="LocalTime" ref="0x40d56940" scoped=""/></to>
+          <from><interface-ref name="LocalTime32khz" ref="0x40d1b440" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40d1c940" scoped=""/></to>
         </wire>
         <wire loc="69:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LocalTimeMilli" ref="0x40d27e98" scoped=""/></from>
-          <to><interface-ref name="LocalTime" ref="0x40d76010" scoped=""/></to>
+          <from><interface-ref name="LocalTimeMilli" ref="0x40d1be98" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40d378a8" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="45:/home/rgao/lily/tinyos2/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
@@ -1071,24 +1071,24 @@
       <configuration/>
       <wiring>
         <wire loc="51:/home/rgao/lily/tinyos2/tos/system/LedsC.nc">
-          <from><interface-ref name="Leds" ref="0x40b443b8" scoped=""/></from>
-          <to><interface-ref name="Leds" ref="0x40b41a40" scoped=""/></to>
+          <from><interface-ref name="Leds" ref="0x40b19368" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x40b3c9f0" scoped=""/></to>
         </wire>
         <wire loc="53:/home/rgao/lily/tinyos2/tos/system/LedsC.nc">
-          <from><interface-ref name="Init" ref="0x40b77440" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40b416f8" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x40b4c440" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40b3c6a8" scoped=""/></to>
         </wire>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/system/LedsC.nc">
-          <from><interface-ref name="Led0" ref="0x40b64780" scoped=""/></from>
-          <to><interface-ref name="Led0" ref="0x40b405b0" scoped=""/></to>
+          <from><interface-ref name="Led0" ref="0x40b39780" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x40b3b5b0" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/system/LedsC.nc">
-          <from><interface-ref name="Led1" ref="0x40b63200" scoped=""/></from>
-          <to><interface-ref name="Led1" ref="0x40b52010" scoped=""/></to>
+          <from><interface-ref name="Led1" ref="0x40b38200" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x40b4d010" scoped=""/></to>
         </wire>
         <wire loc="56:/home/rgao/lily/tinyos2/tos/system/LedsC.nc">
-          <from><interface-ref name="Led2" ref="0x40b63be8" scoped=""/></from>
-          <to><interface-ref name="Led2" ref="0x40b52a18" scoped=""/></to>
+          <from><interface-ref name="Led2" ref="0x40b38be8" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x40b4da18" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="39(CC2420ReceiveC.Spi):/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc" nicename="tos.chips.cc2420.spi.CC2420SpiC" qname="CC2420ReceiveC.Spi">
@@ -1108,8 +1108,8 @@
       <configuration/>
       <wiring>
         <wire loc="139:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXCTRL1" ref="0x40de8bd8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="RXCTRL1" ref="0x40dd3368" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:23">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1118,8 +1118,8 @@
           </to>
         </wire>
         <wire loc="117:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="STXCAL" ref="0x40ded190" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="STXCAL" ref="0x40da9840" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:2">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1128,8 +1128,8 @@
           </to>
         </wire>
         <wire loc="133:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MDMCTRL0" ref="0x40de9270" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MDMCTRL0" ref="0x40dd6920" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:17">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1138,8 +1138,8 @@
           </to>
         </wire>
         <wire loc="142:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SECCTRL1" ref="0x40de7a00" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="SECCTRL1" ref="0x40dd2190" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:26">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1148,8 +1148,8 @@
           </to>
         </wire>
         <wire loc="143:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="BATTMON" ref="0x40de7e38" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="BATTMON" ref="0x40dd25c8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:27">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1158,8 +1158,8 @@
           </to>
         </wire>
         <wire loc="164:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXNONCE" ref="0x40de0190" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="RXNONCE" ref="0x40dcc880" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:272">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1168,8 +1168,8 @@
           </to>
         </wire>
         <wire loc="160:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="KEY0" ref="0x40de1010" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="KEY0" ref="0x40dcd6e8" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:256">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1178,8 +1178,8 @@
           </to>
         </wire>
         <wire loc="120:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="STXONCCA" ref="0x40dedb98" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="STXONCCA" ref="0x40da8260" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:5">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1188,8 +1188,8 @@
           </to>
         </wire>
         <wire loc="158:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="TXFIFO_RAM" ref="0x40de26e8" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="TXFIFO_RAM" ref="0x40dcfe38" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:0">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1198,8 +1198,8 @@
           </to>
         </wire>
         <wire loc="135:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RSSI" ref="0x40de9ae0" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="RSSI" ref="0x40dd5270" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:19">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1208,8 +1208,8 @@
           </to>
         </wire>
         <wire loc="137:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="TXCTRL" ref="0x40de8368" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="TXCTRL" ref="0x40dd5ae0" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:21">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1218,8 +1218,8 @@
           </to>
         </wire>
         <wire loc="149:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MANAND" ref="0x40de4880" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MANAND" ref="0x40dd0010" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:33">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1228,8 +1228,8 @@
           </to>
         </wire>
         <wire loc="144:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="IOCFG0" ref="0x40de62b0" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="IOCFG0" ref="0x40dd2a00" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:28">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1238,12 +1238,12 @@
           </to>
         </wire>
         <wire loc="111:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="ChipSpiResource" ref="0x40dee530" scoped=""/></from>
-          <to><interface-ref name="ChipSpiResource" ref="0x40a0b4a8" scoped=""/></to>
+          <from><interface-ref name="ChipSpiResource" ref="0x40d02bd0" scoped=""/></from>
+          <to><interface-ref name="ChipSpiResource" ref="0x409ec040" scoped=""/></to>
         </wire>
         <wire loc="124:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SFLUSHTX" ref="0x40dec910" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SFLUSHTX" ref="0x40da7010" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:9">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1252,8 +1252,8 @@
           </to>
         </wire>
         <wire loc="125:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SACK" ref="0x40decc68" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SACK" ref="0x40da7368" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:10">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1262,8 +1262,8 @@
           </to>
         </wire>
         <wire loc="126:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SACKPEND" ref="0x40dea080" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SACKPEND" ref="0x40da7740" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:11">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1272,8 +1272,8 @@
           </to>
         </wire>
         <wire loc="159:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXFIFO_RAM" ref="0x40de2b20" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="RXFIFO_RAM" ref="0x40dcd2b0" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:128">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1282,8 +1282,8 @@
           </to>
         </wire>
         <wire loc="122:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SXOSCOFF" ref="0x40dec260" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SXOSCOFF" ref="0x40da8910" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:7">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1292,8 +1292,8 @@
           </to>
         </wire>
         <wire loc="136:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SYNCWORD" ref="0x40de9f18" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="SYNCWORD" ref="0x40dd56a8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:20">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1302,8 +1302,8 @@
           </to>
         </wire>
         <wire loc="134:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MDMCTRL1" ref="0x40de96a8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MDMCTRL1" ref="0x40dd6d58" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:18">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1312,8 +1312,8 @@
           </to>
         </wire>
         <wire loc="116:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SXOSCON" ref="0x40deeda0" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SXOSCON" ref="0x40da94e8" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:1">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1322,8 +1322,8 @@
           </to>
         </wire>
         <wire loc="163:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="TXNONCE" ref="0x40de1cb8" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="TXNONCE" ref="0x40dcc448" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:320">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1332,8 +1332,8 @@
           </to>
         </wire>
         <wire loc="161:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="KEY1" ref="0x40de1448" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="KEY1" ref="0x40dcdb20" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:304">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1342,8 +1342,8 @@
           </to>
         </wire>
         <wire loc="150:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MANOR" ref="0x40de4cb8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MANOR" ref="0x40dd0448" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:34">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1352,8 +1352,8 @@
           </to>
         </wire>
         <wire loc="157:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SHORTADR" ref="0x40de22b0" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="SHORTADR" ref="0x40dcfa00" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:362">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1362,8 +1362,8 @@
           </to>
         </wire>
         <wire loc="146:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MANFIDL" ref="0x40de6b20" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MANFIDL" ref="0x40dd12b0" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:30">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1372,8 +1372,8 @@
           </to>
         </wire>
         <wire loc="167:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXFIFO" ref="0x40de05c8" scoped=""/></from>
-          <to><interface-ref name="Fifo" ref="0x40a0bd38" scoped=""/>
+          <from><interface-ref name="RXFIFO" ref="0x40dcccb8" scoped=""/></from>
+          <to><interface-ref name="Fifo" ref="0x409ec8d0" scoped=""/>
           <arguments>
             <value cst="I:63">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1382,8 +1382,8 @@
           </to>
         </wire>
         <wire loc="115:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SNOP" ref="0x40deea48" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SNOP" ref="0x40da9190" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:0">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1392,8 +1392,8 @@
           </to>
         </wire>
         <wire loc="132:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MAIN" ref="0x40deade0" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MAIN" ref="0x40dd64e8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:16">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1402,8 +1402,8 @@
           </to>
         </wire>
         <wire loc="138:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXCTRL0" ref="0x40de87a0" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="RXCTRL0" ref="0x40dd5f18" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:22">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1412,8 +1412,8 @@
           </to>
         </wire>
         <wire loc="145:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="IOCFG1" ref="0x40de66e8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="IOCFG1" ref="0x40dd2e38" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:29">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1422,8 +1422,8 @@
           </to>
         </wire>
         <wire loc="140:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="FSCTRL" ref="0x40de7190" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="FSCTRL" ref="0x40dd38a0" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:24">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1432,8 +1432,8 @@
           </to>
         </wire>
         <wire loc="118:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SRXON" ref="0x40ded4e8" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SRXON" ref="0x40da9b98" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:3">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1442,8 +1442,8 @@
           </to>
         </wire>
         <wire loc="141:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SECCTRL0" ref="0x40de75c8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="SECCTRL0" ref="0x40dd3cd8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:25">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1452,8 +1452,8 @@
           </to>
         </wire>
         <wire loc="112:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="Resource" ref="0x40d0de50" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40a0ecc0" scoped=""/>
+          <from><interface-ref name="Resource" ref="0x40d02518" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x409d58c0" scoped=""/>
           <arguments>
             <value cst="I:4">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1462,8 +1462,8 @@
           </to>
         </wire>
         <wire loc="127:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SRXDEC" ref="0x40dea3d8" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SRXDEC" ref="0x40da7a98" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:12">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1472,8 +1472,8 @@
           </to>
         </wire>
         <wire loc="129:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SAES" ref="0x40deaa88" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SAES" ref="0x40dd6190" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:14">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1482,8 +1482,8 @@
           </to>
         </wire>
         <wire loc="156:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="PANID" ref="0x40de3e38" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="PANID" ref="0x40dcf5c8" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:360">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1492,8 +1492,8 @@
           </to>
         </wire>
         <wire loc="155:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="IEEEADR" ref="0x40de3a00" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="IEEEADR" ref="0x40dcf190" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:352">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1502,8 +1502,8 @@
           </to>
         </wire>
         <wire loc="123:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SFLUSHRX" ref="0x40dec5b8" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SFLUSHRX" ref="0x40da8c68" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:8">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1512,8 +1512,8 @@
           </to>
         </wire>
         <wire loc="152:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="RXFIFO_REGISTER" ref="0x40de35c8" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="RXFIFO_REGISTER" ref="0x40dd0cb8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:63">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1522,8 +1522,8 @@
           </to>
         </wire>
         <wire loc="162:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SABUF" ref="0x40de1880" scoped=""/></from>
-          <to><interface-ref name="Ram" ref="0x40a0a7a0" scoped=""/>
+          <from><interface-ref name="SABUF" ref="0x40dcc010" scoped=""/></from>
+          <to><interface-ref name="Ram" ref="0x409eb340" scoped=""/>
           <arguments>
             <value cst="I:288">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1532,8 +1532,8 @@
           </to>
         </wire>
         <wire loc="151:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="AGCCTRL" ref="0x40de3190" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="AGCCTRL" ref="0x40dd0880" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:35">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1542,8 +1542,8 @@
           </to>
         </wire>
         <wire loc="119:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="STXON" ref="0x40ded840" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="STXON" ref="0x40da9ef0" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:4">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1552,8 +1552,8 @@
           </to>
         </wire>
         <wire loc="148:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="FSMTC" ref="0x40de4448" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="FSMTC" ref="0x40dd1b20" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:32">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1562,8 +1562,8 @@
           </to>
         </wire>
         <wire loc="121:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="SRFOFF" ref="0x40dedef0" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="SRFOFF" ref="0x40da85b8" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:6">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1572,8 +1572,8 @@
           </to>
         </wire>
         <wire loc="147:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="MANFIDH" ref="0x40de4010" scoped=""/></from>
-          <to><interface-ref name="Reg" ref="0x40a09010" scoped=""/>
+          <from><interface-ref name="MANFIDH" ref="0x40dd16e8" scoped=""/></from>
+          <to><interface-ref name="Reg" ref="0x409ebb08" scoped=""/>
           <arguments>
             <value cst="I:31">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1582,8 +1582,8 @@
           </to>
         </wire>
         <wire loc="128:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="STXENC" ref="0x40dea730" scoped=""/></from>
-          <to><interface-ref name="Strobe" ref="0x40a097e8" scoped=""/>
+          <from><interface-ref name="STXENC" ref="0x40da7df0" scoped=""/></from>
+          <to><interface-ref name="Strobe" ref="0x409e9310" scoped=""/>
           <arguments>
             <value cst="I:13">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1592,8 +1592,8 @@
           </to>
         </wire>
         <wire loc="168:/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiC.nc">
-          <from><interface-ref name="TXFIFO" ref="0x40de0ea0" scoped=""/></from>
-          <to><interface-ref name="Fifo" ref="0x40a0bd38" scoped=""/>
+          <from><interface-ref name="TXFIFO" ref="0x40dcb5c0" scoped=""/></from>
+          <to><interface-ref name="Fifo" ref="0x409ec8d0" scoped=""/>
           <arguments>
             <value cst="I:62">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -1632,20 +1632,20 @@
       <configuration/>
       <wiring>
         <wire loc="72:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Boot" ref="0x40392578" scoped=""/></from>
-          <to><interface-ref name="Boot" ref="0x405365e0" scoped=""/></to>
+          <from><interface-ref name="Boot" ref="0x406295f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x4062a5e0" scoped=""/></to>
         </wire>
         <wire loc="67:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Scheduler" ref="0x40536978" scoped=""/></from>
+          <from><interface-ref name="Scheduler" ref="0x4062a978" scoped=""/></from>
           <to><interface-ref name="Scheduler" ref="0x403875f0" scoped=""/></to>
         </wire>
         <wire loc="68:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="PlatformInit" ref="0x40636010" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40534a30" scoped=""/></to>
+          <from><interface-ref name="PlatformInit" ref="0x4071a010" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4062b1f0" scoped=""/></to>
         </wire>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40636418" scoped=""/></from>
-          <to><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x4071a418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

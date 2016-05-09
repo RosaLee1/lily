@@ -20,12 +20,12 @@
 </long>
       </documentation>
       <parameters>
-        <typedef loc="53:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="precision_tag" ref="0x40514ae0">
+        <typedef loc="53:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="precision_tag" ref="0x40d42d00">
           <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
-          <type-var alignment="U:" size="U:"><typedef-ref name="precision_tag" ref="0x40514ae0" scoped=""/></type-var>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision_tag" ref="0x40d42d00" scoped=""/></type-var>
         </typedef>
       </parameters>
-      <function command="" loc="136:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="getNow" provided="0" ref="0x40510250">
+      <function command="" loc="136:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="getNow" provided="0" ref="0x40d39520">
         <documentation loc="132:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Return the current time.</short>
@@ -45,7 +45,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="83:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="fired" provided="0" ref="0x405130c8">
+      <function event="" loc="83:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="fired" provided="0" ref="0x40d3c2c8">
         <documentation loc="80:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Signaled when the timer expires (one-shot) or repeats (periodic).</short>
@@ -62,7 +62,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startPeriodicAt" provided="0" ref="0x40512220">
+      <function command="" loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startPeriodicAt" provided="0" ref="0x40d3a460">
         <documentation loc="100:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Set a periodic timer to repeat every dt time units.</short>
@@ -94,19 +94,19 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="t0" ref="0x40513ec0">
+          <variable loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="t0" ref="0x40d3a118">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
-          <variable loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x405120c0">
+          <variable loc="114:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40d3a300">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="98:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="isOneShot" provided="0" ref="0x40513a18">
+      <function command="" loc="98:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="isOneShot" provided="0" ref="0x40d3cc18">
         <documentation loc="94:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Check if this is a one-shot timer.</short>
@@ -126,7 +126,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="151:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="getdt" provided="0" ref="0x40510bc8">
+      <function command="" loc="151:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="getdt" provided="0" ref="0x40d39e98">
         <documentation loc="146:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Return the delay or period for the previously started timer.</short>
@@ -147,7 +147,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="144:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="gett0" provided="0" ref="0x40510698">
+      <function command="" loc="144:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="gett0" provided="0" ref="0x40d39968">
         <documentation loc="138:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Return the time anchor for the previously started timer or the time of
@@ -170,7 +170,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="92:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="isRunning" provided="0" ref="0x40513558">
+      <function command="" loc="92:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="isRunning" provided="0" ref="0x40d3c758">
         <documentation loc="86:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Check if timer is running.</short>
@@ -192,7 +192,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="64:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startPeriodic" provided="0" ref="0x40516168">
+      <function command="" loc="64:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startPeriodic" provided="0" ref="0x40d3d388">
         <documentation loc="56:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Set a periodic timer to repeat every dt time units.</short>
@@ -215,14 +215,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="64:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40516010">
+          <variable loc="64:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40d3d230">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startOneShotAt" provided="0" ref="0x40512c08">
+      <function command="" loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startOneShotAt" provided="0" ref="0x40d3ae48">
         <documentation loc="116:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Set a single-short timer to time t0+dt.</short>
@@ -253,19 +253,19 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="t0" ref="0x405128c0">
+          <variable loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="t0" ref="0x40d3ab00">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
-          <variable loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40512aa8">
+          <variable loc="129:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40d3ace8">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="73:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startOneShot" provided="0" ref="0x40516800">
+      <function command="" loc="73:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="startOneShot" provided="0" ref="0x40d3da20">
         <documentation loc="66:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Set a single-short timer to some time units in the future.</short>
@@ -287,14 +287,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="73:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x405166a8">
+          <variable loc="73:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="dt" ref="0x40d3d8c8">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="78:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="stop" provided="0" ref="0x40516cd0">
+      <function command="" loc="78:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc" name="stop" provided="0" ref="0x40d3def0">
         <documentation loc="75:/home/rgao/lily/tinyos2/tos/lib/timer/Timer.nc">
           <short>
  Cancel a timer.</short>

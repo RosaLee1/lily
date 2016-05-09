@@ -7,7 +7,7 @@
  @author Joe Polastre
 </long>
       </documentation>
-      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/SpiByte.nc" name="write" provided="0" ref="0x40a21310">
+      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/SpiByte.nc" name="write" provided="0" ref="0x409e0168">
         <documentation loc="40:/home/rgao/lily/tinyos2/tos/interfaces/SpiByte.nc">
           <short>
  Synchronous transmit and receive (can be in interrupt context)
@@ -30,7 +30,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/SpiByte.nc" name="tx" ref="0x40a211b8">
+          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/SpiByte.nc" name="tx" ref="0x409e0010">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>

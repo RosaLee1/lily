@@ -15,43 +15,43 @@
       <parameters>
       </parameters>
       <module/>
-    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x40922af0">
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x408edaf0">
       <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x40922af0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x408edaf0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40922cc8" scoped=""/>
-        <function-ref name="isInput" ref="0x40922da8" scoped=""/>
-        <function-ref name="setResistor" ref="0x40922e88" scoped=""/>
-        <function-ref name="toggle" ref="0x40921010" scoped=""/>
-        <function-ref name="isOutput" ref="0x409210f0" scoped=""/>
-        <function-ref name="getResistor" ref="0x409211d0" scoped=""/>
-        <function-ref name="makeOutput" ref="0x409212b0" scoped=""/>
-        <function-ref name="get" ref="0x40921390" scoped=""/>
-        <function-ref name="selectIOFunc" ref="0x40921470" scoped=""/>
-        <function-ref name="getRaw" ref="0x40921550" scoped=""/>
-        <function-ref name="set" ref="0x40921630" scoped=""/>
-        <function-ref name="selectModuleFunc" ref="0x40921710" scoped=""/>
-        <function-ref name="isIOFunc" ref="0x409217f0" scoped=""/>
-        <function-ref name="isModuleFunc" ref="0x40921950" scoped=""/>
-        <function-ref name="clr" ref="0x40921a30" scoped=""/>
+        <function-ref name="makeInput" ref="0x408edcc8" scoped=""/>
+        <function-ref name="isInput" ref="0x408edda8" scoped=""/>
+        <function-ref name="setResistor" ref="0x408ede88" scoped=""/>
+        <function-ref name="toggle" ref="0x408ec010" scoped=""/>
+        <function-ref name="isOutput" ref="0x408ec0f0" scoped=""/>
+        <function-ref name="getResistor" ref="0x408ec1d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x408ec2b0" scoped=""/>
+        <function-ref name="get" ref="0x408ec390" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x408ec470" scoped=""/>
+        <function-ref name="getRaw" ref="0x408ec550" scoped=""/>
+        <function-ref name="set" ref="0x408ec630" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x408ec710" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x408ec7f0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x408ec950" scoped=""/>
+        <function-ref name="clr" ref="0x408eca30" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x40922040">
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x408ed040">
       <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x40922040" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x408ed040" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40922218" scoped=""/>
-        <function-ref name="isInput" ref="0x409222f8" scoped=""/>
-        <function-ref name="toggle" ref="0x409223d8" scoped=""/>
-        <function-ref name="isOutput" ref="0x409224b8" scoped=""/>
-        <function-ref name="get" ref="0x40922598" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40922678" scoped=""/>
-        <function-ref name="set" ref="0x40922758" scoped=""/>
-        <function-ref name="clr" ref="0x40922838" scoped=""/>
+        <function-ref name="makeInput" ref="0x408ed218" scoped=""/>
+        <function-ref name="isInput" ref="0x408ed2f8" scoped=""/>
+        <function-ref name="toggle" ref="0x408ed3d8" scoped=""/>
+        <function-ref name="isOutput" ref="0x408ed4b8" scoped=""/>
+        <function-ref name="get" ref="0x408ed598" scoped=""/>
+        <function-ref name="makeOutput" ref="0x408ed678" scoped=""/>
+        <function-ref name="set" ref="0x408ed758" scoped=""/>
+        <function-ref name="clr" ref="0x408ed838" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

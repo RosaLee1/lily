@@ -11,16 +11,16 @@
 </long>
       </documentation>
       <module/>
-    <specification><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/lpl/DummyLplP.nc" name="LowPowerListening" provided="1" ref="0x40e77cb8">
+    <specification><interface loc="41:/home/rgao/lily/tinyos2/tos/chips/cc2420/lpl/DummyLplP.nc" name="LowPowerListening" provided="1" ref="0x40e61cb8">
       <component-ref nicename="tos.chips.cc2420.lpl.DummyLplP" qname="DummyLplP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x40e77cb8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x40e61cb8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
       </instance>
       <interface-functions>
-        <function-ref name="setRemoteWakeupInterval" ref="0x40e77e90" scoped=""/>
-        <function-ref name="getRemoteWakeupInterval" ref="0x40e73010" scoped=""/>
-        <function-ref name="getLocalWakeupInterval" ref="0x40e730f0" scoped=""/>
-        <function-ref name="setLocalWakeupInterval" ref="0x40e731d0" scoped=""/>
+        <function-ref name="setRemoteWakeupInterval" ref="0x40e61e90" scoped=""/>
+        <function-ref name="getRemoteWakeupInterval" ref="0x40e5e010" scoped=""/>
+        <function-ref name="getLocalWakeupInterval" ref="0x40e5e0f0" scoped=""/>
+        <function-ref name="setLocalWakeupInterval" ref="0x40e5e1d0" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

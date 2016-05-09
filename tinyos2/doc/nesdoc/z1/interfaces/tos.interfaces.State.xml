@@ -8,7 +8,7 @@
  @author David Moss - dmm@rincon.com
 </long>
       </documentation>
-      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="getState" provided="0" ref="0x406a2e60">
+      <function command="" loc="71:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="getState" provided="0" ref="0x405875f0">
         <documentation loc="68:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  Get the current state
@@ -25,7 +25,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="toIdle" provided="0" ref="0x406a2010">
+      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="toIdle" provided="0" ref="0x40579788">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  Set the current state back to S_IDLE
@@ -40,7 +40,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="66:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="isState" provided="0" ref="0x406a29f8">
+      <function command="" loc="66:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="isState" provided="0" ref="0x40587188">
         <documentation loc="63:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  </short>
@@ -60,14 +60,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="66:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="myState" ref="0x406a28a0">
+          <variable loc="66:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="myState" ref="0x40587030">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="isIdle" provided="0" ref="0x406a2428">
+      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="isIdle" provided="0" ref="0x40579ba0">
         <documentation loc="58:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  </short>
@@ -86,7 +86,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="requestState" provided="0" ref="0x406a34c0">
+      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="requestState" provided="0" ref="0x4057ec70">
         <documentation loc="40:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  This will allow a state change so long as the current
@@ -109,14 +109,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="reqState" ref="0x406a3368">
+          <variable loc="45:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="reqState" ref="0x4057eb18">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="forceState" provided="0" ref="0x406a3b28">
+      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="forceState" provided="0" ref="0x40579300">
         <documentation loc="47:/home/rgao/lily/tinyos2/tos/interfaces/State.nc">
           <short>
  Force the state machine to go into a certain state,
@@ -136,7 +136,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="51:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="reqState" ref="0x406a39d0">
+          <variable loc="51:/home/rgao/lily/tinyos2/tos/interfaces/State.nc" name="reqState" ref="0x405791a8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>

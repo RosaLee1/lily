@@ -11,7 +11,7 @@
  @version $Revision: 1.2 $ $Date: 2008-06-03 04:43:03 $
 </long>
       </documentation>
-      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="send" provided="0" ref="0x4068ddd0">
+      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="send" provided="0" ref="0x4056e448">
         <documentation loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc">
           <short>
  Send a message
@@ -32,8 +32,8 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -42,21 +42,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="p_msg" ref="0x4068da88">
+          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="p_msg" ref="0x4056e100">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="useCca" ref="0x4068dc70">
+          <variable loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="useCca" ref="0x4056e2e8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="cancel" provided="0" ref="0x40698908">
+      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="cancel" provided="0" ref="0x4056d010">
         <documentation loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc">
           <short>
  Cancel sending of the message.</short>
@@ -77,7 +77,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="modify" provided="0" ref="0x40696068">
+      <function command="" loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="modify" provided="0" ref="0x4056b720">
         <documentation loc="75:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc">
           <short>
  Modify the contents of a packet.</short>
@@ -111,26 +111,26 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="offset" ref="0x40697858">
+          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="offset" ref="0x4056df08">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
-          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="buf" ref="0x40697d00">
+          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="buf" ref="0x4056b3d8">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="len" ref="0x40697ee0">
+          <variable loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="len" ref="0x4056b5b8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="sendDone" provided="0" ref="0x40697368">
+      <function event="" loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="sendDone" provided="0" ref="0x4056da18">
         <documentation loc="67:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc">
           <short>
  Signal that a message has been sent
@@ -148,8 +148,8 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -158,21 +158,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="p_msg" ref="0x40697010">
+          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="p_msg" ref="0x4056d6c0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="error" ref="0x40697208">
+          <variable loc="73:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="error" ref="0x4056d8b8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="resend" provided="0" ref="0x40698430">
+      <function command="" loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="resend" provided="0" ref="0x4056ea98">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc">
           <short>
  Send the previous message again
@@ -195,7 +195,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="useCca" ref="0x406982d8">
+          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Transmit.nc" name="useCca" ref="0x4056e940">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
             </type-int>

@@ -11,7 +11,7 @@
  @version $Revision: 1.4 $ $Date: 2008-06-17 07:28:24 $
 </long>
       </documentation>
-      <function event="" loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="receive" provided="0" ref="0x40c65d38">
+      <function event="" loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="receive" provided="0" ref="0x40c32d38">
         <documentation loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc">
           <short>
  Signals that a message has been received.</short>
@@ -30,28 +30,28 @@
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="type" ref="0x40c657b8">
+          <variable loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="type" ref="0x40c327b8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
-          <variable loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="message" ref="0x40c65bd8">
+          <variable loc="63:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="message" ref="0x40c32bd8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="sfd_dropped" provided="0" ref="0x40c65320">
+      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="sfd_dropped" provided="0" ref="0x40c32320">
         <documentation loc="51:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc">
           <short>
  Notification that the packet has been dropped by the radio
@@ -70,7 +70,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="sfd" provided="0" ref="0x40c68e70">
+      <function command="" loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="sfd" provided="0" ref="0x40c35e70">
         <documentation loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc">
           <short>
  Notification that an SFD capture has occured.</short>
@@ -90,7 +90,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="time" ref="0x40c68d18">
+          <variable loc="49:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Receive.nc" name="time" ref="0x40c35d18">
             <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
               <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
             </type-int>

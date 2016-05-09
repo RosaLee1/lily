@@ -1,11 +1,11 @@
 digraph "tos.chips.cc2420.link.PacketLinkDummyC" {
-  n0x40e7b748 [shape=ellipse, style=filled, label="Send", fontsize=12];
-  n0x40e6c5e8 [shape=ellipse, style=filled, label="SubSend", fontsize=12];
-  n0x40e7be48 [shape=ellipse, style=filled, label="PacketLink", fontsize=12];
+  n0x40e66748 [shape=ellipse, style=filled, label="Send", fontsize=12];
+  n0x40e575e8 [shape=ellipse, style=filled, label="SubSend", fontsize=12];
+  n0x40e66e48 [shape=ellipse, style=filled, label="PacketLink", fontsize=12];
   "PacketLinkDummyP" [fontsize=12, shape=box, URL="../chtml/tos.chips.cc2420.link.PacketLinkDummyP.html"];
   "PacketLinkDummyP" [fontsize=12, shape=box, URL="../chtml/tos.chips.cc2420.link.PacketLinkDummyP.html"];
   "CC2420RadioC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.chips.cc2420.CC2420RadioC.html"];
-  "n0x40e7b748" -> "n0x40e6c5e8" [label="Send", URL="../ihtml/tos.interfaces.Send.html", fontsize=10];
-  "n0x40e7be48" -> "PacketLinkDummyP" [label="PacketLink", URL="../ihtml/tos.interfaces.PacketLink.html", fontsize=10];
+  "n0x40e66748" -> "n0x40e575e8" [label="Send", URL="../ihtml/tos.interfaces.Send.html", fontsize=10];
+  "n0x40e66e48" -> "PacketLinkDummyP" [label="PacketLink", URL="../ihtml/tos.interfaces.PacketLink.html", fontsize=10];
   "PacketLinkDummyP" -> "CC2420RadioC" [label="PacketAcknowledgements", URL="../ihtml/tos.interfaces.PacketAcknowledgements.html", fontsize=10];
 }

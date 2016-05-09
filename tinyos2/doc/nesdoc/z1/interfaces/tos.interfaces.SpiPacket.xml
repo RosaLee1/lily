@@ -22,7 +22,7 @@
  Revision:  $Revision: 1.8 $
 </long>
       </documentation>
-      <function command="" loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="send" provided="0" ref="0x40a206f8">
+      <function command="" loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="send" provided="0" ref="0x409fe580">
         <documentation loc="56:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc">
           <short>
  Send a message over the SPI bus.</short>
@@ -63,28 +63,28 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="txBuf" ref="0x40a20188">
+          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="txBuf" ref="0x409fe010">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="rxBuf" ref="0x40a203a0">
+          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="rxBuf" ref="0x409fe228">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="len" ref="0x40a20590">
+          <variable loc="70:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="len" ref="0x409fe418">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="sendDone" provided="0" ref="0x40a1ed50">
+      <function event="" loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="sendDone" provided="0" ref="0x409fcbc8">
         <documentation loc="72:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc">
           <short>
  Notification that the send command has completed.</short>
@@ -122,26 +122,26 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="txBuf" ref="0x40a1e5d0">
+          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="txBuf" ref="0x409fc448">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="rxBuf" ref="0x40a1e7e8">
+          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="rxBuf" ref="0x409fc660">
             <type-pointer alignment="I:2" size="I:2">
               <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
                 <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
               </type-int>
             </type-pointer>
           </variable>
-          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="len" ref="0x40a1e9d8">
+          <variable loc="82:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="len" ref="0x409fc850">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
-          <variable loc="83:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="error" ref="0x40a1ebe0">
+          <variable loc="83:/home/rgao/lily/tinyos2/tos/interfaces/SpiPacket.nc" name="error" ref="0x409fca58">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>

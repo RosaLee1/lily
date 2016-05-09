@@ -11,7 +11,7 @@
  @version $Revision: 1.3 $ $Date: 2010-06-29 22:07:44 $
 </long>
       </documentation>
-      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Strobe.nc" name="strobe" provided="0" ref="0x40701818">
+      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Strobe.nc" name="strobe" provided="0" ref="0x405d0da8">
         <documentation loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Strobe.nc">
           <short>
  Send a command strobe to the register.</short>
@@ -26,7 +26,7 @@
         <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="cc2420_status_t" ref="0x404d7498"/></typename>
+            <typename><typedef-ref name="cc2420_status_t" ref="0x404cc7e8"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>

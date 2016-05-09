@@ -9,12 +9,12 @@
  @author Xavier Orduna &lt;xorduna@dexmatech.com&gt;
 </long>
       </documentation>
-      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430I2CConfigure.nc" name="getConfig" provided="0" ref="0x40af3720">
+      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430I2CConfigure.nc" name="getConfig" provided="0" ref="0x40acde18">
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430I2CConfigure" qname="Msp430I2CConfigure"/>
         <type-function alignment="I:1" size="I:1">
           <type-pointer alignment="I:2" size="I:2">
-            <type-tag alignment="I:2" size="I:6"><union-ref ref="0x40a78cf0"/>
-              <typename><typedef-ref name="msp430_i2c_union_config_t" ref="0x40a78f18"/></typename>
+            <type-tag alignment="I:2" size="I:6"><union-ref ref="0x40a55500"/>
+              <typename><typedef-ref name="msp430_i2c_union_config_t" ref="0x40a55728"/></typename>
             </type-tag>
           </type-pointer>
           <function-parameters>

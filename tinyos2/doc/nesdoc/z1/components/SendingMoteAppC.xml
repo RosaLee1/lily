@@ -1,0 +1,294 @@
+<?xml version="1.0" ?><component loc="38:SendingMoteAppC.nc" nicename="SendingMoteAppC" qname="SendingMoteAppC">
+      <configuration/>
+      <wiring>
+        <wire loc="46:SendingMoteAppC.nc">
+          <from><interface-ref name="Boot" ref="0x40f0c688" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x406295f0" scoped=""/></to>
+        </wire>
+        <wire loc="47:SendingMoteAppC.nc">
+          <from><interface-ref name="SendTimer" ref="0x40f0cb48" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40f10760" scoped=""/></to>
+        </wire>
+        <wire loc="49:SendingMoteAppC.nc">
+          <from><interface-ref name="RssiMsgSend" ref="0x40f08e58" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x40ec0938" scoped=""/></to>
+        </wire>
+        <wire loc="50:SendingMoteAppC.nc">
+          <from><interface-ref name="RadioControl" ref="0x40f07650" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x404d5e68" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification/><referenced><interface loc="49:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMSend" provided="1" ref="0x40ec0938">
+      <component-ref nicename="tos.system.AMSenderC" qname="SendingMoteAppC.RssiMsgSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x40ec0938" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40ec0b10" scoped=""/>
+        <function-ref name="getPayload" ref="0x40ec0bf0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40ec0cd0" scoped=""/>
+        <function-ref name="cancel" ref="0x40ec0db0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40ec0e90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:SendingMoteC.nc" name="RssiMsgSend" provided="0" ref="0x40f08e58">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RssiMsgSend" ref="0x40f08e58" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f07050" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f07130" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f07210" scoped=""/>
+        <function-ref name="cancel" ref="0x40f072f0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f073d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:SendingMoteC.nc" name="RadioControl" provided="0" ref="0x40f07650">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioControl" ref="0x40f07650" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40f07828" scoped=""/>
+        <function-ref name="stopDone" ref="0x40f07908" scoped=""/>
+        <function-ref name="start" ref="0x40f079e8" scoped=""/>
+        <function-ref name="stop" ref="0x40f07ac8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x40f10760">
+      <component-ref nicename="tos.system.TimerMilliC" qname="SendingMoteAppC.SendTimer"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x40f10760" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40f0e330" scoped=""/>
+        <function-ref name="fired" ref="0x40f0f520" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40f0fc28" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40f0f9d0" scoped=""/>
+        <function-ref name="getdt" ref="0x40f0e7e0" scoped=""/>
+        <function-ref name="gett0" ref="0x40f0e588" scoped=""/>
+        <function-ref name="isRunning" ref="0x40f0f778" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40f10d88" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40f0e010" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40f0f048" scoped=""/>
+        <function-ref name="stop" ref="0x40f0f2c8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="Boot" provided="1" ref="0x406295f0">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x406295f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x406297c8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:SendingMoteC.nc" name="Boot" provided="0" ref="0x40f0c688">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x40f0c688" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x40f0c860" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x404d5e68">
+      <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x404d5e68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x404cc050" scoped=""/>
+        <function-ref name="stopDone" ref="0x404cc130" scoped=""/>
+        <function-ref name="start" ref="0x404cc210" scoped=""/>
+        <function-ref name="stop" ref="0x404cc2f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:SendingMoteC.nc" name="SendTimer" provided="0" ref="0x40f0cb48">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendTimer" ref="0x40f0cb48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40f086a8" scoped=""/>
+        <function-ref name="fired" ref="0x40f09938" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40f08068" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40f09de8" scoped=""/>
+        <function-ref name="getdt" ref="0x40f08b58" scoped=""/>
+        <function-ref name="gett0" ref="0x40f08900" scoped=""/>
+        <function-ref name="isRunning" ref="0x40f09b90" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40f091e0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40f08388" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40f09460" scoped=""/>
+        <function-ref name="stop" ref="0x40f096e0" scoped=""/>
+      </interface-functions>
+    </interface><component loc="56:/home/rgao/lily/tinyos2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x406295f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x4062a5e0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x4062a978" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x403875f0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x4071a010" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4062b1f0" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x4071a418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="52:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC">
+      <configuration/>
+      <wiring>
+        <wire loc="71:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x404d5e68" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x40535460" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x4050b670" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x40535d38" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="Snoop" ref="0x404d71b0" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x40534db0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x40510148" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40533dc0" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40529c68" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="LowPowerListening" ref="0x4052f4f0" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x4053e660" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x40509af8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40534718" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x4051e308" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x4053aeb8" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x40523140" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x405331a8" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x40528650" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x40cfd578" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44(SendingMoteAppC.SendTimer):/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="SendingMoteAppC.SendTimer">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="1">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x40f10760" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="39:SendingMoteC.nc" nicename="SendingMoteC" qname="SendingMoteC">
+      <documentation loc="32:../RssiDemoMessages.h">
+        <short>
+ </short>
+        <long>
+ @author Dimas Abreu Dutra
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="47(SendingMoteAppC.RssiMsgSender):/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" nicename="tos.system.AMSenderC" qname="SendingMoteAppC.RssiMsgSender">
+      <documentation loc="33:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
+        <short>
+ The virtualized active message send abstraction.</short>
+        <long>
+ The virtualized active message send abstraction. Each instantiation
+ of AMSenderC has its own queue of depth one. Therefore, it does not
+ have to contend with other AMSenderC instantiations for queue space.
+ The underlying implementation schedules the packets in these queues
+ using some form of fair-share queueing.
+
+ @author Philip Levis
+ @date   Jan 16 2006
+ @see    TEP 116: Packet Protocols
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
+        <arguments>
+          <value cst="I:10">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="64:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
+          <from><interface-ref name="AMSend" ref="0x40ec0938" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x41425cf8" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
+          <from><interface-ref name="Packet" ref="0x40ebf010" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x4147d3f0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
+          <from><interface-ref name="AMPacket" ref="0x40ebf6a8" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x4147da88" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
+          <from><interface-ref name="Acks" ref="0x40f11330" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x4147c6b0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

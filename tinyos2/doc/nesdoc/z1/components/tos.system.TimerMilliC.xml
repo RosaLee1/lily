@@ -16,8 +16,8 @@
       <configuration/>
       <wiring>
         <wire loc="52:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc">
-          <from><interface-ref name="Timer" ref="0x40d4c6f0" scoped=""/></from>
-          <to><interface-ref name="TimerMilli" ref="0x40dc43f0" scoped=""/>
+          <from><interface-ref name="Timer" ref="0x40d40d88" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/>
           <arguments>
             <value cst="U:">
               <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
@@ -26,38 +26,38 @@
           </to>
         </wire>
       </wiring>
-    <specification><interface loc="45:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x40d4c6f0">
+    <specification><interface loc="45:/home/rgao/lily/tinyos2/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x40d40d88">
       <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x40d4c6f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x40d40d88" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
           </type-tag>
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="getNow" ref="0x40dc7248" scoped=""/>
-        <function-ref name="fired" ref="0x40dc84e8" scoped=""/>
-        <function-ref name="startPeriodicAt" ref="0x40dc8bf0" scoped=""/>
-        <function-ref name="isOneShot" ref="0x40dc8998" scoped=""/>
-        <function-ref name="getdt" ref="0x40dc76f8" scoped=""/>
-        <function-ref name="gett0" ref="0x40dc74a0" scoped=""/>
-        <function-ref name="isRunning" ref="0x40dc8740" scoped=""/>
-        <function-ref name="startPeriodic" ref="0x40d4cd18" scoped=""/>
-        <function-ref name="startOneShotAt" ref="0x40dc8f10" scoped=""/>
-        <function-ref name="startOneShot" ref="0x40dc8010" scoped=""/>
-        <function-ref name="stop" ref="0x40dc8290" scoped=""/>
+        <function-ref name="getNow" ref="0x40db48a8" scoped=""/>
+        <function-ref name="fired" ref="0x40db5b18" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40db4268" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40db4010" scoped=""/>
+        <function-ref name="getdt" ref="0x40db4d58" scoped=""/>
+        <function-ref name="gett0" ref="0x40db4b00" scoped=""/>
+        <function-ref name="isRunning" ref="0x40db5d70" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40db53c0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40db4588" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40db5640" scoped=""/>
+        <function-ref name="stop" ref="0x40db58c0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="49:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc" name="TimerMilli" provided="1" ref="0x40dc43f0">
+    </interface></specification><referenced><interface loc="49:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc" name="TimerMilli" provided="1" ref="0x40db3a70">
       <component-ref nicename="tos.system.TimerMilliP" qname="TimerMilliP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40dc43f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
           </type-tag>
         </arguments>
       </instance>
@@ -67,17 +67,17 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getNow" ref="0x40dc3ed0" scoped=""/>
-        <function-ref name="fired" ref="0x40dc3188" scoped=""/>
-        <function-ref name="startPeriodicAt" ref="0x40dc3890" scoped=""/>
-        <function-ref name="isOneShot" ref="0x40dc3638" scoped=""/>
-        <function-ref name="getdt" ref="0x40dc13a8" scoped=""/>
-        <function-ref name="gett0" ref="0x40dc1150" scoped=""/>
-        <function-ref name="isRunning" ref="0x40dc33e0" scoped=""/>
-        <function-ref name="startPeriodic" ref="0x40dc4a18" scoped=""/>
-        <function-ref name="startOneShotAt" ref="0x40dc3bb0" scoped=""/>
-        <function-ref name="startOneShot" ref="0x40dc4c98" scoped=""/>
-        <function-ref name="stop" ref="0x40dc4f18" scoped=""/>
+        <function-ref name="getNow" ref="0x40dae570" scoped=""/>
+        <function-ref name="fired" ref="0x40daf810" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40daff18" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40dafcc0" scoped=""/>
+        <function-ref name="getdt" ref="0x40daea20" scoped=""/>
+        <function-ref name="gett0" ref="0x40dae7c8" scoped=""/>
+        <function-ref name="isRunning" ref="0x40dafa68" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40daf0b8" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40dae250" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40daf338" scoped=""/>
+        <function-ref name="stop" ref="0x40daf5b8" scoped=""/>
       </interface-functions>
     </interface><component loc="48:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc" nicename="tos.system.TimerMilliP" qname="TimerMilliP">
       <documentation loc="34:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc">
@@ -98,12 +98,12 @@
       <configuration/>
       <wiring>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc">
-          <from><interface-ref name="TimerMilli" ref="0x40dc43f0" scoped=""/></from>
-          <to><interface-ref name="TimerMilli" ref="0x40d4ebe0" scoped=""/></to>
+          <from><interface-ref name="TimerMilli" ref="0x40db3a70" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x40d38580" scoped=""/></to>
         </wire>
         <wire loc="53:/home/rgao/lily/tinyos2/tos/system/TimerMilliP.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40d4e430" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40d42430" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

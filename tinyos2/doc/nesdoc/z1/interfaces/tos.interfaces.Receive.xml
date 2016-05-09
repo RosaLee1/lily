@@ -10,7 +10,7 @@
  Defines global error codes for error_t in TinyOS.
 </long>
       </documentation>
-      <function event="" loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="receive" provided="0" ref="0x40509378">
+      <function event="" loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="receive" provided="0" ref="0x4050c958">
         <documentation loc="58:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc">
           <short>
  Receive a packet buffer, returning a buffer for the signaling
@@ -38,14 +38,14 @@
         <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
         <type-function alignment="I:1" size="I:1">
           <type-pointer alignment="I:2" size="I:2">
-            <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-              <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+            <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+              <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
             </type-tag>
           </type-pointer>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-pointer alignment="I:2" size="I:2">
@@ -57,19 +57,19 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="msg" ref="0x4050ad90">
+          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="msg" ref="0x4050c410">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="payload" ref="0x40509010">
+          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="payload" ref="0x4050c5f0">
             <type-pointer alignment="I:2" size="I:2">
               <type-void alignment="I:1" size="I:1"/>
             </type-pointer>
           </variable>
-          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="len" ref="0x405091f0">
+          <variable loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Receive.nc" name="len" ref="0x4050c7d0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>

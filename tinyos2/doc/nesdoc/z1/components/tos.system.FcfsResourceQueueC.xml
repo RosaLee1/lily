@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><component abstract="" loc="42:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" nicename="tos.system.FcfsResourceQueueC" qname="FcfsResourceQueueC" safe="">
       <parameters>
-        <constant loc="42:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="size" ref="0x40b92068">
+        <constant loc="42:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="size" ref="0x40b68068">
           <component-ref nicename="tos.system.FcfsResourceQueueC" qname="FcfsResourceQueueC"/>
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
             <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
@@ -8,25 +8,25 @@
         </constant>
       </parameters>
       <module/>
-    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="Init" provided="1" ref="0x40b924f8">
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="Init" provided="1" ref="0x40b684f8">
       <component-ref nicename="tos.system.FcfsResourceQueueC" qname="FcfsResourceQueueC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40b924f8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40b684f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40b926d0" scoped=""/>
+        <function-ref name="init" ref="0x40b686d0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="FcfsQueue" provided="1" ref="0x40b8e668">
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/system/FcfsResourceQueueC.nc" name="FcfsQueue" provided="1" ref="0x40b8a668">
       <component-ref nicename="tos.system.FcfsResourceQueueC" qname="FcfsResourceQueueC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="FcfsQueue" ref="0x40b8e668" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FcfsQueue" ref="0x40b8a668" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.ResourceQueue" qname="ResourceQueue"/>
       </instance>
       <interface-functions>
-        <function-ref name="enqueue" ref="0x40b8e840" scoped=""/>
-        <function-ref name="isEmpty" ref="0x40b8e920" scoped=""/>
-        <function-ref name="isEnqueued" ref="0x40b8ea00" scoped=""/>
-        <function-ref name="dequeue" ref="0x40b8eae0" scoped=""/>
+        <function-ref name="enqueue" ref="0x40b8a840" scoped=""/>
+        <function-ref name="isEmpty" ref="0x40b8a920" scoped=""/>
+        <function-ref name="isEnqueued" ref="0x40b8aa00" scoped=""/>
+        <function-ref name="dequeue" ref="0x40b8aae0" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

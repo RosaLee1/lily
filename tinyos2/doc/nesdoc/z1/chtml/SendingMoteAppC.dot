@@ -1,0 +1,14 @@
+digraph "SendingMoteAppC" {
+  "SendingMoteC" [fontsize=12, shape=box, URL="../chtml/SendingMoteC.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "SendingMoteC" [fontsize=12, shape=box, URL="../chtml/SendingMoteC.html"];
+  "SendingMoteAppC.SendTimer" [fontsize=12, shape=box,peripheries=2, style=dashed, label="TimerMilliC\n(SendTimer)", URL="../chtml/tos.system.TimerMilliC.html"];
+  "SendingMoteC" [fontsize=12, shape=box, URL="../chtml/SendingMoteC.html"];
+  "SendingMoteAppC.RssiMsgSender" [fontsize=12, shape=box,peripheries=2, style=dashed, label="AMSenderC\n(RssiMsgSender)", URL="../chtml/tos.system.AMSenderC.html"];
+  "SendingMoteC" [fontsize=12, shape=box, URL="../chtml/SendingMoteC.html"];
+  "ActiveMessageC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.platforms.z1.ActiveMessageC.html"];
+  "SendingMoteC" -> "MainC" [label="Boot", URL="../ihtml/tos.interfaces.Boot.html", fontsize=10];
+  "SendingMoteC" -> "SendingMoteAppC.SendTimer" [label="Timer<TMilli>", URL="../ihtml/tos.lib.timer.Timer.html", fontsize=10];
+  "SendingMoteC" -> "SendingMoteAppC.RssiMsgSender" [label="AMSend", URL="../ihtml/tos.interfaces.AMSend.html", fontsize=10];
+  "SendingMoteC" -> "ActiveMessageC" [label="SplitControl", URL="../ihtml/tos.interfaces.SplitControl.html", fontsize=10];
+}

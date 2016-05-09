@@ -13,22 +13,22 @@
       <configuration/>
       <wiring>
         <wire loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Counter32khz32C.nc">
-          <from><interface-ref name="Counter" ref="0x40788cf0" scoped=""/></from>
-          <to><interface-ref name="Counter" ref="0x407a70c0" scoped=""/></to>
+          <from><interface-ref name="Counter" ref="0x40766cf0" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407820c0" scoped=""/></to>
         </wire>
         <wire loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Counter32khz32C.nc">
-          <from><interface-ref name="CounterFrom" ref="0x407b0380" scoped=""/></from>
-          <to><interface-ref name="Msp430Counter32khz" ref="0x40787820" scoped=""/></to>
+          <from><interface-ref name="CounterFrom" ref="0x40789380" scoped=""/></from>
+          <to><interface-ref name="Msp430Counter32khz" ref="0x40769820" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Counter32khz32C.nc" name="Counter" provided="1" ref="0x40788cf0">
+    <specification><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Counter32khz32C.nc" name="Counter" provided="1" ref="0x40766cf0">
       <component-ref nicename="tos.chips.msp430.timer.Counter32khz32C" qname="Counter32khz32C"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x40788cf0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x40766cf0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -36,19 +36,19 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="get" ref="0x4078b478" scoped=""/>
-        <function-ref name="clearOverflow" ref="0x4078b968" scoped=""/>
-        <function-ref name="isOverflowPending" ref="0x4078b6f0" scoped=""/>
-        <function-ref name="overflow" ref="0x4078bbe0" scoped=""/>
+        <function-ref name="get" ref="0x4076a478" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x4076a968" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x4076a6f0" scoped=""/>
+        <function-ref name="overflow" ref="0x4076abe0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc" name="Msp430Counter32khz" provided="1" ref="0x40787820">
+    </interface></specification><referenced><interface loc="43:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc" name="Msp430Counter32khz" provided="1" ref="0x40769820">
       <component-ref nicename="tos.chips.msp430.timer.Msp430Counter32khzC" qname="Msp430Counter32khzC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Counter32khz" ref="0x40787820" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Counter32khz" ref="0x40769820" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
             <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
@@ -56,39 +56,19 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="get" ref="0x4079c010" scoped=""/>
-        <function-ref name="clearOverflow" ref="0x4079c500" scoped=""/>
-        <function-ref name="isOverflowPending" ref="0x4079c288" scoped=""/>
-        <function-ref name="overflow" ref="0x4079c778" scoped=""/>
+        <function-ref name="get" ref="0x40779010" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40779500" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40779288" scoped=""/>
+        <function-ref name="overflow" ref="0x40779778" scoped=""/>
       </interface-functions>
-    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc" name="CounterFrom" provided="0" ref="0x407b0380">
+    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc" name="Counter" provided="1" ref="0x407820c0">
       <component-ref nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="CounterFrom" ref="0x407b0380" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x407820c0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
-          </type-tag>
-          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
-          </type-int>
-        </arguments>
-      </instance>
-      <interface-functions>
-        <function-ref name="get" ref="0x407b0ad0" scoped=""/>
-        <function-ref name="clearOverflow" ref="0x407ae010" scoped=""/>
-        <function-ref name="isOverflowPending" ref="0x407b0d48" scoped=""/>
-        <function-ref name="overflow" ref="0x407ae288" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc" name="Counter" provided="1" ref="0x407a70c0">
-      <component-ref nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x407a70c0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
-        <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -96,10 +76,30 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="get" ref="0x407a7810" scoped=""/>
-        <function-ref name="clearOverflow" ref="0x407a7d00" scoped=""/>
-        <function-ref name="isOverflowPending" ref="0x407a7a88" scoped=""/>
-        <function-ref name="overflow" ref="0x407b0010" scoped=""/>
+        <function-ref name="get" ref="0x40782810" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40782d00" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40782a88" scoped=""/>
+        <function-ref name="overflow" ref="0x40789010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc" name="CounterFrom" provided="0" ref="0x40789380">
+      <component-ref nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CounterFrom" ref="0x40789380" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40789ad0" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40788010" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40789d48" scoped=""/>
+        <function-ref name="overflow" ref="0x40788288" scoped=""/>
       </interface-functions>
     </interface><component loc="54(Counter32khz32C.Transform):/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc" nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform">
       <documentation loc="34:/home/rgao/lily/tinyos2/tos/lib/timer/TransformCounterC.nc">
@@ -128,14 +128,14 @@
       <instance number="0">
         <component-ref nicename="tos.lib.timer.TransformCounterC" qname="TransformCounterC"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
           </type-int>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
             <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
@@ -164,12 +164,12 @@
       <configuration/>
       <wiring>
         <wire loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc">
-          <from><interface-ref name="Msp430Counter32khz" ref="0x40787820" scoped=""/></from>
-          <to><interface-ref name="Counter" ref="0x4079a388" scoped=""/></to>
+          <from><interface-ref name="Msp430Counter32khz" ref="0x40769820" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x40776388" scoped=""/></to>
         </wire>
         <wire loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Counter32khzC.nc">
-          <from><interface-ref name="Msp430Timer" ref="0x407924b8" scoped=""/></from>
-          <to><interface-ref name="TimerB" ref="0x40581e60" scoped=""/></to>
+          <from><interface-ref name="Msp430Timer" ref="0x407754b8" scoped=""/></from>
+          <to><interface-ref name="TimerB" ref="0x40679320" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

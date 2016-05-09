@@ -6,7 +6,7 @@
  @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
 </long>
       </documentation>
-      <function event="" loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerEvent.nc" name="fired" provided="0" ref="0x405a4138">
+      <function event="" loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerEvent.nc" name="fired" provided="0" ref="0x4069b288">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerEvent" qname="Msp430TimerEvent"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>

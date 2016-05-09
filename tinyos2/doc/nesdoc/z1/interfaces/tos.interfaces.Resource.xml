@@ -20,7 +20,7 @@
  @date $Date: 2010-06-29 22:07:46 $
 </long>
       </documentation>
-      <function command="" loc="120:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="release" provided="0" ref="0x40678138">
+      <function command="" loc="120:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="release" provided="0" ref="0x40550af8">
         <documentation loc="104:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc">
           <short>
  Release a shared resource you previously acquired.</short>
@@ -52,7 +52,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="97:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="immediateRequest" provided="0" ref="0x4067a7f0">
+      <function command="" loc="97:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="immediateRequest" provided="0" ref="0x405501d8">
         <documentation loc="90:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc">
           <short>
  Request immediate access to a shared resource.</short>
@@ -75,7 +75,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="88:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="request" provided="0" ref="0x4067a1f0">
+      <function command="" loc="88:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="request" provided="0" ref="0x40553bc8">
         <documentation loc="78:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc">
           <short>
  Request access to a shared resource.</short>
@@ -101,7 +101,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="102:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="granted" provided="0" ref="0x4067aca0">
+      <function event="" loc="102:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="granted" provided="0" ref="0x40550688">
         <documentation loc="99:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc">
           <short>
  You are now in control of the resource.</short>
@@ -118,7 +118,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="128:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="isOwner" provided="0" ref="0x40678830">
+      <function command="" loc="128:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc" name="isOwner" provided="0" ref="0x4054f210">
         <documentation loc="122:/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc">
           <short>
   Check if the user of this interface is the current

@@ -10,28 +10,28 @@
 </long>
       </documentation>
       <module/>
-    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/link/PacketLinkDummyP.nc" name="PacketAcknowledgements" provided="0" ref="0x40e6ba60">
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/chips/cc2420/link/PacketLinkDummyP.nc" name="PacketAcknowledgements" provided="0" ref="0x40e56a60">
       <component-ref nicename="tos.chips.cc2420.link.PacketLinkDummyP" qname="PacketLinkDummyP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x40e6ba60" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x40e56a60" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
       </instance>
       <interface-functions>
-        <function-ref name="requestAck" ref="0x40e6bc38" scoped=""/>
-        <function-ref name="noAck" ref="0x40e6bd18" scoped=""/>
-        <function-ref name="wasAcked" ref="0x40e6bdf8" scoped=""/>
+        <function-ref name="requestAck" ref="0x40e56c38" scoped=""/>
+        <function-ref name="noAck" ref="0x40e56d18" scoped=""/>
+        <function-ref name="wasAcked" ref="0x40e56df8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/cc2420/link/PacketLinkDummyP.nc" name="PacketLink" provided="1" ref="0x40e6b2a8">
+    </interface><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/cc2420/link/PacketLinkDummyP.nc" name="PacketLink" provided="1" ref="0x40e562a8">
       <component-ref nicename="tos.chips.cc2420.link.PacketLinkDummyP" qname="PacketLinkDummyP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketLink" ref="0x40e6b2a8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketLink" ref="0x40e562a8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketLink" qname="PacketLink"/>
       </instance>
       <interface-functions>
-        <function-ref name="getRetryDelay" ref="0x40e6b480" scoped=""/>
-        <function-ref name="setRetries" ref="0x40e6b560" scoped=""/>
-        <function-ref name="getRetries" ref="0x40e6b640" scoped=""/>
-        <function-ref name="setRetryDelay" ref="0x40e6b720" scoped=""/>
-        <function-ref name="wasDelivered" ref="0x40e6b800" scoped=""/>
+        <function-ref name="getRetryDelay" ref="0x40e56480" scoped=""/>
+        <function-ref name="setRetries" ref="0x40e56560" scoped=""/>
+        <function-ref name="getRetries" ref="0x40e56640" scoped=""/>
+        <function-ref name="setRetryDelay" ref="0x40e56720" scoped=""/>
+        <function-ref name="wasDelivered" ref="0x40e56800" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

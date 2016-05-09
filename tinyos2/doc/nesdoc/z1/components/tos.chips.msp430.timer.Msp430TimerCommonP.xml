@@ -1,39 +1,39 @@
 <?xml version="1.0" ?><component loc="2:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" nicename="tos.chips.msp430.timer.Msp430TimerCommonP" qname="Msp430TimerCommonP" safe="">
       <module/>
-    <specification><interface loc="7:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerB1" provided="1" ref="0x406184b8">
+    <specification><interface loc="7:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerB1" provided="1" ref="0x407074b8">
       <component-ref nicename="tos.chips.msp430.timer.Msp430TimerCommonP" qname="Msp430TimerCommonP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerB1" ref="0x406184b8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerB1" ref="0x407074b8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerEvent" qname="Msp430TimerEvent"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x40618690" scoped=""/>
+        <function-ref name="fired" ref="0x40707690" scoped=""/>
       </interface-functions>
-    </interface><interface loc="4:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerA0" provided="1" ref="0x40609700">
+    </interface><interface loc="4:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerA0" provided="1" ref="0x406f6700">
       <component-ref nicename="tos.chips.msp430.timer.Msp430TimerCommonP" qname="Msp430TimerCommonP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerA0" ref="0x40609700" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerA0" ref="0x406f6700" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerEvent" qname="Msp430TimerEvent"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x406098d8" scoped=""/>
+        <function-ref name="fired" ref="0x406f68d8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="5:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerA1" provided="1" ref="0x40609b88">
+    </interface><interface loc="5:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerA1" provided="1" ref="0x406f6b88">
       <component-ref nicename="tos.chips.msp430.timer.Msp430TimerCommonP" qname="Msp430TimerCommonP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerA1" ref="0x40609b88" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerA1" ref="0x406f6b88" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerEvent" qname="Msp430TimerEvent"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x40609d60" scoped=""/>
+        <function-ref name="fired" ref="0x406f6d60" scoped=""/>
       </interface-functions>
-    </interface><interface loc="6:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerB0" provided="1" ref="0x40618030">
+    </interface><interface loc="6:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430TimerCommonP.nc" name="VectorTimerB0" provided="1" ref="0x40707030">
       <component-ref nicename="tos.chips.msp430.timer.Msp430TimerCommonP" qname="Msp430TimerCommonP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerB0" ref="0x40618030" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="VectorTimerB0" ref="0x40707030" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerEvent" qname="Msp430TimerEvent"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x40618208" scoped=""/>
+        <function-ref name="fired" ref="0x40707208" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

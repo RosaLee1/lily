@@ -1,123 +1,112 @@
 <?xml version="1.0" ?><component loc="52:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC">
-      <documentation loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-        <short>
-
- The Active Message layer on the Telos platform.</short>
-        <long>
-
- The Active Message layer on the Telos platform. This is a naming wrapper
- around the CC2420 Active Message layer.
-
-</long>
-      </documentation>
       <configuration/>
       <wiring>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="SplitControl" ref="0x404cf378" scoped=""/></from>
-          <to><interface-ref name="SplitControl" ref="0x40660c00" scoped=""/></to>
+          <from><interface-ref name="SplitControl" ref="0x404d5e68" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x40535460" scoped=""/></to>
         </wire>
         <wire loc="73:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="AMSend" ref="0x404cfc50" scoped=""/></from>
-          <to><interface-ref name="AMSend" ref="0x4065f550" scoped=""/></to>
+          <from><interface-ref name="AMSend" ref="0x4050b670" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x40535d38" scoped=""/></to>
         </wire>
         <wire loc="75:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="Snoop" ref="0x40630cd0" scoped=""/></from>
-          <to><interface-ref name="Snoop" ref="0x4065e5c8" scoped=""/></to>
+          <from><interface-ref name="Snoop" ref="0x404d71b0" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x40534db0" scoped=""/></to>
         </wire>
         <wire loc="76:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="Packet" ref="0x4063bce8" scoped=""/></from>
-          <to><interface-ref name="Packet" ref="0x4065d5f0" scoped=""/></to>
+          <from><interface-ref name="Packet" ref="0x40510148" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40533dc0" scoped=""/></to>
         </wire>
         <wire loc="82:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="PacketTimeStamp32khz" ref="0x4064d7c0" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40529c68" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></to>
         </wire>
         <wire loc="79:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="LowPowerListening" ref="0x40655068" scoped=""/></from>
-          <to><interface-ref name="LowPowerListening" ref="0x40674db0" scoped=""/></to>
+          <from><interface-ref name="LowPowerListening" ref="0x4052f4f0" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x4053e660" scoped=""/></to>
         </wire>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="Receive" ref="0x40630638" scoped=""/></from>
-          <to><interface-ref name="Receive" ref="0x4065ff10" scoped=""/></to>
+          <from><interface-ref name="Receive" ref="0x40509af8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40534718" scoped=""/></to>
         </wire>
         <wire loc="78:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="PacketAcknowledgements" ref="0x40650be8" scoped=""/></from>
-          <to><interface-ref name="PacketAcknowledgements" ref="0x4065c690" scoped=""/></to>
+          <from><interface-ref name="PacketAcknowledgements" ref="0x4051e308" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x4053aeb8" scoped=""/></to>
         </wire>
         <wire loc="77:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="AMPacket" ref="0x40642a98" scoped=""/></from>
-          <to><interface-ref name="AMPacket" ref="0x4065e938" scoped=""/></to>
+          <from><interface-ref name="AMPacket" ref="0x40523140" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x405331a8" scoped=""/></to>
         </wire>
         <wire loc="83:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc">
-          <from><interface-ref name="PacketTimeStampMilli" ref="0x406511a0" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStampMilli" ref="0x40d09578" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x40528650" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x40cfd578" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x404cf378">
+    <specification><interface loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x404d5e68">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x404cf378" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x404d5e68" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
       </instance>
       <interface-functions>
-        <function-ref name="startDone" ref="0x404cf550" scoped=""/>
-        <function-ref name="stopDone" ref="0x404cf630" scoped=""/>
-        <function-ref name="start" ref="0x404cf710" scoped=""/>
-        <function-ref name="stop" ref="0x404cf7f0" scoped=""/>
+        <function-ref name="startDone" ref="0x404cc050" scoped=""/>
+        <function-ref name="stopDone" ref="0x404cc130" scoped=""/>
+        <function-ref name="start" ref="0x404cc210" scoped=""/>
+        <function-ref name="stop" ref="0x404cc2f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="AMSend" provided="1" ref="0x404cfc50">
+    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="AMSend" provided="1" ref="0x4050b670">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x404cfc50" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x4050b670" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
       </instance>
       <interface-parameters>
         <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="send" ref="0x404cfe28" scoped=""/>
-        <function-ref name="getPayload" ref="0x404cff08" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x40630010" scoped=""/>
-        <function-ref name="cancel" ref="0x406300f0" scoped=""/>
-        <function-ref name="sendDone" ref="0x406301d0" scoped=""/>
+        <function-ref name="send" ref="0x4050b848" scoped=""/>
+        <function-ref name="getPayload" ref="0x4050b928" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x4050ba08" scoped=""/>
+        <function-ref name="cancel" ref="0x4050bae8" scoped=""/>
+        <function-ref name="sendDone" ref="0x4050bbc8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Snoop" provided="1" ref="0x40630cd0">
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Snoop" provided="1" ref="0x404d71b0">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x40630cd0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x404d71b0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
       </instance>
       <interface-parameters>
         <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="receive" ref="0x40630ea8" scoped=""/>
+        <function-ref name="receive" ref="0x404d7388" scoped=""/>
       </interface-functions>
-    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Packet" provided="1" ref="0x4063bce8">
+    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Packet" provided="1" ref="0x40510148">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x4063bce8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x40510148" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
       </instance>
       <interface-functions>
-        <function-ref name="clear" ref="0x4063bec0" scoped=""/>
-        <function-ref name="payloadLength" ref="0x40640010" scoped=""/>
-        <function-ref name="getPayload" ref="0x406400f0" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x406401d0" scoped=""/>
-        <function-ref name="setPayloadLength" ref="0x406402b0" scoped=""/>
+        <function-ref name="clear" ref="0x40510320" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40510400" scoped=""/>
+        <function-ref name="getPayload" ref="0x405104e0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x405105c0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x405106a0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x4064d7c0">
+    </interface><interface loc="63:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x40529c68">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x4064d7c0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x40529c68" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -125,75 +114,75 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="timestamp" ref="0x406412d8" scoped=""/>
-        <function-ref name="clear" ref="0x40641688" scoped=""/>
-        <function-ref name="isValid" ref="0x4064df10" scoped=""/>
-        <function-ref name="set" ref="0x40641a38" scoped=""/>
+        <function-ref name="timestamp" ref="0x404d37a0" scoped=""/>
+        <function-ref name="clear" ref="0x404d3b50" scoped=""/>
+        <function-ref name="isValid" ref="0x404d33f0" scoped=""/>
+        <function-ref name="set" ref="0x404d3f00" scoped=""/>
       </interface-functions>
-    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="LowPowerListening" provided="1" ref="0x40655068">
+    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="LowPowerListening" provided="1" ref="0x4052f4f0">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x40655068" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x4052f4f0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
       </instance>
       <interface-functions>
-        <function-ref name="setRemoteWakeupInterval" ref="0x40655240" scoped=""/>
-        <function-ref name="getRemoteWakeupInterval" ref="0x40655320" scoped=""/>
-        <function-ref name="getLocalWakeupInterval" ref="0x40655400" scoped=""/>
-        <function-ref name="setLocalWakeupInterval" ref="0x406554e0" scoped=""/>
+        <function-ref name="setRemoteWakeupInterval" ref="0x4052f6c8" scoped=""/>
+        <function-ref name="getRemoteWakeupInterval" ref="0x4052f7a8" scoped=""/>
+        <function-ref name="getLocalWakeupInterval" ref="0x4052f888" scoped=""/>
+        <function-ref name="setLocalWakeupInterval" ref="0x4052f968" scoped=""/>
       </interface-functions>
-    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Receive" provided="1" ref="0x40630638">
+    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="Receive" provided="1" ref="0x40509af8">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40630638" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40509af8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
       </instance>
       <interface-parameters>
         <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="receive" ref="0x40630810" scoped=""/>
+        <function-ref name="receive" ref="0x40509cd0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x40650be8">
+    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x4051e308">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x40650be8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x4051e308" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
       </instance>
       <interface-functions>
-        <function-ref name="requestAck" ref="0x40650dc0" scoped=""/>
-        <function-ref name="noAck" ref="0x40650ea0" scoped=""/>
-        <function-ref name="wasAcked" ref="0x4063a010" scoped=""/>
+        <function-ref name="requestAck" ref="0x4051e4e0" scoped=""/>
+        <function-ref name="noAck" ref="0x4051e5c0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x4051e6a0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="61:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x40642a98">
+    </interface><interface loc="61:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x40523140">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x40642a98" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x40523140" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
       </instance>
       <interface-functions>
-        <function-ref name="group" ref="0x40642c70" scoped=""/>
-        <function-ref name="source" ref="0x40642d50" scoped=""/>
-        <function-ref name="address" ref="0x40642e30" scoped=""/>
-        <function-ref name="destination" ref="0x40642f10" scoped=""/>
-        <function-ref name="setSource" ref="0x4063f010" scoped=""/>
-        <function-ref name="setDestination" ref="0x4063f0f0" scoped=""/>
-        <function-ref name="type" ref="0x4063f1d0" scoped=""/>
-        <function-ref name="setType" ref="0x4063f2b0" scoped=""/>
-        <function-ref name="isForMe" ref="0x4063f390" scoped=""/>
-        <function-ref name="setGroup" ref="0x4063f470" scoped=""/>
-        <function-ref name="localGroup" ref="0x4063f550" scoped=""/>
+        <function-ref name="group" ref="0x40523318" scoped=""/>
+        <function-ref name="source" ref="0x405233f8" scoped=""/>
+        <function-ref name="address" ref="0x405234d8" scoped=""/>
+        <function-ref name="destination" ref="0x405235b8" scoped=""/>
+        <function-ref name="setSource" ref="0x40523698" scoped=""/>
+        <function-ref name="setDestination" ref="0x40523778" scoped=""/>
+        <function-ref name="type" ref="0x40523858" scoped=""/>
+        <function-ref name="setType" ref="0x40523938" scoped=""/>
+        <function-ref name="isForMe" ref="0x40523a18" scoped=""/>
+        <function-ref name="setGroup" ref="0x40523af8" scoped=""/>
+        <function-ref name="localGroup" ref="0x40523bd8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="64:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketTimeStampMilli" provided="1" ref="0x406511a0">
+    </interface><interface loc="64:/home/rgao/lily/tinyos2/tos/platforms/z1/ActiveMessageC.nc" name="PacketTimeStampMilli" provided="1" ref="0x40528650">
       <component-ref nicename="tos.platforms.z1.ActiveMessageC" qname="ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x406511a0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x40528650" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -201,120 +190,102 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="timestamp" ref="0x40651ca0" scoped=""/>
-        <function-ref name="clear" ref="0x4064b068" scoped=""/>
-        <function-ref name="isValid" ref="0x406518f0" scoped=""/>
-        <function-ref name="set" ref="0x4064b418" scoped=""/>
+        <function-ref name="timestamp" ref="0x40527170" scoped=""/>
+        <function-ref name="clear" ref="0x40527520" scoped=""/>
+        <function-ref name="isValid" ref="0x40528da0" scoped=""/>
+        <function-ref name="set" ref="0x405278d0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x4065c690">
+    </interface></specification><referenced><interface loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x405331a8">
       <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x4065c690" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x405331a8" scoped=""/></type-interface>
       <instance>
-        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
       </instance>
       <interface-functions>
-        <function-ref name="requestAck" ref="0x4065c868" scoped=""/>
-        <function-ref name="noAck" ref="0x4065c948" scoped=""/>
-        <function-ref name="wasAcked" ref="0x4065ca28" scoped=""/>
+        <function-ref name="group" ref="0x40533380" scoped=""/>
+        <function-ref name="source" ref="0x40533460" scoped=""/>
+        <function-ref name="address" ref="0x40533540" scoped=""/>
+        <function-ref name="destination" ref="0x40533620" scoped=""/>
+        <function-ref name="setSource" ref="0x40533700" scoped=""/>
+        <function-ref name="setDestination" ref="0x405337e0" scoped=""/>
+        <function-ref name="type" ref="0x405338c0" scoped=""/>
+        <function-ref name="setType" ref="0x405339a0" scoped=""/>
+        <function-ref name="isForMe" ref="0x40533a80" scoped=""/>
+        <function-ref name="setGroup" ref="0x40533b60" scoped=""/>
+        <function-ref name="localGroup" ref="0x40533c40" scoped=""/>
       </interface-functions>
-    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Packet" provided="1" ref="0x4065d5f0">
+    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="LowPowerListening" provided="1" ref="0x4053e660">
       <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x4065d5f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x4053e660" scoped=""/></type-interface>
       <instance>
-        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
       </instance>
       <interface-functions>
-        <function-ref name="clear" ref="0x4065d7c8" scoped=""/>
-        <function-ref name="payloadLength" ref="0x4065d8a8" scoped=""/>
-        <function-ref name="getPayload" ref="0x4065d988" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x4065da68" scoped=""/>
-        <function-ref name="setPayloadLength" ref="0x4065db48" scoped=""/>
+        <function-ref name="setRemoteWakeupInterval" ref="0x4053e838" scoped=""/>
+        <function-ref name="getRemoteWakeupInterval" ref="0x4053e918" scoped=""/>
+        <function-ref name="getLocalWakeupInterval" ref="0x4053e9f8" scoped=""/>
+        <function-ref name="setLocalWakeupInterval" ref="0x4053ead8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMSend" provided="1" ref="0x4065f550">
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStampMilli" provided="1" ref="0x40cfd578">
+      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x40cfd578" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x40cfc088" scoped=""/>
+        <function-ref name="clear" ref="0x40cfc438" scoped=""/>
+        <function-ref name="isValid" ref="0x40cfdcc8" scoped=""/>
+        <function-ref name="set" ref="0x40cfc7e8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMSend" provided="1" ref="0x40535d38">
       <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x4065f550" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x40535d38" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
       </instance>
       <interface-parameters>
         <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="send" ref="0x4065f728" scoped=""/>
-        <function-ref name="getPayload" ref="0x4065f808" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x4065f8e8" scoped=""/>
-        <function-ref name="cancel" ref="0x4065f9c8" scoped=""/>
-        <function-ref name="sendDone" ref="0x4065faa8" scoped=""/>
+        <function-ref name="send" ref="0x40535f10" scoped=""/>
+        <function-ref name="getPayload" ref="0x40534010" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x405340f0" scoped=""/>
+        <function-ref name="cancel" ref="0x405341d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x405342b0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Snoop" provided="1" ref="0x4065e5c8">
+    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Receive" provided="1" ref="0x40534718">
       <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x4065e5c8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x40534718" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
       </instance>
       <interface-parameters>
         <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="receive" ref="0x4065e7a0" scoped=""/>
+        <function-ref name="receive" ref="0x405348f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Receive" provided="1" ref="0x4065ff10">
-      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x4065ff10" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
-      </instance>
-      <interface-parameters>
-        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-          <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
-        </type-int>
-      </interface-parameters>
-      <interface-functions>
-        <function-ref name="receive" ref="0x4065e108" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x4065e938">
-      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x4065e938" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="group" ref="0x4065eb10" scoped=""/>
-        <function-ref name="source" ref="0x4065ebf0" scoped=""/>
-        <function-ref name="address" ref="0x4065ecd0" scoped=""/>
-        <function-ref name="destination" ref="0x4065edb0" scoped=""/>
-        <function-ref name="setSource" ref="0x4065ee90" scoped=""/>
-        <function-ref name="setDestination" ref="0x4065d010" scoped=""/>
-        <function-ref name="type" ref="0x4065d0f0" scoped=""/>
-        <function-ref name="setType" ref="0x4065d1d0" scoped=""/>
-        <function-ref name="isForMe" ref="0x4065d2b0" scoped=""/>
-        <function-ref name="setGroup" ref="0x4065d390" scoped=""/>
-        <function-ref name="localGroup" ref="0x4065d470" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="LowPowerListening" provided="1" ref="0x40674db0">
-      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="LowPowerListening" ref="0x40674db0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="setRemoteWakeupInterval" ref="0x40668010" scoped=""/>
-        <function-ref name="getRemoteWakeupInterval" ref="0x406680f0" scoped=""/>
-        <function-ref name="getLocalWakeupInterval" ref="0x406681d0" scoped=""/>
-        <function-ref name="setLocalWakeupInterval" ref="0x406682b0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x40d0bb00">
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x40d00b00">
       <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
         <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ceaf8"/>
-            <typename><typedef-ref name="T32khz" ref="0x404cecc0"/></typename>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404cd5b0"/>
+            <typename><typedef-ref name="T32khz" ref="0x404cd778"/></typename>
           </type-tag>
           <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
             <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
@@ -322,42 +293,60 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="timestamp" ref="0x40d0a6b8" scoped=""/>
-        <function-ref name="clear" ref="0x40d0aa68" scoped=""/>
-        <function-ref name="isValid" ref="0x40d0a308" scoped=""/>
-        <function-ref name="set" ref="0x40d0ae18" scoped=""/>
+        <function-ref name="timestamp" ref="0x40cff6b8" scoped=""/>
+        <function-ref name="clear" ref="0x40cffa68" scoped=""/>
+        <function-ref name="isValid" ref="0x40cff308" scoped=""/>
+        <function-ref name="set" ref="0x40cffe18" scoped=""/>
       </interface-functions>
-    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x40660c00">
+    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x40535460">
       <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x40660c00" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x40535460" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
       </instance>
       <interface-functions>
-        <function-ref name="startDone" ref="0x40660dd8" scoped=""/>
-        <function-ref name="stopDone" ref="0x40660eb8" scoped=""/>
-        <function-ref name="start" ref="0x4065f010" scoped=""/>
-        <function-ref name="stop" ref="0x4065f0f0" scoped=""/>
+        <function-ref name="startDone" ref="0x40535638" scoped=""/>
+        <function-ref name="stopDone" ref="0x40535718" scoped=""/>
+        <function-ref name="start" ref="0x405357f8" scoped=""/>
+        <function-ref name="stop" ref="0x405358d8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" name="PacketTimeStampMilli" provided="1" ref="0x40d09578">
-      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x40d09578" scoped=""/></type-interface>
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Snoop" provided="1" ref="0x40534db0">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x40534db0" scoped=""/></type-interface>
       <instance>
-        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
-        <arguments>
-          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x404ce6b8"/>
-            <typename><typedef-ref name="TMilli" ref="0x404ce880"/></typename>
-          </type-tag>
-          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
-            <typename><typedef-ref name="uint32_t" ref="0x40215250"/></typename>
-          </type-int>
-        </arguments>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40533010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x4053aeb8">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x4053aeb8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
       </instance>
       <interface-functions>
-        <function-ref name="timestamp" ref="0x40d08088" scoped=""/>
-        <function-ref name="clear" ref="0x40d08438" scoped=""/>
-        <function-ref name="isValid" ref="0x40d09cc8" scoped=""/>
-        <function-ref name="set" ref="0x40d087e8" scoped=""/>
+        <function-ref name="requestAck" ref="0x4053f0c0" scoped=""/>
+        <function-ref name="noAck" ref="0x4053f1a0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x4053f280" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Packet" provided="1" ref="0x40533dc0">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x40533dc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40540010" scoped=""/>
+        <function-ref name="payloadLength" ref="0x405400f0" scoped=""/>
+        <function-ref name="getPayload" ref="0x405401d0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x405402b0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40540390" scoped=""/>
       </interface-functions>
     </interface><component loc="38:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc" nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC">
       <documentation loc="32:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
@@ -372,104 +361,104 @@
       <configuration/>
       <wiring>
         <wire loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LinkPacketMetadata" ref="0x40d0b4a8" scoped=""/></from>
-          <to><interface-ref name="LinkPacketMetadata" ref="0x40d2f010" scoped=""/></to>
+          <from><interface-ref name="LinkPacketMetadata" ref="0x40d004a8" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x40cf7010" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="CC2420Packet" ref="0x40d0c0e0" scoped=""/></from>
-          <to><interface-ref name="CC2420Packet" ref="0x40d06b28" scoped=""/></to>
+          <from><interface-ref name="CC2420Packet" ref="0x40d010e0" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40cfbb28" scoped=""/></to>
         </wire>
         <wire loc="59:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40d0bb00" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40d2f668" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40d00b00" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40cf7668" scoped=""/></to>
         </wire>
         <wire loc="57:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="CC2420PacketBody" ref="0x40d0cf08" scoped=""/></from>
-          <to><interface-ref name="CC2420PacketBody" ref="0x40d309c0" scoped=""/></to>
+          <from><interface-ref name="CC2420PacketBody" ref="0x40d01f08" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40cf89c0" scoped=""/></to>
         </wire>
         <wire loc="61:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40d08cb0" scoped=""/></from>
-          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40d2b888" scoped=""/></to>
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40cfccb0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40cf3888" scoped=""/></to>
         </wire>
         <wire loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="PacketTimeStampMilli" ref="0x40d09578" scoped=""/></from>
-          <to><interface-ref name="PacketTimeStampMilli" ref="0x40d2c100" scoped=""/></to>
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x40cfd578" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x40cf4100" scoped=""/></to>
         </wire>
         <wire loc="56:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="Acks" ref="0x40d0c988" scoped=""/></from>
-          <to><interface-ref name="Acks" ref="0x40d30440" scoped=""/></to>
+          <from><interface-ref name="Acks" ref="0x40d01988" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x40cf8440" scoped=""/></to>
         </wire>
         <wire loc="64:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="Counter" ref="0x40d55360" scoped=""/></from>
-          <to><interface-ref name="Counter" ref="0x40788cf0" scoped=""/></to>
+          <from><interface-ref name="Counter" ref="0x40d48360" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x40766cf0" scoped=""/></to>
         </wire>
         <wire loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LocalTime32khz" ref="0x40d27440" scoped=""/></from>
-          <to><interface-ref name="LocalTime" ref="0x40d56940" scoped=""/></to>
+          <from><interface-ref name="LocalTime32khz" ref="0x40d1b440" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40d1c940" scoped=""/></to>
         </wire>
         <wire loc="69:/home/rgao/lily/tinyos2/tos/chips/cc2420/packet/CC2420PacketC.nc">
-          <from><interface-ref name="LocalTimeMilli" ref="0x40d27e98" scoped=""/></from>
-          <to><interface-ref name="LocalTime" ref="0x40d76010" scoped=""/></to>
+          <from><interface-ref name="LocalTimeMilli" ref="0x40d1be98" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40d378a8" scoped=""/></to>
         </wire>
       </wiring>
     </component><component loc="53:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc" nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC">
       <configuration/>
       <wiring>
         <wire loc="82:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="SplitControl" ref="0x40660c00" scoped=""/></from>
-          <to><interface-ref name="SplitControl" ref="0x40672448" scoped=""/></to>
+          <from><interface-ref name="SplitControl" ref="0x40535460" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x4054edb0" scoped=""/></to>
         </wire>
         <wire loc="83:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="RadioBackoff" ref="0x40674588" scoped=""/></from>
-          <to><interface-ref name="RadioBackoff" ref="0x40e8d238" scoped=""/></to>
+          <from><interface-ref name="RadioBackoff" ref="0x40541de8" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x40e76238" scoped=""/></to>
         </wire>
         <wire loc="86:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="SendNotifier" ref="0x40673260" scoped=""/></from>
-          <to><interface-ref name="SendNotifier" ref="0x40e8eb88" scoped=""/></to>
+          <from><interface-ref name="SendNotifier" ref="0x40548ad0" scoped=""/></from>
+          <to><interface-ref name="SendNotifier" ref="0x40e77b88" scoped=""/></to>
         </wire>
         <wire loc="84:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="Packet" ref="0x4065d5f0" scoped=""/></from>
-          <to><interface-ref name="Packet" ref="0x40e8e190" scoped=""/></to>
+          <from><interface-ref name="Packet" ref="0x40533dc0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40e77190" scoped=""/></to>
         </wire>
         <wire loc="85:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="AMSend" ref="0x4065f550" scoped=""/></from>
-          <to><interface-ref name="AMSend" ref="0x40e90100" scoped=""/></to>
+          <from><interface-ref name="AMSend" ref="0x40535d38" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x40e7a100" scoped=""/></to>
         </wire>
         <wire loc="88:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="Snoop" ref="0x4065e5c8" scoped=""/></from>
-          <to><interface-ref name="Snoop" ref="0x40e8f178" scoped=""/></to>
+          <from><interface-ref name="Snoop" ref="0x40534db0" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x40e79178" scoped=""/></to>
         </wire>
         <wire loc="92:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="CC2420Packet" ref="0x40669df0" scoped=""/></from>
-          <to><interface-ref name="CC2420Packet" ref="0x406773c8" scoped=""/></to>
+          <from><interface-ref name="CC2420Packet" ref="0x4053a660" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40551c08" scoped=""/></to>
         </wire>
         <wire loc="91:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="LowPowerListening" ref="0x40674db0" scoped=""/></from>
-          <to><interface-ref name="LowPowerListening" ref="0x406855d0" scoped=""/></to>
+          <from><interface-ref name="LowPowerListening" ref="0x4053e660" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x40557e28" scoped=""/></to>
         </wire>
         <wire loc="87:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="Receive" ref="0x4065ff10" scoped=""/></from>
-          <to><interface-ref name="Receive" ref="0x40e90ac0" scoped=""/></to>
+          <from><interface-ref name="Receive" ref="0x40534718" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40e7aac0" scoped=""/></to>
         </wire>
         <wire loc="93:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="PacketAcknowledgements" ref="0x4065c690" scoped=""/></from>
-          <to><interface-ref name="PacketAcknowledgements" ref="0x40677c20" scoped=""/></to>
+          <from><interface-ref name="PacketAcknowledgements" ref="0x4053aeb8" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x405574d0" scoped=""/></to>
         </wire>
         <wire loc="90:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="PacketLink" ref="0x4066f760" scoped=""/></from>
-          <to><interface-ref name="PacketLink" ref="0x40685bf0" scoped=""/></to>
+          <from><interface-ref name="PacketLink" ref="0x40546010" scoped=""/></from>
+          <to><interface-ref name="PacketLink" ref="0x40563498" scoped=""/></to>
         </wire>
         <wire loc="89:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="AMPacket" ref="0x4065e938" scoped=""/></from>
-          <to><interface-ref name="AMPacket" ref="0x40e8f4e8" scoped=""/></to>
+          <from><interface-ref name="AMPacket" ref="0x405331a8" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x40e794e8" scoped=""/></to>
         </wire>
         <wire loc="94:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="LinkPacketMetadata" ref="0x40667a98" scoped=""/></from>
-          <to><interface-ref name="LinkPacketMetadata" ref="0x40685208" scoped=""/></to>
+          <from><interface-ref name="LinkPacketMetadata" ref="0x405442e8" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x40557a60" scoped=""/></to>
         </wire>
         <wire loc="97:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="RadioResource" ref="0x40e884f0" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40678dc0" scoped=""/>
+          <from><interface-ref name="RadioResource" ref="0x40e724f0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x4054f7a0" scoped=""/>
           <arguments>
             <value cst="I:0">
               <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -478,36 +467,36 @@
           </to>
         </wire>
         <wire loc="98:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="SubSend" ref="0x40e8da88" scoped=""/></from>
-          <to><interface-ref name="ActiveSend" ref="0x4067b888" scoped=""/></to>
+          <from><interface-ref name="SubSend" ref="0x40e76a88" scoped=""/></from>
+          <to><interface-ref name="ActiveSend" ref="0x405510e8" scoped=""/></to>
         </wire>
         <wire loc="99:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="SubReceive" ref="0x40e8c220" scoped=""/></from>
-          <to><interface-ref name="ActiveReceive" ref="0x40677030" scoped=""/></to>
+          <from><interface-ref name="SubReceive" ref="0x40e75220" scoped=""/></from>
+          <to><interface-ref name="ActiveReceive" ref="0x40551870" scoped=""/></to>
         </wire>
         <wire loc="101:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="ActiveMessageAddress" ref="0x40e89460" scoped=""/></from>
-          <to><interface-ref name="ActiveMessageAddress" ref="0x40c1bea8" scoped=""/></to>
+          <from><interface-ref name="ActiveMessageAddress" ref="0x40e73460" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x40c13ea8" scoped=""/></to>
         </wire>
         <wire loc="102:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="CC2420Packet" ref="0x40e8c5b8" scoped=""/></from>
-          <to><interface-ref name="CC2420Packet" ref="0x40d0c0e0" scoped=""/></to>
+          <from><interface-ref name="CC2420Packet" ref="0x40e755b8" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40d010e0" scoped=""/></to>
         </wire>
         <wire loc="103:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="CC2420PacketBody" ref="0x40e8cdd8" scoped=""/></from>
-          <to><interface-ref name="CC2420PacketBody" ref="0x40d0cf08" scoped=""/></to>
+          <from><interface-ref name="CC2420PacketBody" ref="0x40e75dd8" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40d01f08" scoped=""/></to>
         </wire>
         <wire loc="104:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="CC2420Config" ref="0x40e8a390" scoped=""/></from>
-          <to><interface-ref name="CC2420Config" ref="0x406e31b0" scoped=""/></to>
+          <from><interface-ref name="CC2420Config" ref="0x40e74390" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x405b1930" scoped=""/></to>
         </wire>
         <wire loc="106:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="SubBackoff" ref="0x40e89ba0" scoped=""/></from>
-          <to><interface-ref name="RadioBackoff" ref="0x40680ac8" scoped=""/></to>
+          <from><interface-ref name="SubBackoff" ref="0x40e73ba0" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x4055f2d0" scoped=""/></to>
         </wire>
         <wire loc="109:/home/rgao/lily/tinyos2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
-          <from><interface-ref name="Leds" ref="0x40e88bb8" scoped=""/></from>
-          <to><interface-ref name="Leds" ref="0x40b443b8" scoped=""/></to>
+          <from><interface-ref name="Leds" ref="0x40e72bb8" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x40b19368" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

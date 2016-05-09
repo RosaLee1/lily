@@ -11,8 +11,8 @@
       <configuration/>
       <wiring>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/system/StateC.nc">
-          <from><interface-ref name="State" ref="0x40a4d0f8" scoped=""/></from>
-          <to><interface-ref name="State" ref="0x40a4a100" scoped=""/>
+          <from><interface-ref name="State" ref="0x409e7bb8" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x40a2bbe8" scoped=""/>
           <arguments>
             <value cst="U:">
               <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
@@ -21,23 +21,23 @@
           </to>
         </wire>
       </wiring>
-    <specification><interface loc="67:/home/rgao/lily/tinyos2/tos/system/StateC.nc" name="State" provided="1" ref="0x40a4d0f8">
+    <specification><interface loc="67:/home/rgao/lily/tinyos2/tos/system/StateC.nc" name="State" provided="1" ref="0x409e7bb8">
       <component-ref nicename="tos.system.StateC" qname="StateC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a4d0f8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x409e7bb8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
       </instance>
       <interface-functions>
-        <function-ref name="getState" ref="0x40a4d2d0" scoped=""/>
-        <function-ref name="toIdle" ref="0x40a4d3b0" scoped=""/>
-        <function-ref name="isState" ref="0x40a4d490" scoped=""/>
-        <function-ref name="isIdle" ref="0x40a4d570" scoped=""/>
-        <function-ref name="requestState" ref="0x40a4d650" scoped=""/>
-        <function-ref name="forceState" ref="0x40a4d730" scoped=""/>
+        <function-ref name="getState" ref="0x409e7d90" scoped=""/>
+        <function-ref name="toIdle" ref="0x409e7e70" scoped=""/>
+        <function-ref name="isState" ref="0x40a2b010" scoped=""/>
+        <function-ref name="isIdle" ref="0x40a2b0f0" scoped=""/>
+        <function-ref name="requestState" ref="0x40a2b1d0" scoped=""/>
+        <function-ref name="forceState" ref="0x40a2b2b0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc" name="State" provided="1" ref="0x40a4a100">
+    </interface></specification><referenced><interface loc="66:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc" name="State" provided="1" ref="0x40a2bbe8">
       <component-ref nicename="tos.system.StateImplC" qname="StateImplC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a4a100" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="State" ref="0x40a2bbe8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
       </instance>
@@ -47,12 +47,12 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getState" ref="0x40a4a2d8" scoped=""/>
-        <function-ref name="toIdle" ref="0x40a4a3b8" scoped=""/>
-        <function-ref name="isState" ref="0x40a4a498" scoped=""/>
-        <function-ref name="isIdle" ref="0x40a4a578" scoped=""/>
-        <function-ref name="requestState" ref="0x40a4a658" scoped=""/>
-        <function-ref name="forceState" ref="0x40a4a738" scoped=""/>
+        <function-ref name="getState" ref="0x40a2bdc0" scoped=""/>
+        <function-ref name="toIdle" ref="0x40a2bea0" scoped=""/>
+        <function-ref name="isState" ref="0x40a28010" scoped=""/>
+        <function-ref name="isIdle" ref="0x40a280f0" scoped=""/>
+        <function-ref name="requestState" ref="0x40a281d0" scoped=""/>
+        <function-ref name="forceState" ref="0x40a282b0" scoped=""/>
       </interface-functions>
     </interface><component loc="64:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc" nicename="tos.system.StateImplC" qname="StateImplC">
       <documentation loc="32:/home/rgao/lily/tinyos2/tos/types/State.h">
@@ -65,12 +65,12 @@
       <configuration/>
       <wiring>
         <wire loc="75:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc">
-          <from><interface-ref name="State" ref="0x40a4a100" scoped=""/></from>
-          <to><interface-ref name="State" ref="0x40a47798" scoped=""/></to>
+          <from><interface-ref name="State" ref="0x40a2bbe8" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x40a242d8" scoped=""/></to>
         </wire>
         <wire loc="74:/home/rgao/lily/tinyos2/tos/system/StateImplC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40a47168" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40a28c90" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

@@ -9,7 +9,7 @@
  @date   March 21, 2005
 </long>
       </documentation>
-      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0Off" provided="0" ref="0x40524298">
+      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0Off" provided="0" ref="0x40575cf0">
         <documentation loc="58:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn off LED 0.</short>
@@ -26,7 +26,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="67:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0Toggle" provided="0" ref="0x405246e0">
+      <function command="" loc="67:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0Toggle" provided="0" ref="0x40574158">
         <documentation loc="63:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Toggle LED 0; if it was off, turn it on, if was on, turn it off.</short>
@@ -44,7 +44,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="72:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1On" provided="0" ref="0x40524b60">
+      <function command="" loc="72:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1On" provided="0" ref="0x405745d8">
         <documentation loc="69:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn on LED 1.</short>
@@ -61,7 +61,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="83:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1Toggle" provided="0" ref="0x40523458">
+      <function command="" loc="83:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1Toggle" provided="0" ref="0x40574e48">
         <documentation loc="79:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Toggle LED 1; if it was off, turn it on, if was on, turn it off.</short>
@@ -79,7 +79,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2Toggle" provided="0" ref="0x40521158">
+      <function command="" loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2Toggle" provided="0" ref="0x40573b60">
         <documentation loc="96:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Toggle LED 2; if it was off, turn it on, if was on, turn it off.</short>
@@ -97,7 +97,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="117:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="get" provided="0" ref="0x40521600">
+      <function command="" loc="117:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="get" provided="0" ref="0x4057f038">
         <documentation loc="103:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Get the current LED settings as a bitmask.</short>
@@ -127,7 +127,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="77:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1Off" provided="0" ref="0x40523010">
+      <function command="" loc="77:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led1Off" provided="0" ref="0x40574a00">
         <documentation loc="74:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn off LED 1.</short>
@@ -144,7 +144,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="134:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="set" provided="0" ref="0x40521d40">
+      <function command="" loc="134:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="set" provided="0" ref="0x4057f778">
         <documentation loc="120:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Set the current LED configuration using a bitmask.</short>
@@ -173,14 +173,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="134:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="val" ref="0x40521be8">
+          <variable loc="134:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="val" ref="0x4057f620">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0On" provided="0" ref="0x40517e50">
+      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led0On" provided="0" ref="0x405758c8">
         <documentation loc="53:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn on LED 0.</short>
@@ -197,7 +197,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2On" provided="0" ref="0x405238d8">
+      <function command="" loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2On" provided="0" ref="0x405732f0">
         <documentation loc="86:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn on LED 2.</short>
@@ -214,7 +214,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="94:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2Off" provided="0" ref="0x40523d00">
+      <function command="" loc="94:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc" name="led2Off" provided="0" ref="0x40573718">
         <documentation loc="91:/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc">
           <short>
  Turn off LED 2.</short>

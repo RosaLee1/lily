@@ -12,80 +12,80 @@
 </long>
       </documentation>
       <module/>
-    <specification><interface loc="50:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led0" provided="0" ref="0x40b64780">
+    <specification><interface loc="50:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led0" provided="0" ref="0x40b39780">
       <component-ref nicename="tos.system.LedsP" qname="LedsP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led0" ref="0x40b64780" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led0" ref="0x40b39780" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40b64958" scoped=""/>
-        <function-ref name="isInput" ref="0x40b64a38" scoped=""/>
-        <function-ref name="toggle" ref="0x40b64b18" scoped=""/>
-        <function-ref name="isOutput" ref="0x40b64bf8" scoped=""/>
-        <function-ref name="get" ref="0x40b64cd8" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40b64db8" scoped=""/>
-        <function-ref name="set" ref="0x40b64e98" scoped=""/>
-        <function-ref name="clr" ref="0x40b63010" scoped=""/>
+        <function-ref name="makeInput" ref="0x40b39958" scoped=""/>
+        <function-ref name="isInput" ref="0x40b39a38" scoped=""/>
+        <function-ref name="toggle" ref="0x40b39b18" scoped=""/>
+        <function-ref name="isOutput" ref="0x40b39bf8" scoped=""/>
+        <function-ref name="get" ref="0x40b39cd8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40b39db8" scoped=""/>
+        <function-ref name="set" ref="0x40b39e98" scoped=""/>
+        <function-ref name="clr" ref="0x40b38010" scoped=""/>
       </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Init" provided="1" ref="0x40b416f8">
+    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Init" provided="1" ref="0x40b3c6a8">
       <component-ref nicename="tos.system.LedsP" qname="LedsP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40b416f8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40b3c6a8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40b418d0" scoped=""/>
+        <function-ref name="init" ref="0x40b3c880" scoped=""/>
       </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led1" provided="0" ref="0x40b63200">
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led1" provided="0" ref="0x40b38200">
       <component-ref nicename="tos.system.LedsP" qname="LedsP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led1" ref="0x40b63200" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led1" ref="0x40b38200" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40b633d8" scoped=""/>
-        <function-ref name="isInput" ref="0x40b634b8" scoped=""/>
-        <function-ref name="toggle" ref="0x40b63598" scoped=""/>
-        <function-ref name="isOutput" ref="0x40b63678" scoped=""/>
-        <function-ref name="get" ref="0x40b63758" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40b63838" scoped=""/>
-        <function-ref name="set" ref="0x40b63918" scoped=""/>
-        <function-ref name="clr" ref="0x40b639f8" scoped=""/>
+        <function-ref name="makeInput" ref="0x40b383d8" scoped=""/>
+        <function-ref name="isInput" ref="0x40b384b8" scoped=""/>
+        <function-ref name="toggle" ref="0x40b38598" scoped=""/>
+        <function-ref name="isOutput" ref="0x40b38678" scoped=""/>
+        <function-ref name="get" ref="0x40b38758" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40b38838" scoped=""/>
+        <function-ref name="set" ref="0x40b38918" scoped=""/>
+        <function-ref name="clr" ref="0x40b389f8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Leds" provided="1" ref="0x40b41a40">
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Leds" provided="1" ref="0x40b3c9f0">
       <component-ref nicename="tos.system.LedsP" qname="LedsP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40b41a40" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x40b3c9f0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
       </instance>
       <interface-functions>
-        <function-ref name="led0Off" ref="0x40b41c18" scoped=""/>
-        <function-ref name="led0Toggle" ref="0x40b41cf8" scoped=""/>
-        <function-ref name="led1On" ref="0x40b41dd8" scoped=""/>
-        <function-ref name="led1Toggle" ref="0x40b41eb8" scoped=""/>
-        <function-ref name="led2Toggle" ref="0x40b64010" scoped=""/>
-        <function-ref name="get" ref="0x40b640f0" scoped=""/>
-        <function-ref name="led1Off" ref="0x40b641d0" scoped=""/>
-        <function-ref name="led2Off" ref="0x40b64550" scoped=""/>
-        <function-ref name="set" ref="0x40b642b0" scoped=""/>
-        <function-ref name="led0On" ref="0x40b64390" scoped=""/>
-        <function-ref name="led2On" ref="0x40b64470" scoped=""/>
+        <function-ref name="led0Off" ref="0x40b3cbc8" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40b3cca8" scoped=""/>
+        <function-ref name="led1On" ref="0x40b3cd88" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40b3ce68" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x40b39010" scoped=""/>
+        <function-ref name="get" ref="0x40b390f0" scoped=""/>
+        <function-ref name="led1Off" ref="0x40b391d0" scoped=""/>
+        <function-ref name="led2Off" ref="0x40b39550" scoped=""/>
+        <function-ref name="set" ref="0x40b392b0" scoped=""/>
+        <function-ref name="led0On" ref="0x40b39390" scoped=""/>
+        <function-ref name="led2On" ref="0x40b39470" scoped=""/>
       </interface-functions>
-    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led2" provided="0" ref="0x40b63be8">
+    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/system/LedsP.nc" name="Led2" provided="0" ref="0x40b38be8">
       <component-ref nicename="tos.system.LedsP" qname="LedsP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led2" ref="0x40b63be8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Led2" ref="0x40b38be8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
       </instance>
       <interface-functions>
-        <function-ref name="makeInput" ref="0x40b63dc0" scoped=""/>
-        <function-ref name="isInput" ref="0x40b63ea0" scoped=""/>
-        <function-ref name="toggle" ref="0x40b61010" scoped=""/>
-        <function-ref name="isOutput" ref="0x40b610f0" scoped=""/>
-        <function-ref name="get" ref="0x40b611d0" scoped=""/>
-        <function-ref name="makeOutput" ref="0x40b612b0" scoped=""/>
-        <function-ref name="set" ref="0x40b61390" scoped=""/>
-        <function-ref name="clr" ref="0x40b61470" scoped=""/>
+        <function-ref name="makeInput" ref="0x40b38dc0" scoped=""/>
+        <function-ref name="isInput" ref="0x40b38ea0" scoped=""/>
+        <function-ref name="toggle" ref="0x40b37010" scoped=""/>
+        <function-ref name="isOutput" ref="0x40b370f0" scoped=""/>
+        <function-ref name="get" ref="0x40b371d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40b372b0" scoped=""/>
+        <function-ref name="set" ref="0x40b37390" scoped=""/>
+        <function-ref name="clr" ref="0x40b37470" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

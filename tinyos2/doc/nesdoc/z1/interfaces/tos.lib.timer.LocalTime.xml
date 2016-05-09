@@ -20,12 +20,12 @@
 </long>
       </documentation>
       <parameters>
-        <typedef loc="53:/home/rgao/lily/tinyos2/tos/lib/timer/LocalTime.nc" name="precision_tag" ref="0x40d2ab98">
+        <typedef loc="53:/home/rgao/lily/tinyos2/tos/lib/timer/LocalTime.nc" name="precision_tag" ref="0x40cf1b98">
           <interfacedef-ref nicename="tos.lib.timer.LocalTime" qname="LocalTime"/>
-          <type-var alignment="U:" size="U:"><typedef-ref name="precision_tag" ref="0x40d2ab98" scoped=""/></type-var>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision_tag" ref="0x40cf1b98" scoped=""/></type-var>
         </typedef>
       </parameters>
-      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/lib/timer/LocalTime.nc" name="get" provided="0" ref="0x40d27090">
+      <function command="" loc="61:/home/rgao/lily/tinyos2/tos/lib/timer/LocalTime.nc" name="get" provided="0" ref="0x40d1b090">
         <documentation loc="55:/home/rgao/lily/tinyos2/tos/lib/timer/LocalTime.nc">
           <short> 
  Return current time.</short>

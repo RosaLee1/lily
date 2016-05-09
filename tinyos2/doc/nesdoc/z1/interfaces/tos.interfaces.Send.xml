@@ -10,7 +10,7 @@
  Defines global error codes for error_t in TinyOS.
 </long>
       </documentation>
-      <function command="" loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="send" provided="0" ref="0x40689020">
+      <function command="" loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="send" provided="0" ref="0x4055c790">
         <documentation loc="57:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc">
           <short> 
  Send a packet with a data payload of &lt;tt&gt;len&lt;/tt&gt;.</short>
@@ -40,8 +40,8 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -50,21 +50,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x4067ccc8">
+          <variable loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x4055c450">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="len" ref="0x4067cea8">
+          <variable loc="75:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="len" ref="0x4055c630">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="getPayload" provided="0" ref="0x40688b78">
+      <function command="" loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="getPayload" provided="0" ref="0x40558370">
         <documentation loc="115:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc">
           <short>
  Return a pointer to a protocol's payload region in a packet which
@@ -87,8 +87,8 @@
           </type-pointer>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -97,21 +97,21 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x40688818">
+          <variable loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x40558010">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="len" ref="0x406889f8">
+          <variable loc="125:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="len" ref="0x405581f0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="112:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="maxPayloadLength" provided="0" ref="0x406882b8">
+      <function command="" loc="112:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="maxPayloadLength" provided="0" ref="0x40559a90">
         <documentation loc="102:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc">
           <short>
  Return the maximum payload length that this communication layer
@@ -136,7 +136,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="cancel" provided="0" ref="0x40689c60">
+      <function command="" loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="cancel" provided="0" ref="0x4055a3f8">
         <documentation loc="77:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc">
           <short>
  Cancel a requested transmission.</short>
@@ -160,23 +160,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x40689b08">
+          <variable loc="89:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x4055a2a0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="sendDone" provided="0" ref="0x40687920">
+      <function event="" loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="sendDone" provided="0" ref="0x40559170">
         <documentation loc="91:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc">
           <short> 
  Signaled in response to an accepted send request.</short>
@@ -195,8 +195,8 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -205,14 +205,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x406875c8">
+          <variable loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="msg" ref="0x4055ad38">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
-          <variable loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="error" ref="0x406877c0">
+          <variable loc="100:/home/rgao/lily/tinyos2/tos/interfaces/Send.nc" name="error" ref="0x40559010">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>

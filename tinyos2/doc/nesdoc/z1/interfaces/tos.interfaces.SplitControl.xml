@@ -20,7 +20,7 @@
  @author Kevin Klues (klueska@cs.wustl.edu)
 </long>
       </documentation>
-      <function event="" loc="113:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="startDone" provided="0" ref="0x404d49e8">
+      <function event="" loc="113:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="startDone" provided="0" ref="0x404d6ec0">
         <documentation loc="106:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc">
           <short> 
  Notify caller that the component has been started and is ready to
@@ -43,14 +43,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="113:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="error" ref="0x404d4890">
+          <variable loc="113:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="error" ref="0x404d6d68">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="138:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="stopDone" provided="0" ref="0x404d2768">
+      <function event="" loc="138:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="stopDone" provided="0" ref="0x404d5c18">
         <documentation loc="132:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc">
           <short>
  Notify caller that the component has been stopped.</short>
@@ -71,14 +71,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="138:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="error" ref="0x404d2610">
+          <variable loc="138:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="error" ref="0x404d5ac0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="error_t" ref="0x4038cda0"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="104:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="start" provided="0" ref="0x404d41a8">
+      <function command="" loc="104:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="start" provided="0" ref="0x404d6680">
         <documentation loc="89:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc">
           <short>
  Start this component and all of its subcomponents.</short>
@@ -109,7 +109,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="130:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="stop" provided="0" ref="0x404d4ef8">
+      <function command="" loc="130:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc" name="stop" provided="0" ref="0x404d53e0">
         <documentation loc="115:/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc">
           <short>
  Start this component and all of its subcomponents.</short>

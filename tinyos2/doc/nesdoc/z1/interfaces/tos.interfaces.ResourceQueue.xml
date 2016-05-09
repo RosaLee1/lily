@@ -13,7 +13,7 @@
   @date   $Date: 2010-06-29 22:07:46 $
 </long>
       </documentation>
-      <function command="" loc="79:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="enqueue" provided="0" ref="0x40b8e398">
+      <function command="" loc="79:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="enqueue" provided="0" ref="0x40b8a398">
         <documentation loc="72:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc">
           <short>
  Enqueue a client id
@@ -34,19 +34,19 @@
           </type-int>
           <function-parameters>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="resource_client_id_t" ref="0x40b98cb8"/></typename>
+              <typename><typedef-ref name="resource_client_id_t" ref="0x40b6dcb8"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="79:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="id" ref="0x40b8e240">
+          <variable loc="79:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="id" ref="0x40b8a240">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="resource_client_id_t" ref="0x40b98cb8"/></typename>
+              <typename><typedef-ref name="resource_client_id_t" ref="0x40b6dcb8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="isEmpty" provided="0" ref="0x40b8f010">
+      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="isEmpty" provided="0" ref="0x40b65010">
         <documentation loc="47:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc">
           <short>
  Check to see if the queue is empty.</short>
@@ -68,7 +68,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="isEnqueued" provided="0" ref="0x40b8f6d0">
+      <function command="" loc="62:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="isEnqueued" provided="0" ref="0x40b656d0">
         <documentation loc="55:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc">
           <short>
  Check to see if a given client id has already been enqueued
@@ -88,19 +88,19 @@
           </type-int>
           <function-parameters>
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="resource_client_id_t" ref="0x40b98cb8"/></typename>
+              <typename><typedef-ref name="resource_client_id_t" ref="0x40b6dcb8"/></typename>
             </type-int>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="62:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="id" ref="0x40b8f578">
+          <variable loc="62:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="id" ref="0x40b65578">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="resource_client_id_t" ref="0x40b98cb8"/></typename>
+              <typename><typedef-ref name="resource_client_id_t" ref="0x40b6dcb8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="70:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="dequeue" provided="0" ref="0x40b8fc80">
+      <function command="" loc="70:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc" name="dequeue" provided="0" ref="0x40b65c80">
         <documentation loc="64:/home/rgao/lily/tinyos2/tos/interfaces/ResourceQueue.nc">
           <short>
  Retreive the client id of the next resource in the queue.</short>
@@ -114,7 +114,7 @@
         <interfacedef-ref nicename="tos.interfaces.ResourceQueue" qname="ResourceQueue"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="resource_client_id_t" ref="0x40b98cb8"/></typename>
+            <typename><typedef-ref name="resource_client_id_t" ref="0x40b6dcb8"/></typename>
           </type-int>
           <function-parameters>
           </function-parameters>

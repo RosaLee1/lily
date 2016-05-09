@@ -15,35 +15,35 @@
       <configuration/>
       <wiring>
         <wire loc="56:/home/rgao/lily/tinyos2/tos/system/RandomC.nc">
-          <from><interface-ref name="Random" ref="0x40df8978" scoped=""/></from>
-          <to><interface-ref name="Random" ref="0x40df4478" scoped=""/></to>
+          <from><interface-ref name="Random" ref="0x40de3c40" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x40de06e0" scoped=""/></to>
         </wire>
         <wire loc="55:/home/rgao/lily/tinyos2/tos/system/RandomC.nc">
-          <from><interface-ref name="SeedInit" ref="0x40df80b8" scoped=""/></from>
-          <to><interface-ref name="SeedInit" ref="0x40df7b18" scoped=""/></to>
+          <from><interface-ref name="SeedInit" ref="0x40de3380" scoped=""/></from>
+          <to><interface-ref name="SeedInit" ref="0x40de4dd8" scoped=""/></to>
         </wire>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/system/RandomC.nc">
-          <from><interface-ref name="Init" ref="0x40dfce30" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40df75f8" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x40de6090" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40de48b8" scoped=""/></to>
         </wire>
         <wire loc="52:/home/rgao/lily/tinyos2/tos/system/RandomC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40df75f8" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40de48b8" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="Random" provided="1" ref="0x40df8978">
+    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="Random" provided="1" ref="0x40de3c40">
       <component-ref nicename="tos.system.RandomC" qname="RandomC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Random" ref="0x40df8978" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Random" ref="0x40de3c40" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
       </instance>
       <interface-functions>
-        <function-ref name="rand16" ref="0x40df8b50" scoped=""/>
-        <function-ref name="rand32" ref="0x40df8c30" scoped=""/>
+        <function-ref name="rand16" ref="0x40de3e18" scoped=""/>
+        <function-ref name="rand32" ref="0x40de3ef8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="SeedInit" provided="1" ref="0x40df80b8">
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="SeedInit" provided="1" ref="0x40de3380">
       <component-ref nicename="tos.system.RandomC" qname="RandomC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SeedInit" ref="0x40df80b8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SeedInit" ref="0x40de3380" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.ParameterInit" qname="ParameterInit"/>
         <arguments>
@@ -53,20 +53,29 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40df86e0" scoped=""/>
+        <function-ref name="init" ref="0x40de39a8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="Init" provided="1" ref="0x40dfce30">
+    </interface><interface loc="44:/home/rgao/lily/tinyos2/tos/system/RandomC.nc" name="Init" provided="1" ref="0x40de6090">
       <component-ref nicename="tos.system.RandomC" qname="RandomC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40dfce30" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40de6090" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40df9050" scoped=""/>
+        <function-ref name="init" ref="0x40de6268" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="47:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="SeedInit" provided="1" ref="0x40df7b18">
+    </interface></specification><referenced><interface loc="46:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="Init" provided="1" ref="0x40de48b8">
       <component-ref nicename="tos.system.RandomMlcgC" qname="RandomMlcgC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SeedInit" ref="0x40df7b18" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40de48b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40de4a90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="SeedInit" provided="1" ref="0x40de4dd8">
+      <component-ref nicename="tos.system.RandomMlcgC" qname="RandomMlcgC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SeedInit" ref="0x40de4dd8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.ParameterInit" qname="ParameterInit"/>
         <arguments>
@@ -76,35 +85,26 @@
         </arguments>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40df41e0" scoped=""/>
+        <function-ref name="init" ref="0x40de0448" scoped=""/>
       </interface-functions>
-    </interface><interface loc="46:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="Init" provided="1" ref="0x40df75f8">
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="Random" provided="1" ref="0x40de06e0">
       <component-ref nicename="tos.system.RandomMlcgC" qname="RandomMlcgC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x40df75f8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="init" ref="0x40df77d0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" name="Random" provided="1" ref="0x40df4478">
-      <component-ref nicename="tos.system.RandomMlcgC" qname="RandomMlcgC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Random" ref="0x40df4478" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Random" ref="0x40de06e0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
       </instance>
       <interface-functions>
-        <function-ref name="rand16" ref="0x40df4650" scoped=""/>
-        <function-ref name="rand32" ref="0x40df4730" scoped=""/>
+        <function-ref name="rand16" ref="0x40de08b8" scoped=""/>
+        <function-ref name="rand32" ref="0x40de0998" scoped=""/>
       </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x40534258">
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x406299f8">
       <component-ref nicename="tos.system.MainC" qname="MainC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40534430" scoped=""/>
+        <function-ref name="init" ref="0x40629bd0" scoped=""/>
       </interface-functions>
     </interface><component loc="45:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc" nicename="tos.system.RandomMlcgC" qname="RandomMlcgC" safe="">
       <documentation loc="32:/home/rgao/lily/tinyos2/tos/system/RandomMlcgC.nc">
@@ -140,20 +140,20 @@
       <configuration/>
       <wiring>
         <wire loc="72:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Boot" ref="0x40392578" scoped=""/></from>
-          <to><interface-ref name="Boot" ref="0x405365e0" scoped=""/></to>
+          <from><interface-ref name="Boot" ref="0x406295f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x4062a5e0" scoped=""/></to>
         </wire>
         <wire loc="67:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="Scheduler" ref="0x40536978" scoped=""/></from>
+          <from><interface-ref name="Scheduler" ref="0x4062a978" scoped=""/></from>
           <to><interface-ref name="Scheduler" ref="0x403875f0" scoped=""/></to>
         </wire>
         <wire loc="68:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="PlatformInit" ref="0x40636010" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x40534a30" scoped=""/></to>
+          <from><interface-ref name="PlatformInit" ref="0x4071a010" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4062b1f0" scoped=""/></to>
         </wire>
         <wire loc="71:/home/rgao/lily/tinyos2/tos/system/MainC.nc">
-          <from><interface-ref name="SoftwareInit" ref="0x40636418" scoped=""/></from>
-          <to><interface-ref name="SoftwareInit" ref="0x40534258" scoped=""/></to>
+          <from><interface-ref name="SoftwareInit" ref="0x4071a418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x406299f8" scoped=""/></to>
         </wire>
       </wiring>
     </component></referenced></component>

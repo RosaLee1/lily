@@ -1,0 +1,68 @@
+<?xml version="1.0" ?><component loc="39:SendingMoteC.nc" nicename="SendingMoteC" qname="SendingMoteC">
+      <documentation loc="32:../RssiDemoMessages.h">
+        <short>
+ </short>
+        <long>
+ @author Dimas Abreu Dutra
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="41:SendingMoteC.nc" name="SendTimer" provided="0" ref="0x40f0cb48">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendTimer" ref="0x40f0cb48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x40392e78"/>
+            <typename><typedef-ref name="TMilli" ref="0x404cd338"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40f086a8" scoped=""/>
+        <function-ref name="fired" ref="0x40f09938" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40f08068" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40f09de8" scoped=""/>
+        <function-ref name="getdt" ref="0x40f08b58" scoped=""/>
+        <function-ref name="gett0" ref="0x40f08900" scoped=""/>
+        <function-ref name="isRunning" ref="0x40f09b90" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40f091e0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40f08388" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40f09460" scoped=""/>
+        <function-ref name="stop" ref="0x40f096e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:SendingMoteC.nc" name="Boot" provided="0" ref="0x40f0c688">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x40f0c688" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x40f0c860" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:SendingMoteC.nc" name="RadioControl" provided="0" ref="0x40f07650">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioControl" ref="0x40f07650" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40f07828" scoped=""/>
+        <function-ref name="stopDone" ref="0x40f07908" scoped=""/>
+        <function-ref name="start" ref="0x40f079e8" scoped=""/>
+        <function-ref name="stop" ref="0x40f07ac8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:SendingMoteC.nc" name="RssiMsgSend" provided="0" ref="0x40f08e58">
+      <component-ref nicename="SendingMoteC" qname="SendingMoteC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RssiMsgSend" ref="0x40f08e58" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f07050" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f07130" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f07210" scoped=""/>
+        <function-ref name="cancel" ref="0x40f072f0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f073d0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

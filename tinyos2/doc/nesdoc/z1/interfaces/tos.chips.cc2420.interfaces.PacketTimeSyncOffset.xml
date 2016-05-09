@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><interfacedef loc="43:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" nicename="tos.chips.cc2420.interfaces.PacketTimeSyncOffset" qname="PacketTimeSyncOffset">
-      <function command="" loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="get" provided="0" ref="0x40c47d48">
+      <function command="" loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="get" provided="0" ref="0x40c3fd48">
         <documentation loc="52:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc">
           <short>
  </short>
@@ -17,23 +17,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c47bf0">
+          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c3fbf0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="isSet" provided="0" ref="0x40c47440">
+      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="isSet" provided="0" ref="0x40c3f440">
         <documentation loc="45:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc">
           <short>
  </short>
@@ -50,23 +50,23 @@
           </type-int>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c472e8">
+          <variable loc="50:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c3f2e8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="cancel" provided="0" ref="0x40c45f20">
+      <function command="" loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="cancel" provided="0" ref="0x40c3cf20">
         <documentation loc="67:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc">
           <short>
  </short>
@@ -81,23 +81,23 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c45dc8">
+          <variable loc="72:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c3cdc8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="set" provided="0" ref="0x40c45638">
+      <function command="" loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="set" provided="0" ref="0x40c3c638">
         <documentation loc="60:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc">
           <short>
  </short>
@@ -112,17 +112,17 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c454e0">
+          <variable loc="65:/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/PacketTimeSyncOffset.nc" name="msg" ref="0x40c3c4e0">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>

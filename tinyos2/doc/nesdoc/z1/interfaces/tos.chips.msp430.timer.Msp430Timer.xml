@@ -7,7 +7,7 @@
  @author Jan Hauer &lt;hauer@tkn.tu-berlin.de&gt;
 </long>
       </documentation>
-      <function command="" loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clear" provided="0" ref="0x4057a550">
+      <function command="" loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clear" provided="0" ref="0x406748e8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -17,7 +17,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setClockSource" provided="0" ref="0x40579328">
+      <function command="" loc="55:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setClockSource" provided="0" ref="0x406726c8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -28,14 +28,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="55:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clockSource" ref="0x405791d0">
+          <variable loc="55:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clockSource" ref="0x40672570">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="enableEvents" provided="0" ref="0x4057a940">
+      <function command="" loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="enableEvents" provided="0" ref="0x40674cd8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -45,7 +45,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="get" provided="0" ref="0x40547c88">
+      <function command="" loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="get" provided="0" ref="0x40663070">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
@@ -57,7 +57,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="disableEvents" provided="0" ref="0x4057ad38">
+      <function command="" loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="disableEvents" provided="0" ref="0x406720f8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -67,7 +67,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clearOverflow" provided="0" ref="0x4057b4f0">
+      <function command="" loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="clearOverflow" provided="0" ref="0x406638b8">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -77,7 +77,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="getMode" provided="0" ref="0x4057a1a8">
+      <function command="" loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="getMode" provided="0" ref="0x40674540">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:2" cname="int" size="I:2"/>
@@ -87,7 +87,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="isOverflowPending" provided="0" ref="0x4057b0f8">
+      <function command="" loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="isOverflowPending" provided="0" ref="0x406634c0">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
@@ -99,7 +99,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="overflow" provided="0" ref="0x4057b8b8">
+      <function event="" loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="overflow" provided="0" ref="0x40663c80">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -109,7 +109,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setMode" provided="0" ref="0x4057bda8">
+      <function command="" loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setMode" provided="0" ref="0x40674188">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -118,12 +118,12 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="mode" ref="0x4057bc50">
+          <variable loc="50:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="mode" ref="0x40674030">
             <type-int alignment="I:2" cname="int" size="I:2"/>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setInputDivider" provided="0" ref="0x40579910">
+      <function command="" loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="setInputDivider" provided="0" ref="0x40672cb0">
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Timer" qname="Msp430Timer"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -134,7 +134,7 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="inputDivider" ref="0x405797b8">
+          <variable loc="56:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430Timer.nc" name="inputDivider" ref="0x40672b58">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
               <typename><typedef-ref name="uint16_t" ref="0x40215010"/></typename>
             </type-int>

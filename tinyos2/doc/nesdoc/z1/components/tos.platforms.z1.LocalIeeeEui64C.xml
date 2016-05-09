@@ -1,12 +1,12 @@
 <?xml version="1.0" ?><component loc="39:/home/rgao/lily/tinyos2/tos/platforms/z1/LocalIeeeEui64C.nc" nicename="tos.platforms.z1.LocalIeeeEui64C" qname="LocalIeeeEui64C">
       <module/>
-    <specification><interface loc="40:/home/rgao/lily/tinyos2/tos/platforms/z1/LocalIeeeEui64C.nc" name="LocalIeeeEui64" provided="1" ref="0x40c1a760">
+    <specification><interface loc="40:/home/rgao/lily/tinyos2/tos/platforms/z1/LocalIeeeEui64C.nc" name="LocalIeeeEui64" provided="1" ref="0x40c12760">
       <component-ref nicename="tos.platforms.z1.LocalIeeeEui64C" qname="LocalIeeeEui64C"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalIeeeEui64" ref="0x40c1a760" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalIeeeEui64" ref="0x40c12760" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.LocalIeeeEui64" qname="LocalIeeeEui64"/>
       </instance>
       <interface-functions>
-        <function-ref name="getId" ref="0x40c1a938" scoped=""/>
+        <function-ref name="getId" ref="0x40c12938" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

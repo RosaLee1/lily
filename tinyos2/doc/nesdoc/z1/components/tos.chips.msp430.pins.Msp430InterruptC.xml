@@ -16,30 +16,30 @@
       <parameters>
       </parameters>
       <module/>
-    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430InterruptC.nc" name="HplInterrupt" provided="0" ref="0x409d4920">
+    <specification><interface loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430InterruptC.nc" name="HplInterrupt" provided="0" ref="0x409b5920">
       <component-ref nicename="tos.chips.msp430.pins.Msp430InterruptC" qname="Msp430InterruptC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplInterrupt" ref="0x409d4920" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplInterrupt" ref="0x409b5920" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
       </instance>
       <interface-functions>
-        <function-ref name="clear" ref="0x409d4af8" scoped=""/>
-        <function-ref name="fired" ref="0x409d4bd8" scoped=""/>
-        <function-ref name="disable" ref="0x409d4cb8" scoped=""/>
-        <function-ref name="edge" ref="0x409d4d98" scoped=""/>
-        <function-ref name="enable" ref="0x409d4e78" scoped=""/>
-        <function-ref name="getValue" ref="0x409d3010" scoped=""/>
+        <function-ref name="clear" ref="0x409b5af8" scoped=""/>
+        <function-ref name="fired" ref="0x409b5bd8" scoped=""/>
+        <function-ref name="disable" ref="0x409b5cb8" scoped=""/>
+        <function-ref name="edge" ref="0x409b5d98" scoped=""/>
+        <function-ref name="enable" ref="0x409b5e78" scoped=""/>
+        <function-ref name="getValue" ref="0x409b4010" scoped=""/>
       </interface-functions>
-    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430InterruptC.nc" name="Interrupt" provided="1" ref="0x409d41f0">
+    </interface><interface loc="45:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430InterruptC.nc" name="Interrupt" provided="1" ref="0x409b51f0">
       <component-ref nicename="tos.chips.msp430.pins.Msp430InterruptC" qname="Msp430InterruptC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Interrupt" ref="0x409d41f0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Interrupt" ref="0x409b51f0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.GpioInterrupt" qname="GpioInterrupt"/>
       </instance>
       <interface-functions>
-        <function-ref name="fired" ref="0x409d43c8" scoped=""/>
-        <function-ref name="disable" ref="0x409d44a8" scoped=""/>
-        <function-ref name="enableFallingEdge" ref="0x409d4588" scoped=""/>
-        <function-ref name="enableRisingEdge" ref="0x409d4668" scoped=""/>
+        <function-ref name="fired" ref="0x409b53c8" scoped=""/>
+        <function-ref name="disable" ref="0x409b54a8" scoped=""/>
+        <function-ref name="enableFallingEdge" ref="0x409b5588" scoped=""/>
+        <function-ref name="enableRisingEdge" ref="0x409b5668" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

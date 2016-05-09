@@ -15,143 +15,143 @@
 </long>
       </documentation>
       <parameters>
-        <constant loc="47:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMId" ref="0x40ed3db8">
+        <constant loc="47:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMId" ref="0x40ebe010">
           <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
           <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-            <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+            <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
           </type-int>
         </constant>
       </parameters>
       <configuration/>
       <wiring>
         <wire loc="64:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
-          <from><interface-ref name="AMSend" ref="0x41133060" scoped=""/></from>
-          <to><interface-ref name="AMSend" ref="0x41169010" scoped=""/></to>
+          <from><interface-ref name="AMSend" ref="0x40ebe298" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x40f15408" scoped=""/></to>
         </wire>
         <wire loc="65:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
-          <from><interface-ref name="Packet" ref="0x41133738" scoped=""/></from>
-          <to><interface-ref name="Packet" ref="0x411696a8" scoped=""/></to>
+          <from><interface-ref name="Packet" ref="0x40ebe970" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40f15aa0" scoped=""/></to>
         </wire>
         <wire loc="66:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
-          <from><interface-ref name="AMPacket" ref="0x41133e28" scoped=""/></from>
-          <to><interface-ref name="AMPacket" ref="0x41169d40" scoped=""/></to>
+          <from><interface-ref name="AMPacket" ref="0x40ebd0b8" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x40f14150" scoped=""/></to>
         </wire>
         <wire loc="67:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc">
-          <from><interface-ref name="Acks" ref="0x41132b80" scoped=""/></from>
-          <to><interface-ref name="Acks" ref="0x41168950" scoped=""/></to>
+          <from><interface-ref name="Acks" ref="0x40ebddc0" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x40f14d48" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="49:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMSend" provided="1" ref="0x41133060">
+    <specification><interface loc="49:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMSend" provided="1" ref="0x40ebe298">
       <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x41133060" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x40ebe298" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
       </instance>
       <interface-functions>
-        <function-ref name="send" ref="0x41133238" scoped=""/>
-        <function-ref name="getPayload" ref="0x41133318" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x411333f8" scoped=""/>
-        <function-ref name="cancel" ref="0x411334d8" scoped=""/>
-        <function-ref name="sendDone" ref="0x411335b8" scoped=""/>
+        <function-ref name="send" ref="0x40ebe470" scoped=""/>
+        <function-ref name="getPayload" ref="0x40ebe550" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40ebe630" scoped=""/>
+        <function-ref name="cancel" ref="0x40ebe710" scoped=""/>
+        <function-ref name="sendDone" ref="0x40ebe7f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="Packet" provided="1" ref="0x41133738">
+    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="Packet" provided="1" ref="0x40ebe970">
       <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x41133738" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x40ebe970" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
       </instance>
       <interface-functions>
-        <function-ref name="clear" ref="0x41133910" scoped=""/>
-        <function-ref name="payloadLength" ref="0x411339f0" scoped=""/>
-        <function-ref name="getPayload" ref="0x41133ad0" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x41133bb0" scoped=""/>
-        <function-ref name="setPayloadLength" ref="0x41133c90" scoped=""/>
+        <function-ref name="clear" ref="0x40ebeb48" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40ebec28" scoped=""/>
+        <function-ref name="getPayload" ref="0x40ebed08" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40ebede8" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40ebeec8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMPacket" provided="1" ref="0x41133e28">
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="AMPacket" provided="1" ref="0x40ebd0b8">
       <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x41133e28" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x40ebd0b8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
       </instance>
       <interface-functions>
-        <function-ref name="group" ref="0x41132050" scoped=""/>
-        <function-ref name="source" ref="0x41132130" scoped=""/>
-        <function-ref name="address" ref="0x41132210" scoped=""/>
-        <function-ref name="destination" ref="0x411322f0" scoped=""/>
-        <function-ref name="setSource" ref="0x411323d0" scoped=""/>
-        <function-ref name="setDestination" ref="0x411324b0" scoped=""/>
-        <function-ref name="type" ref="0x41132590" scoped=""/>
-        <function-ref name="setType" ref="0x41132670" scoped=""/>
-        <function-ref name="isForMe" ref="0x41132750" scoped=""/>
-        <function-ref name="setGroup" ref="0x41132830" scoped=""/>
-        <function-ref name="localGroup" ref="0x41132910" scoped=""/>
+        <function-ref name="group" ref="0x40ebd290" scoped=""/>
+        <function-ref name="source" ref="0x40ebd370" scoped=""/>
+        <function-ref name="address" ref="0x40ebd450" scoped=""/>
+        <function-ref name="destination" ref="0x40ebd530" scoped=""/>
+        <function-ref name="setSource" ref="0x40ebd610" scoped=""/>
+        <function-ref name="setDestination" ref="0x40ebd6f0" scoped=""/>
+        <function-ref name="type" ref="0x40ebd7d0" scoped=""/>
+        <function-ref name="setType" ref="0x40ebd8b0" scoped=""/>
+        <function-ref name="isForMe" ref="0x40ebd990" scoped=""/>
+        <function-ref name="setGroup" ref="0x40ebda70" scoped=""/>
+        <function-ref name="localGroup" ref="0x40ebdb50" scoped=""/>
       </interface-functions>
-    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="Acks" provided="1" ref="0x41132b80">
+    </interface><interface loc="52:/home/rgao/lily/tinyos2/tos/system/AMSenderC.nc" name="Acks" provided="1" ref="0x40ebddc0">
       <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x41132b80" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x40ebddc0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
       </instance>
       <interface-functions>
-        <function-ref name="requestAck" ref="0x41132d58" scoped=""/>
-        <function-ref name="noAck" ref="0x41132e38" scoped=""/>
-        <function-ref name="wasAcked" ref="0x41132f18" scoped=""/>
+        <function-ref name="requestAck" ref="0x40ebc010" scoped=""/>
+        <function-ref name="noAck" ref="0x40ebc0f0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x40ebc1d0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="52:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="Acks" provided="1" ref="0x41168950">
+    </interface></specification><referenced><interface loc="52:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="Acks" provided="1" ref="0x40f14d48">
       <component-ref nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x41168950" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x40f14d48" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
       </instance>
       <interface-functions>
-        <function-ref name="requestAck" ref="0x41168b28" scoped=""/>
-        <function-ref name="noAck" ref="0x41168c08" scoped=""/>
-        <function-ref name="wasAcked" ref="0x41168ce8" scoped=""/>
+        <function-ref name="requestAck" ref="0x40f14f20" scoped=""/>
+        <function-ref name="noAck" ref="0x40f13018" scoped=""/>
+        <function-ref name="wasAcked" ref="0x40f130f8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="Packet" provided="1" ref="0x411696a8">
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="AMPacket" provided="1" ref="0x40f14150">
       <component-ref nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x411696a8" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x40f14150" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x40f14328" scoped=""/>
+        <function-ref name="source" ref="0x40f14408" scoped=""/>
+        <function-ref name="address" ref="0x40f144e8" scoped=""/>
+        <function-ref name="destination" ref="0x40f145c8" scoped=""/>
+        <function-ref name="setSource" ref="0x40f146a8" scoped=""/>
+        <function-ref name="setDestination" ref="0x40f14788" scoped=""/>
+        <function-ref name="type" ref="0x40f14868" scoped=""/>
+        <function-ref name="setType" ref="0x40f14948" scoped=""/>
+        <function-ref name="isForMe" ref="0x40f14a28" scoped=""/>
+        <function-ref name="setGroup" ref="0x40f14b08" scoped=""/>
+        <function-ref name="localGroup" ref="0x40f14be8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="Packet" provided="1" ref="0x40f15aa0">
+      <component-ref nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x40f15aa0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
       </instance>
       <interface-functions>
-        <function-ref name="clear" ref="0x41169880" scoped=""/>
-        <function-ref name="payloadLength" ref="0x41169960" scoped=""/>
-        <function-ref name="getPayload" ref="0x41169a40" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x41169b20" scoped=""/>
-        <function-ref name="setPayloadLength" ref="0x41169c00" scoped=""/>
+        <function-ref name="clear" ref="0x40f15c78" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40f15d58" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f15e38" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f15f18" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40f14010" scoped=""/>
       </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="AMPacket" provided="1" ref="0x41169d40">
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="AMSend" provided="1" ref="0x40f15408">
       <component-ref nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x41169d40" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="group" ref="0x41169f18" scoped=""/>
-        <function-ref name="source" ref="0x41168010" scoped=""/>
-        <function-ref name="address" ref="0x411680f0" scoped=""/>
-        <function-ref name="destination" ref="0x411681d0" scoped=""/>
-        <function-ref name="setSource" ref="0x411682b0" scoped=""/>
-        <function-ref name="setDestination" ref="0x41168390" scoped=""/>
-        <function-ref name="type" ref="0x41168470" scoped=""/>
-        <function-ref name="setType" ref="0x41168550" scoped=""/>
-        <function-ref name="isForMe" ref="0x41168630" scoped=""/>
-        <function-ref name="setGroup" ref="0x41168710" scoped=""/>
-        <function-ref name="localGroup" ref="0x411687f0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" name="AMSend" provided="1" ref="0x41169010">
-      <component-ref nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x41169010" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x40f15408" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
       </instance>
       <interface-functions>
-        <function-ref name="send" ref="0x411691e8" scoped=""/>
-        <function-ref name="getPayload" ref="0x411692c8" scoped=""/>
-        <function-ref name="maxPayloadLength" ref="0x411693a8" scoped=""/>
-        <function-ref name="cancel" ref="0x41169488" scoped=""/>
-        <function-ref name="sendDone" ref="0x41169568" scoped=""/>
+        <function-ref name="send" ref="0x40f155e0" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f156c0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f157a0" scoped=""/>
+        <function-ref name="cancel" ref="0x40f15880" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f15960" scoped=""/>
       </interface-functions>
     </interface><component abstract="" loc="47(AMSenderC.SenderC):/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc" nicename="tos.system.DirectAMSenderC" qname="AMSenderC.SenderC">
       <documentation loc="33:/home/rgao/lily/tinyos2/tos/system/DirectAMSenderC.nc">
@@ -174,7 +174,7 @@
         <arguments>
           <value cst="U:">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
-              <typename><typedef-ref name="am_id_t" ref="0x404ffae0"/></typename>
+              <typename><typedef-ref name="am_id_t" ref="0x40501e40"/></typename>
             </type-int>
           </value>
         </arguments>

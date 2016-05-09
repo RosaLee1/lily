@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><interfacedef loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts" qname="HplMsp430UsciRawInterrupts">
-      <function event="" loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="rxDone" provided="0" ref="0x40afd088">
+      <function event="" loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="rxDone" provided="0" ref="0x40ad8938">
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts" qname="HplMsp430UsciRawInterrupts"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>
@@ -10,14 +10,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="data" ref="0x40b00f08">
+          <variable loc="58:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="data" ref="0x40ad87e0">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="uint8_t" ref="0x40214dc8"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function event="" loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="txDone" provided="0" ref="0x40b00b20">
+      <function event="" loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc" name="txDone" provided="0" ref="0x40ad83f8">
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.HplMsp430UsciRawInterrupts" qname="HplMsp430UsciRawInterrupts"/>
         <type-function alignment="I:1" size="I:1">
           <type-void alignment="I:1" size="I:1"/>

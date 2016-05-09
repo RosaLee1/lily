@@ -18,7 +18,7 @@
  @author David Moss
 </long>
       </documentation>
-      <function event="" loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="aboutToSend" provided="0" ref="0x4067f988">
+      <function event="" loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="aboutToSend" provided="0" ref="0x40548248">
         <documentation loc="52:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc">
           <short>
  The system is about to send this message.</short>
@@ -35,25 +35,25 @@
           <type-void alignment="I:1" size="I:1"/>
           <function-parameters>
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="dest" ref="0x4067f610">
+          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="dest" ref="0x40546ea8">
             <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
-              <typename><typedef-ref name="am_addr_t" ref="0x404fe010"/></typename>
+              <typename><typedef-ref name="am_addr_t" ref="0x40500330"/></typename>
             </type-int>
           </variable>
-          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="msg" ref="0x4067f828">
+          <variable loc="59:/home/rgao/lily/tinyos2/tos/interfaces/SendNotifier.nc" name="msg" ref="0x405480e8">
             <type-pointer alignment="I:2" size="I:2">
-              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40502308"/>
-                <typename><typedef-ref name="message_t" ref="0x4050f0c8"/></typename>
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x40505640"/>
+                <typename><typedef-ref name="message_t" ref="0x405043e8"/></typename>
               </type-tag>
             </type-pointer>
           </variable>

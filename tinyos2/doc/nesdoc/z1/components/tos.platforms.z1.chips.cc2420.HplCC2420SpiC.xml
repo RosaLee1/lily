@@ -16,81 +16,81 @@
       <configuration/>
       <wiring>
         <wire loc="54:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc">
-          <from><interface-ref name="SpiPacket" ref="0x40a48d28" scoped=""/></from>
-          <to><interface-ref name="SpiPacket" ref="0x40bed328" scoped=""/></to>
+          <from><interface-ref name="SpiPacket" ref="0x40a397f0" scoped=""/></from>
+          <to><interface-ref name="SpiPacket" ref="0x40bbe328" scoped=""/></to>
         </wire>
         <wire loc="53:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc">
-          <from><interface-ref name="SpiByte" ref="0x40a48990" scoped=""/></from>
-          <to><interface-ref name="SpiByte" ref="0x40bed010" scoped=""/></to>
+          <from><interface-ref name="SpiByte" ref="0x40a39458" scoped=""/></from>
+          <to><interface-ref name="SpiByte" ref="0x40bbe010" scoped=""/></to>
         </wire>
         <wire loc="52:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc">
-          <from><interface-ref name="Resource" ref="0x40a48290" scoped=""/></from>
-          <to><interface-ref name="Resource" ref="0x40a59508" scoped=""/></to>
+          <from><interface-ref name="Resource" ref="0x40a2cca0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40a37508" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="SpiPacket" provided="1" ref="0x40a48d28">
+    <specification><interface loc="44:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="SpiPacket" provided="1" ref="0x40a397f0">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40a48d28" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40a397f0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SpiPacket" qname="SpiPacket"/>
       </instance>
       <interface-functions>
-        <function-ref name="send" ref="0x40a48f00" scoped=""/>
-        <function-ref name="sendDone" ref="0x40a5b010" scoped=""/>
+        <function-ref name="send" ref="0x40a399c8" scoped=""/>
+        <function-ref name="sendDone" ref="0x40a39aa8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="SpiByte" provided="1" ref="0x40a48990">
+    </interface><interface loc="43:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="SpiByte" provided="1" ref="0x40a39458">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40a48990" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40a39458" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
       </instance>
       <interface-functions>
-        <function-ref name="write" ref="0x40a48b68" scoped=""/>
+        <function-ref name="write" ref="0x40a39630" scoped=""/>
       </interface-functions>
-    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="Resource" provided="1" ref="0x40a48290">
+    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/cc2420/HplCC2420SpiC.nc" name="Resource" provided="1" ref="0x40a2cca0">
       <component-ref nicename="tos.platforms.z1.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a48290" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a2cca0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
       </instance>
       <interface-functions>
-        <function-ref name="release" ref="0x40a48468" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40a48548" scoped=""/>
-        <function-ref name="request" ref="0x40a48628" scoped=""/>
-        <function-ref name="granted" ref="0x40a48708" scoped=""/>
-        <function-ref name="isOwner" ref="0x40a487e8" scoped=""/>
+        <function-ref name="release" ref="0x40a2ce78" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40a39010" scoped=""/>
+        <function-ref name="request" ref="0x40a390f0" scoped=""/>
+        <function-ref name="granted" ref="0x40a391d0" scoped=""/>
+        <function-ref name="isOwner" ref="0x40a392b0" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="SpiByte" provided="1" ref="0x40bed010">
+    </interface></specification><referenced><interface loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="SpiPacket" provided="1" ref="0x40bbe328">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiB0C" qname="HplCC2420SpiC.SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40bed010" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="write" ref="0x40bed1e8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="SpiPacket" provided="1" ref="0x40bed328">
-      <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiB0C" qname="HplCC2420SpiC.SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40bed328" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x40bbe328" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.SpiPacket" qname="SpiPacket"/>
       </instance>
       <interface-functions>
-        <function-ref name="send" ref="0x40bed500" scoped=""/>
-        <function-ref name="sendDone" ref="0x40bed5e0" scoped=""/>
+        <function-ref name="send" ref="0x40bbe500" scoped=""/>
+        <function-ref name="sendDone" ref="0x40bbe5e0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="Resource" provided="1" ref="0x40a59508">
+    </interface><interface loc="51:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="Resource" provided="1" ref="0x40a37508">
       <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiB0C" qname="HplCC2420SpiC.SpiC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a59508" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x40a37508" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
       </instance>
       <interface-functions>
-        <function-ref name="release" ref="0x40a596e0" scoped=""/>
-        <function-ref name="immediateRequest" ref="0x40a597c0" scoped=""/>
-        <function-ref name="request" ref="0x40a598a0" scoped=""/>
-        <function-ref name="granted" ref="0x40a59980" scoped=""/>
-        <function-ref name="isOwner" ref="0x40a59a60" scoped=""/>
+        <function-ref name="release" ref="0x40a376e0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40a377c0" scoped=""/>
+        <function-ref name="request" ref="0x40a378a0" scoped=""/>
+        <function-ref name="granted" ref="0x40a37980" scoped=""/>
+        <function-ref name="isOwner" ref="0x40a37a60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" name="SpiByte" provided="1" ref="0x40bbe010">
+      <component-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiB0C" qname="HplCC2420SpiC.SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x40bbe010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="write" ref="0x40bbe1e8" scoped=""/>
       </interface-functions>
     </interface><component abstract="" loc="49(HplCC2420SpiC.SpiC):/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430SpiB0C.nc" nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiB0C" qname="HplCC2420SpiC.SpiC">
       <instance>

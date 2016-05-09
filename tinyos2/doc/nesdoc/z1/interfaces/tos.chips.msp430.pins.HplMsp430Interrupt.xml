@@ -6,7 +6,7 @@
  @author Joe Polastre
 </long>
       </documentation>
-      <function command="" loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="clear" provided="0" ref="0x40945e48">
+      <function command="" loc="52:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="clear" provided="0" ref="0x4092ae48">
         <documentation loc="49:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short> 
  Clears the MSP430 Interrupt Pending Flag for a particular port.</short>
@@ -23,7 +23,7 @@
         <parameters>
         </parameters>
       </function>
-      <function event="" loc="72:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="fired" provided="0" ref="0x40960dd8">
+      <function event="" loc="72:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="fired" provided="0" ref="0x40927dd8">
         <documentation loc="69:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short>
  Signalled when an interrupt occurs on a port.</short>
@@ -40,7 +40,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="disable" provided="0" ref="0x40945a10">
+      <function command="" loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="disable" provided="0" ref="0x4092aa10">
         <documentation loc="44:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short> 
  Disables MSP430 hardware interrupt on a particular port.</short>
@@ -57,7 +57,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="edge" provided="0" ref="0x40960910">
+      <function command="" loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="edge" provided="0" ref="0x40927910">
         <documentation loc="61:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short> 
  Sets whether the edge should be high to low or low to high.</short>
@@ -78,14 +78,14 @@
           </function-parameters>
         </type-function>
         <parameters>
-          <variable loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="low_to_high" ref="0x409607b8">
+          <variable loc="67:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="low_to_high" ref="0x409277b8">
             <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
               <typename><typedef-ref name="bool" ref="0x40384e80"/></typename>
             </type-int>
           </variable>
         </parameters>
       </function>
-      <function command="" loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="enable" provided="0" ref="0x409455c8">
+      <function command="" loc="42:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="enable" provided="0" ref="0x4092a5c8">
         <documentation loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short> 
  Enables MSP430 hardware interrupt on a particular port.</short>
@@ -102,7 +102,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="59:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="getValue" provided="0" ref="0x409602f8">
+      <function command="" loc="59:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc" name="getValue" provided="0" ref="0x409272f8">
         <documentation loc="54:/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430Interrupt.nc">
           <short> 
  Gets the current value of the input voltage of a port.</short>

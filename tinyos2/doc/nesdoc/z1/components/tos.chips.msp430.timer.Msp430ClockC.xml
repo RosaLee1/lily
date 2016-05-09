@@ -9,53 +9,44 @@
       <configuration/>
       <wiring>
         <wire loc="47:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc">
-          <from><interface-ref name="Msp430ClockInit" ref="0x405446c0" scoped=""/></from>
-          <to><interface-ref name="Msp430ClockInit" ref="0x405569c0" scoped=""/></to>
+          <from><interface-ref name="Msp430ClockInit" ref="0x4062f098" scoped=""/></from>
+          <to><interface-ref name="Msp430ClockInit" ref="0x4064c0f8" scoped=""/></to>
         </wire>
         <wire loc="46:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc">
-          <from><interface-ref name="Init" ref="0x4053b010" scoped=""/></from>
-          <to><interface-ref name="Init" ref="0x405565f0" scoped=""/></to>
+          <from><interface-ref name="Init" ref="0x406278b0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4064eca8" scoped=""/></to>
         </wire>
         <wire loc="48:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc">
           <from><interface-ref name="McuPowerOverride" ref="0x404c2218" scoped=""/></from>
-          <to><interface-ref name="McuPowerOverride" ref="0x405633d8" scoped=""/></to>
+          <to><interface-ref name="McuPowerOverride" ref="0x4064caf8" scoped=""/></to>
         </wire>
       </wiring>
-    <specification><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc" name="Msp430ClockInit" provided="1" ref="0x405446c0">
+    <specification><interface loc="40:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc" name="Msp430ClockInit" provided="1" ref="0x4062f098">
       <component-ref nicename="tos.chips.msp430.timer.Msp430ClockC" qname="Msp430ClockC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430ClockInit" ref="0x405446c0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430ClockInit" ref="0x4062f098" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430ClockInit" qname="Msp430ClockInit"/>
       </instance>
       <interface-functions>
-        <function-ref name="defaultInitClocks" ref="0x40544eb8" scoped=""/>
-        <function-ref name="initTimerB" ref="0x40544978" scoped=""/>
-        <function-ref name="defaultInitTimerA" ref="0x40544a58" scoped=""/>
-        <function-ref name="initTimerA" ref="0x40544b38" scoped=""/>
-        <function-ref name="defaultInitTimerB" ref="0x40544898" scoped=""/>
-        <function-ref name="defaultSetupDcoCalibrate" ref="0x40544c18" scoped=""/>
-        <function-ref name="setupDcoCalibrate" ref="0x40544cf8" scoped=""/>
-        <function-ref name="initClocks" ref="0x40544dd8" scoped=""/>
+        <function-ref name="defaultInitClocks" ref="0x4062f890" scoped=""/>
+        <function-ref name="initTimerB" ref="0x4062f350" scoped=""/>
+        <function-ref name="defaultInitTimerA" ref="0x4062f430" scoped=""/>
+        <function-ref name="initTimerA" ref="0x4062f510" scoped=""/>
+        <function-ref name="defaultInitTimerB" ref="0x4062f270" scoped=""/>
+        <function-ref name="defaultSetupDcoCalibrate" ref="0x4062f5f0" scoped=""/>
+        <function-ref name="setupDcoCalibrate" ref="0x4062f6d0" scoped=""/>
+        <function-ref name="initClocks" ref="0x4062f7b0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc" name="Init" provided="1" ref="0x4053b010">
+    </interface><interface loc="39:/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430ClockC.nc" name="Init" provided="1" ref="0x406278b0">
       <component-ref nicename="tos.chips.msp430.timer.Msp430ClockC" qname="Msp430ClockC"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x4053b010" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x406278b0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x4053b1e8" scoped=""/>
+        <function-ref name="init" ref="0x40627a88" scoped=""/>
       </interface-functions>
-    </interface></specification><referenced><interface loc="50:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="McuPowerOverride" provided="1" ref="0x405633d8">
-      <component-ref nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="McuPowerOverride" ref="0x405633d8" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.McuPowerOverride" qname="McuPowerOverride"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="lowestState" ref="0x405635b0" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="55:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/McuSleepC.nc" name="McuPowerOverride" provided="0" ref="0x404c2218">
+    </interface></specification><referenced><interface loc="55:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/McuSleepC.nc" name="McuPowerOverride" provided="0" ref="0x404c2218">
       <component-ref nicename="tos.platforms.z1.chips.msp430.McuSleepC" qname="McuSleepC"/>
       <type-interface alignment="I:2" size="I:2"><interface-ref name="McuPowerOverride" ref="0x404c2218" scoped=""/></type-interface>
       <instance>
@@ -64,30 +55,39 @@
       <interface-functions>
         <function-ref name="lowestState" ref="0x404c23f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="Init" provided="1" ref="0x405565f0">
+    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="Msp430ClockInit" provided="1" ref="0x4064c0f8">
       <component-ref nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x405565f0" scoped=""/></type-interface>
-      <instance>
-        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
-      </instance>
-      <interface-functions>
-        <function-ref name="init" ref="0x405567c8" scoped=""/>
-      </interface-functions>
-    </interface><interface loc="49:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="Msp430ClockInit" provided="1" ref="0x405569c0">
-      <component-ref nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430ClockInit" ref="0x405569c0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430ClockInit" ref="0x4064c0f8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430ClockInit" qname="Msp430ClockInit"/>
       </instance>
       <interface-functions>
-        <function-ref name="defaultInitClocks" ref="0x405631d0" scoped=""/>
-        <function-ref name="initTimerB" ref="0x40556c78" scoped=""/>
-        <function-ref name="defaultInitTimerA" ref="0x40556d58" scoped=""/>
-        <function-ref name="initTimerA" ref="0x40556e38" scoped=""/>
-        <function-ref name="defaultInitTimerB" ref="0x40556b98" scoped=""/>
-        <function-ref name="defaultSetupDcoCalibrate" ref="0x40556f18" scoped=""/>
-        <function-ref name="setupDcoCalibrate" ref="0x40563010" scoped=""/>
-        <function-ref name="initClocks" ref="0x405630f0" scoped=""/>
+        <function-ref name="defaultInitClocks" ref="0x4064c8f0" scoped=""/>
+        <function-ref name="initTimerB" ref="0x4064c3b0" scoped=""/>
+        <function-ref name="defaultInitTimerA" ref="0x4064c490" scoped=""/>
+        <function-ref name="initTimerA" ref="0x4064c570" scoped=""/>
+        <function-ref name="defaultInitTimerB" ref="0x4064c2d0" scoped=""/>
+        <function-ref name="defaultSetupDcoCalibrate" ref="0x4064c650" scoped=""/>
+        <function-ref name="setupDcoCalibrate" ref="0x4064c730" scoped=""/>
+        <function-ref name="initClocks" ref="0x4064c810" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="McuPowerOverride" provided="1" ref="0x4064caf8">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="McuPowerOverride" ref="0x4064caf8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.McuPowerOverride" qname="McuPowerOverride"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="lowestState" ref="0x4064ccd0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" name="Init" provided="1" ref="0x4064eca8">
+      <component-ref nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x4064eca8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x4064ee80" scoped=""/>
       </interface-functions>
     </interface><component loc="46:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430ClockP.nc" nicename="tos.platforms.z1.chips.msp430.timer.Msp430ClockP" qname="Msp430ClockP" safe="">
       <module/>

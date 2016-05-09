@@ -2,9 +2,9 @@
       <parameters>
       </parameters>
       <module/>
-    <specification><interface loc="41:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/usci/Z1UsciP.nc" name="Msp430SpiConfigure" provided="1" ref="0x40ad2b68">
+    <specification><interface loc="41:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/usci/Z1UsciP.nc" name="Msp430SpiConfigure" provided="1" ref="0x40acd2a8">
       <component-ref nicename="tos.platforms.z1.chips.msp430.usci.Z1UsciP" qname="Z1UsciP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430SpiConfigure" ref="0x40ad2b68" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430SpiConfigure" ref="0x40acd2a8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430SpiConfigure" qname="Msp430SpiConfigure"/>
       </instance>
@@ -14,11 +14,11 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getConfig" ref="0x40ad2d40" scoped=""/>
+        <function-ref name="getConfig" ref="0x40acd480" scoped=""/>
       </interface-functions>
-    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/usci/Z1UsciP.nc" name="Msp430I2CConfigure" provided="1" ref="0x40af3b78">
+    </interface><interface loc="42:/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/usci/Z1UsciP.nc" name="Msp430I2CConfigure" provided="1" ref="0x40acc2b8">
       <component-ref nicename="tos.platforms.z1.chips.msp430.usci.Z1UsciP" qname="Z1UsciP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430I2CConfigure" ref="0x40af3b78" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430I2CConfigure" ref="0x40acc2b8" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.chips.msp430.x2xxx.usci.Msp430I2CConfigure" qname="Msp430I2CConfigure"/>
       </instance>
@@ -28,6 +28,6 @@
         </type-int>
       </interface-parameters>
       <interface-functions>
-        <function-ref name="getConfig" ref="0x40af3d50" scoped=""/>
+        <function-ref name="getConfig" ref="0x40acc490" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

@@ -10,42 +10,42 @@
 </long>
       </documentation>
       <module/>
-    <specification><interface loc="60:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="SoftwareInit" provided="0" ref="0x40636418">
+    <specification><interface loc="60:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="SoftwareInit" provided="0" ref="0x4071a418">
       <component-ref nicename="tos.system.RealMainP" qname="RealMainP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x40636418" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x4071a418" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x406365f0" scoped=""/>
+        <function-ref name="init" ref="0x4071a5f0" scoped=""/>
       </interface-functions>
-    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="Boot" provided="1" ref="0x405365e0">
+    </interface><interface loc="57:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="Boot" provided="1" ref="0x4062a5e0">
       <component-ref nicename="tos.system.RealMainP" qname="RealMainP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x405365e0" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x4062a5e0" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
       </instance>
       <interface-functions>
-        <function-ref name="booted" ref="0x405367b8" scoped=""/>
+        <function-ref name="booted" ref="0x4062a7b8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="59:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="PlatformInit" provided="0" ref="0x40636010">
+    </interface><interface loc="59:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="PlatformInit" provided="0" ref="0x4071a010">
       <component-ref nicename="tos.system.RealMainP" qname="RealMainP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="PlatformInit" ref="0x40636010" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PlatformInit" ref="0x4071a010" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x406361e8" scoped=""/>
+        <function-ref name="init" ref="0x4071a1e8" scoped=""/>
       </interface-functions>
-    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="Scheduler" provided="0" ref="0x40536978">
+    </interface><interface loc="58:/home/rgao/lily/tinyos2/tos/system/RealMainP.nc" name="Scheduler" provided="0" ref="0x4062a978">
       <component-ref nicename="tos.system.RealMainP" qname="RealMainP"/>
-      <type-interface alignment="I:2" size="I:2"><interface-ref name="Scheduler" ref="0x40536978" scoped=""/></type-interface>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Scheduler" ref="0x4062a978" scoped=""/></type-interface>
       <instance>
         <interfacedef-ref nicename="tos.interfaces.Scheduler" qname="Scheduler"/>
       </instance>
       <interface-functions>
-        <function-ref name="init" ref="0x40536b50" scoped=""/>
-        <function-ref name="taskLoop" ref="0x40536c30" scoped=""/>
-        <function-ref name="runNextTask" ref="0x40536d10" scoped=""/>
+        <function-ref name="init" ref="0x4062ab50" scoped=""/>
+        <function-ref name="taskLoop" ref="0x4062ac30" scoped=""/>
+        <function-ref name="runNextTask" ref="0x4062ad10" scoped=""/>
       </interface-functions>
     </interface></specification><referenced/></component>

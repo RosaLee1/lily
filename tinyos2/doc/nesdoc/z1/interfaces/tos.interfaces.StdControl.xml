@@ -20,7 +20,7 @@
  @author Kevin Klues (klueska@cs.wustl.edu)
 </long>
       </documentation>
-      <function command="" loc="95:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc" name="start" provided="0" ref="0x4069c4d0">
+      <function command="" loc="95:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc" name="start" provided="0" ref="0x40567b60">
         <documentation loc="88:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc">
           <short>
  Start this component and all of its subcomponents.</short>
@@ -43,7 +43,7 @@
         <parameters>
         </parameters>
       </function>
-      <function command="" loc="105:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc" name="stop" provided="0" ref="0x4069c998">
+      <function command="" loc="105:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc" name="stop" provided="0" ref="0x4056f038">
         <documentation loc="97:/home/rgao/lily/tinyos2/tos/interfaces/StdControl.nc">
           <short>
  Stop the component and any pertinent subcomponents (not all
