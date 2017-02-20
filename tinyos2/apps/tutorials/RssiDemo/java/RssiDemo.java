@@ -45,6 +45,7 @@
  */
 
 import java.io.IOException;
+import java.sql.Timestamp;
 
 import net.tinyos.message.*;
 import net.tinyos.packet.*;
@@ -59,11 +60,12 @@ public class RssiDemo implements MessageListener {
     this.moteIF.registerListener(new RssiMsg(), this);
   }
     
+  /*add a timestamp when reading the rssi of a received message*/
   public void messageReceived(int to, Message message) {
     RssiMsg msg = (RssiMsg) message;
     int source = message.getSerialPacket().get_header_src();
-    System.out.println("Rssi Message received from node " + source + 
-		       ": Rssi = " +  msg.get_rssi());
+    Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+    System.out.println(timestamp + ": Rssi Message received from node " + source + ": Rssi = " +  msg.get_rssi());
   }
   
   private static void usage() {

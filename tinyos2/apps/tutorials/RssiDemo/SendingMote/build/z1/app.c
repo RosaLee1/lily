@@ -1558,7 +1558,7 @@ typedef nx_struct timesync_footer_t {
 } __attribute__((packed)) timesync_footer_t;
 # 39 "ApplicationDefinitions.h"
 enum __nesc_unnamed4288 {
-  SEND_INTERVAL_MS = 250
+  SEND_INTERVAL_MS = 10
 };
 enum CC2420ActiveMessageC____nesc_unnamed4289 {
   CC2420ActiveMessageC__CC2420_AM_SEND_ID = 0U
