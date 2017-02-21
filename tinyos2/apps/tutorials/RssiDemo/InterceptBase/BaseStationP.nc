@@ -54,6 +54,7 @@
 
 #include "AM.h"
 #include "Serial.h"
+#include "printf.h"
 
 module BaseStationP @safe() {
   uses {
@@ -204,6 +205,9 @@ implementation
 
     msg = uartQueue[uartOut];
     tmpLen = len = call RadioPacket.payloadLength(msg);
+   /*
+    * printf("received packet length: %u \n", tmpLen);
+    */
     id = call RadioAMPacket.type(msg);
     addr = call RadioAMPacket.destination(msg);
     src = call RadioAMPacket.source(msg);

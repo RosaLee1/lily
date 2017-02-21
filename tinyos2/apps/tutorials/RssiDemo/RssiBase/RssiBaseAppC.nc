@@ -40,6 +40,8 @@ configuration RssiBaseAppC {
 } implementation {
   components BaseStationC;
   components RssiBaseC as App;
+  components PrintfC;
+  components SerialStartC; 
 
 #ifdef __CC2420_H__
   components CC2420ActiveMessageC;

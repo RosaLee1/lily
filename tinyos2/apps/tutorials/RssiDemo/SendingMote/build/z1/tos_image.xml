@@ -1,11 +1,11 @@
 <tos_image>
   <ident>
-    <uidhash>0D1DAEE5L</uidhash>
+    <uidhash>CFEFAF87L</uidhash>
     <hostname>rgao-virtual-ma</hostname>
     <username>rgao</username>
     <appname>SendingMoteAppC</appname>
     <userhash>7942D6A9L</userhash>
-    <timestamp>58AB6413L</timestamp>
+    <timestamp>58AC809AL</timestamp>
     <deluge_support>no</deluge_support>
     <platform>z1</platform>
   </ident>
