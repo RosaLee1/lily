@@ -31,6 +31,7 @@
  
 #include "Timer.h"
 #include "RssiToSerial.h"
+#include "printf.h"
  
  /**
   * This is more of a general demonstration than a test.
@@ -117,6 +118,29 @@ implementation {
   }
   
   /**************** ReadRssi Events *************************/
+/**  event void ReadRssi.readDone(error_t result, uint16_t val ){
+ *    
+ *   if(result != SUCCESS){
+ *     post readRssi();
+ *     return;
+ *   }
+ *   atomic{
+ *    total += val;
+ *     reads ++;
+ *     if(largest < val){
+ *       largest = val;
+ *     }
+ *   } 
+ *   if(reads == (1<<LOG2SAMPLES)){
+ *     post sendSerialMsg();
+ *   }
+ *   
+ *   post readRssi();
+ *   
+ * }
+ */
+
+  /*output the read rss to serial port in 16-mary*/
   event void ReadRssi.readDone(error_t result, uint16_t val ){
     
     if(result != SUCCESS){
@@ -124,15 +148,8 @@ implementation {
       return;
     }
     atomic{
-      total += val;
-      reads ++;
-      if(largest < val){
-        largest = val;
-      }
+      printf("received rss: %u", val);
     } 
-    if(reads == (1<<LOG2SAMPLES)){
-      post sendSerialMsg();
-    }
     
     post readRssi();
     

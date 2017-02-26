@@ -1,4 +1,8 @@
 COMPONENT=RssiToSerialC
+
+PFLAGS += -I$(TOSROOT)/tos/lib/printf
+PFLAGS += -DNEW_PRINTF_SEMANTICS
+
 BUILD_EXTRA_DEPS = RssiSerialMsg.java SpecAnalyzer.class
 CLEAN_EXTRA = *.class RssiSerialMsg.java
 

@@ -53,6 +53,9 @@ implementation {
   components SerialActiveMessageC as AM;
   components ActiveMessageC;
   components CC2420ControlC;
+
+  components PrintfC;
+  components SerialStartC;
   
   App.Boot -> MainC.Boot;
   App.SerialControl -> AM;
