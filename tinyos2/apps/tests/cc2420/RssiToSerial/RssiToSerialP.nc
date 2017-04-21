@@ -161,11 +161,13 @@ implementation {
     atomic{
       reads ++;
       printf("%u", val);
+      printfflush();
     } 
 
     if(reads == (1<<LOG2SAMPLES)){
       timestamp = call LocalTime.get();
       printf("\n (Experiment ends at %ld) \n", timestamp);
+      printfflush();
       reads = 0;
     }
     
