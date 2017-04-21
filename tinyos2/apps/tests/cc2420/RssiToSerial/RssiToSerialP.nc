@@ -50,40 +50,43 @@ module RssiToSerialP {
   uses {
     interface Leds;
     interface Boot;
-    interface AMSend;
+   /** interface AMSend; **/
     interface SplitControl as AMControl;
-    interface SplitControl as SerialControl;
-    interface Packet;
+    interface SplitControl as SerialControl; 
+   /** interface Packet;  **/
     interface Read<uint16_t> as ReadRssi;
     interface CC2420Config as Config;
+
+    interface LocalTime<TMicro>;
   }
 }
 implementation {
 
   /******* Global Variables ****************/
-  message_t packet;
-  bool locked;
-  uint32_t total;
-  uint16_t largest;
-  uint16_t reads;
+ /** message_t packet; **/
+ /** bool locked; **/
+ /** uint32_t total; **/
+ /** uint16_t largest; **/
+  uint16_t reads; 
+  uint32_t timestamp;
   
   /******** Declare Tasks *******************/
   task void readRssi();
-  task void sendSerialMsg();
+/**  task void sendSerialMsg(); **/
   
   /************ Boot Events *****************/
   event void Boot.booted() {
     call AMControl.start();
-    total = 0;
-    largest = 0;
-    reads = 0;
-    locked = FALSE;
+/**    total = 0;  **/
+/**    largest = 0;  **/
+    reads = 0;  
+/**    locked = FALSE;  **/
   }
 
   /************ AMControl Events ******************/
   event void AMControl.startDone(error_t err) {
     if (err == SUCCESS) {
-      call SerialControl.start();
+      call SerialControl.start(); 
     }
     else {
       call AMControl.start();
@@ -95,6 +98,8 @@ implementation {
   }
   
   /***************SerialControl Events*****************/
+
+
   event void SerialControl.startDone(error_t error){
     if (error == SUCCESS) {
       post readRssi();
@@ -103,19 +108,24 @@ implementation {
       call AMControl.start();
     }
   }
+
   
   event void SerialControl.stopDone(error_t error){
     //do nothing
   }
+
   
   /***************** AMSend Events ****************************/
-  event void AMSend.sendDone(message_t* bufPtr, error_t error) {
-    
-    if (&packet == bufPtr) {
-      locked = FALSE;
-    }
-    //post readRssi();
-  }
+
+/**
+*  event void AMSend.sendDone(message_t* bufPtr, error_t error) {
+*    
+*    if (&packet == bufPtr) {
+*      locked = FALSE;
+*    }
+*    //post readRssi();
+*  }
+*/
   
   /**************** ReadRssi Events *************************/
 /**  event void ReadRssi.readDone(error_t result, uint16_t val ){
@@ -140,16 +150,24 @@ implementation {
  * }
  */
 
-  /*output the read rss to serial port in 16-mary*/
+  /*output the read rss to serial port in 16-mary and print as unsigned decimal*/
   event void ReadRssi.readDone(error_t result, uint16_t val ){
     
     if(result != SUCCESS){
       post readRssi();
       return;
     }
+
     atomic{
-      printf("received rss: %u", val);
+      reads ++;
+      printf("%u", val);
     } 
+
+    if(reads == (1<<LOG2SAMPLES)){
+      timestamp = call LocalTime.get();
+      printf("\n (Experiment ends at %ld) \n", timestamp);
+      reads = 0;
+    }
     
     post readRssi();
     
@@ -168,29 +186,31 @@ implementation {
     }
   }
   
-  task void sendSerialMsg(){
-    if(locked){
-      return;
-    }
-    else {
-      rssi_serial_msg_t* rsm = (rssi_serial_msg_t*)call Packet.getPayload(&packet, sizeof(rssi_serial_msg_t));
-      
-      if (call Packet.maxPayloadLength() < sizeof(rssi_serial_msg_t)) {
-	    return;
-      }
-	  atomic{
-	    rsm->rssiAvgValue = (total >> (LOG2SAMPLES));
-	    rsm->rssiLargestValue = largest;
-	    total = 0;
-	    largest = 0;
-	    reads = 0;
-	  }
-	  rsm->channel = call Config.getChannel();
-      if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(rssi_serial_msg_t)) == SUCCESS) {
-	    locked = TRUE;
-      }
-    }
-  }
+/**
+*  task void sendSerialMsg(){
+*    if(locked){
+*      return;
+*    }
+*    else {
+*      rssi_serial_msg_t* rsm = (rssi_serial_msg_t*)call Packet.getPayload(&packet, sizeof(rssi_serial_msg_t));
+*      
+*      if (call Packet.maxPayloadLength() < sizeof(rssi_serial_msg_t)) {
+*	    return;
+*      }
+*	  atomic{
+*	    rsm->rssiAvgValue = (total >> (LOG2SAMPLES));
+*	    rsm->rssiLargestValue = largest;
+*	    total = 0;
+*	    largest = 0;
+*	    reads = 0;
+*	  }
+*	  rsm->channel = call Config.getChannel();
+*      if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(rssi_serial_msg_t)) == SUCCESS) {
+*	    locked = TRUE;
+*      }
+*    }
+*  }
+*/
 
 }
 

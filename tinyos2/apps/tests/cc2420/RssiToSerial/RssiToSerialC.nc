@@ -49,22 +49,26 @@
 configuration RssiToSerialC {}
 implementation {
   components MainC, RssiToSerialP as App, LedsC;
-  components new TimerMilliC();
-  components SerialActiveMessageC as AM;
+  components new TimerMilliC(); 
+  components SerialActiveMessageC as AM; 
   components ActiveMessageC;
   components CC2420ControlC;
 
   components PrintfC;
-  components SerialStartC;
+  components SerialStartC; 
+
+  components LocalTimeMicroC;
   
   App.Boot -> MainC.Boot;
   App.SerialControl -> AM;
-  App.AMSend -> AM.AMSend[AM_RSSI_SERIAL_MSG];
+  /**App.AMSend -> AM.AMSend[AM_RSSI_SERIAL_MSG];**/
   App.AMControl -> ActiveMessageC;
   App.Leds -> LedsC;
-  App.Packet -> AM;
+  /**App.Packet -> AM;**/
   App.ReadRssi -> CC2420ControlC.ReadRssi;
   App.Config -> CC2420ControlC.CC2420Config;
+
+  App.LocalTime -> LocalTimeMicroC;
 }
 
 

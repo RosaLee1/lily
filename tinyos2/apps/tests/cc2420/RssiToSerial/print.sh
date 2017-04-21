@@ -8,7 +8,7 @@ tosprint(){
 
 # tinyos log helper function
 toslog(){
-    java net.tinyos.tools.PrintfClient -comm serial@/dev/$1:115200 > rss.log
+    java net.tinyos.tools.PrintfClient -comm serial@/dev/$1:115200 > rss.txt
 }
 
 # tinyos listen helper function
