@@ -153,7 +153,7 @@ implementation {
     //metadata->timesync = FALSE;
     metadata->timestamp = CC2420_INVALID_TIMESTAMP;
 
-    ccaOn = FALSE;
+    ccaOn = TRUE;
     signal RadioBackoff.requestCca(m_msg);
 
     call CC2420Transmit.send( m_msg, ccaOn );
