@@ -88,7 +88,7 @@ implementation
         logptr->counter = m_entry.counter;
         logptr->local_rx_timestamp = m_entry.local_rx_timestamp;
         call AMSend.send(AM_BROADCAST_ADDR, &my_msg, sizeof(logentry_t));
-        call Leds.led1On();  
+        call Leds.led1On();  // green light is on
       }
       else {
         if (call LogWrite.erase() != SUCCESS) {
@@ -99,7 +99,7 @@ implementation
     }
 
     event void AMSend.sendDone(message_t* ptr, error_t err) {
-      call Leds.led1Off();
+      call Leds.led1Off(); // green light is off
       if ((err == SUCCESS) && (ptr == &my_msg)) {
         call Packet.clear(&my_msg);
         if (call LogRead.read(&m_entry, sizeof(logentry_t)) != SUCCESS) {
@@ -128,7 +128,7 @@ implementation
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
             uint32_t rxTimestamp = call LocalTime.get();
 
-	    call Leds.led2On();
+	    call Leds.led2On(); // blue light is on
     	    if (!m_busy) {
       	      m_busy = TRUE;
               m_entry.src_addr = TOS_NODE_ID;
@@ -147,7 +147,7 @@ implementation
     event void LogWrite.appendDone(void* buf, storage_len_t len, 
                                  bool recordsLost, error_t err) {
       m_busy = FALSE;
-      call Leds.led2Off();
+      call Leds.led2Off(); // blue light is off
     }
 
     event void LogRead.seekDone(error_t err) {}
