@@ -52,43 +52,94 @@ module TestFtspC
         interface SplitControl as RadioControl;
         // microsecond local time
         interface LocalTime<TMicro>;
+        interface LogRead;
+        interface LogWrite;
     }
 }
 
 implementation
 {
     message_t msg;
-    uint32_t timeoffset = 0;
+    message_t my_msg;
+
     bool locked = FALSE;
+
+    bool m_busy = TRUE;
+    logentry_t m_entry;
 
     event void Boot.booted() {
         call RadioControl.start();
     }
 
+    event void RadioControl.startDone(error_t err) {
+      if (err == SUCCESS) {
+        if (call LogRead.read(&m_entry, sizeof(logentry_t)) != SUCCESS) {
+	  // Handle error.
+        }
+      }
+      else {
+        call RadioControl.start();
+      }
+    }
+
+    event void RadioControl.stopDone(error_t error){}
+
+    event void LogRead.readDone(void* buf, storage_len_t len, error_t err) {
+      if ( (len == sizeof(logentry_t)) && (buf == &m_entry) ) {
+        logentry_t* logptr = (logentry_t*)(call Packet.getPayload(&my_msg, sizeof(logentry_t)));
+        logptr->src_addr = m_entry.src_addr;
+        logptr->counter = m_entry.counter;
+        logptr->local_rx_timestamp = m_entry.local_rx_timestamp;
+        call AMSend.send(AM_BROADCAST_ADDR, &my_msg, sizeof(logentry_t));
+        call Leds.led1On();  
+      }
+      else {
+        if (call LogWrite.erase() != SUCCESS) {
+	  // Handle error.
+        }
+        call Leds.led0On(); //red light is on
+      }
+    }
+
+    event void AMSend.sendDone(message_t* ptr, error_t err) {
+      call Leds.led1Off();
+      if ((err == SUCCESS) && (ptr == &my_msg)) {
+        call Packet.clear(&my_msg);
+        if (call LogRead.read(&m_entry, sizeof(logentry_t)) != SUCCESS) {
+	  // Handle error.
+        }
+      }
+
+      locked = FALSE;
+      return;
+    }
+
+    event void LogWrite.eraseDone(error_t err) {
+      if (err == SUCCESS) {
+        m_busy = FALSE;
+      }
+      else {
+        // Handle error.
+      }
+      call Leds.led0Off(); //red light is off
+    }
+
     event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
     {
-        call Leds.led0Toggle();
+        call Leds.led0Toggle(); // red light
         //Temp = call LocalTime.get();
         if (!locked && call PacketTimeStamp.isValid(msgPtr)) {
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
-            test_ftsp_msg_t* report = (test_ftsp_msg_t*)call Packet.getPayload(&msg, sizeof(test_ftsp_msg_t));
+            logentry_t* report = (logentry_t*)call Packet.getPayload(&msg, sizeof(logentry_t));
 
-            //uint32_t rxTimestamp = call PacketTimeStamp.timestamp(msgPtr); //this is the time for synchronization
             uint32_t rxTimestamp = call LocalTime.get();
 
             report->src_addr = TOS_NODE_ID;
             report->counter = rcm->counter;
             report->local_rx_timestamp = rxTimestamp;
-            report->is_synced = call GlobalTime.local2Global(&rxTimestamp);
-            report->global_rx_timestamp = rxTimestamp; //this is what after timestamp
-            //report->global_rx_timestamp = call LocalTime.get();
-            report->skew_times_1000000 = (uint32_t)call TimeSyncInfo.getSkew()*1000000UL;
-            report->ftsp_root_addr = call TimeSyncInfo.getRootID();
-            report->ftsp_seq = call TimeSyncInfo.getSeqNum();
-            report->ftsp_table_entries = call TimeSyncInfo.getNumEntries();
 
 	    ///////////broadcast for basestation///////////////
-            if (call AMSend.send(AM_BROADCAST_ADDR, &msg, sizeof(test_ftsp_msg_t)) == SUCCESS) {
+            if (call AMSend.send(AM_BROADCAST_ADDR, &msg, sizeof(logentry_t)) == SUCCESS) {
               locked = TRUE;
             }
 	    //-----------------------------------------//
@@ -98,11 +149,10 @@ implementation
         return msgPtr;
     }
 
-    event void AMSend.sendDone(message_t* ptr, error_t success) {
-        locked = FALSE;
-        return;
-    }
+    event void LogWrite.appendDone(void* buf, storage_len_t len, 
+                                 bool recordsLost, error_t err) {}
 
-    event void RadioControl.startDone(error_t err) {}
-    event void RadioControl.stopDone(error_t error){}
+    event void LogRead.seekDone(error_t err) {}
+    event void LogWrite.syncDone(error_t err) {}
+
 }

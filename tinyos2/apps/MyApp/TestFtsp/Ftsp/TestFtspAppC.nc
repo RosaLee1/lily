@@ -36,6 +36,7 @@
 #include "TestFtsp.h"
 #include "RadioCountToLeds.h"
 #include "Timer.h"
+#include "StorageVolumes.h"
 
 configuration TestFtspAppC {
 }
@@ -66,4 +67,8 @@ implementation {
   // wiring microsecond localtime 
   App.LocalTime -> LocalTimeMicroC;
 
+  components new LogStorageC(VOLUME_LOGTEST, TRUE);
+
+  App.LogRead -> LogStorageC;
+  App.LogWrite -> LogStorageC;
 }

@@ -7,12 +7,12 @@
 public class TestFtspMsg extends net.tinyos.message.Message {
 
     /** The default size of this message type in bytes. */
-    public static final int DEFAULT_MESSAGE_SIZE = 21;
+    public static final int DEFAULT_MESSAGE_SIZE = 8;
 
     /** The Active Message type associated with this message. */
     public static final int AM_TYPE = 137;
 
-    /** Create a new TestFtspMsg of size 21. */
+    /** Create a new TestFtspMsg of size 8. */
     public TestFtspMsg() {
         super(DEFAULT_MESSAGE_SIZE);
         amTypeSet(AM_TYPE);
@@ -91,25 +91,7 @@ public class TestFtspMsg extends net.tinyos.message.Message {
         s += "  [counter=0x"+Long.toHexString(get_counter())+"]\n";
       } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
       try {
-        s += "  [local_rx_timestamp=0x"+Long.toHexString(get_local_rx_timestamp())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
         s += "  [global_rx_timestamp=0x"+Long.toHexString(get_global_rx_timestamp())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
-        s += "  [skew_times_1000000=0x"+Long.toHexString(get_skew_times_1000000())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
-        s += "  [is_synced=0x"+Long.toHexString(get_is_synced())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
-        s += "  [ftsp_root_addr=0x"+Long.toHexString(get_ftsp_root_addr())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
-        s += "  [ftsp_seq=0x"+Long.toHexString(get_ftsp_seq())+"]\n";
-      } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
-      try {
-        s += "  [ftsp_table_entries=0x"+Long.toHexString(get_ftsp_table_entries())+"]\n";
       } catch (ArrayIndexOutOfBoundsException aioobe) { /* Skip field */ }
       return s;
     }
@@ -243,72 +225,9 @@ public class TestFtspMsg extends net.tinyos.message.Message {
     }
 
     /////////////////////////////////////////////////////////
-    // Accessor methods for field: local_rx_timestamp
-    //   Field type: long, unsigned
-    //   Offset (bits): 32
-    //   Size (bits): 32
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'local_rx_timestamp' is signed (false).
-     */
-    public static boolean isSigned_local_rx_timestamp() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'local_rx_timestamp' is an array (false).
-     */
-    public static boolean isArray_local_rx_timestamp() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'local_rx_timestamp'
-     */
-    public static int offset_local_rx_timestamp() {
-        return (32 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'local_rx_timestamp'
-     */
-    public static int offsetBits_local_rx_timestamp() {
-        return 32;
-    }
-
-    /**
-     * Return the value (as a long) of the field 'local_rx_timestamp'
-     */
-    public long get_local_rx_timestamp() {
-        return (long)getUIntBEElement(offsetBits_local_rx_timestamp(), 32);
-    }
-
-    /**
-     * Set the value of the field 'local_rx_timestamp'
-     */
-    public void set_local_rx_timestamp(long value) {
-        setUIntBEElement(offsetBits_local_rx_timestamp(), 32, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'local_rx_timestamp'
-     */
-    public static int size_local_rx_timestamp() {
-        return (32 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'local_rx_timestamp'
-     */
-    public static int sizeBits_local_rx_timestamp() {
-        return 32;
-    }
-
-    /////////////////////////////////////////////////////////
     // Accessor methods for field: global_rx_timestamp
     //   Field type: long, unsigned
-    //   Offset (bits): 64
+    //   Offset (bits): 32
     //   Size (bits): 32
     /////////////////////////////////////////////////////////
 
@@ -330,14 +249,14 @@ public class TestFtspMsg extends net.tinyos.message.Message {
      * Return the offset (in bytes) of the field 'global_rx_timestamp'
      */
     public static int offset_global_rx_timestamp() {
-        return (64 / 8);
+        return (32 / 8);
     }
 
     /**
      * Return the offset (in bits) of the field 'global_rx_timestamp'
      */
     public static int offsetBits_global_rx_timestamp() {
-        return 64;
+        return 32;
     }
 
     /**
@@ -366,321 +285,6 @@ public class TestFtspMsg extends net.tinyos.message.Message {
      */
     public static int sizeBits_global_rx_timestamp() {
         return 32;
-    }
-
-    /////////////////////////////////////////////////////////
-    // Accessor methods for field: skew_times_1000000
-    //   Field type: int, unsigned
-    //   Offset (bits): 96
-    //   Size (bits): 32
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'skew_times_1000000' is signed (false).
-     */
-    public static boolean isSigned_skew_times_1000000() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'skew_times_1000000' is an array (false).
-     */
-    public static boolean isArray_skew_times_1000000() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'skew_times_1000000'
-     */
-    public static int offset_skew_times_1000000() {
-        return (96 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'skew_times_1000000'
-     */
-    public static int offsetBits_skew_times_1000000() {
-        return 96;
-    }
-
-    /**
-     * Return the value (as a int) of the field 'skew_times_1000000'
-     */
-    public int get_skew_times_1000000() {
-        return (int)getSIntBEElement(offsetBits_skew_times_1000000(), 32);
-    }
-
-    /**
-     * Set the value of the field 'skew_times_1000000'
-     */
-    public void set_skew_times_1000000(int value) {
-        setSIntBEElement(offsetBits_skew_times_1000000(), 32, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'skew_times_1000000'
-     */
-    public static int size_skew_times_1000000() {
-        return (32 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'skew_times_1000000'
-     */
-    public static int sizeBits_skew_times_1000000() {
-        return 32;
-    }
-
-    /////////////////////////////////////////////////////////
-    // Accessor methods for field: is_synced
-    //   Field type: short, unsigned
-    //   Offset (bits): 128
-    //   Size (bits): 8
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'is_synced' is signed (false).
-     */
-    public static boolean isSigned_is_synced() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'is_synced' is an array (false).
-     */
-    public static boolean isArray_is_synced() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'is_synced'
-     */
-    public static int offset_is_synced() {
-        return (128 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'is_synced'
-     */
-    public static int offsetBits_is_synced() {
-        return 128;
-    }
-
-    /**
-     * Return the value (as a short) of the field 'is_synced'
-     */
-    public short get_is_synced() {
-        return (short)getUIntBEElement(offsetBits_is_synced(), 8);
-    }
-
-    /**
-     * Set the value of the field 'is_synced'
-     */
-    public void set_is_synced(short value) {
-        setUIntBEElement(offsetBits_is_synced(), 8, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'is_synced'
-     */
-    public static int size_is_synced() {
-        return (8 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'is_synced'
-     */
-    public static int sizeBits_is_synced() {
-        return 8;
-    }
-
-    /////////////////////////////////////////////////////////
-    // Accessor methods for field: ftsp_root_addr
-    //   Field type: int, unsigned
-    //   Offset (bits): 136
-    //   Size (bits): 16
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'ftsp_root_addr' is signed (false).
-     */
-    public static boolean isSigned_ftsp_root_addr() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'ftsp_root_addr' is an array (false).
-     */
-    public static boolean isArray_ftsp_root_addr() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'ftsp_root_addr'
-     */
-    public static int offset_ftsp_root_addr() {
-        return (136 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'ftsp_root_addr'
-     */
-    public static int offsetBits_ftsp_root_addr() {
-        return 136;
-    }
-
-    /**
-     * Return the value (as a int) of the field 'ftsp_root_addr'
-     */
-    public int get_ftsp_root_addr() {
-        return (int)getUIntBEElement(offsetBits_ftsp_root_addr(), 16);
-    }
-
-    /**
-     * Set the value of the field 'ftsp_root_addr'
-     */
-    public void set_ftsp_root_addr(int value) {
-        setUIntBEElement(offsetBits_ftsp_root_addr(), 16, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'ftsp_root_addr'
-     */
-    public static int size_ftsp_root_addr() {
-        return (16 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'ftsp_root_addr'
-     */
-    public static int sizeBits_ftsp_root_addr() {
-        return 16;
-    }
-
-    /////////////////////////////////////////////////////////
-    // Accessor methods for field: ftsp_seq
-    //   Field type: short, unsigned
-    //   Offset (bits): 152
-    //   Size (bits): 8
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'ftsp_seq' is signed (false).
-     */
-    public static boolean isSigned_ftsp_seq() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'ftsp_seq' is an array (false).
-     */
-    public static boolean isArray_ftsp_seq() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'ftsp_seq'
-     */
-    public static int offset_ftsp_seq() {
-        return (152 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'ftsp_seq'
-     */
-    public static int offsetBits_ftsp_seq() {
-        return 152;
-    }
-
-    /**
-     * Return the value (as a short) of the field 'ftsp_seq'
-     */
-    public short get_ftsp_seq() {
-        return (short)getUIntBEElement(offsetBits_ftsp_seq(), 8);
-    }
-
-    /**
-     * Set the value of the field 'ftsp_seq'
-     */
-    public void set_ftsp_seq(short value) {
-        setUIntBEElement(offsetBits_ftsp_seq(), 8, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'ftsp_seq'
-     */
-    public static int size_ftsp_seq() {
-        return (8 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'ftsp_seq'
-     */
-    public static int sizeBits_ftsp_seq() {
-        return 8;
-    }
-
-    /////////////////////////////////////////////////////////
-    // Accessor methods for field: ftsp_table_entries
-    //   Field type: short, unsigned
-    //   Offset (bits): 160
-    //   Size (bits): 8
-    /////////////////////////////////////////////////////////
-
-    /**
-     * Return whether the field 'ftsp_table_entries' is signed (false).
-     */
-    public static boolean isSigned_ftsp_table_entries() {
-        return false;
-    }
-
-    /**
-     * Return whether the field 'ftsp_table_entries' is an array (false).
-     */
-    public static boolean isArray_ftsp_table_entries() {
-        return false;
-    }
-
-    /**
-     * Return the offset (in bytes) of the field 'ftsp_table_entries'
-     */
-    public static int offset_ftsp_table_entries() {
-        return (160 / 8);
-    }
-
-    /**
-     * Return the offset (in bits) of the field 'ftsp_table_entries'
-     */
-    public static int offsetBits_ftsp_table_entries() {
-        return 160;
-    }
-
-    /**
-     * Return the value (as a short) of the field 'ftsp_table_entries'
-     */
-    public short get_ftsp_table_entries() {
-        return (short)getUIntBEElement(offsetBits_ftsp_table_entries(), 8);
-    }
-
-    /**
-     * Set the value of the field 'ftsp_table_entries'
-     */
-    public void set_ftsp_table_entries(short value) {
-        setUIntBEElement(offsetBits_ftsp_table_entries(), 8, value);
-    }
-
-    /**
-     * Return the size, in bytes, of the field 'ftsp_table_entries'
-     */
-    public static int size_ftsp_table_entries() {
-        return (8 / 8);
-    }
-
-    /**
-     * Return the size, in bits, of the field 'ftsp_table_entries'
-     */
-    public static int sizeBits_ftsp_table_entries() {
-        return 8;
     }
 
 }
