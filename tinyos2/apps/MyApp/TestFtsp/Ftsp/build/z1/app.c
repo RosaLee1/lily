@@ -2517,6 +2517,11 @@ static void /*HplMsp430GeneralIOC.P54*/HplMsp430GeneralIORenP__36__IO__clr(void 
 static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__makeOutput(void );
 #line 48
 static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void );
+
+
+
+
+static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__clr(void );
 #line 85
 static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__makeOutput(void );
 #line 48
@@ -2959,8 +2964,12 @@ static void LedsP__Leds__led1On(void );
 
 
 static void LedsP__Leds__led1Off(void );
+#line 94
+static void LedsP__Leds__led2Off(void );
 #line 56
 static void LedsP__Leds__led0On(void );
+#line 89
+static void LedsP__Leds__led2On(void );
 # 42 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__GeneralIO__toggle(void );
 
@@ -2985,6 +2994,7 @@ static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__clr(void );
 static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__makeOutput(void );
 #line 40
 static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__set(void );
+static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__clr(void );
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(
 # 41 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
@@ -3987,6 +3997,10 @@ static void Stm25pLogP__Read__default__seekDone(
 uint8_t arg_0x410aa3f8, 
 # 115 "/home/rgao/lily/tinyos2/tos/interfaces/LogRead.nc"
 error_t error);
+# 55 "/home/rgao/lily/tinyos2/tos/interfaces/Get.nc"
+static Stm25pLogP__Circular__val_t Stm25pLogP__Circular__default__get(
+# 47 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
+uint8_t arg_0x410d59a8);
 # 62 "/home/rgao/lily/tinyos2/tos/interfaces/Init.nc"
 static error_t Stm25pLogP__Init__init(void );
 # 118 "/home/rgao/lily/tinyos2/tos/interfaces/LogWrite.nc"
@@ -4019,6 +4033,19 @@ void * buf,
 
 storage_len_t len, bool recordsLost, 
 error_t error);
+#line 54
+static error_t Stm25pLogP__Write__append(
+# 43 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
+uint8_t arg_0x410aaf20, 
+# 47 "/home/rgao/lily/tinyos2/tos/interfaces/LogWrite.nc"
+void * buf, 
+
+
+
+
+
+
+storage_len_t len);
 # 120 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static error_t Stm25pLogP__ClientResource__default__release(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
@@ -4257,6 +4284,8 @@ static void /*HplStm25pPinsC.HoldM*/Msp430GpioC__11__GeneralIO__makeOutput(void 
 static void /*HplStm25pPinsC.HoldM*/Msp430GpioC__11__GeneralIO__set(void );
 # 48 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pVolume.nc"
 static volume_id_t /*TestFtspAppC.LogStorageC.BinderP*/Stm25pBinderP__0__Volume__getVolumeId(void );
+# 55 "/home/rgao/lily/tinyos2/tos/interfaces/Get.nc"
+static /*TestFtspAppC.LogStorageC.ConfigP*/Stm25pLogConfigP__0__Circular__val_t /*TestFtspAppC.LogStorageC.ConfigP*/Stm25pLogConfigP__0__Circular__get(void );
 # 62 "/home/rgao/lily/tinyos2/tos/interfaces/Init.nc"
 static error_t PlatformP__Msp430ClockInit__init(void );
 #line 62
@@ -5954,8 +5983,8 @@ static inline void /*HplMsp430GeneralIOC.P54*/HplMsp430GeneralIORenP__36__IO__to
 
 static inline void /*HplMsp430GeneralIOC.P54*/HplMsp430GeneralIORenP__36__IO__makeOutput(void );
 #line 48
-static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void );
-
+static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void );
+static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__clr(void );
 
 
 
@@ -6772,6 +6801,7 @@ static void LedsP__Led1__clr(void );
 static void LedsP__Led2__makeOutput(void );
 #line 40
 static void LedsP__Led2__set(void );
+static void LedsP__Led2__clr(void );
 # 56 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
 static inline error_t LedsP__Init__init(void );
 #line 74
@@ -6796,6 +6826,21 @@ static inline void LedsP__Leds__led1On(void );
 
 
 static inline void LedsP__Leds__led1Off(void );
+
+
+
+
+
+
+
+
+
+static inline void LedsP__Leds__led2On(void );
+
+
+
+
+static inline void LedsP__Leds__led2Off(void );
 # 58 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__HplGeneralIO__toggle(void );
 #line 85
@@ -6836,9 +6881,14 @@ static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__makeOutp
 static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__makeOutput(void );
 #line 48
 static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__set(void );
+
+
+
+
+static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__clr(void );
 # 48 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
 static inline void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__set(void );
-
+static inline void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__clr(void );
 
 
 
@@ -8885,8 +8935,12 @@ static void TestFtspC__Leds__led1On(void );
 
 
 static void TestFtspC__Leds__led1Off(void );
+#line 94
+static void TestFtspC__Leds__led2Off(void );
 #line 56
 static void TestFtspC__Leds__led0On(void );
+#line 89
+static void TestFtspC__Leds__led2On(void );
 # 63 "/home/rgao/lily/tinyos2/tos/interfaces/LogRead.nc"
 static error_t TestFtspC__LogRead__read(
 #line 57
@@ -8899,11 +8953,19 @@ void * buf,
 storage_len_t len);
 # 93 "/home/rgao/lily/tinyos2/tos/interfaces/LogWrite.nc"
 static error_t TestFtspC__LogWrite__erase(void );
-# 62 "TestFtspC.nc"
-message_t TestFtspC__msg;
-message_t TestFtspC__my_msg;
+#line 54
+static error_t TestFtspC__LogWrite__append(
+#line 47
+void * buf, 
 
-bool TestFtspC__locked = FALSE;
+
+
+
+
+
+storage_len_t len);
+# 62 "TestFtspC.nc"
+message_t TestFtspC__my_msg;
 
 bool TestFtspC__m_busy = TRUE;
 logentry_t TestFtspC__m_entry;
@@ -8926,9 +8988,9 @@ static inline void TestFtspC__RadioControl__startDone(error_t err);
 static inline void TestFtspC__RadioControl__stopDone(error_t error);
 
 static inline void TestFtspC__LogRead__readDone(void *buf, storage_len_t len, error_t err);
-#line 104
+#line 101
 static void TestFtspC__AMSend__sendDone(message_t *ptr, error_t err);
-#line 117
+#line 113
 static inline void TestFtspC__LogWrite__eraseDone(error_t err);
 
 
@@ -8940,9 +9002,12 @@ static inline void TestFtspC__LogWrite__eraseDone(error_t err);
 
 
 static inline message_t *TestFtspC__Receive__receive(message_t *msgPtr, void *payload, uint8_t len);
-#line 152
+#line 147
 static inline void TestFtspC__LogWrite__appendDone(void *buf, storage_len_t len, 
 bool recordsLost, error_t err);
+
+
+
 
 static inline void TestFtspC__LogRead__seekDone(error_t err);
 static inline void TestFtspC__LogWrite__syncDone(error_t err);
@@ -8985,6 +9050,10 @@ static void Stm25pLogP__Read__seekDone(
 uint8_t arg_0x410aa3f8, 
 # 115 "/home/rgao/lily/tinyos2/tos/interfaces/LogRead.nc"
 error_t error);
+# 55 "/home/rgao/lily/tinyos2/tos/interfaces/Get.nc"
+static Stm25pLogP__Circular__val_t Stm25pLogP__Circular__get(
+# 47 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
+uint8_t arg_0x410d59a8);
 # 118 "/home/rgao/lily/tinyos2/tos/interfaces/LogWrite.nc"
 static void Stm25pLogP__Write__syncDone(
 # 43 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
@@ -9119,6 +9188,11 @@ static inline error_t Stm25pLogP__Init__init(void );
 static error_t Stm25pLogP__Read__read(uint8_t id, void *buf, storage_len_t len);
 #line 152
 static inline error_t Stm25pLogP__Write__erase(uint8_t id);
+
+
+
+
+static inline error_t Stm25pLogP__Write__append(uint8_t id, void *buf, storage_len_t len);
 #line 190
 static error_t Stm25pLogP__newRequest(uint8_t client);
 #line 202
@@ -9170,6 +9244,7 @@ static inline error_t Stm25pLogP__Sector__default__erase(uint8_t id, uint8_t sec
 
 static inline error_t Stm25pLogP__ClientResource__default__request(uint8_t id);
 static inline error_t Stm25pLogP__ClientResource__default__release(uint8_t id);
+static inline bool Stm25pLogP__Circular__default__get(uint8_t id);
 # 113 "/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc"
 static void Stm25pSectorP__SplitControl__startDone(error_t error);
 #line 138
@@ -9828,6 +9903,8 @@ static inline void /*HplStm25pPinsC.HoldM*/Msp430GpioC__11__GeneralIO__set(void 
 static inline void /*HplStm25pPinsC.HoldM*/Msp430GpioC__11__GeneralIO__makeOutput(void );
 # 45 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pBinderP.nc"
 static inline volume_id_t /*TestFtspAppC.LogStorageC.BinderP*/Stm25pBinderP__0__Volume__getVolumeId(void );
+# 45 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogConfigP.nc"
+static inline bool /*TestFtspAppC.LogStorageC.ConfigP*/Stm25pLogConfigP__0__Circular__get(void );
 # 397 "/home/rgao/lily/tinyos2/tos/chips/msp430/msp430hardware.h"
 static inline  void __nesc_enable_interrupt(void )
 {
@@ -13638,15 +13715,6 @@ inline static void RealMainP__Scheduler__init(void ){
 #line 57
 }
 #line 57
-# 48 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc"
-static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void )
-#line 48
-{
-  /* atomic removed: atomic calls only */
-#line 48
-  * (volatile uint8_t * )49U |= 0x01 << 5;
-}
-
 # 48 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
 inline static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__set(void ){
 #line 48
@@ -15494,14 +15562,14 @@ inline static void * TestFtspC__Packet__getPayload(message_t * msg, uint8_t len)
 #line 126
 }
 #line 126
-# 87 "TestFtspC.nc"
+# 84 "TestFtspC.nc"
 static inline void TestFtspC__LogRead__readDone(void *buf, storage_len_t len, error_t err)
-#line 87
+#line 84
 {
   if (len == sizeof(logentry_t ) && buf == &TestFtspC__m_entry) {
       logentry_t *logptr = (logentry_t *)TestFtspC__Packet__getPayload(&TestFtspC__my_msg, sizeof(logentry_t ));
 
-#line 90
+#line 87
       __nesc_hton_uint16(logptr->src_addr.nxdata, __nesc_ntoh_uint16(TestFtspC__m_entry.src_addr.nxdata));
       __nesc_hton_uint16(logptr->counter.nxdata, __nesc_ntoh_uint16(TestFtspC__m_entry.counter.nxdata));
       __nesc_hton_uint32(logptr->local_rx_timestamp.nxdata, __nesc_ntoh_uint32(TestFtspC__m_entry.local_rx_timestamp.nxdata));
@@ -16546,9 +16614,9 @@ inline static error_t Stm25pLogP__ClientResource__request(uint8_t arg_0x410e1358
 #line 88
 }
 #line 88
-# 155 "TestFtspC.nc"
+# 153 "TestFtspC.nc"
 static inline void TestFtspC__LogRead__seekDone(error_t err)
-#line 155
+#line 153
 {
 }
 
@@ -16596,9 +16664,9 @@ inline static void TestFtspC__Leds__led0Off(void ){
 #line 61
 }
 #line 61
-# 117 "TestFtspC.nc"
+# 113 "TestFtspC.nc"
 static inline void TestFtspC__LogWrite__eraseDone(error_t err)
-#line 117
+#line 113
 {
   if (err == SUCCESS) {
       TestFtspC__m_busy = FALSE;
@@ -16636,11 +16704,30 @@ inline static void Stm25pLogP__Write__eraseDone(uint8_t arg_0x410aaf20, error_t 
 #line 100
 }
 #line 100
-# 152 "TestFtspC.nc"
+# 109 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
+static inline void LedsP__Leds__led2Off(void )
+#line 109
+{
+  LedsP__Led2__set();
+  ;
+#line 111
+  ;
+}
+
+# 94 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+inline static void TestFtspC__Leds__led2Off(void ){
+#line 94
+  LedsP__Leds__led2Off();
+#line 94
+}
+#line 94
+# 147 "TestFtspC.nc"
 static inline void TestFtspC__LogWrite__appendDone(void *buf, storage_len_t len, 
 bool recordsLost, error_t err)
-#line 153
+#line 148
 {
+  TestFtspC__m_busy = FALSE;
+  TestFtspC__Leds__led2Off();
 }
 
 # 519 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
@@ -16670,9 +16757,9 @@ inline static void Stm25pLogP__Write__appendDone(uint8_t arg_0x410aaf20, void * 
 #line 68
 }
 #line 68
-# 156 "TestFtspC.nc"
+# 154 "TestFtspC.nc"
 static inline void TestFtspC__LogWrite__syncDone(error_t err)
-#line 156
+#line 154
 {
 }
 
@@ -17708,6 +17795,148 @@ inline static message_t * CC2420ActiveMessageP__Snoop__receive(am_id_t arg_0x40f
 #line 78
 }
 #line 78
+# 45 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogConfigP.nc"
+static inline bool /*TestFtspAppC.LogStorageC.ConfigP*/Stm25pLogConfigP__0__Circular__get(void )
+#line 45
+{
+  return 1;
+}
+
+# 530 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
+static inline bool Stm25pLogP__Circular__default__get(uint8_t id)
+#line 530
+{
+#line 530
+  return FALSE;
+}
+
+# 55 "/home/rgao/lily/tinyos2/tos/interfaces/Get.nc"
+inline static Stm25pLogP__Circular__val_t Stm25pLogP__Circular__get(uint8_t arg_0x410d59a8){
+#line 55
+  unsigned char __nesc_result;
+#line 55
+
+#line 55
+  switch (arg_0x410d59a8) {
+#line 55
+    case /*TestFtspAppC.LogStorageC*/LogStorageC__0__LOG_ID:
+#line 55
+      __nesc_result = /*TestFtspAppC.LogStorageC.ConfigP*/Stm25pLogConfigP__0__Circular__get();
+#line 55
+      break;
+#line 55
+    default:
+#line 55
+      __nesc_result = Stm25pLogP__Circular__default__get(arg_0x410d59a8);
+#line 55
+      break;
+#line 55
+    }
+#line 55
+
+#line 55
+  return __nesc_result;
+#line 55
+}
+#line 55
+# 157 "/home/rgao/lily/tinyos2/tos/chips/stm25p/Stm25pLogP.nc"
+static inline error_t Stm25pLogP__Write__append(uint8_t id, void *buf, storage_len_t len)
+#line 157
+{
+
+  uint16_t bytes_left = (uint16_t )Stm25pLogP__m_log_info[id].write_addr % Stm25pLogP__BLOCK_SIZE;
+
+#line 160
+  bytes_left = Stm25pLogP__BLOCK_SIZE - bytes_left;
+
+
+  if (len > Stm25pLogP__MAX_RECORD_SIZE) {
+    return EINVAL;
+    }
+
+  if (sizeof Stm25pLogP__m_header + len > bytes_left) {
+    Stm25pLogP__m_log_info[id].write_addr += bytes_left;
+    }
+
+  if (!Stm25pLogP__Circular__get(id) && 
+  (uint8_t )(Stm25pLogP__m_log_info[id].write_addr >> STM25P_SECTOR_SIZE_LOG2) >= 
+  Stm25pLogP__Sector__getNumSectors(id)) {
+    return ESIZE;
+    }
+  Stm25pLogP__m_records_lost = FALSE;
+  Stm25pLogP__m_req.req = Stm25pLogP__S_APPEND;
+  Stm25pLogP__m_req.buf = buf;
+  Stm25pLogP__m_req.len = len;
+
+  return Stm25pLogP__newRequest(id);
+}
+
+# 54 "/home/rgao/lily/tinyos2/tos/interfaces/LogWrite.nc"
+inline static error_t TestFtspC__LogWrite__append(void * buf, storage_len_t len){
+#line 54
+  unsigned char __nesc_result;
+#line 54
+
+#line 54
+  __nesc_result = Stm25pLogP__Write__append(/*TestFtspAppC.LogStorageC*/LogStorageC__0__LOG_ID, buf, len);
+#line 54
+
+#line 54
+  return __nesc_result;
+#line 54
+}
+#line 54
+# 49 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc"
+static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__clr(void )
+#line 49
+{
+#line 49
+  { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+#line 49
+    * (volatile uint8_t * )49U &= ~(0x01 << 5);
+#line 49
+    __nesc_atomic_end(__nesc_atomic); }
+}
+
+# 53 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+inline static void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__clr(void ){
+#line 53
+  /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__clr();
+#line 53
+}
+#line 53
+# 49 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
+static inline void /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__clr(void )
+#line 49
+{
+#line 49
+  /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__HplGeneralIO__clr();
+}
+
+# 41 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
+inline static void LedsP__Led2__clr(void ){
+#line 41
+  /*PlatformLedsC.Led2Impl*/Msp430GpioC__9__GeneralIO__clr();
+#line 41
+}
+#line 41
+# 104 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
+static inline void LedsP__Leds__led2On(void )
+#line 104
+{
+  LedsP__Led2__clr();
+  ;
+#line 106
+  ;
+}
+
+# 89 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+inline static void TestFtspC__Leds__led2On(void ){
+#line 89
+  LedsP__Leds__led2On();
+#line 89
+}
+#line 89
 # 86 "/home/rgao/lily/tinyos2/tos/chips/msp430/timer/Msp430HybridAlarmCounterP.nc"
 static __inline uint32_t Msp430HybridAlarmCounterP__now2ghz(void )
 #line 86
@@ -17936,27 +18165,26 @@ inline static void TestFtspC__Leds__led0Toggle(void ){
 #line 67
 }
 #line 67
-# 127 "TestFtspC.nc"
+# 123 "TestFtspC.nc"
 static inline message_t *TestFtspC__Receive__receive(message_t *msgPtr, void *payload, uint8_t len)
 {
   TestFtspC__Leds__led0Toggle();
 
-  if (!TestFtspC__locked && TestFtspC__PacketTimeStamp__isValid(msgPtr)) {
+  if (TestFtspC__PacketTimeStamp__isValid(msgPtr)) {
       radio_count_msg_t *rcm = (radio_count_msg_t *)TestFtspC__Packet__getPayload(msgPtr, sizeof(radio_count_msg_t ));
-      logentry_t *report = (logentry_t *)TestFtspC__Packet__getPayload(&TestFtspC__msg, sizeof(logentry_t ));
-
       uint32_t rxTimestamp = TestFtspC__LocalTime__get();
 
-      __nesc_hton_uint16(report->src_addr.nxdata, TOS_NODE_ID);
-      __nesc_hton_uint16(report->counter.nxdata, __nesc_ntoh_uint16(rcm->counter.nxdata));
-      __nesc_hton_uint32(report->local_rx_timestamp.nxdata, rxTimestamp);
-
-
-      if (TestFtspC__AMSend__send(AM_BROADCAST_ADDR, &TestFtspC__msg, sizeof(logentry_t )) == SUCCESS) {
-          TestFtspC__locked = TRUE;
+      TestFtspC__Leds__led2On();
+      if (!TestFtspC__m_busy) {
+          TestFtspC__m_busy = TRUE;
+          __nesc_hton_uint16(TestFtspC__m_entry.src_addr.nxdata, TOS_NODE_ID);
+          __nesc_hton_uint16(TestFtspC__m_entry.counter.nxdata, __nesc_ntoh_uint16(rcm->counter.nxdata));
+          __nesc_hton_uint32(TestFtspC__m_entry.local_rx_timestamp.nxdata, rxTimestamp);
+          if (TestFtspC__LogWrite__append(&TestFtspC__m_entry, sizeof(logentry_t )) != SUCCESS) {
+              TestFtspC__m_busy = FALSE;
+            }
         }
     }
-
 
 
   return msgPtr;
@@ -21135,9 +21363,9 @@ static inline void /*TimeSyncC.TimeSyncP*/TimeSyncP__0__RadioControl__stopDone(e
 {
 }
 
-# 85 "TestFtspC.nc"
+# 82 "TestFtspC.nc"
 static inline void TestFtspC__RadioControl__stopDone(error_t error)
-#line 85
+#line 82
 {
 }
 
@@ -21194,9 +21422,9 @@ inline static error_t TestFtspC__LogRead__read(void * buf, storage_len_t len){
 #line 63
 }
 #line 63
-# 74 "TestFtspC.nc"
+# 71 "TestFtspC.nc"
 static inline void TestFtspC__RadioControl__startDone(error_t err)
-#line 74
+#line 71
 {
   if (err == SUCCESS) {
       if (TestFtspC__LogRead__read(&TestFtspC__m_entry, sizeof(logentry_t )) != SUCCESS) {
@@ -22847,9 +23075,9 @@ inline static error_t RealMainP__SoftwareInit__init(void ){
 #line 62
 }
 #line 62
-# 70 "TestFtspC.nc"
+# 67 "TestFtspC.nc"
 static inline void TestFtspC__Boot__booted(void )
-#line 70
+#line 67
 {
   TestFtspC__RadioControl__start();
 }
@@ -24976,6 +25204,18 @@ static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__set(void 
     __nesc_atomic_end(__nesc_atomic); }
 }
 
+#line 48
+static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void )
+#line 48
+{
+#line 48
+  { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+#line 48
+    * (volatile uint8_t * )49U |= 0x01 << 5;
+#line 48
+    __nesc_atomic_end(__nesc_atomic); }
+}
+
 # 134 "/home/rgao/lily/tinyos2/tos/system/SchedulerBasicP.nc"
 static bool SchedulerBasicP__Scheduler__runNextTask(void )
 {
@@ -25869,9 +26109,9 @@ static void /*AMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__sendDone(am_id_t i
     }
 }
 
-# 104 "TestFtspC.nc"
+# 101 "TestFtspC.nc"
 static void TestFtspC__AMSend__sendDone(message_t *ptr, error_t err)
-#line 104
+#line 101
 {
   TestFtspC__Leds__led1Off();
   if (err == SUCCESS && ptr == &TestFtspC__my_msg) {
@@ -25881,7 +26121,6 @@ static void TestFtspC__AMSend__sendDone(message_t *ptr, error_t err)
     }
 
 
-  TestFtspC__locked = FALSE;
   return;
 }
 

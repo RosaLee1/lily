@@ -59,10 +59,7 @@ module TestFtspC
 
 implementation
 {
-    message_t msg;
     message_t my_msg;
-
-    bool locked = FALSE;
 
     bool m_busy = TRUE;
     logentry_t m_entry;
@@ -110,7 +107,6 @@ implementation
         }
       }
 
-      locked = FALSE;
       return;
     }
 
@@ -128,21 +124,20 @@ implementation
     {
         call Leds.led0Toggle(); // red light
         //Temp = call LocalTime.get();
-        if (!locked && call PacketTimeStamp.isValid(msgPtr)) {
+        if (call PacketTimeStamp.isValid(msgPtr)) {
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
-            logentry_t* report = (logentry_t*)call Packet.getPayload(&msg, sizeof(logentry_t));
-
             uint32_t rxTimestamp = call LocalTime.get();
 
-            report->src_addr = TOS_NODE_ID;
-            report->counter = rcm->counter;
-            report->local_rx_timestamp = rxTimestamp;
-
-	    ///////////broadcast for basestation///////////////
-            if (call AMSend.send(AM_BROADCAST_ADDR, &msg, sizeof(logentry_t)) == SUCCESS) {
-              locked = TRUE;
-            }
-	    //-----------------------------------------//
+	    call Leds.led2On();
+    	    if (!m_busy) {
+      	      m_busy = TRUE;
+              m_entry.src_addr = TOS_NODE_ID;
+              m_entry.counter = rcm->counter;
+	      m_entry.local_rx_timestamp = rxTimestamp;
+              if (call LogWrite.append(&m_entry, sizeof(logentry_t)) != SUCCESS) {
+	        m_busy = FALSE;
+              }
+            }      
 
         }
 
@@ -150,7 +145,10 @@ implementation
     }
 
     event void LogWrite.appendDone(void* buf, storage_len_t len, 
-                                 bool recordsLost, error_t err) {}
+                                 bool recordsLost, error_t err) {
+      m_busy = FALSE;
+      call Leds.led2Off();
+    }
 
     event void LogRead.seekDone(error_t err) {}
     event void LogWrite.syncDone(error_t err) {}
