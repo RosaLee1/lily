@@ -160,7 +160,7 @@ implementation {
 
     atomic{
       reads ++;
-      printf("%u", val);
+      printf(" %u ", val);
       printfflush();
     } 
 

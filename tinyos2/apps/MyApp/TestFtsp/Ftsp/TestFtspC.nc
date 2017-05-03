@@ -36,6 +36,7 @@
 #include "TestFtsp.h"
 #include "RadioCountToLeds.h"
 #include "Timer.h"
+#include "printf.h"
 
 module TestFtspC
 {
@@ -50,10 +51,13 @@ module TestFtspC
         interface PacketTimeStamp<TMilli,uint32_t>;
         interface Boot;
         interface SplitControl as RadioControl;
+        interface SplitControl as SerialControl; 
         // microsecond local time
         interface LocalTime<TMicro>;
         interface LogRead;
         interface LogWrite;
+        interface Read<uint16_t> as ReadRssi;
+        interface CC2420Config as Config;
     }
 }
 
@@ -64,8 +68,17 @@ implementation
     bool m_busy = TRUE;
     logentry_t m_entry;
 
+    uint16_t my_counter;
+    uint32_t rxTimestamp;
+
+    uint16_t reads;
+
     event void Boot.booted() {
         call RadioControl.start();
+        call SerialControl.start(); 
+        my_counter=0;
+        rxTimestamp=0;
+        reads = 0;
     }
 
     event void RadioControl.startDone(error_t err) {
@@ -81,12 +94,16 @@ implementation
 
     event void RadioControl.stopDone(error_t error){}
 
+    event void SerialControl.startDone(error_t error) {}
+    event void SerialControl.stopDone(error_t error) {}
+
     event void LogRead.readDone(void* buf, storage_len_t len, error_t err) {
       if ( (len == sizeof(logentry_t)) && (buf == &m_entry) ) {
         logentry_t* logptr = (logentry_t*)(call Packet.getPayload(&my_msg, sizeof(logentry_t)));
         logptr->src_addr = m_entry.src_addr;
         logptr->counter = m_entry.counter;
         logptr->local_rx_timestamp = m_entry.local_rx_timestamp;
+        logptr->rss = m_entry.rss;
         call AMSend.send(AM_BROADCAST_ADDR, &my_msg, sizeof(logentry_t));
         call Leds.led1On();  // green light is on
       }
@@ -123,25 +140,56 @@ implementation
     event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
     {
         call Leds.led0Toggle(); // red light
-        //Temp = call LocalTime.get();
+      
         if (call PacketTimeStamp.isValid(msgPtr)) {
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
-            uint32_t rxTimestamp = call LocalTime.get();
+            rxTimestamp = call LocalTime.get();
+            my_counter=rcm->counter;
 
-	    call Leds.led2On(); // blue light is on
-    	    if (!m_busy) {
-      	      m_busy = TRUE;
-              m_entry.src_addr = TOS_NODE_ID;
-              m_entry.counter = rcm->counter;
-	      m_entry.local_rx_timestamp = rxTimestamp;
-              if (call LogWrite.append(&m_entry, sizeof(logentry_t)) != SUCCESS) {
-	        m_busy = FALSE;
-              }
-            }      
-
+	    call ReadRssi.read();
         }
 
         return msgPtr;
+    }
+
+    event void ReadRssi.readDone(error_t result, uint16_t val ){
+    
+      if(result != SUCCESS){
+        call ReadRssi.read();
+        return;
+      }
+
+      call Leds.led2On(); // blue light is on
+      if (!m_busy) {
+      	m_busy = TRUE;
+        m_entry.src_addr = TOS_NODE_ID;
+        m_entry.counter = my_counter;
+	m_entry.local_rx_timestamp = rxTimestamp;
+        m_entry.rss = val;
+        if (call LogWrite.append(&m_entry, sizeof(logentry_t)) != SUCCESS) {
+	  m_busy = FALSE;
+        }
+      }   
+
+      atomic{
+        reads ++;
+      } 
+
+      printf(" (reads %u) ", reads);
+      if(reads == 2){
+        uint32_t timestamp = call LocalTime.get();
+        printf("\n (rss exp ends at %ld) \n", timestamp);
+        //printfflush();
+        printf(" (counter %u) ", my_counter);
+        printf(" (rss exp starts at %ld) ", rxTimestamp);
+        printf(" (rss %u) ", m_entry.rss);
+        printfflush();
+        reads = 0;
+        return;
+      }
+    
+      call ReadRssi.read();
+    
     }
 
     event void LogWrite.appendDone(void* buf, storage_len_t len, 
@@ -152,5 +200,6 @@ implementation
 
     event void LogRead.seekDone(error_t err) {}
     event void LogWrite.syncDone(error_t err) {}
+    event void Config.syncDone(error_t error) {}
 
 }

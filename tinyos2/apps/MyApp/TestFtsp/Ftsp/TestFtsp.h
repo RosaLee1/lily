@@ -40,13 +40,15 @@ typedef nx_struct logentry_t
 {
   nx_uint16_t    src_addr;
   nx_uint16_t    counter;
-  nx_uint32_t    local_rx_timestamp; 
+  nx_uint32_t    local_rx_timestamp;
+  nx_uint16_t    rss; 
 } logentry_t;
 
 //32*5 +8 = 168
 enum
 {
-	AM_TEST_FTSP_MSG = 137
+	AM_TEST_FTSP_MSG = 137,
+        LOG2SAMPLES = 3,
 };
 
 #endif
