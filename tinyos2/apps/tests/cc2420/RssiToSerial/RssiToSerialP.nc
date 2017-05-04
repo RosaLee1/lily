@@ -164,12 +164,12 @@ implementation {
       printfflush();
     } 
 
-    if(reads == (1<<LOG2SAMPLES)){
-      timestamp = call LocalTime.get();
-      printf("\n (Experiment ends at %ld) \n", timestamp);
-      printfflush();
-      reads = 0;
-    }
+   // if(reads == (1<<LOG2SAMPLES)){
+   //   timestamp = call LocalTime.get();
+   //   printf("\n (Experiment ends at %ld) \n", timestamp);
+   //   printfflush();
+   //   reads = 0;
+   // }
     
     post readRssi();
     
