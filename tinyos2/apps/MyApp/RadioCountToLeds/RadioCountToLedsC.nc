@@ -78,7 +78,7 @@ implementation {
 
   event void AMControl.startDone(error_t err) {
     if (err == SUCCESS) {
-      call MilliTimer.startPeriodic(250);
+      call MilliTimer.startPeriodic(100);
     }
     else {
       call AMControl.start();
@@ -91,6 +91,11 @@ implementation {
   
   event void MilliTimer.fired() {
     counter++;
+
+    if(counter > 1){ // only send ONE counter packet and stop
+      return;
+    }
+
     dbg("RadioCountToLedsC", "RadioCountToLedsC: timer fired, counter is %hu.\n", counter);
     if (locked) {
       return;

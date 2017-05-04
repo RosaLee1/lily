@@ -246,12 +246,12 @@ typedef int32_t ufs_daddr_t;
 typedef int32_t ufs_time_t;
 typedef u_int32_t uid_t;
 # 41 "/usr/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/include/string.h" 3
-extern int memcmp(const void *arg_0x40301690, const void *arg_0x40301828, size_t arg_0x403019c0);
-extern void *memcpy(void *arg_0x40301e68, const void *arg_0x40305030, size_t arg_0x403051c8);
+extern int memcmp(const void *arg_0x40306690, const void *arg_0x40306828, size_t arg_0x403069c0);
+extern void *memcpy(void *arg_0x40306e68, const void *arg_0x40304030, size_t arg_0x403041c8);
 
-extern void *memset(void *arg_0x40305e90, int arg_0x40304010, size_t arg_0x403041a8);
+extern void *memset(void *arg_0x40304e90, int arg_0x40309010, size_t arg_0x403091a8);
 #line 65
-extern void *memset(void *arg_0x40310d30, int arg_0x40310e88, size_t arg_0x40315030);
+extern void *memset(void *arg_0x40315d30, int arg_0x40315e88, size_t arg_0x40314030);
 # 62 "/usr/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/include/stdlib.h" 3
 #line 59
 typedef struct __nesc_unnamed4242 {
@@ -2716,13 +2716,13 @@ static void HplMsp430UsciAB0RawInterruptsP__UsciA__default__txDone(void );
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(
 # 41 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x40bbb5b8, 
+uint8_t arg_0x40bba5b8, 
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 uint8_t data);
 #line 54
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(
 # 41 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x40bbb5b8);
+uint8_t arg_0x40bba5b8);
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__RawInterrupts__rxDone(uint8_t data);
 #line 54
@@ -4078,10 +4078,10 @@ static inline void RadioCountToLedsC__AMControl__stopDone(error_t err);
 
 
 static inline void RadioCountToLedsC__MilliTimer__fired(void );
-#line 112
+#line 117
 static inline message_t *RadioCountToLedsC__Receive__receive(message_t *bufPtr, 
 void *payload, uint8_t len);
-#line 140
+#line 145
 static inline void RadioCountToLedsC__AMSend__sendDone(message_t *bufPtr, error_t error);
 # 46 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
 static void LedsP__Led0__makeOutput(void );
@@ -5788,13 +5788,13 @@ static inline void HplMsp430UsciAB0RawInterruptsP__UsciA__default__rxDone(uint8_
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(
 # 41 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x40bbb5b8, 
+uint8_t arg_0x40bba5b8, 
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 uint8_t data);
 #line 54
 static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(
 # 41 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x40bbb5b8);
+uint8_t arg_0x40bba5b8);
 # 90 "/home/rgao/lily/tinyos2/tos/interfaces/ArbiterInfo.nc"
 static bool /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__ArbiterInfo__inUse(void );
 
@@ -12748,6 +12748,11 @@ static inline void RadioCountToLedsC__MilliTimer__fired(void )
 #line 92
 {
   RadioCountToLedsC__counter++;
+
+  if (RadioCountToLedsC__counter > 1) {
+      return;
+    }
+
   ;
   if (RadioCountToLedsC__locked) {
       return;
@@ -12755,7 +12760,7 @@ static inline void RadioCountToLedsC__MilliTimer__fired(void )
   else {
       radio_count_msg_t *rcm = (radio_count_msg_t *)RadioCountToLedsC__Packet__getPayload(&RadioCountToLedsC__packet, sizeof(radio_count_msg_t ));
 
-#line 100
+#line 105
       if (rcm == (void *)0) {
           return;
         }
@@ -13137,22 +13142,22 @@ inline static void RadioCountToLedsC__Leds__led0On(void ){
 #line 56
 }
 #line 56
-# 112 "RadioCountToLedsC.nc"
+# 117 "RadioCountToLedsC.nc"
 static inline message_t *RadioCountToLedsC__Receive__receive(message_t *bufPtr, 
 void *payload, uint8_t len)
-#line 113
+#line 118
 {
   ;
   if (len != sizeof(radio_count_msg_t )) {
-#line 115
+#line 120
       return bufPtr;
     }
   else 
-#line 116
+#line 121
     {
       radio_count_msg_t *rcm = (radio_count_msg_t *)payload;
 
-#line 118
+#line 123
       if (__nesc_ntoh_uint16(rcm->counter.nxdata) & 0x1) {
           RadioCountToLedsC__Leds__led0On();
         }
@@ -15814,7 +15819,7 @@ static inline void RadioCountToLedsC__AMControl__startDone(error_t err)
 #line 79
 {
   if (err == SUCCESS) {
-      RadioCountToLedsC__MilliTimer__startPeriodic(250);
+      RadioCountToLedsC__MilliTimer__startPeriodic(100);
     }
   else {
       RadioCountToLedsC__AMControl__start();
@@ -16175,9 +16180,9 @@ inline static error_t CC2420CsmaP__CC2420Power__startVReg(void ){
 #line 51
 }
 #line 51
-# 140 "RadioCountToLedsC.nc"
+# 145 "RadioCountToLedsC.nc"
 static inline void RadioCountToLedsC__AMSend__sendDone(message_t *bufPtr, error_t error)
-#line 140
+#line 145
 {
   if (&RadioCountToLedsC__packet == bufPtr) {
       RadioCountToLedsC__locked = FALSE;
@@ -16437,7 +16442,7 @@ static inline error_t CC2420ControlP__Init__init(void )
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   CC2420ControlP__m_pan = CC2420ControlP__ActiveMessageAddress__amGroup();
   CC2420ControlP__m_tx_power = 31;
-  CC2420ControlP__m_channel = 26;
+  CC2420ControlP__m_channel = 16;
 
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   for (i = 0; i < 4; i++) {
@@ -17468,9 +17473,9 @@ static inline void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interru
 }
 
 # 59 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
-inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(uint8_t arg_0x40bbb5b8, uint8_t data){
+inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(uint8_t arg_0x40bba5b8, uint8_t data){
 #line 59
-  switch (arg_0x40bbb5b8) {
+  switch (arg_0x40bba5b8) {
 #line 59
     case /*CC2420SpiWireC.HplCC2420SpiC.SpiC.UsciC*/Msp430UsciB0C__0__CLIENT_ID:
 #line 59
@@ -17480,7 +17485,7 @@ inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interru
 #line 59
     default:
 #line 59
-      /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(arg_0x40bbb5b8, data);
+      /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(arg_0x40bba5b8, data);
 #line 59
       break;
 #line 59
@@ -17560,9 +17565,9 @@ static inline void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interru
 }
 
 # 54 "/home/rgao/lily/tinyos2/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
-inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(uint8_t arg_0x40bbb5b8){
+inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(uint8_t arg_0x40bba5b8){
 #line 54
-  switch (arg_0x40bbb5b8) {
+  switch (arg_0x40bba5b8) {
 #line 54
     case /*CC2420SpiWireC.HplCC2420SpiC.SpiC.UsciC*/Msp430UsciB0C__0__CLIENT_ID:
 #line 54
@@ -17572,7 +17577,7 @@ inline static void /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interru
 #line 54
     default:
 #line 54
-      /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(arg_0x40bbb5b8);
+      /*Msp430UsciShareB0P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(arg_0x40bba5b8);
 #line 54
       break;
 #line 54
