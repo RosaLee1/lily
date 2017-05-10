@@ -70,10 +70,11 @@ implementation {
   message_t packet;
 
   bool locked;
-  uint16_t counter = 0;
+  uint16_t  counter;
   
   event void Boot.booted() {
     call AMControl.start();
+    counter = 0;
   }
 
   event void AMControl.startDone(error_t err) {
@@ -92,7 +93,7 @@ implementation {
   event void MilliTimer.fired() {
     counter++;
 
-    if(counter > 1){ // only send ONE counter packet and stop
+    if(counter > (1<<LOG2SAMPLES)){ // only send two counter packets and stop
       return;
     }
 

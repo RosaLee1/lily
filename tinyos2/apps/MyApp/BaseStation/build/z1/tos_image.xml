@@ -1,11 +1,11 @@
 <tos_image>
   <ident>
-    <uidhash>77065591L</uidhash>
+    <uidhash>53504AD8L</uidhash>
     <hostname>rgao-virtual-ma</hostname>
     <username>rgao</username>
     <appname>BaseStationC</appname>
     <userhash>7942D6A9L</userhash>
-    <timestamp>590A7E37L</timestamp>
+    <timestamp>591344E3L</timestamp>
     <deluge_support>no</deluge_support>
     <platform>z1</platform>
   </ident>
