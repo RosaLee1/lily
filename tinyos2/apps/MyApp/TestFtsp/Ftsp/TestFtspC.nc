@@ -70,15 +70,17 @@ implementation
 
     uint16_t my_counter;
     uint32_t rxTimestamp;
+    uint16_t writes;
 
-    uint16_t reads;
+    /******** Declare Tasks *******************/
+    task void readRssi();
 
     event void Boot.booted() {
         call RadioControl.start();
         call SerialControl.start(); 
         my_counter=0;
         rxTimestamp=0;
-        reads = 0;
+        writes = 1;
     }
 
     event void RadioControl.startDone(error_t err) {
@@ -139,14 +141,17 @@ implementation
 
     event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
     {
+        printf(" (received) ");
         call Leds.led0Toggle(); // red light
       
         if (call PacketTimeStamp.isValid(msgPtr)) {
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
             rxTimestamp = call LocalTime.get();
             my_counter=rcm->counter;
+ 	    printf(" (valid) ");
+	    writes = 1;
 
-	    call ReadRssi.read();
+	    post readRssi();
         }
 
         return msgPtr;
@@ -155,7 +160,7 @@ implementation
     event void ReadRssi.readDone(error_t result, uint16_t val ){
     
       if(result != SUCCESS){
-        call ReadRssi.read();
+        post readRssi();
         return;
       }
 
@@ -166,29 +171,12 @@ implementation
         m_entry.counter = my_counter;
 	m_entry.local_rx_timestamp = rxTimestamp;
         m_entry.rss = val;
+      printf("\n (%u |%u :%u :%u :%u) \n",writes,m_entry.src_addr,m_entry.counter,m_entry.local_rx_timestamp,m_entry.rss);
+      printfflush();
         if (call LogWrite.append(&m_entry, sizeof(logentry_t)) != SUCCESS) {
-	  m_busy = FALSE;
+          m_busy = FALSE;
         }
       }   
-
-      atomic{
-        reads ++;
-      } 
-
-      printf(" (reads %u) ", reads);
-      if(reads == 2){
-        uint32_t timestamp = call LocalTime.get();
-        printf("\n (rss exp ends at %ld) \n", timestamp);
-        //printfflush();
-        printf(" (counter %u) ", my_counter);
-        printf(" (rss exp starts at %ld) ", rxTimestamp);
-        printf(" (rss %u) ", m_entry.rss);
-        printfflush();
-        reads = 0;
-        return;
-      }
-    
-      call ReadRssi.read();
     
     }
 
@@ -196,10 +184,27 @@ implementation
                                  bool recordsLost, error_t err) {
       m_busy = FALSE;
       call Leds.led2Off(); // blue light is off
+
+      atomic{
+        writes ++;
+      }
+    
+      if(writes > (1<<LOG2SAMPLES)){
+        return;
+      } else {
+        post readRssi();
+      }
     }
 
     event void LogRead.seekDone(error_t err) {}
     event void LogWrite.syncDone(error_t err) {}
     event void Config.syncDone(error_t error) {}
+
+    /***************** TASKS *****************************/  
+    task void readRssi(){
+      if(call ReadRssi.read() != SUCCESS){
+        post readRssi();
+      }
+    }
 
 }

@@ -48,7 +48,7 @@ typedef nx_struct logentry_t
 enum
 {
 	AM_TEST_FTSP_MSG = 137,
-        LOG2SAMPLES = 3,
+        LOG2SAMPLES = 3, // LOG2SAMPLES=2,(1<<LOG2SAMPLES)=4; LOG2SAMPLES=3,(1<<LOG2SAMPLES)=8
 };
 
 #endif

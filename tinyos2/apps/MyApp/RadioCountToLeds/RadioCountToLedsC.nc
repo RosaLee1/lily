@@ -1,6 +1,6 @@
 // $Id: RadioCountToLedsC.nc,v 1.7 2010-06-29 22:07:17 scipio Exp $
 
-/*									tab:4
+/*									
  * Copyright (c) 2000-2005 The Regents of the University  of California.  
  * All rights reserved.
  *
@@ -70,16 +70,15 @@ implementation {
   message_t packet;
 
   bool locked;
-  uint16_t  counter;
+  uint16_t  counter = 0;
   
   event void Boot.booted() {
     call AMControl.start();
-    counter = 0;
   }
 
   event void AMControl.startDone(error_t err) {
     if (err == SUCCESS) {
-      call MilliTimer.startPeriodic(100);
+      call MilliTimer.startPeriodic(10);
     }
     else {
       call AMControl.start();
@@ -93,9 +92,9 @@ implementation {
   event void MilliTimer.fired() {
     counter++;
 
-    if(counter > (1<<LOG2SAMPLES)){ // only send two counter packets and stop
-      return;
-    }
+   // if(counter > 1){ // only send two counter packets and stop
+   //   return;
+   // }
 
     dbg("RadioCountToLedsC", "RadioCountToLedsC: timer fired, counter is %hu.\n", counter);
     if (locked) {
