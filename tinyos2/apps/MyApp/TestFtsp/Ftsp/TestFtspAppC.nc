@@ -74,11 +74,5 @@ implementation {
 
   components CC2420ControlC;
   App.ReadRssi -> CC2420ControlC.ReadRssi;
-  App.Config -> CC2420ControlC.CC2420Config;
-
-  components SerialActiveMessageC;
-  components PrintfC;
-  components SerialStartC; 
-
-  App.SerialControl -> SerialActiveMessageC; 
+  App.Config -> CC2420ControlC.CC2420Config; 
 }

@@ -36,7 +36,6 @@
 #include "TestFtsp.h"
 #include "RadioCountToLeds.h"
 #include "Timer.h"
-#include "printf.h"
 
 module TestFtspC
 {
@@ -51,7 +50,6 @@ module TestFtspC
         interface PacketTimeStamp<TMilli,uint32_t>;
         interface Boot;
         interface SplitControl as RadioControl;
-        interface SplitControl as SerialControl; 
         // microsecond local time
         interface LocalTime<TMicro>;
         interface LogRead;
@@ -70,17 +68,14 @@ implementation
 
     uint16_t my_counter;
     uint32_t rxTimestamp;
-    uint16_t writes;
 
     /******** Declare Tasks *******************/
     task void readRssi();
 
     event void Boot.booted() {
         call RadioControl.start();
-        call SerialControl.start(); 
         my_counter=0;
         rxTimestamp=0;
-        writes = 1;
     }
 
     event void RadioControl.startDone(error_t err) {
@@ -95,9 +90,6 @@ implementation
     }
 
     event void RadioControl.stopDone(error_t error){}
-
-    event void SerialControl.startDone(error_t error) {}
-    event void SerialControl.stopDone(error_t error) {}
 
     event void LogRead.readDone(void* buf, storage_len_t len, error_t err) {
       if ( (len == sizeof(logentry_t)) && (buf == &m_entry) ) {
@@ -141,15 +133,12 @@ implementation
 
     event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
     {
-        printf(" (received) ");
         call Leds.led0Toggle(); // red light
       
         if (call PacketTimeStamp.isValid(msgPtr)) {
             radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(msgPtr, sizeof(radio_count_msg_t));
             rxTimestamp = call LocalTime.get();
             my_counter=rcm->counter;
- 	    printf(" (valid) ");
-	    writes = 1;
 
 	    post readRssi();
         }
@@ -171,8 +160,6 @@ implementation
         m_entry.counter = my_counter;
 	m_entry.local_rx_timestamp = rxTimestamp;
         m_entry.rss = val;
-      printf("\n (%u |%u :%u :%u :%u) \n",writes,m_entry.src_addr,m_entry.counter,m_entry.local_rx_timestamp,m_entry.rss);
-      printfflush();
         if (call LogWrite.append(&m_entry, sizeof(logentry_t)) != SUCCESS) {
           m_busy = FALSE;
         }
@@ -184,16 +171,6 @@ implementation
                                  bool recordsLost, error_t err) {
       m_busy = FALSE;
       call Leds.led2Off(); // blue light is off
-
-      atomic{
-        writes ++;
-      }
-    
-      if(writes > (1<<LOG2SAMPLES)){
-        return;
-      } else {
-        post readRssi();
-      }
     }
 
     event void LogRead.seekDone(error_t err) {}
