@@ -919,7 +919,7 @@ enum __nesc_unnamed4260 {
 
   MAC_FOOTER_SIZE = sizeof(uint16_t ), 
 
-  MAC_PACKET_SIZE = MAC_HEADER_SIZE + 50 + MAC_FOOTER_SIZE, 
+  MAC_PACKET_SIZE = MAC_HEADER_SIZE + 115 + MAC_FOOTER_SIZE, 
 
   CC2420_SIZE = MAC_HEADER_SIZE + MAC_FOOTER_SIZE
 };
@@ -1200,7 +1200,7 @@ typedef union TOSRadioMetadata {
 #line 14
 typedef nx_struct message_t {
   nx_uint8_t header[sizeof(message_header_t )];
-  nx_uint8_t data[50];
+  nx_uint8_t data[115];
   nx_uint8_t footer[sizeof(message_footer_t )];
   nx_uint8_t metadata[sizeof(message_metadata_t )];
 } __attribute__((packed)) message_t;
@@ -14929,7 +14929,7 @@ static inline error_t CC2420CsmaP__Send__send(message_t *p_msg, uint8_t len)
 
   __nesc_hton_uint32(metadata->timestamp.nxdata, CC2420_INVALID_TIMESTAMP);
 
-  CC2420CsmaP__ccaOn = TRUE;
+  CC2420CsmaP__ccaOn = FALSE;
   CC2420CsmaP__RadioBackoff__requestCca(CC2420CsmaP__m_msg);
 
   CC2420CsmaP__CC2420Transmit__send(CC2420CsmaP__m_msg, CC2420CsmaP__ccaOn);
@@ -18604,7 +18604,7 @@ inline static uint16_t CC2420ActiveMessageP__CC2420Config__getPanAddr(void ){
 static inline uint8_t CC2420CsmaP__Send__maxPayloadLength(void )
 #line 173
 {
-  return 50;
+  return 115;
 }
 
 # 112 "/home/rgao/lily/tinyos2/tos/interfaces/Send.nc"
@@ -19174,7 +19174,7 @@ inline static error_t /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__SubSen
 static inline uint8_t /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Packet__maxPayloadLength(void )
 #line 131
 {
-  return 50;
+  return 115;
 }
 
 #line 68
