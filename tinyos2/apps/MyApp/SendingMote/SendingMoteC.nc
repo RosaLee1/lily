@@ -38,6 +38,7 @@
 
 module SendingMoteC {
   uses interface Boot;
+  uses interface Leds;
   uses interface Timer<TMilli> as SendTimer;
   
   uses interface AMSend as RssiMsgSend;
@@ -57,7 +58,8 @@ module SendingMoteC {
 
 
   event void SendTimer.fired(){
-    call RssiMsgSend.send(AM_BROADCAST_ADDR, &msg, sizeof(sender_msg_t));    
+    call Leds.led1Toggle(); // green light
+    call RssiMsgSend.send(AM_BROADCAST_ADDR, &msg, sizeof(sender_msg_t));  
   }
 
   event void RssiMsgSend.sendDone(message_t *m, error_t error){}

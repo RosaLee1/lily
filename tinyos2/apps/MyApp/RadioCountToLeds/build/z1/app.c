@@ -1970,6 +1970,14 @@ static void LedsP__Leds__led1On(void );
 
 
 
+
+
+
+
+
+
+static void LedsP__Leds__led1Toggle(void );
+#line 77
 static void LedsP__Leds__led1Off(void );
 #line 94
 static void LedsP__Leds__led2Off(void );
@@ -2073,6 +2081,11 @@ static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void 
 
 
 static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__clr(void );
+
+
+
+
+static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void );
 #line 85
 static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__makeOutput(void );
 #line 48
@@ -2087,7 +2100,7 @@ static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__0__GeneralIO__makeOutput(void
 #line 40
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__0__GeneralIO__set(void );
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__0__GeneralIO__clr(void );
-
+static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__toggle(void );
 
 
 
@@ -4048,6 +4061,14 @@ static void RadioCountToLedsC__Leds__led1On(void );
 
 
 
+
+
+
+
+
+
+static void RadioCountToLedsC__Leds__led1Toggle(void );
+#line 77
 static void RadioCountToLedsC__Leds__led1Off(void );
 #line 94
 static void RadioCountToLedsC__Leds__led2Off(void );
@@ -4079,17 +4100,17 @@ static inline void RadioCountToLedsC__AMControl__stopDone(error_t err);
 
 
 static inline void RadioCountToLedsC__MilliTimer__fired(void );
-#line 117
+#line 118
 static inline message_t *RadioCountToLedsC__Receive__receive(message_t *bufPtr, 
 void *payload, uint8_t len);
-#line 145
+#line 146
 static inline void RadioCountToLedsC__AMSend__sendDone(message_t *bufPtr, error_t error);
 # 46 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
 static void LedsP__Led0__makeOutput(void );
 #line 40
 static void LedsP__Led0__set(void );
 static void LedsP__Led0__clr(void );
-
+static void LedsP__Led1__toggle(void );
 
 
 
@@ -4133,7 +4154,7 @@ static inline void LedsP__Leds__led1Off(void );
 
 
 
-
+static inline void LedsP__Leds__led1Toggle(void );
 
 
 
@@ -4224,7 +4245,7 @@ static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__ma
 #line 48
 static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__set(void );
 static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__clr(void );
-
+static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void );
 
 
 
@@ -4247,7 +4268,9 @@ static inline void /*PlatformLedsC.Led0Impl*/Msp430GpioC__0__GeneralIO__clr(void
 
 
 static inline void /*PlatformLedsC.Led0Impl*/Msp430GpioC__0__GeneralIO__makeOutput(void );
-# 85 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+# 58 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__toggle(void );
+#line 85
 static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__makeOutput(void );
 #line 48
 static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__set(void );
@@ -4259,7 +4282,7 @@ static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__clr(void );
 # 48 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
 static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__set(void );
 static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__clr(void );
-
+static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__toggle(void );
 
 
 
@@ -11767,7 +11790,7 @@ static inline error_t CC2420CsmaP__Send__send(message_t *p_msg, uint8_t len)
 
   __nesc_hton_uint32(metadata->timestamp.nxdata, CC2420_INVALID_TIMESTAMP);
 
-  CC2420CsmaP__ccaOn = TRUE;
+  CC2420CsmaP__ccaOn = FALSE;
   CC2420CsmaP__RadioBackoff__requestCca(CC2420CsmaP__m_msg);
 
   CC2420CsmaP__CC2420Transmit__send(CC2420CsmaP__m_msg, CC2420CsmaP__ccaOn);
@@ -12534,6 +12557,57 @@ static __inline  uint16_t __nesc_hton_uint16(void * target, uint16_t value)
   return value;
 }
 
+# 50 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc"
+static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void )
+#line 50
+{
+#line 50
+  { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+#line 50
+    * (volatile uint8_t * )49U ^= 0x01 << 6;
+#line 50
+    __nesc_atomic_end(__nesc_atomic); }
+}
+
+# 58 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+inline static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__toggle(void ){
+#line 58
+  /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle();
+#line 58
+}
+#line 58
+# 50 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
+static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__toggle(void )
+#line 50
+{
+#line 50
+  /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__HplGeneralIO__toggle();
+}
+
+# 42 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
+inline static void LedsP__Led1__toggle(void ){
+#line 42
+  /*PlatformLedsC.Led1Impl*/Msp430GpioC__1__GeneralIO__toggle();
+#line 42
+}
+#line 42
+# 99 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
+static inline void LedsP__Leds__led1Toggle(void )
+#line 99
+{
+  LedsP__Led1__toggle();
+  ;
+#line 101
+  ;
+}
+
+# 83 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+inline static void RadioCountToLedsC__Leds__led1Toggle(void ){
+#line 83
+  LedsP__Leds__led1Toggle();
+#line 83
+}
+#line 83
 # 80 "/home/rgao/lily/tinyos2/tos/interfaces/AMSend.nc"
 inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__send(am_id_t arg_0x407c2ca0, am_addr_t addr, message_t * msg, uint8_t len){
 #line 80
@@ -12768,6 +12842,7 @@ static inline void RadioCountToLedsC__MilliTimer__fired(void )
 
       __nesc_hton_uint16(rcm->counter.nxdata, RadioCountToLedsC__counter);
       if (RadioCountToLedsC__AMSend__send(AM_BROADCAST_ADDR, &RadioCountToLedsC__packet, sizeof(radio_count_msg_t )) == SUCCESS) {
+          RadioCountToLedsC__Leds__led1Toggle();
           ;
           RadioCountToLedsC__locked = TRUE;
         }
@@ -13143,22 +13218,22 @@ inline static void RadioCountToLedsC__Leds__led0On(void ){
 #line 56
 }
 #line 56
-# 117 "RadioCountToLedsC.nc"
+# 118 "RadioCountToLedsC.nc"
 static inline message_t *RadioCountToLedsC__Receive__receive(message_t *bufPtr, 
 void *payload, uint8_t len)
-#line 118
+#line 119
 {
   ;
   if (len != sizeof(radio_count_msg_t )) {
-#line 120
+#line 121
       return bufPtr;
     }
   else 
-#line 121
+#line 122
     {
       radio_count_msg_t *rcm = (radio_count_msg_t *)payload;
 
-#line 123
+#line 124
       if (__nesc_ntoh_uint16(rcm->counter.nxdata) & 0x1) {
           RadioCountToLedsC__Leds__led0On();
         }
@@ -16181,9 +16256,9 @@ inline static error_t CC2420CsmaP__CC2420Power__startVReg(void ){
 #line 51
 }
 #line 51
-# 145 "RadioCountToLedsC.nc"
+# 146 "RadioCountToLedsC.nc"
 static inline void RadioCountToLedsC__AMSend__sendDone(message_t *bufPtr, error_t error)
-#line 145
+#line 146
 {
   if (&RadioCountToLedsC__packet == bufPtr) {
       RadioCountToLedsC__locked = FALSE;

@@ -43,6 +43,9 @@ configuration SendingMoteAppC {
 
   components SendingMoteC as App;
 
+  components LedsC;
+
+  App.Leds -> LedsC;
   App.Boot -> MainC;
   App.SendTimer -> SendTimer;
   

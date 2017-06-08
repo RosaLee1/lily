@@ -2172,6 +2172,16 @@ static void /*HplMsp430GeneralIOC.P54*/HplMsp430GeneralIORenP__36__IO__set(void 
 static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__makeOutput(void );
 #line 48
 static void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__set(void );
+
+
+
+
+
+
+
+
+
+static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void );
 #line 85
 static void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__makeOutput(void );
 #line 48
@@ -2587,12 +2597,14 @@ static void HplMsp430UsciAB0RawInterruptsP__UsciA__default__rxDone(uint8_t data)
 static void HplMsp430UsciAB0RawInterruptsP__UsciA__default__txDone(void );
 # 62 "/home/rgao/lily/tinyos2/tos/interfaces/Init.nc"
 static error_t LedsP__Init__init(void );
+# 83 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+static void LedsP__Leds__led1Toggle(void );
 # 46 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__GeneralIO__makeOutput(void );
 #line 40
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__GeneralIO__set(void );
 
-
+static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__toggle(void );
 
 
 
@@ -4615,7 +4627,7 @@ static inline void /*HplMsp430GeneralIOC.P55*/HplMsp430GeneralIORenP__37__IO__ma
 #line 48
 static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__set(void );
 
-
+static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void );
 
 
 
@@ -5394,7 +5406,7 @@ static void LedsP__Led0__makeOutput(void );
 #line 40
 static void LedsP__Led0__set(void );
 
-
+static void LedsP__Led1__toggle(void );
 
 
 
@@ -5411,6 +5423,8 @@ static void LedsP__Led2__makeOutput(void );
 static void LedsP__Led2__set(void );
 # 56 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
 static inline error_t LedsP__Init__init(void );
+#line 99
+static inline void LedsP__Leds__led1Toggle(void );
 # 85 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
 static void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__HplGeneralIO__makeOutput(void );
 #line 48
@@ -5423,14 +5437,16 @@ static inline void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__GeneralIO__set(void
 
 
 static inline void /*PlatformLedsC.Led0Impl*/Msp430GpioC__7__GeneralIO__makeOutput(void );
-# 85 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+# 58 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__HplGeneralIO__toggle(void );
+#line 85
 static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__HplGeneralIO__makeOutput(void );
 #line 48
 static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__HplGeneralIO__set(void );
 # 48 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
 static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__set(void );
 
-
+static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__toggle(void );
 
 
 
@@ -7127,6 +7143,8 @@ static inline void /*AMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__default__send
 static void SendingMoteC__SendTimer__startPeriodic(uint32_t dt);
 # 104 "/home/rgao/lily/tinyos2/tos/interfaces/SplitControl.nc"
 static error_t SendingMoteC__RadioControl__start(void );
+# 83 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+static void SendingMoteC__Leds__led1Toggle(void );
 # 80 "/home/rgao/lily/tinyos2/tos/interfaces/AMSend.nc"
 static error_t SendingMoteC__RssiMsgSend__send(am_addr_t addr, 
 #line 71
@@ -7140,7 +7158,7 @@ message_t * msg,
 
 
 uint8_t len);
-# 46 "SendingMoteC.nc"
+# 47 "SendingMoteC.nc"
 message_t SendingMoteC__msg;
 
 static inline void SendingMoteC__Boot__booted(void );
@@ -7155,6 +7173,7 @@ static inline void SendingMoteC__RadioControl__stopDone(error_t result);
 
 
 static inline void SendingMoteC__SendTimer__fired(void );
+
 
 
 
@@ -11147,9 +11166,9 @@ inline static bool RealMainP__Scheduler__runNextTask(void ){
 #line 65
 }
 #line 65
-# 63 "SendingMoteC.nc"
+# 65 "SendingMoteC.nc"
 static inline void SendingMoteC__RssiMsgSend__sendDone(message_t *m, error_t error)
-#line 63
+#line 65
 {
 }
 
@@ -12669,10 +12688,62 @@ inline static error_t SendingMoteC__RssiMsgSend__send(am_addr_t addr, message_t 
 #line 80
 }
 #line 80
-# 59 "SendingMoteC.nc"
-static inline void SendingMoteC__SendTimer__fired(void )
-#line 59
+# 50 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIORenP.nc"
+static inline void /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle(void )
+#line 50
 {
+#line 50
+  { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+#line 50
+    * (volatile uint8_t * )49U ^= 0x01 << 6;
+#line 50
+    __nesc_atomic_end(__nesc_atomic); }
+}
+
+# 58 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/HplMsp430GeneralIO.nc"
+inline static void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__HplGeneralIO__toggle(void ){
+#line 58
+  /*HplMsp430GeneralIOC.P56*/HplMsp430GeneralIORenP__38__IO__toggle();
+#line 58
+}
+#line 58
+# 50 "/home/rgao/lily/tinyos2/tos/chips/msp430/pins/Msp430GpioC.nc"
+static inline void /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__toggle(void )
+#line 50
+{
+#line 50
+  /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__HplGeneralIO__toggle();
+}
+
+# 42 "/home/rgao/lily/tinyos2/tos/interfaces/GeneralIO.nc"
+inline static void LedsP__Led1__toggle(void ){
+#line 42
+  /*PlatformLedsC.Led1Impl*/Msp430GpioC__8__GeneralIO__toggle();
+#line 42
+}
+#line 42
+# 99 "/home/rgao/lily/tinyos2/tos/system/LedsP.nc"
+static inline void LedsP__Leds__led1Toggle(void )
+#line 99
+{
+  LedsP__Led1__toggle();
+  ;
+#line 101
+  ;
+}
+
+# 83 "/home/rgao/lily/tinyos2/tos/interfaces/Leds.nc"
+inline static void SendingMoteC__Leds__led1Toggle(void ){
+#line 83
+  LedsP__Leds__led1Toggle();
+#line 83
+}
+#line 83
+# 60 "SendingMoteC.nc"
+static inline void SendingMoteC__SendTimer__fired(void )
+#line 60
+{
+  SendingMoteC__Leds__led1Toggle();
   SendingMoteC__RssiMsgSend__send(AM_BROADCAST_ADDR, &SendingMoteC__msg, sizeof(sender_msg_t ));
 }
 
@@ -15375,9 +15446,9 @@ static inline void CC2420CsmaP__sendDone_task__runTask(void )
   CC2420CsmaP__Send__sendDone(CC2420CsmaP__m_msg, packetErr);
 }
 
-# 56 "SendingMoteC.nc"
+# 57 "SendingMoteC.nc"
 static inline void SendingMoteC__RadioControl__stopDone(error_t result)
-#line 56
+#line 57
 {
 }
 
@@ -15436,9 +15507,9 @@ inline static void SendingMoteC__SendTimer__startPeriodic(uint32_t dt){
 #line 64
 }
 #line 64
-# 52 "SendingMoteC.nc"
+# 53 "SendingMoteC.nc"
 static inline void SendingMoteC__RadioControl__startDone(error_t result)
-#line 52
+#line 53
 {
   SendingMoteC__SendTimer__startPeriodic(SEND_INTERVAL_MS);
 }
@@ -16345,9 +16416,9 @@ inline static error_t SendingMoteC__RadioControl__start(void ){
 #line 104
 }
 #line 104
-# 48 "SendingMoteC.nc"
+# 49 "SendingMoteC.nc"
 static inline void SendingMoteC__Boot__booted(void )
-#line 48
+#line 49
 {
   SendingMoteC__RadioControl__start();
 }
