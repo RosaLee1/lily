@@ -45,6 +45,9 @@ module SendingMoteC {
   uses interface SplitControl as RadioControl;
 } implementation {
   message_t msg;
+
+  /******** Declare Tasks *******************/
+  task void sendMsg();
   
   event void Boot.booted(){
     call RadioControl.start();
@@ -56,11 +59,16 @@ module SendingMoteC {
 
   event void RadioControl.stopDone(error_t result){}
 
-
   event void SendTimer.fired(){
-    call Leds.led1Toggle(); // green light
-    call RssiMsgSend.send(AM_BROADCAST_ADDR, &msg, sizeof(sender_msg_t));  
+    post sendMsg();
   }
 
   event void RssiMsgSend.sendDone(message_t *m, error_t error){}
+
+  /***************** TASKS *****************************/  
+  task void sendMsg(){
+    call Leds.led1Toggle(); // green light 
+    call RssiMsgSend.send(AM_BROADCAST_ADDR, &msg, sizeof(sender_msg_t)); 
+  }
+
 }
