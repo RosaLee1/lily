@@ -16081,7 +16081,7 @@ static inline error_t CC2420CsmaP__Send__send(message_t *p_msg, uint8_t len)
 
   __nesc_hton_uint32(metadata->timestamp.nxdata, CC2420_INVALID_TIMESTAMP);
 
-  CC2420CsmaP__ccaOn = TRUE;
+  CC2420CsmaP__ccaOn = FALSE;
   CC2420CsmaP__RadioBackoff__requestCca(CC2420CsmaP__m_msg);
 
   CC2420CsmaP__CC2420Transmit__send(CC2420CsmaP__m_msg, CC2420CsmaP__ccaOn);
