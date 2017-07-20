@@ -19576,7 +19576,7 @@ static inline error_t CC2420ControlP__Init__init(void )
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   CC2420ControlP__m_pan = CC2420ControlP__ActiveMessageAddress__amGroup();
   CC2420ControlP__m_tx_power = 31;
-  CC2420ControlP__m_channel = 16;
+  CC2420ControlP__m_channel = 20;
 
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   for (i = 0; i < 4; i++) {

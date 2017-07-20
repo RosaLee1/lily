@@ -658,7 +658,7 @@ enum __nesc_unnamed4250 {
   MSP430_PORT_RESISTOR_PULLDOWN, 
   MSP430_PORT_RESISTOR_PULLUP
 };
-# 39 "../RssiDemoMessages.h"
+# 39 "RssiDemoMessages.h"
 enum __nesc_unnamed4251 {
   AM_RSSIMSG = 10
 };
@@ -2340,31 +2340,31 @@ error_t error);
 # 62 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 static error_t CC2420SpiP__Fifo__continueRead(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 62 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length);
 #line 91
 static void CC2420SpiP__Fifo__default__writeDone(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 91 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length, error_t error);
 #line 82
 static cc2420_status_t CC2420SpiP__Fifo__write(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 82 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length);
 #line 51
 static cc2420_status_t CC2420SpiP__Fifo__beginRead(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 51 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length);
 #line 71
 static void CC2420SpiP__Fifo__default__readDone(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 71 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length, error_t error);
 # 31 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc"
@@ -2382,13 +2382,13 @@ static void CC2420SpiP__SpiResource__granted(void );
 # 63 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Ram.nc"
 static cc2420_status_t CC2420SpiP__Ram__write(
 # 47 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint16_t arg_0x409ffa38, 
+uint16_t arg_0x409fea38, 
 # 63 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Ram.nc"
 uint8_t offset, uint8_t * data, uint8_t length);
 # 55 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Register.nc"
 static cc2420_status_t CC2420SpiP__Reg__read(
 # 48 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409fe200, 
+uint8_t arg_0x409fd200, 
 # 55 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Register.nc"
 uint16_t *data);
 
@@ -2400,35 +2400,35 @@ uint16_t *data);
 
 static cc2420_status_t CC2420SpiP__Reg__write(
 # 48 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409fe200, 
+uint8_t arg_0x409fd200, 
 # 63 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Register.nc"
 uint16_t data);
 # 120 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static error_t CC2420SpiP__Resource__release(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 97 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static error_t CC2420SpiP__Resource__immediateRequest(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 88 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static error_t CC2420SpiP__Resource__request(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 102 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static void CC2420SpiP__Resource__default__granted(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 128 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
 static bool CC2420SpiP__Resource__isOwner(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 75 "/home/rgao/lily/tinyos2/tos/interfaces/TaskBasic.nc"
 static void CC2420SpiP__grant__runTask(void );
 # 53 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Strobe.nc"
 static cc2420_status_t CC2420SpiP__Strobe__strobe(
 # 49 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409fe9b8);
+uint8_t arg_0x409fd9b8);
 # 62 "/home/rgao/lily/tinyos2/tos/interfaces/Init.nc"
 static error_t StateImplP__Init__init(void );
 # 56 "/home/rgao/lily/tinyos2/tos/interfaces/State.nc"
@@ -4914,13 +4914,13 @@ uint16_t len);
 # 91 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 static void CC2420SpiP__Fifo__writeDone(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 91 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length, error_t error);
 #line 71
 static void CC2420SpiP__Fifo__readDone(
 # 46 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409ff010, 
+uint8_t arg_0x409fe010, 
 # 71 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
 uint8_t * data, uint8_t length, error_t error);
 # 24 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/ChipSpiResource.nc"
@@ -4947,7 +4947,7 @@ static bool CC2420SpiP__SpiResource__isOwner(void );
 #line 102
 static void CC2420SpiP__Resource__granted(
 # 45 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
-uint8_t arg_0x409e05b8);
+uint8_t arg_0x409ff5b8);
 # 67 "/home/rgao/lily/tinyos2/tos/interfaces/TaskBasic.nc"
 static error_t CC2420SpiP__grant__postTask(void );
 # 88 "/home/rgao/lily/tinyos2/tos/chips/cc2420/spi/CC2420SpiP.nc"
@@ -14157,9 +14157,9 @@ static inline void CC2420SpiP__Fifo__default__readDone(uint8_t addr, uint8_t *rx
 }
 
 # 71 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
-inline static void CC2420SpiP__Fifo__readDone(uint8_t arg_0x409ff010, uint8_t * data, uint8_t length, error_t error){
+inline static void CC2420SpiP__Fifo__readDone(uint8_t arg_0x409fe010, uint8_t * data, uint8_t length, error_t error){
 #line 71
-  switch (arg_0x409ff010) {
+  switch (arg_0x409fe010) {
 #line 71
     case CC2420_TXFIFO:
 #line 71
@@ -14175,7 +14175,7 @@ inline static void CC2420SpiP__Fifo__readDone(uint8_t arg_0x409ff010, uint8_t * 
 #line 71
     default:
 #line 71
-      CC2420SpiP__Fifo__default__readDone(arg_0x409ff010, data, length, error);
+      CC2420SpiP__Fifo__default__readDone(arg_0x409fe010, data, length, error);
 #line 71
       break;
 #line 71
@@ -14347,9 +14347,9 @@ static inline void CC2420SpiP__Fifo__default__writeDone(uint8_t addr, uint8_t *t
 }
 
 # 91 "/home/rgao/lily/tinyos2/tos/chips/cc2420/interfaces/CC2420Fifo.nc"
-inline static void CC2420SpiP__Fifo__writeDone(uint8_t arg_0x409ff010, uint8_t * data, uint8_t length, error_t error){
+inline static void CC2420SpiP__Fifo__writeDone(uint8_t arg_0x409fe010, uint8_t * data, uint8_t length, error_t error){
 #line 91
-  switch (arg_0x409ff010) {
+  switch (arg_0x409fe010) {
 #line 91
     case CC2420_TXFIFO:
 #line 91
@@ -14365,7 +14365,7 @@ inline static void CC2420SpiP__Fifo__writeDone(uint8_t arg_0x409ff010, uint8_t *
 #line 91
     default:
 #line 91
-      CC2420SpiP__Fifo__default__writeDone(arg_0x409ff010, data, length, error);
+      CC2420SpiP__Fifo__default__writeDone(arg_0x409fe010, data, length, error);
 #line 91
       break;
 #line 91
@@ -14916,9 +14916,9 @@ static inline void CC2420SpiP__Resource__default__granted(uint8_t id)
 }
 
 # 102 "/home/rgao/lily/tinyos2/tos/interfaces/Resource.nc"
-inline static void CC2420SpiP__Resource__granted(uint8_t arg_0x409e05b8){
+inline static void CC2420SpiP__Resource__granted(uint8_t arg_0x409ff5b8){
 #line 102
-  switch (arg_0x409e05b8) {
+  switch (arg_0x409ff5b8) {
 #line 102
     case /*CC2420ControlC.Spi*/CC2420SpiC__0__CLIENT_ID:
 #line 102
@@ -14952,7 +14952,7 @@ inline static void CC2420SpiP__Resource__granted(uint8_t arg_0x409e05b8){
 #line 102
     default:
 #line 102
-      CC2420SpiP__Resource__default__granted(arg_0x409e05b8);
+      CC2420SpiP__Resource__default__granted(arg_0x409ff5b8);
 #line 102
       break;
 #line 102
@@ -15960,7 +15960,7 @@ static inline error_t CC2420ControlP__Init__init(void )
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   CC2420ControlP__m_pan = CC2420ControlP__ActiveMessageAddress__amGroup();
   CC2420ControlP__m_tx_power = 31;
-  CC2420ControlP__m_channel = 16;
+  CC2420ControlP__m_channel = 20;
 
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   for (i = 0; i < 4; i++) {

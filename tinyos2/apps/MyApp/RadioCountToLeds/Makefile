@@ -1,6 +1,7 @@
 COMPONENT=RadioCountToLedsAppC
 
-CFLAGS += -DCC2420_DEF_CHANNEL=16
+CFLAGS += -DCC2420_DEF_CHANNEL=20
+CFLAGS += -DCC2420_DEF_RFPOWER=15
 
 BUILD_EXTRA_DEPS = RadioCountMsg.py RadioCountMsg.class
 CLEAN_EXTRA = RadioCountMsg.py RadioCountMsg.class RadioCountMsg.java
