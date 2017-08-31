@@ -64,7 +64,9 @@ module RssiToSerialP {
 implementation {
 
   typedef nx_struct logentry_t {
-    nx_uint16_t rss;
+    nx_uint16_t    src_addr;
+    nx_uint32_t    timestamp;
+    nx_uint16_t    rss; 
   } logentry_t;
 
   logentry_t m_entry;
@@ -120,6 +122,12 @@ implementation {
       return;
     }
 
+    atomic{
+      reads ++;
+    } 
+
+    m_entry.src_addr = 1;
+    m_entry.timestamp = call LocalTime.get();
     m_entry.rss = val;
 
     call Leds.led1On(); // green light is on
@@ -131,34 +139,38 @@ implementation {
   event void LogWrite.appendDone(void* buf, storage_len_t len, 
                                  bool recordsLost, error_t err) {
     call Leds.led1Off(); // green light is off
-    call Leds.led0On(); // red light is on
-    call LogRead.read(&m_entry, sizeof(logentry_t));
+
+    if(reads == (1<<LOG2SAMPLES)){
+      call Leds.led0On(); // red light is on
+      call LogRead.read(&m_entry, sizeof(logentry_t));
+    } else {
+      post readRssi();
+    }
+    
   }
 
   /********************* log read Events *************************/
   event void LogRead.readDone(void* buf, storage_len_t len, error_t err) {
-    if ( (len == sizeof(logentry_t)) && (buf == &m_entry) ) {
-      printf(" %u ", m_entry.rss);
+    if ( (len == sizeof(logentry_t)) && (buf == &m_entry) && (m_entry.src_addr == 1)) {
+      printf(" (%u %ld %u) ", m_entry.src_addr, m_entry.timestamp, m_entry.rss);
       printfflush();
+      call LogRead.read(&m_entry, sizeof(logentry_t));
+    } else {
+      call LogWrite.erase();
     }
-
-    if (call LogWrite.erase() != SUCCESS) {
-	// Handle error.
-    }
-    
- 
   }
 
   /********************* log erase Events *************************/
   event void LogWrite.eraseDone(error_t err) {
     if (err == SUCCESS) {
+      reads=0;
+      call Leds.led0Off(); // red light is off
       post readRssi();
     }
     else {
       // Handle error.
     }
 
-    call Leds.led0Off(); // red light is off
   }
 
   event void LogRead.seekDone(error_t err) {
