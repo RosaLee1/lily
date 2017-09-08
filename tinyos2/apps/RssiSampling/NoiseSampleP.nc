@@ -3,6 +3,8 @@
  ******************************************************************/
 
 #include "NoiseSample.h"
+#include "printf.h"
+#include "Timer.h"
 
 module NoiseSampleP
 {
@@ -18,6 +20,7 @@ module NoiseSampleP
 	uses interface Packet;
 	uses interface BlockRead;
 	uses interface BlockWrite;
+	uses interface LocalTime<TMicro>;
 }
 
 implementation
@@ -33,6 +36,8 @@ implementation
 	uint8_t Buf2[BUF_SIZE];
 	uint8_t rdata[BUF_SIZE];
 	uint16_t Rssi_val = 0;
+	uint32_t start_timestamp;
+	uint32_t end_timestamp;
 
 	void SystemInit()
 	{
@@ -46,6 +51,8 @@ implementation
 		Buf_len = 0;
 		Total_len = 0;
 		Addr_offset = 0;
+		start_timestamp = 0;
+		end_timestamp = 0;
 		call RadioControl.start();
 	}
 
@@ -146,6 +153,9 @@ implementation
 		if (Total_len == TOTAL_SIZE)
 		{
 			call Alarm0.stop();
+			end_timestamp = call LocalTime.get();
+   			printf("\n (%ld %ld) \n", start_timestamp, end_timestamp);
+      			printfflush();
 		}
 		if (Buf_len == BUF_SIZE)
 		{
@@ -293,6 +303,7 @@ implementation
 			call Leds.led1On();
 			call Leds.led2Off();
 #endif
+			start_timestamp = call LocalTime.get();
 			call Alarm0.start(ALARM_PERIOD);
 		}
 	}

@@ -21,6 +21,9 @@ implementation
 	components new SerialAMSenderC(AM_SERIAL_ID);
 	components new BlockStorageC(VOLUME_BLOCK);
 	components HplCC2420PinsC as Pins;
+  	components PrintfC;
+  	components SerialStartC;
+	components LocalTimeMicroC;
 
 	App->MainC.Boot;
 	App.Leds->LedsC;
@@ -34,6 +37,7 @@ implementation
 	App.Packet->SerialAMSenderC;
 	App.BlockRead->BlockStorageC;
 	App.BlockWrite->BlockStorageC;
+	App.LocalTime -> LocalTimeMicroC;
 }
 
 
