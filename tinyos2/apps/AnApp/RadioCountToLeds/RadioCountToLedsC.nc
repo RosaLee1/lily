@@ -78,7 +78,7 @@ implementation {
 
   event void AMControl.startDone(error_t err) {
     if (err == SUCCESS) {
-      call MilliTimer.startPeriodic(10);
+      call MilliTimer.startPeriodic(200);
     }
     else {
       call AMControl.start();
@@ -92,9 +92,11 @@ implementation {
   event void MilliTimer.fired() {
     counter++;
 
-   // if(counter > 1){ // only send two counter packets and stop
-   //   return;
-   // }
+    if(counter == (1<<LOG2SAMPLES)){ // only send two counter packets and stop
+      call MilliTimer.stop();
+      call Leds.led1Off(); // green light
+      return;
+    }
 
     dbg("RadioCountToLedsC", "RadioCountToLedsC: timer fired, counter is %hu.\n", counter);
     if (locked) {
@@ -108,7 +110,7 @@ implementation {
 
       rcm->counter = counter;
       if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_count_msg_t)) == SUCCESS) {
-	call Leds.led1Toggle(); // green light
+	call Leds.led1On(); // green light
 	dbg("RadioCountToLedsC", "RadioCountToLedsC: packet sent.\n", counter);	
 	locked = TRUE;
       }
