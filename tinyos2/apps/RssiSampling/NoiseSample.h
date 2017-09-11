@@ -11,7 +11,7 @@ enum
 	ALARM_PERIOD = 8, //i.e. 4KHz
 	AM_SERIAL_ID = 6,
 	BUF_SIZE = 512,
-	TOTAL_SIZE = 1024,
+	TOTAL_SIZE = 512,
 	FLASH_ADDR = 0x00,
 };
 
