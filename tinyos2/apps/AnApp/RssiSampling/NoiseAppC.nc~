@@ -25,18 +25,23 @@ implementation
 	components HplCC2420PinsC as Pins;
 	components LocalTimeMicroC;
 
+  components PrintfC;
+  components SerialStartC; 
+
 	App->MainC.Boot;
 	App.Leds->LedsC;
 	App.Alarm0->Alarm0; 
 	App.Resource->RssiC;
 	App.RSSI->RssiC;
 	App.CSN->Pins.CSN;
+
 	App.RadioControl->ActiveMessageC;
 	App.Receive -> ActiveMessageC.Receive[AM_RADIO_COUNT_MSG];
-	App.Packet -> ActiveMessageC;
+	App.RadioPacket -> ActiveMessageC;
 	App.SerialControl->SerialActiveMessageC;
 	App.AMSend->SerialAMSenderC;
 	App.Packet->SerialAMSenderC;
+
 	App.BlockRead->BlockStorageC;
 	App.BlockWrite->BlockStorageC;
 	App.LocalTime -> LocalTimeMicroC;

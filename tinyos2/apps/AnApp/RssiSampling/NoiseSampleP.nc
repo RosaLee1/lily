@@ -39,8 +39,9 @@ implementation
 	uint8_t Buf2[BUF_SIZE];
 	uint8_t rdata[BUF_SIZE];
 	uint16_t Rssi_val = 0;
-	uint32_t rxTimestamp;
-	uint16_t my_counter;
+	uint32_t rxTimestamp[PACKET_NUMBER];
+	uint16_t my_counter[PACKET_NUMBER];
+	uint8_t packet_num;
 
 	void SystemInit()
 	{
@@ -54,8 +55,7 @@ implementation
 		Buf_len = 0;
 		Total_len = 0;
 		Addr_offset = 0;
-        	my_counter=0;
-        	rxTimestamp=0;
+		packet_num=0;
 		call RadioControl.start();
 	}
 
@@ -141,8 +141,8 @@ implementation
 		msg.NodeId = TOS_NODE_ID;
 		msg.SeqNo = Buf_len + 1 + (Addr_offset - BUF_SIZE);
 		msg.RssiVal = rdata[Buf_len];
-		msg.this_rxTimestamp = rxTimestamp;
-		msg.this_counter = my_counter;
+		msg.this_rxTimestamp = rxTimestamp[(uint8_t)(Addr_offset/Total_len)];
+		msg.this_counter = my_counter[(uint8_t)(Addr_offset/Total_len)];
 		Buf_len++;
 		DataReport(msg);	
 	}
@@ -252,10 +252,17 @@ implementation
         {
 
             	radio_count_msg_t* rcm = (radio_count_msg_t*)call RadioPacket.getPayload(msgPtr, sizeof(radio_count_msg_t));
-            	rxTimestamp = call LocalTime.get();
-            	my_counter=rcm->counter;
+            	rxTimestamp[packet_num] = call LocalTime.get();
+            	my_counter[packet_num]=rcm->counter;
 
-	    	call Alarm0.start(ALARM_PERIOD);
+		packet_num++;
+
+                if (packet_num > PACKET_NUMBER)
+		{
+	    		return msgPtr;
+		}
+
+		call Alarm0.start(ALARM_PERIOD);
 
         	return msgPtr;
     	}
@@ -282,7 +289,7 @@ implementation
 				{
 					resultReport = FALSE;
 					Buf_len = 0;
-					if (Addr_offset == TOTAL_SIZE)
+					if (Addr_offset == Total_len)
 					{
 						call Leds.led0Off();
 						call Leds.led1On();
@@ -328,8 +335,15 @@ implementation
 		}
 		else
 		{
-			Addr_offset = 0;
-			post DataRead();
+			Total_len = 0;
+
+                        if (packet_num == PACKET_NUMBER) 
+			{
+				Addr_offset = 0;
+                                Total_len = TOTAL_SIZE*PACKET_NUMBER;
+
+				post DataRead();
+			}
 		}
 	}
 
