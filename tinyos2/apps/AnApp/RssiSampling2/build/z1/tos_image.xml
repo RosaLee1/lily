@@ -1,3 +1,15 @@
+<tos_image>
+  <ident>
+    <uidhash>E7BB20DCL</uidhash>
+    <hostname>rgao-virtual-ma</hostname>
+    <username>rgao</username>
+    <appname>NoiseAppC</appname>
+    <userhash>7942D6A9L</userhash>
+    <timestamp>59B9540CL</timestamp>
+    <deluge_support>no</deluge_support>
+    <platform>z1</platform>
+  </ident>
+  <image format="ihex">
 :103100005542200135D0085A8245EA193140003134
 :103110003F4028000F9308249242EA1920012F8390
 :103120009F4F0C710011F8233F40C2080F930724F2
@@ -1032,3 +1044,5 @@
 :10FFF000206B0E6B9E359E354A6B386B9E350031FB
 :0400000300003100C8
 :00000001FF
+  </image>
+</tos_image>

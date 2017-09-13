@@ -6,7 +6,6 @@
 #include "RadioCountToLeds.h"
 #include "Timer.h"
 #include "StorageVolumes.h"
-#include "printf.h"
 
 module NoiseSampleP
 {
@@ -142,8 +141,8 @@ implementation
 		msg.NodeId = TOS_NODE_ID;
 		msg.SeqNo = Buf_len + 1 + (Addr_offset - BUF_SIZE);
 		msg.RssiVal = rdata[Buf_len];
-		msg.this_rxTimestamp = rxTimestamp[(uint8_t)(Addr_offset/Total_len)];
-		msg.this_counter = my_counter[(uint8_t)(Addr_offset/Total_len)];
+		msg.this_rxTimestamp = rxTimestamp[(uint8_t)(Addr_offset/TOTAL_SIZE)];
+		msg.this_counter = my_counter[(uint8_t)(Addr_offset/TOTAL_SIZE)];
 		Buf_len++;
 		DataReport(msg);	
 	}

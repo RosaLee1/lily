@@ -683,7 +683,7 @@ typedef nx_struct radio_count_msg {
 
 enum __nesc_unnamed4251 {
   AM_RADIO_COUNT_MSG = 6, 
-  LOG2SAMPLES = 4
+  LOG2SAMPLES = 3
 };
 # 55 "/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430XDcoCalib.h"
 static inline void Set_DCO(unsigned int Delta);
