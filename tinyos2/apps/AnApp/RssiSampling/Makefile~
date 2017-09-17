@@ -4,8 +4,5 @@ CFLAGS += -DCC2420_DEF_CHANNEL=20
 
 PFLAGS += -I$(TOSDIR)/../apps/AnApp/RadioCountToLeds
 
-PFLAGS += -I$(TOSROOT)/tos/lib/printf
-PFLAGS += -DNEW_PRINTF_SEMANTICS
-
 include $(MAKERULES)
 

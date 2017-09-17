@@ -34,21 +34,27 @@
  */
 
 #include "RssiDemoMessages.h"
+#include "RadioCountToLeds.h"
 
 configuration SendingMoteAppC {
 } implementation {
   components ActiveMessageC, MainC;  
   components new AMSenderC(AM_RSSIMSG) as RssiMsgSender;
-  components new TimerMilliC() as SendTimer;
-
   components SendingMoteC as App;
-
   components LedsC;
+  
+  components SerialActiveMessageC as AM; 
+  components PrintfC;
+  components SerialStartC; 
+  
+  components LocalTimeMicroC;
 
   App.Leds -> LedsC;
   App.Boot -> MainC;
-  App.SendTimer -> SendTimer;
   
+  App.SerialControl -> AM;
   App.RssiMsgSend -> RssiMsgSender;
   App.RadioControl -> ActiveMessageC;
+  App.Receive -> ActiveMessageC.Receive[AM_RADIO_COUNT_MSG];
+  App.LocalTime -> LocalTimeMicroC;
 }
