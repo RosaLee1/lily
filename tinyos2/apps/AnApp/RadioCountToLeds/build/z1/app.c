@@ -683,7 +683,7 @@ typedef nx_struct radio_count_msg {
 
 enum __nesc_unnamed4251 {
   AM_RADIO_COUNT_MSG = 6, 
-  LOG2SAMPLES = 3
+  LOG2SAMPLES = 4
 };
 # 55 "/home/rgao/lily/tinyos2/tos/platforms/z1/chips/msp430/timer/Msp430XDcoCalib.h"
 static inline void Set_DCO(unsigned int Delta);
@@ -14684,7 +14684,7 @@ static inline void CC2420ControlP__writeTxctrl(void )
     CC2420ControlP__TXCTRL__write((((2 << CC2420_TXCTRL_TXMIXBUF_CUR) | (
     3 << CC2420_TXCTRL_PA_CURRENT)) | (
     1 << CC2420_TXCTRL_RESERVED)) | ((
-    15 & 0x1F) << CC2420_TXCTRL_PA_LEVEL));
+    31 & 0x1F) << CC2420_TXCTRL_PA_LEVEL));
   }
 }
 
@@ -16462,8 +16462,8 @@ static inline error_t CC2420ControlP__Init__init(void )
   CC2420ControlP__m_short_addr = CC2420ControlP__ActiveMessageAddress__amAddress();
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   CC2420ControlP__m_pan = CC2420ControlP__ActiveMessageAddress__amGroup();
-  CC2420ControlP__m_tx_power = 15;
-  CC2420ControlP__m_channel = 20;
+  CC2420ControlP__m_tx_power = 31;
+  CC2420ControlP__m_channel = 26;
 
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   for (i = 0; i < 4; i++) {
@@ -18882,7 +18882,7 @@ static void CC2420TransmitP__loadTXFIFO(void )
   uint8_t tx_power = __nesc_ntoh_uint8(CC2420TransmitP__CC2420PacketBody__getMetadata(CC2420TransmitP__m_msg)->tx_power.nxdata);
 
   if (!tx_power) {
-      tx_power = 15;
+      tx_power = 31;
     }
 
   CC2420TransmitP__CSN__clr();

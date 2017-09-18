@@ -36,8 +36,6 @@
 #include "ApplicationDefinitions.h"
 #include "RssiDemoMessages.h"
 #include "RadioCountToLeds.h"
-#include "printf.h"
-#include "Timer.h"
 
 module SendingMoteC {
   uses interface Boot;
@@ -46,13 +44,9 @@ module SendingMoteC {
   uses interface AMSend as RssiMsgSend;
   uses interface Receive;
   uses interface SplitControl as RadioControl;
-  uses interface SplitControl as SerialControl;
-  uses interface LocalTime<TMicro>;
 } implementation {
   message_t msg;
   uint16_t  packet_num = 0;
-  uint32_t  start_timestamp;
-  uint32_t  end_timestamp;
   
   /******** Declare Tasks *******************/
   task void sendMsg();
@@ -61,22 +55,10 @@ module SendingMoteC {
     call RadioControl.start();
   }
 
-  event void RadioControl.startDone(error_t result){
-    if (result == SUCCESS) {
-      call SerialControl.start(); 
-    }
-    else {
-      call RadioControl.start();
-    }
-  }
-  
-  event void SerialControl.startDone(error_t error){}
-  
-  event void SerialControl.stopDone(error_t error){}
+  event void RadioControl.startDone(error_t result){}
   
   event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
   {
-    start_timestamp = call LocalTime.get(); 
     post sendMsg();
 	return msgPtr;
   }
@@ -88,9 +70,7 @@ module SendingMoteC {
     packet_num++;
     
     if(packet_num == 26){ // stop sending packets
-      end_timestamp = call LocalTime.get();
-      printf("\n (%ld %ld) \n", start_timestamp, end_timestamp);
-      printfflush();
+      call Leds.led1Toggle(); // green light 
       packet_num = 0;
       return;
     }

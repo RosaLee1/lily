@@ -718,7 +718,7 @@ enum __nesc_unnamed4253 {
   BUF_SIZE = 512, 
   TOTAL_SIZE = 512, 
   FLASH_ADDR = 0x00, 
-  PACKET_NUMBER = 5
+  PACKET_NUMBER = 15
 };
 
 
@@ -745,7 +745,7 @@ typedef nx_struct radio_count_msg {
 
 enum __nesc_unnamed4254 {
   AM_RADIO_COUNT_MSG = 6, 
-  LOG2SAMPLES = 3
+  LOG2SAMPLES = 4
 };
 # 41 "/home/rgao/lily/tinyos2/tos/lib/timer/Timer.h"
 typedef struct __nesc_unnamed4255 {
@@ -24909,7 +24909,7 @@ static inline error_t CC2420ControlP__Init__init(void )
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   CC2420ControlP__m_pan = CC2420ControlP__ActiveMessageAddress__amGroup();
   CC2420ControlP__m_tx_power = 31;
-  CC2420ControlP__m_channel = 20;
+  CC2420ControlP__m_channel = 26;
 
   CC2420ControlP__m_ext_addr = CC2420ControlP__LocalIeeeEui64__getId();
   for (i = 0; i < 4; i++) {

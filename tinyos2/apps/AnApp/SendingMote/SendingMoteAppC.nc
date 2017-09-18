@@ -42,19 +42,11 @@ configuration SendingMoteAppC {
   components new AMSenderC(AM_RSSIMSG) as RssiMsgSender;
   components SendingMoteC as App;
   components LedsC;
-  
-  components SerialActiveMessageC as AM; 
-  components PrintfC;
-  components SerialStartC; 
-  
-  components LocalTimeMicroC;
 
   App.Leds -> LedsC;
   App.Boot -> MainC;
   
-  App.SerialControl -> AM;
   App.RssiMsgSend -> RssiMsgSender;
   App.RadioControl -> ActiveMessageC;
   App.Receive -> ActiveMessageC.Receive[AM_RADIO_COUNT_MSG];
-  App.LocalTime -> LocalTimeMicroC;
 }
