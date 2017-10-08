@@ -1,11 +1,11 @@
 <tos_image>
   <ident>
-    <uidhash>4258909EL</uidhash>
+    <uidhash>E0DB3160L</uidhash>
     <hostname>rgao-virtual-ma</hostname>
     <username>rgao</username>
     <appname>RadioCountToLed</appname>
     <userhash>7942D6A9L</userhash>
-    <timestamp>59C04B34L</timestamp>
+    <timestamp>59CD38A3L</timestamp>
     <deluge_support>no</deluge_support>
     <platform>z1</platform>
   </ident>

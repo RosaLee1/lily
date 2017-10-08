@@ -50,7 +50,7 @@ public class TestSerial implements MessageListener {
 	try {
 	this.outputFile = new FileOutputStream("rss.txt");
 	this.output = new PrintStream(outputFile);
-	this.output.println("*** Noise data with 4 KHz sampling ***");
+	this.output.println("*** RSS data with 4 KHz sampling ***");
 	this.output.println("");
 	this.output.println("[Node Id] [Sequence No] [RSSI(dBm)] [TimeStamp(us)] [Counter No]");
 	this.output.println("");
