@@ -33,12 +33,13 @@
  * @author Dimas Abreu Dutra
  */
 
-#include "ApplicationDefinitions.h"
 #include "RssiDemoMessages.h"
 #include "RadioCountToLeds.h"
+#include "printf.h"
 
 module SendingMoteC {
   uses interface Boot;
+  uses interface Timer<TMilli> as SendTimer;
   uses interface Leds;
   
   uses interface AMSend as RssiMsgSend;
@@ -47,6 +48,7 @@ module SendingMoteC {
 } implementation {
   message_t msg;
   uint16_t  packet_num = 0;
+  uint16_t  counter_packet_num = 1;
   
   /******** Declare Tasks *******************/
   task void sendMsg();
@@ -57,25 +59,42 @@ module SendingMoteC {
 
   event void RadioControl.startDone(error_t result){}
   
+  event void RadioControl.stopDone(error_t result){}
+  
   event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
   {
-    post sendMsg();
+    
+    call SendTimer.startOneShot(10);
+    
+    printf(" (%u ", counter_packet_num);
+    printfflush();
+    
+    counter_packet_num++;
+    
+    if(counter_packet_num == (1<<LOG2SAMPLES)){ 
+        counter_packet_num = 1;
+    }
 	return msgPtr;
   }
-
-  event void RadioControl.stopDone(error_t result){}
+  
+  event void SendTimer.fired(){
+    post sendMsg();
+  }
 
   event void RssiMsgSend.sendDone(message_t *m, error_t error){
   
     packet_num++;
     
-    if(packet_num == 26){ // stop sending packets
-      call Leds.led1Toggle(); // green light 
+    if(packet_num == 18){ // stop sending packets
+      call Leds.led1Toggle(); // green light
+      
+      printf(" finish) ");
+      printfflush();
+    
       packet_num = 0;
       return;
     }
     
-  
     post sendMsg();
   }
 

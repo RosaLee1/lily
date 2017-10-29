@@ -42,9 +42,14 @@ configuration SendingMoteAppC {
   components new AMSenderC(AM_RSSIMSG) as RssiMsgSender;
   components SendingMoteC as App;
   components LedsC;
+  components new TimerMilliC() as SendTimer;
+  
+  components PrintfC;
+  components SerialStartC; 
 
   App.Leds -> LedsC;
   App.Boot -> MainC;
+  App.SendTimer -> SendTimer;
   
   App.RssiMsgSend -> RssiMsgSender;
   App.RadioControl -> ActiveMessageC;

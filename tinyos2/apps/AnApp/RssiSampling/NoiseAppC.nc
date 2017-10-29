@@ -18,6 +18,7 @@ implementation
 	components new Alarm32khz32C() as Alarm0;
 	components new CC2420RssiC() as RssiC;
 	components NoiseSampleP as App;
+	components new AMReceiverC(AM_RADIO_COUNT_MSG);
 	components ActiveMessageC;
 	components SerialActiveMessageC;
 	components new SerialAMSenderC(AM_SERIAL_ID);
@@ -33,7 +34,7 @@ implementation
 	App.CSN->Pins.CSN;
 
 	App.RadioControl->ActiveMessageC;
-	App.Receive -> ActiveMessageC.Receive[AM_RADIO_COUNT_MSG];
+	App.Receive -> AMReceiverC;
 	App.RadioPacket -> ActiveMessageC;
 	App.SerialControl->SerialActiveMessageC;
 	App.AMSend->SerialAMSenderC;

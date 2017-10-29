@@ -6,6 +6,7 @@
 #include "RadioCountToLeds.h"
 #include "Timer.h"
 #include "StorageVolumes.h"
+#include "printf.h"
 
 module NoiseSampleP
 {
@@ -77,6 +78,7 @@ implementation
 			call Leds.led1Off();
 			call Leds.led2On();
 		}
+		
 	}
 
 	void Report(error_t e)
@@ -97,6 +99,7 @@ implementation
 			call Leds.led1Off();
 			call Leds.led2On();
 		}
+		
 	}
 
 	event void Boot.booted()
@@ -120,10 +123,12 @@ implementation
 		{
 			Addr_offset += BUF_SIZE;
 		}
+		
 	}
 
 	task void DataRead()
 	{
+	      
 		if (call BlockRead.read(FLASH_ADDR+Addr_offset, rdata, BUF_SIZE) != SUCCESS)
 		{
 			Report(0x48);
@@ -132,6 +137,7 @@ implementation
 		{
 			Addr_offset += BUF_SIZE;
 		}
+		
 	}
 
 	task void SendSerial()
@@ -141,8 +147,8 @@ implementation
 		msg.NodeId = TOS_NODE_ID;
 		msg.SeqNo = Buf_len + 1 + (Addr_offset - BUF_SIZE);
 		msg.RssiVal = rdata[Buf_len];
-		msg.this_rxTimestamp = rxTimestamp[(uint8_t)(Addr_offset/TOTAL_SIZE)];
-		msg.this_counter = my_counter[(uint8_t)(Addr_offset/TOTAL_SIZE)];
+		msg.this_rxTimestamp = rxTimestamp[(uint8_t)((Addr_offset/TOTAL_SIZE)-1)];
+		msg.this_counter = my_counter[(uint8_t)((Addr_offset/TOTAL_SIZE)-1)];
 		Buf_len++;
 		DataReport(msg);	
 	}
@@ -250,21 +256,19 @@ implementation
 
         event message_t* Receive.receive(message_t* msgPtr, void* payload, uint8_t len)
         {
+            radio_count_msg_t* rcm = (radio_count_msg_t*)call RadioPacket.getPayload(msgPtr, sizeof(radio_count_msg_t));
+            rxTimestamp[packet_num] = call LocalTime.get();
+            my_counter[packet_num]=rcm->counter;
 
-            	radio_count_msg_t* rcm = (radio_count_msg_t*)call RadioPacket.getPayload(msgPtr, sizeof(radio_count_msg_t));
-            	rxTimestamp[packet_num] = call LocalTime.get();
-            	my_counter[packet_num]=rcm->counter;
+		    packet_num++;
 
-		packet_num++;
-
-                if (packet_num > PACKET_NUMBER)
-		{
+            if (packet_num > PACKET_NUMBER){
 	    		return msgPtr;
-		}
+		    }
 
-		call Alarm0.start(ALARM_PERIOD);
-
-        	return msgPtr;
+		    call Alarm0.start(ALARM_PERIOD);  
+		     
+            return msgPtr;
     	}
 
 	event void SerialControl.stopDone(error_t err)
@@ -280,6 +284,7 @@ implementation
 
 	event void AMSend.sendDone(message_t *bufPtr, error_t err)
 	{
+	
 		if (&packet == bufPtr)
 		{
 			sendBusy = FALSE;
@@ -306,6 +311,7 @@ implementation
 				}	
 			}
 		}
+		
 	}
 
 	event void BlockWrite.writeDone(storage_addr_t addr, void *buf, 
@@ -323,8 +329,9 @@ implementation
 				{
 					Report(0x44);
 				}
-			}
+			} 
 		}
+		
 	}
 
 	event void BlockWrite.syncDone(error_t err)
@@ -337,19 +344,21 @@ implementation
 		{
 			Total_len = 0;
 
-                        if (packet_num == PACKET_NUMBER) 
-			{
+            if (packet_num == PACKET_NUMBER) 
+			{      
 				Addr_offset = 0;
-                                Total_len = TOTAL_SIZE*PACKET_NUMBER;
+                Total_len = TOTAL_SIZE*PACKET_NUMBER;
 
 				post DataRead();
 			}
 		}
+		
 	}
 
 	event void BlockRead.readDone(storage_addr_t addr, void *buf, 
 									storage_len_t len, error_t err)
 	{
+	
 		if (err != SUCCESS)
 		{
 			Report(0x49);
@@ -360,6 +369,7 @@ implementation
 			resultReport = TRUE;
 			post SendSerial();
 		}
+		
 	}
 
 	event void BlockRead.computeCrcDone(storage_addr_t addr, storage_len_t len,
