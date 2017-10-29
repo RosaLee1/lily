@@ -13,7 +13,7 @@ enum
 	BUF_SIZE = 512,
 	TOTAL_SIZE = 512,
 	FLASH_ADDR = 0x00,
-	PACKET_NUMBER = 7, 
+	PACKET_NUMBER = 15, 
 };
 
 typedef nx_struct Msg
